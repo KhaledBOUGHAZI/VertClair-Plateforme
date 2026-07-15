@@ -1,0 +1,32 @@
+{
+    "id": "rechauffement_climatique",
+    "titre": "Le réchauffement climatique",
+    "niveau": "debutant",
+    "illustration": "rechauffement_climatique.png",
+    "message_image": "L’illustration montre que l’augmentation des gaz à effet de serre entraîne une hausse progressive de la température moyenne mondiale.",
+    "a_retenir": "Quelques degrés supplémentaires à l'échelle mondiale peuvent entraîner de grands changements à l'échelle locale.",
+    "resume": "Le réchauffement climatique correspond à l'augmentation durable de la température moyenne de la planète observée depuis le début de l'ère industrielle.",
+    "pourquoi": "Même une hausse de quelques degrés modifie profondément les ressources en eau, la santé, l'agriculture, les écosystèmes et les conditions de vie des populations.",
+    "causes": [
+        "Augmentation des gaz à effet de serre",
+        "Utilisation des énergies fossiles",
+        "Déforestation",
+        "Certaines pratiques agricoles et industrielles"
+    ],
+    "consequences": [
+        "Canicules plus fréquentes et plus intenses",
+        "Sécheresses plus sévères",
+        "Hausse du niveau de la mer",
+        "Modification des régimes de pluie",
+        "Perturbation des écosystèmes"
+    ],
+    "solutions": [
+        "Réduire les émissions de gaz à effet de serre",
+        "Développer les énergies bas carbone",
+        "Adapter les territoires aux nouvelles conditions climatiques",
+        "Préserver les sols, l'eau et la biodiversité"
+    ],
+    "saviez_vous": "La température moyenne mondiale a déjà augmenté d'environ 1,2°C depuis la fin du XIXe siècle.",
+    "territoire": "Les données climatiques locales permettent d'anticiper les risques propres à chaque commune et d'identifier les actions d'adaptation prioritaires.",
+    "fenny": "Quelques degrés de plus à l'échelle de la planète peuvent entraîner de très grands changements à l'échelle locale."
+}

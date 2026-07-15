@@ -1,0 +1,70 @@
+<div class="col-md-6 mb-4">
+    <div class="card border-0 shadow-sm h-100">
+        <div class="card-body">
+
+            <h4>{{ titre }}</h4>
+
+            <div class="progress mb-3" style="height: 10px;">
+                <div class="progress-bar bg-success" style="width: {{ progression }}%;"></div>
+            </div>
+
+            <div class="small text-muted mb-3">
+                📚 30 fiches pédagogiques<br>
+                📝 30 questions de quiz<br>
+                🏅 3 niveaux de formation
+            </div>
+
+            <p class="mb-1">
+                🌱 Débutant
+                {% if debutant %}
+                    <span class="badge bg-success">🟢 Validé {{ debutant.pourcentage }}%</span>
+                {% elif progression > 0 %}
+                    <span class="badge bg-warning text-dark">🟡 En cours</span>
+                {% else %}
+                    <span class="badge bg-secondary">⚪ À faire</span>
+                {% endif %}
+            </p>
+
+            <p class="mb-1">
+                🌿 Connaisseur
+                {% if connaisseur %}
+                    <span class="badge bg-success">🟢 Validé {{ connaisseur.pourcentage }}%</span>
+                {% elif debutant %}
+                    <span class="badge bg-warning text-dark">🟡 En cours</span>
+                {% else %}
+                    <span class="badge bg-secondary">⚪ À faire</span>
+                {% endif %}
+            </p>
+
+            <p class="mb-3">
+                🌳 Expert
+                {% if expert %}
+                    <span class="badge bg-success">🟢 Validé {{ expert.pourcentage }}%</span>
+                {% elif connaisseur %}
+                    <span class="badge bg-warning text-dark">🟡 En cours</span>
+                {% else %}
+                    <span class="badge bg-secondary">⚪ À faire</span>
+                {% endif %}
+            </p>
+
+            {% if not debutant %}
+                <a href="{% url 'quiz_session' theme 'debutant' %}" class="btn btn-success btn-sm">
+                    Commencer débutant
+                </a>
+            {% elif not connaisseur %}
+                <a href="{% url 'quiz_session' theme 'connaisseur' %}" class="btn btn-success btn-sm">
+                    Continuer connaisseur
+                </a>
+            {% elif not expert %}
+                <a href="{% url 'quiz_session' theme 'expert' %}" class="btn btn-success btn-sm">
+                    Continuer expert
+                </a>
+            {% else %}
+                <a href="{% url 'quiz_session' theme 'expert' %}" class="btn btn-outline-success btn-sm">
+                    Revoir le module
+                </a>
+            {% endif %}
+
+        </div>
+    </div>
+</div>

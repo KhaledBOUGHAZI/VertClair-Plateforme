@@ -1,0 +1,36 @@
+{
+    "id": "resilience_hydrique",
+    "titre": "La résilience hydrique des territoires",
+    "niveau": "connaisseur",
+    "illustration": "sobriete_hydrique.png",
+    "message_image": "L’illustration montre un territoire qui s’adapte au changement climatique grâce à une gestion intégrée de l’eau, des sols et des milieux naturels.",
+    "resume": "La résilience hydrique correspond à la capacité d’un territoire à maintenir durablement ses ressources en eau malgré les sécheresses, les inondations, les fortes chaleurs et les évolutions climatiques. Elle repose sur une combinaison d’aménagements, de préservation des milieux naturels et de gestion raisonnée de la ressource.",
+    "pourquoi": "Le changement climatique modifie progressivement les régimes de pluie, augmente l’évaporation et accentue les événements extrêmes. Les collectivités, entreprises et citoyens doivent donc adapter leurs pratiques afin de garantir une ressource en eau suffisante tout en protégeant les écosystèmes.",
+    "causes": [
+        "Hausse des températures.",
+        "Sécheresses plus longues et plus fréquentes.",
+        "Précipitations plus intenses mais moins régulières.",
+        "Artificialisation des sols.",
+        "Pression croissante sur les ressources en eau."
+    ],
+    "consequences": [
+        "Baisse du niveau des nappes souterraines.",
+        "Réduction du débit des cours d'eau.",
+        "Conflits entre les différents usages de l'eau.",
+        "Dégradation de la biodiversité.",
+        "Vulnérabilité accrue des territoires."
+    ],
+    "solutions": [
+        "Économiser la ressource en eau.",
+        "Préserver les zones humides et les cours d'eau.",
+        "Favoriser l'infiltration des eaux de pluie.",
+        "Réutiliser certaines eaux traitées lorsque cela est possible.",
+        "Développer les solutions fondées sur la nature.",
+        "Adapter les plans d'aménagement au changement climatique.",
+        "Suivre régulièrement les indicateurs de disponibilité en eau."
+    ],
+    "saviez_vous": "Un territoire résilient ne cherche pas seulement à faire face aux crises : il s'organise pour mieux les anticiper et en limiter les conséquences.",
+    "territoire": "VertClair croise les données issues de DRIAS, BRGM, Géorisques, EauFrance et d'autres bases publiques afin d'aider les collectivités et les entreprises à évaluer leur résilience hydrique et à construire un plan d'action adapté.",
+    "a_retenir": "La résilience hydrique repose autant sur la protection des milieux naturels que sur une gestion responsable de la ressource en eau.",
+    "fenny": "Chaque action menée aujourd'hui pour préserver l'eau rendra votre territoire plus résilient face aux défis climatiques de demain."
+}

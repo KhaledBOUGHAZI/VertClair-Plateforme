@@ -1,0 +1,33 @@
+{
+    "id": "feux_foret",
+    "titre": "Les feux de forêt",
+    "niveau": "debutant",
+    "illustration": "feux_foret.png",
+    "message_image": "L’illustration montre que la chaleur, la sécheresse et le vent favorisent la propagation rapide des incendies.",
+    "a_retenir": "La prévention reste le moyen le plus efficace de limiter les risques d'incendie.",
+    "resume": "Les feux de forêt sont des incendies qui se propagent dans les espaces boisés ou les milieux naturels. Ils sont favorisés par la chaleur, la sécheresse, le vent et la présence de végétation sèche.",
+    "pourquoi": "Le changement climatique augmente la durée et l'intensité des périodes favorables aux incendies. Des territoires auparavant peu exposés peuvent désormais être concernés.",
+    "causes": [
+        "Sécheresse",
+        "Fortes chaleurs",
+        "Vent",
+        "Imprudences humaines"
+    ],
+    "consequences": [
+        "Destruction de milieux naturels",
+        "Risques pour les habitants et les infrastructures",
+        "Émissions importantes de fumées et de CO₂",
+        "Dégradation des sols",
+        "Perte de biodiversité"
+    ],
+    "solutions": [
+        "Débroussailler autour des zones exposées",
+        "Informer les habitants",
+        "Préserver des coupures végétales adaptées",
+        "Anticiper les accès pour les secours",
+        "Surveiller les périodes à risque"
+    ],
+    "saviez_vous": "La plupart des départs de feu sont liés à des activités humaines, volontaires ou accidentelles.",
+    "territoire": "Les communes boisées ou proches de massifs doivent intégrer ce risque dans leur stratégie d'adaptation.",
+    "fenny": "La meilleure lutte contre les incendies reste souvent la prévention avant le départ du feu."
+}

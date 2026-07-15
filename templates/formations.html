@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Quiz & Formations{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid p-4">
+
+    <h1 class="mb-2">🎓 Quiz & Formations écologiques</h1>
+
+    <p class="text-muted mb-4">
+        Testez vos connaissances et progressez sur les grands enjeux écologiques.
+    </p>
+
+    <div class="row">
+
+        {% include "partials/carte_quiz.html" with image="images/quiz/climat.jpg" titre="🌡️ Climat & adaptation" texte="Canicules, sécheresses, inondations et solutions d’adaptation." theme="climat" progression="30" %}
+
+        {% include "partials/carte_quiz.html" with image="images/quiz/economie-circulaire.jpg" titre="♻️ Économie circulaire" texte="Réduire, réemployer, réparer, recycler dans le bon ordre." theme="economie-circulaire" progression="10" %}
+
+        {% include "partials/carte_quiz.html" with image="images/quiz/biodiversite.jpg" titre="🌿 Biodiversité" texte="Espèces, habitats naturels et continuités écologiques." theme="biodiversite" progression="0" %}
+
+        {% include "partials/carte_quiz.html" with image="images/quiz/eau.jpg" titre="💧 Eau" texte="Ressource en eau, qualité, zones humides et gestion durable." theme="eau" progression="0" %}
+
+        {% include "partials/carte_quiz.html" with image="images/quiz/energie.jpg" titre="⚡ Énergie" texte="Sobriété énergétique, efficacité et renouvelables." theme="energie" progression="0" %}
+
+        {% include "partials/carte_quiz.html" with image="images/quiz/alimentation.jpg" titre="🍽️ Alimentation durable" texte="Agriculture, circuits courts et gaspillage alimentaire." theme="alimentation" progression="0" %}
+
+    </div>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    if (typeof setFenny === "function") {
+        setFenny(
+            "quiz",
+            "🎓 Choisissez un thème et progressez à votre rythme."
+        );
+    }
+});
+</script>
+
+{% endblock %}

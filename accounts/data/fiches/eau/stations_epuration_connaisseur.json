@@ -1,0 +1,32 @@
+{
+    "id": "stations_epuration",
+    "titre": "Les stations d'épuration : nettoyer l'eau avant son retour au milieu naturel",
+    "niveau": "connaisseur",
+    "illustration": "pollutions_eau.png",
+    "message_image": "L’illustration montre les principales étapes du traitement des eaux usées avant leur rejet dans une rivière.",
+    "resume": "Après avoir été utilisée dans les habitations, les entreprises ou les industries, l'eau devient une eau usée. Elle est collectée par les réseaux d'assainissement puis acheminée vers une station d'épuration où plusieurs traitements permettent d'éliminer une grande partie des pollutions avant son retour dans le milieu naturel.",
+    "pourquoi": "Sans traitement, les eaux usées transporteraient des matières organiques, des bactéries, des nutriments et de nombreux polluants pouvant fortement dégrader les rivières et les écosystèmes aquatiques.",
+    "causes": [
+        "Utilisation quotidienne de l'eau dans les logements.",
+        "Rejets des activités économiques.",
+        "Eaux pluviales mélangées au réseau dans certains secteurs.",
+        "Production permanente d'eaux usées."
+    ],
+    "consequences": [
+        "Dégradation de la qualité des rivières si les eaux ne sont pas traitées.",
+        "Prolifération d'algues liée aux excès d'azote et de phosphore.",
+        "Risque sanitaire pour les populations et la biodiversité.",
+        "Coûts importants pour les collectivités."
+    ],
+    "solutions": [
+        "Moderniser les stations d'épuration.",
+        "Limiter les pollutions à la source.",
+        "Réduire les produits toxiques rejetés dans les réseaux.",
+        "Séparer les eaux pluviales des eaux usées lorsque cela est possible.",
+        "Valoriser les boues issues du traitement."
+    ],
+    "saviez_vous": "Une station d'épuration ne rend pas l'eau potable. Elle élimine principalement les pollutions afin que l'eau rejetée perturbe le moins possible le milieu naturel.",
+    "territoire": "La qualité des rivières affichée dans VertClair dépend notamment des performances des stations d'épuration situées en amont du territoire.",
+    "a_retenir": "Le meilleur traitement reste celui qui évite la pollution avant même qu'elle n'entre dans le réseau d'assainissement.",
+    "fenny": "Ne jetez jamais huiles, peintures, solvants ou médicaments dans les canalisations : ils compliquent fortement le travail des stations d'épuration."
+}

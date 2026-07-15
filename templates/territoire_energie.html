@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Énergie territoriale{% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<div class="container-fluid p-4">
+
+    <h2>⚡ Énergie territoriale</h2>
+
+    <p class="text-muted">
+        Diagnostic énergétique, bâtiments, énergies renouvelables et transition énergétique du territoire.
+    </p>
+
+    <div class="mt-4 mb-4">
+
+        <input
+            type="text"
+            id="ville"
+            class="form-control"
+            placeholder="Ex : Pacy-sur-Eure"
+        >
+
+        <button
+            type="button"
+            id="btn-energie"
+            class="btn btn-primary mt-3"
+        >
+            Consulter l’énergie
+        </button>
+
+    </div>
+
+    <div id="boutonsEnergie" class="mb-4" style="display:none;">
+
+        <button class="btn btn-outline-primary me-2" onclick="afficherBlocBatiments()">
+            🏢 Bâtiments
+        </button>
+
+        <button class="btn btn-outline-warning me-2" onclick="afficherBlocSolaire()">
+            ☀️ Solaire
+        </button>
+
+        <button class="btn btn-outline-info me-2" onclick="afficherBlocEolien()">
+            🌬️ Éolien
+        </button>
+
+        <button class="btn btn-outline-success me-2" onclick="afficherBlocGeothermie()">
+            🌡️ Géothermie
+        </button>
+
+        <button class="btn btn-outline-dark me-2" onclick="afficherBlocBiomasse()">
+            🌳 Biomasse
+        </button>
+
+        <button class="btn btn-outline-danger" onclick="afficherBlocActionsEnergie()">
+            🎯 Actions énergie
+        </button>
+
+    </div>
+
+    <div id="blocBatimentsEnergie"></div>
+
+      <div id="map" style="height:500px;" class="mb-4"></div>
+
+    <div id="blocOutilsBatiments" style="display:none;">
+
+        <hr class="mt-4 mb-4">
+
+        <h4>🏢 Rechercher un bâtiment</h4>
+
+        <input
+            type="text"
+            id="adresse"
+            class="form-control"
+            placeholder="Ex : 12 rue de Vernon, Pacy-sur-Eure"
+        >
+
+        <button
+            type="button"
+            id="btn-dpe-batiment"
+            class="btn btn-dark mt-3"
+        >
+            Analyser le bâtiment
+        </button>
+
+        <div id="resultatBatiment" class="mt-4"></div>
+
+        <button
+            type="button"
+            id="btn-carte-dpe"
+            class="btn btn-danger mt-4"
+        >
+            Afficher les passoires thermiques
+        </button>
+
+        <div class="card p-3 mt-3 mb-3">
+
+        <div id="statsCarteDPE" class="mt-3"></div>
+
+        </div>
+
+      
+    </div>
+
+    <div id="blocSolaireEnergie"></div>
+    <div id="blocEolienEnergie"></div>
+    <div id="blocGeothermieEnergie"></div>
+    <div id="blocBiomasseEnergie"></div>
+    <div id="blocActionsEnergie"></div>
+
+    <div id="syntheseDPE" class="card p-4 mt-4"></div>
+
+</div>
+
+<script src="{% static 'js/territoire/map.js' %}?v=40"></script>
+<script src="{% static 'js/territoire/filtres-dpe.js' %}?v=40"></script>
+<script src="{% static 'js/territoire/carte-dpe.js' %}?v=40"></script>
+<script src="{% static 'js/territoire/dpe-batiment.js' %}?v=40"></script>
+
+<script src="{% static 'js/territoire/energie-solaire.js' %}?v=4"></script>
+<script src="{% static 'js/territoire/energie-actions.js' %}?v=2"></script>
+<script src="{% static 'js/territoire/energie-eolien.js' %}?v=1"></script>
+<script src="{% static 'js/territoire/energie-geothermie.js' %}?v=1"></script>
+<script src="{% static 'js/territoire/energie-biomasse.js' %}?v=1"></script>
+<script src="{% static 'js/territoire/energie-navigation.js' %}?v=5"></script>
+<script src="{% static 'js/territoire/energie.js' %}?v=47"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    initMap();
+
+    document.getElementById("btn-energie").addEventListener("click", function(){
+        chargerEnergie();
+    });
+
+    document.getElementById("btn-dpe-batiment").addEventListener("click", function(){
+        analyserBatiment();
+    });
+
+    document.getElementById("btn-carte-dpe").addEventListener("click", function(){
+        afficherCarteDPE();
+    });
+
+    document.getElementById("filtre-dpe").addEventListener("change", function(){
+        afficherPointsDPE();
+    });
+
+});
+</script>
+
+{% endblock %}

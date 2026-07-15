@@ -1,0 +1,33 @@
+{
+    "id": "inondations",
+    "titre": "Les inondations",
+    "niveau": "debutant",
+    "illustration": "inondations.png",
+    "message_image": "L’illustration montre qu’une rivière qui déborde ou des pluies intenses peuvent rapidement toucher les habitations et les routes.",
+    "a_retenir": "L'eau a besoin d'espace. Les sols naturels et les zones humides réduisent le risque d'inondation.",
+    "resume": "Une inondation se produit lorsque l'eau déborde ou s'accumule plus vite que le territoire ne peut l'absorber ou l'évacuer.",
+    "pourquoi": "Les inondations sont l'un des risques naturels les plus fréquents en France. Elles peuvent provoquer des dommages importants aux habitants, aux infrastructures et aux activités économiques.",
+    "causes": [
+        "Pluies intenses",
+        "Débordement de cours d'eau",
+        "Sols imperméabilisés",
+        "Construction en zones exposées"
+    ],
+    "consequences": [
+        "Dégâts matériels",
+        "Coupures de routes et de réseaux",
+        "Risques pour les personnes",
+        "Pollutions accidentelles",
+        "Coûts importants pour les collectivités"
+    ],
+    "solutions": [
+        "Limiter l'urbanisation en zones à risque",
+        "Restaurer les zones d'expansion des crues",
+        "Désimperméabiliser les sols",
+        "Créer des noues et espaces d'infiltration",
+        "Informer les habitants"
+    ],
+    "saviez_vous": "Une prairie ou une zone humide peut ralentir l'eau et réduire les pics de crue.",
+    "territoire": "Les cartes PPR inondation et Géorisques permettent d'identifier les secteurs exposés.",
+    "fenny": "L'eau a besoin d'espace. Les zones humides, les prairies et les sols naturels peuvent fortement réduire le risque d'inondation."
+}

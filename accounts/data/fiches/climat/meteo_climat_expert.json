@@ -1,0 +1,28 @@
+{
+    "id": "meteo_climat",
+    "titre": "Météo, climat et projections climatiques",
+    "niveau": "expert",
+    "illustration": "meteo_climat.svg",
+    "resume": "Les politiques d'adaptation reposent sur l'analyse des normales climatiques et des projections futures produites par les modèles climatiques.",
+    "pourquoi": "Les collectivités et les entreprises doivent anticiper les évolutions du climat afin d'adapter leurs infrastructures, leurs activités et leurs investissements.",
+    "causes": [
+        "Accumulation des gaz à effet de serre",
+        "Modification du bilan énergétique de la Terre",
+        "Influence des rétroactions climatiques"
+    ],
+    "consequences": [
+        "Modification durable des températures",
+        "Évolution des ressources en eau",
+        "Augmentation de certains risques naturels"
+    ],
+    "solutions": [
+        "Utiliser les scénarios DRIAS",
+        "Mettre en place des stratégies d'adaptation",
+        "Intégrer le climat dans les décisions d'aménagement"
+    ],
+    "saviez_vous": "Les projections climatiques ne prédisent pas la météo future mais permettent d'estimer les tendances probables selon différents scénarios d'émissions.",
+    "territoire": "Les scénarios DRIAS et TRACC permettent d'estimer les évolutions futures de la température, des sécheresses et des précipitations sur votre territoire.",
+    "message_image": "Les climatologues utilisent des modèles et plusieurs scénarios pour estimer les évolutions possibles du climat futur.",
+    "a_retenir": "L'incertitude ne justifie pas l'inaction : les tendances futures sont suffisamment robustes pour guider les stratégies d'adaptation.",
+    "fenny": "Les meilleures décisions sont celles qui restent pertinentes dans plusieurs scénarios climatiques futurs."
+}

@@ -1,0 +1,34 @@
+{
+    "id": "ecosystemes",
+    "titre": "Les écosystèmes : des milieux vivants en équilibre",
+    "niveau": "debutant",
+    "illustration": "biodiversite.png",
+    "message_image": "L’illustration montre plusieurs écosystèmes naturels où les plantes, les animaux, les champignons et les micro-organismes vivent en interaction avec leur environnement.",
+    "resume": "Un écosystème est un milieu naturel dans lequel les êtres vivants interagissent entre eux et avec leur environnement. Forêts, prairies, rivières, mares, zones humides ou littoraux sont autant d'écosystèmes qui rendent des services essentiels à la nature et aux sociétés humaines.",
+    "pourquoi": "Chaque écosystème joue un rôle important : il abrite une biodiversité spécifique, régule le climat, filtre l'eau, stocke du carbone et contribue à la qualité de vie. Plus un écosystème est en bon état, plus il est capable de résister aux perturbations naturelles ou humaines.",
+    "causes": [
+        "Diversité des climats.",
+        "Nature des sols.",
+        "Disponibilité en eau.",
+        "Présence de différentes espèces végétales et animales."
+    ],
+    "consequences": [
+        "Maintien de la biodiversité.",
+        "Production d'oxygène.",
+        "Purification naturelle de l'eau.",
+        "Protection contre l'érosion.",
+        "Stockage du carbone."
+    ],
+    "solutions": [
+        "Préserver les milieux naturels.",
+        "Limiter la destruction des habitats.",
+        "Restaurer les écosystèmes dégradés.",
+        "Planter des espèces locales.",
+        "Réduire les pollutions.",
+        "Favoriser les continuités écologiques."
+    ],
+    "saviez_vous": "Une simple mare peut abriter plusieurs centaines d'espèces animales et végétales différentes.",
+    "territoire": "VertClair permet d'identifier plusieurs écosystèmes présents sur votre territoire grâce aux données publiques sur les zones humides, les espaces naturels protégés et les trames écologiques.",
+    "a_retenir": "Un écosystème fonctionne grâce aux interactions entre les êtres vivants et leur environnement. Lorsque l'un de ces éléments disparaît, tout l'équilibre peut être perturbé.",
+    "fenny": "Une forêt, une rivière ou une prairie ne sont pas seulement des paysages : ce sont des écosystèmes où chaque espèce contribue à maintenir l'équilibre du vivant."
+}

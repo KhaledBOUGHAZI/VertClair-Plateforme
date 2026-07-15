@@ -1,0 +1,43 @@
+{
+    "id": "restauration_cours_eau",
+    "titre": "La restauration des cours d'eau : retrouver un fonctionnement naturel",
+    "niveau": "expert",
+    "illustration": "rivieres.png",
+    "message_image": "L’illustration montre qu'un cours d'eau restauré retrouve progressivement ses fonctions naturelles : écoulement, biodiversité, infiltration et régulation des crues.",
+    "resume": "Pendant de nombreuses décennies, de nombreux cours d'eau ont été rectifiés, busés, endigués ou artificialisés afin de répondre aux besoins de l'agriculture, de l'industrie ou de l'urbanisation. Aujourd'hui, la restauration écologique vise à redonner aux rivières un fonctionnement plus naturel afin d'améliorer leur résilience face au changement climatique.",
+    "pourquoi": "Une rivière restaurée offre de nombreux bénéfices : amélioration de la qualité de l'eau, réduction des risques d'inondation, développement de la biodiversité, recharge des nappes souterraines et meilleure adaptation aux sécheresses.",
+    "causes": [
+        "Rectification des cours d'eau.",
+        "Artificialisation des berges.",
+        "Construction de barrages et de seuils.",
+        "Urbanisation des vallées.",
+        "Dégradation des habitats aquatiques."
+    ],
+    "consequences": [
+        "Accélération des écoulements.",
+        "Érosion des berges.",
+        "Perte de biodiversité.",
+        "Diminution de la recharge des nappes.",
+        "Aggravation de certains risques d'inondation."
+    ],
+    "solutions": [
+        "Reméandrer les rivières.",
+        "Restaurer les berges naturelles.",
+        "Reconnecter les zones d'expansion des crues.",
+        "Supprimer ou aménager certains ouvrages.",
+        "Replanter des ripisylves.",
+        "Préserver les continuités écologiques."
+    ],
+    "saviez_vous": "Une rivière qui retrouve ses méandres ralentit naturellement les écoulements, favorise l'infiltration de l'eau et limite les crues en aval.",
+    "territoire": "Les cartes de VertClair permettent d'identifier les secteurs où la restauration des cours d'eau peut contribuer à améliorer simultanément la biodiversité, la qualité de l'eau et l'adaptation au changement climatique.",
+    "a_retenir": "Restaurer une rivière ne consiste pas seulement à embellir le paysage : c'est renforcer durablement les fonctions écologiques et hydrologiques du territoire.",
+    "fenny": "Une rivière qui retrouve son fonctionnement naturel devient souvent plus résiliente face aux sécheresses comme aux inondations.",
+    "vertclair_plus": "Les projets de restauration des cours d'eau peuvent être intégrés directement dans le Plan de Transition VertClair afin d'évaluer leurs bénéfices environnementaux et leur contribution à l'adaptation climatique.",
+    "pour_aller_plus_loin": [
+        "Office français de la biodiversité",
+        "Agence de l'eau",
+        "Cerema",
+        "Guide de restauration des cours d'eau",
+        "Directive-cadre sur l'eau"
+    ]
+}

@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block title %}Modifier utilisateur{% endblock %}
+
+{% block content %}
+
+<div class="container mt-4">
+
+    <h1>Modifier utilisateur</h1>
+
+    <div class="card shadow-sm border-0">
+        <div class="card-body">
+
+            <form method="post">
+                {% csrf_token %}
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Prénom</label>
+                        <input type="text" name="first_name" class="form-control" value="{{ profil_cible.user.first_name }}">
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Nom</label>
+                        <input type="text" name="last_name" class="form-control" value="{{ profil_cible.user.last_name }}">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control" value="{{ profil_cible.user.email }}">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Fonction</label>
+                    <input type="text" name="fonction" class="form-control" value="{{ profil_cible.fonction }}">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Téléphone</label>
+                    <input type="text" name="telephone" class="form-control" value="{{ profil_cible.telephone }}">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Service</label>
+                    <select name="service" class="form-select">
+                        <option value="">Aucun service</option>
+                        {% for service in services %}
+                            <option value="{{ service.id }}" {% if profil_cible.service_id == service.id %}selected{% endif %}>
+                                {{ service.nom }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">Rôle</label>
+                    <select name="role" class="form-select">
+                        <option value="admin_org" {% if profil_cible.role == "admin_org" %}selected{% endif %}>Administrateur d’organisation</option>
+                        <option value="gestionnaire" {% if profil_cible.role == "gestionnaire" %}selected{% endif %}>Gestionnaire</option>
+                        <option value="utilisateur" {% if profil_cible.role == "utilisateur" %}selected{% endif %}>Utilisateur</option>
+                        <option value="lecteur" {% if profil_cible.role == "lecteur" %}selected{% endif %}>Lecteur</option>
+                    </select>
+                </div>
+
+                <button class="btn btn-success">Enregistrer</button>
+
+                <a href="{% url 'utilisateurs_organisation' %}" class="btn btn-outline-secondary">
+                    Annuler
+                </a>
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

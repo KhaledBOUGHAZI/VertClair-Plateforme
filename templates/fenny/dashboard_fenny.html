@@ -1,0 +1,432 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard Fenny{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid mt-4">
+
+    <div class="mb-4">
+        <h1>🦊 Dashboard Fenny PRO</h1>
+        <p class="text-muted">
+            Supervision globale de la plateforme VertClair.
+        </p>
+    </div>
+
+    <div class="card shadow-sm border-0 mb-4">
+        <div class="card-header bg-warning">
+            🚨 Centre d’alertes
+        </div>
+        <div class="card-body">
+            {% for alerte in alertes %}
+                <div class="alert alert-{{ alerte.niveau }} mb-2">
+                    {{ alerte.message }}
+                </div>
+            {% empty %}
+                <div class="alert alert-success mb-0">
+                    Aucune alerte.
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="row g-4 mb-4">
+
+        <div class="col-md-3">
+            <a href="{% url 'fenny_organisations' %}" class="text-decoration-none text-dark">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body text-center">
+                        <h6>🏢 Organisations</h6>
+                        <h2>{{ organisations }}</h2>
+                        <small class="text-muted">+ {{ organisations_30j }} sur 30 jours</small>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-3">
+            <a href="{% url 'fenny_utilisateurs' %}" class="text-decoration-none text-dark">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body text-center">
+                        <h6>👥 Utilisateurs</h6>
+                        <h2>{{ utilisateurs }}</h2>
+                        <small class="text-muted">{{ utilisateurs_connectes_aujourdhui }} connecté(s) aujourd’hui</small>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-3">
+            <a href="{% url 'fenny_abonnements' %}" class="text-decoration-none text-dark">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body text-center">
+                        <h6>💳 Licences</h6>
+                        <h2>{{ licences_utilisees }} / {{ licences_vendues }}</h2>
+
+                        <div class="progress mt-2" style="height: 8px;">
+                            <div class="progress-bar bg-success"
+                                 style="width: {{ taux_utilisation_licences }}%;">
+                            </div>
+                        </div>
+
+                        <small class="text-muted">
+                            {{ taux_utilisation_licences }} % utilisées
+                        </small>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-3">
+            <a href="{% url 'fenny_abonnements' %}" class="text-decoration-none text-dark">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body text-center">
+                        <h6>💶 MRR</h6>
+                        <h2>{{ ca_mensuel }} €</h2>
+                        <small class="text-muted">ARR : {{ ca_annuel }} €</small>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="row g-4 mb-4">
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <h6>📈 Nouvelles organisations</h6>
+                    <h2>{{ organisations_30j }}</h2>
+                    <small class="text-muted">30 derniers jours</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <h6>👤 Nouveaux utilisateurs</h6>
+                    <h2>{{ utilisateurs_30j }}</h2>
+                    <small class="text-muted">30 derniers jours</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <h6>💰 Panier moyen</h6>
+                    <h2>{{ panier_moyen|floatformat:2 }} €</h2>
+                    <small class="text-muted">par abonnement actif</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <h6>👥 Revenu / utilisateur</h6>
+                    <h2>{{ revenu_par_utilisateur|floatformat:2 }} €</h2>
+                    <small class="text-muted">MRR / utilisateurs actifs</small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row g-4 mb-4">
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <h6>🟢 Actifs</h6>
+                    <h2>{{ abonnements_actifs }}</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <h6>🧪 Essais</h6>
+                    <h2>{{ essais }}</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <h6>⛔ Suspendus</h6>
+                    <h2>{{ suspendus }}</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <h6>📨 Invitations</h6>
+                    <h2>{{ invitations }}</h2>
+                    <small class="text-muted">{{ invitations_expirees }} expirée(s)</small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row g-4 mb-4">
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <h6>📝 Quiz 30 jours</h6>
+                    <h2>{{ quiz_30j }}</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <h6>🌍 Bilans carbone</h6>
+                    <h2>{{ bilans_carbone }}</h2>
+                    <small class="text-muted">+ {{ bilans_carbone_30j }} sur 30 jours</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <h6>♻️ CO₂ calculé</h6>
+                    <h2>{{ total_co2|floatformat:0 }}</h2>
+                    <small class="text-muted">kg CO₂</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <h6>📋 Plans de transition</h6>
+                    <h2>{{ actions_transition }}</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row g-4 mb-4">
+
+        <div class="col-lg-6">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-header bg-info text-white">
+                    📊 Répartition des abonnements
+                </div>
+                <div class="card-body">
+                    <canvas id="chartAbonnements"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-header bg-success text-white">
+                    🌱 Utilisation VertClair
+                </div>
+                <div class="card-body">
+                    <canvas id="chartUtilisation"></canvas>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row g-4 mb-4">
+
+        <div class="col-lg-6">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-header bg-primary text-white">
+                    🏢 Dernières organisations
+                </div>
+                <div class="card-body">
+                    <table class="table table-sm align-middle">
+                        <thead>
+                            <tr>
+                                <th>Nom</th>
+                                <th>Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for organisation in dernieres_organisations %}
+                                <tr>
+                                    <td>{{ organisation.nom }}</td>
+                                    <td>{{ organisation.get_type_organisation_display }}</td>
+                                </tr>
+                            {% empty %}
+                                <tr>
+                                    <td colspan="2" class="text-muted">Aucune organisation.</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-header bg-dark text-white">
+                    👥 Derniers utilisateurs
+                </div>
+                <div class="card-body">
+                    <table class="table table-sm align-middle">
+                        <thead>
+                            <tr>
+                                <th>Utilisateur</th>
+                                <th>Organisation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for profil in derniers_utilisateurs %}
+                                <tr>
+                                    <td>{{ profil.user.username }}</td>
+                                    <td>{{ profil.organisation|default:"-" }}</td>
+                                </tr>
+                            {% empty %}
+                                <tr>
+                                    <td colspan="2" class="text-muted">Aucun utilisateur.</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row g-4 mb-4">
+
+        <div class="col-lg-6">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-header bg-secondary text-white">
+                    💳 Derniers abonnements
+                </div>
+                <div class="card-body">
+                    <table class="table table-sm align-middle">
+                        <thead>
+                            <tr>
+                                <th>Organisation</th>
+                                <th>Formule</th>
+                                <th>Statut</th>
+                                <th>Prix</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for abonnement in derniers_abonnements %}
+                                <tr>
+                                    <td>{{ abonnement.organisation.nom }}</td>
+                                    <td>{{ abonnement.get_formule_display }}</td>
+                                    <td>{{ abonnement.get_statut_display }}</td>
+                                    <td>{{ abonnement.prix_mensuel_ht }} €</td>
+                                </tr>
+                            {% empty %}
+                                <tr>
+                                    <td colspan="4" class="text-muted">Aucun abonnement.</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-header bg-secondary text-white">
+                    📜 Activité récente
+                </div>
+                <div class="card-body">
+                    <table class="table table-sm align-middle">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Organisation</th>
+                                <th>Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for activite in dernieres_activites %}
+                                <tr>
+                                    <td>{{ activite.date_creation|date:"d/m/Y H:i" }}</td>
+                                    <td>
+                                        {% if activite.organisation %}
+                                            {{ activite.organisation.nom }}
+                                        {% else %}
+                                            -
+                                        {% endif %}
+                                    </td>
+                                    <td>{{ activite.message }}</td>
+                                </tr>
+                            {% empty %}
+                                <tr>
+                                    <td colspan="3" class="text-muted">Aucune activité.</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+const chartAbonnements = document.getElementById("chartAbonnements");
+
+if (chartAbonnements) {
+    new Chart(chartAbonnements, {
+        type: "doughnut",
+        data: {
+            labels: ["Actifs", "Essais", "Suspendus", "Résiliés"],
+            datasets: [{
+                data: [
+                    {{ abonnements_actifs }},
+                    {{ essais }},
+                    {{ suspendus }},
+                    {{ resilies }}
+                ]
+            }]
+        }
+    });
+}
+
+const chartUtilisation = document.getElementById("chartUtilisation");
+
+if (chartUtilisation) {
+    new Chart(chartUtilisation, {
+        type: "bar",
+        data: {
+            labels: ["Quiz", "Carbone", "Actions", "Utilisateurs actifs"],
+            datasets: [{
+                label: "Utilisation",
+                data: [
+                    {{ quiz_realises }},
+                    {{ bilans_carbone }},
+                    {{ actions_transition }},
+                    {{ utilisateurs_actifs }}
+                ]
+            }]
+        }
+    });
+}
+</script>
+
+{% endblock %}

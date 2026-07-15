@@ -1,0 +1,392 @@
+{% extends "base.html" %}
+
+{% block title %}Fenny - Organisation{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid mt-4">
+
+    <a href="{% url 'fenny_organisations' %}" class="btn btn-outline-secondary mb-3">
+        ← Retour aux organisations
+    </a>
+
+    <h1>🏢 {{ organisation.nom }}</h1>
+    <p class="text-muted">Fiche détaillée de l'organisation.</p>
+
+    <div class="d-flex gap-2 flex-wrap mb-4">
+        <a href="{% url 'fenny_modifier_organisation' organisation.id %}" class="btn btn-outline-secondary">
+            ✏ Modifier l'organisation
+        </a>
+        <a href="{% url 'utilisateurs_organisation' %}" class="btn btn-outline-success">
+            👥 Gérer les utilisateurs
+        </a>
+        <a href="{% url 'inviter_utilisateur' %}" class="btn btn-outline-primary">
+            📨 Envoyer une invitation
+        </a>
+        <a href="{% url 'fenny_modifier_abonnement' organisation.id %}" class="btn btn-outline-warning">
+    💳 Gérer l'abonnement
+</a>
+    </div>
+
+    <div class="row g-4 mb-4">
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h6>Type</h6>
+                    <h3>{{ organisation.get_type_organisation_display }}</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h6>Utilisateurs</h6>
+                    <h3>{{ utilisateurs.count }}</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h6>Licences</h6>
+                    <h3>{% if abonnement %}{{ abonnement.nb_licences }}{% else %}-{% endif %}</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h6>Statut</h6>
+                    <h3>{% if abonnement %}{{ abonnement.get_statut_display }}{% else %}Sans abonnement{% endif %}</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row g-4 mb-4">
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h6>📚 Quiz réalisés</h6>
+                    <h2>{{ quiz_realises_org }}</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h6>👣 Bilans carbone</h6>
+                    <h2>{{ bilans_carbone_org }}</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h6>📋 Actions créées</h6>
+                    <h2>{{ actions_transition_org|default:"0" }}</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h6>🟢 Utilisateurs actifs</h6>
+                    <h2>{{ utilisateurs_actifs_org }}</h2>
+                    <small>/ {{ utilisateurs.count }}</small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card shadow-sm border-0 mt-4">
+        <div class="card-header bg-primary text-white">
+            🏢 Informations générales
+        </div>
+
+        <div class="card-body">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <table class="table table-borderless">
+                        <tr>
+                            <th width="180">Nom</th>
+                            <td>{{ organisation.nom }}</td>
+                        </tr>
+                        <tr>
+                            <th>Type</th>
+                            <td>{{ organisation.get_type_organisation_display }}</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>{{ organisation.email|default:"-" }}</td>
+                        </tr>
+                        <tr>
+                            <th>Téléphone</th>
+                            <td>{{ organisation.telephone|default:"-" }}</td>
+                        </tr>
+                        <tr>
+                            <th>SIRET</th>
+                            <td>{{ organisation.siret|default:"-" }}</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="col-md-6">
+                    <table class="table table-borderless">
+                        <tr>
+                            <th width="180">Adresse</th>
+                            <td>{{ organisation.adresse|default:"-" }}</td>
+                        </tr>
+                        <tr>
+                            <th>Date création</th>
+                            <td>{{ organisation.date_creation|date:"d/m/Y H:i" }}</td>
+                        </tr>
+                        <tr>
+                            <th>Abonnement</th>
+                            <td>
+                                {% if abonnement %}
+                                    {{ abonnement.get_formule_display }}
+                                {% else %}
+                                    -
+                                {% endif %}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Statut</th>
+                            <td>
+                                {% if abonnement %}
+                                    <span class="badge bg-success">
+                                        {{ abonnement.get_statut_display }}
+                                    </span>
+                                {% else %}
+                                    <span class="badge bg-secondary">Aucun</span>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card shadow-sm border-0 mt-4">
+        <div class="card-header bg-dark text-white">
+            💳 Abonnement
+        </div>
+
+        <div class="card-body">
+            {% if abonnement %}
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <table class="table table-borderless">
+                            <tr>
+                                <th width="220">Formule</th>
+                                <td>{{ abonnement.get_formule_display }}</td>
+                            </tr>
+
+                            <tr>
+                                <th>Licences</th>
+                                <td>
+                                    {% widthratio utilisateurs.count abonnement.nb_licences 100 as taux_licences %}
+
+                                    <strong>{{ utilisateurs.count }} / {{ abonnement.nb_licences }}</strong>
+                                    licences utilisées
+
+                                    <div class="progress mt-2" style="height: 8px;">
+                                        <div
+                                            class="progress-bar {% if taux_licences|add:'0' >= 90 %}bg-danger{% elif taux_licences|add:'0' >= 70 %}bg-warning{% else %}bg-success{% endif %}"
+                                            style="width: {{ taux_licences }}%;">
+                                        </div>
+                                    </div>
+
+                                    <small class="text-muted">
+                                        {{ taux_licences }} % d’occupation
+                                    </small>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>Prix mensuel HT</th>
+                                <td>{{ abonnement.prix_mensuel_ht }} €</td>
+                            </tr>
+
+                            <tr>
+                                <th>Statut</th>
+                                <td>
+                                    <span class="badge bg-success">
+                                        {{ abonnement.get_statut_display }}
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="col-md-6">
+                        <table class="table table-borderless">
+                            <tr>
+                                <th width="220">Début</th>
+                                <td>{{ abonnement.date_debut|default:"-" }}</td>
+                            </tr>
+                            <tr>
+                                <th>Fin</th>
+                                <td>{{ abonnement.date_fin|default:"-" }}</td>
+                            </tr>
+                            <tr>
+                                <th>Stripe Customer</th>
+                                <td>{{ abonnement.stripe_customer_id|default:"-" }}</td>
+                            </tr>
+                            <tr>
+                                <th>Stripe Subscription</th>
+                                <td>{{ abonnement.stripe_subscription_id|default:"-" }}</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+            {% else %}
+                <div class="alert alert-warning mb-0">
+                    Cette organisation ne possède pas encore d'abonnement.
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="row g-4 mt-4">
+
+        <div class="col-lg-6">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-header bg-success text-white">
+                    👥 Utilisateurs
+                </div>
+
+                <div class="card-body">
+                    <table class="table table-sm align-middle">
+                        <thead>
+                            <tr>
+                                <th>Utilisateur</th>
+                                <th>Service</th>
+                                <th>Rôle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for profil in utilisateurs %}
+                                <tr>
+                                    <td>{{ profil.user.username }}</td>
+                                    <td>
+                                        {% if profil.service %}
+                                            {{ profil.service.nom }}
+                                        {% else %}
+                                            -
+                                        {% endif %}
+                                    </td>
+                                    <td>{{ profil.get_role_display }}</td>
+                                </tr>
+                            {% empty %}
+                                <tr>
+                                    <td colspan="3" class="text-muted">
+                                        Aucun utilisateur.
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-header bg-warning">
+                    📨 Invitations en attente
+                </div>
+
+                <div class="card-body">
+                    <table class="table table-sm align-middle">
+                        <thead>
+                            <tr>
+                                <th>Email</th>
+                                <th>Nom</th>
+                                <th>Expiration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for invitation in invitations %}
+                                <tr>
+                                    <td>{{ invitation.email }}</td>
+                                    <td>{{ invitation.prenom }} {{ invitation.nom }}</td>
+                                    <td>{{ invitation.date_expiration|date:"d/m/Y H:i" }}</td>
+                                </tr>
+                            {% empty %}
+                                <tr>
+                                    <td colspan="3" class="text-muted">
+                                        Aucune invitation en attente.
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card shadow-sm border-0 mt-4">
+        <div class="card-header bg-secondary text-white">
+            📜 Journal d'activité
+        </div>
+
+        <div class="card-body">
+            <table class="table table-sm align-middle">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Utilisateur</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for activite in activites %}
+                        <tr>
+                            <td>{{ activite.date_creation|date:"d/m/Y H:i" }}</td>
+                            <td>
+                                {% if activite.utilisateur %}
+                                    {{ activite.utilisateur.username }}
+                                {% else %}
+                                    -
+                                {% endif %}
+                            </td>
+                            <td>{{ activite.message }}</td>
+                        </tr>
+                    {% empty %}
+                        <tr>
+                            <td colspan="3" class="text-muted">
+                                Aucune activité enregistrée.
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

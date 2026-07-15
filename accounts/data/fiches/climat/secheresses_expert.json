@@ -1,0 +1,34 @@
+{
+    "id": "secheresses",
+    "titre": "Sécheresses, eau et vulnérabilité territoriale",
+    "niveau": "expert",
+    "illustration": "secheresses.png",
+    "message_image": "L’illustration montre que la sécheresse peut devenir un risque systémique pour l’eau, l’agriculture, les bâtiments et les milieux naturels.",
+    "resume": "L’analyse experte des sécheresses combine les précipitations, l’évapotranspiration, l’état des sols, les nappes, les usages de l’eau et les vulnérabilités locales.",
+    "pourquoi": "Les sécheresses peuvent affecter simultanément l’eau potable, l’agriculture, les milieux naturels, les bâtiments et les activités économiques.",
+    "causes": [
+        "Déficit pluviométrique prolongé",
+        "Hausse de l’évapotranspiration",
+        "Artificialisation des sols",
+        "Pression sur les ressources en eau",
+        "Changement climatique"
+    ],
+    "consequences": [
+        "Conflits d’usage de l’eau",
+        "Baisse des nappes souterraines",
+        "Perte de rendement agricole",
+        "Dépérissement forestier",
+        "Dommages aux bâtiments liés aux argiles"
+    ],
+    "solutions": [
+        "Mettre en place une stratégie locale de sobriété hydrique",
+        "Restaurer les zones humides",
+        "Désimperméabiliser les sols",
+        "Prioriser les usages essentiels",
+        "Adapter les cultures et les essences végétales"
+    ],
+    "saviez_vous": "Le retrait-gonflement des argiles peut provoquer des fissures importantes dans les bâtiments lors des alternances sécheresse-réhumidification.",
+    "territoire": "Les cartes BRGM, Géorisques et les données locales sur l’eau permettent d’identifier les zones les plus exposées.",
+    "a_retenir": "Une stratégie sécheresse efficace doit combiner sobriété, infiltration, protection des sols et adaptation des usages.",
+    "fenny": "Pour gérer la sécheresse, il faut penser bassin versant, pas seulement commune."
+}

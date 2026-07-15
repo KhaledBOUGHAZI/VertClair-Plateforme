@@ -1,0 +1,37 @@
+{
+    "id": "actions_biodiversite",
+    "titre": "Agir pour préserver la biodiversité au quotidien",
+    "niveau": "debutant",
+    "illustration": "biodiversite.png",
+    "message_image": "L’illustration montre des citoyens, des collectivités et des entreprises réalisant des actions simples qui favorisent la biodiversité sur leur territoire.",
+    "resume": "Préserver la biodiversité ne dépend pas uniquement des grandes réserves naturelles. Chacun peut contribuer à son échelle, que ce soit dans un jardin, une entreprise, une commune ou un établissement scolaire. Additionnées, ces actions participent à la protection des espèces et des milieux naturels.",
+    "pourquoi": "Les activités humaines exercent une pression importante sur les écosystèmes. En adoptant des pratiques plus respectueuses de la nature, chacun peut contribuer à maintenir les équilibres écologiques et améliorer la qualité de vie sur son territoire.",
+    "causes": [
+        "Artificialisation des sols.",
+        "Disparition des habitats naturels.",
+        "Pollutions.",
+        "Utilisation excessive de produits phytosanitaires.",
+        "Fragmentation des espaces naturels."
+    ],
+    "consequences": [
+        "Régression de certaines espèces.",
+        "Diminution des pollinisateurs.",
+        "Perte de biodiversité.",
+        "Dégradation des écosystèmes.",
+        "Moindre résilience face au changement climatique."
+    ],
+    "solutions": [
+        "Planter des espèces végétales locales.",
+        "Créer des haies et des prairies fleuries.",
+        "Installer des nichoirs et des hôtels à insectes.",
+        "Préserver les arbres anciens.",
+        "Limiter l'utilisation des pesticides.",
+        "Laisser une partie des espaces verts en gestion naturelle.",
+        "Participer à des programmes de plantation ou de restauration écologique.",
+        "Sensibiliser son entourage à la protection de la biodiversité."
+    ],
+    "saviez_vous": "Un simple jardin peut devenir un véritable refuge pour de nombreuses espèces lorsqu'il est géré de manière écologique.",
+    "territoire": "Grâce aux données territoriales de VertClair, vous pouvez identifier les principaux enjeux de biodiversité de votre commune et découvrir les actions les plus adaptées à votre environnement.",
+    "a_retenir": "Chaque action, même modeste, contribue à préserver la biodiversité. Les efforts de chacun s'additionnent pour protéger durablement les écosystèmes.",
+    "fenny": "La biodiversité commence souvent juste devant chez soi. Une haie, une fleur ou un arbre peuvent devenir le premier maillon d'un territoire plus vivant."
+}

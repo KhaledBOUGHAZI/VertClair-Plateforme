@@ -1,0 +1,33 @@
+{
+    "id": "secheresse_eau",
+    "titre": "La sécheresse et la ressource en eau",
+    "niveau": "debutant",
+    "illustration": "secheresse_eau.png",
+    "message_image": "L’illustration montre comment un manque prolongé de pluie diminue les réserves en eau des sols, des nappes et des rivières.",
+    "resume": "Une sécheresse correspond à une période durant laquelle les ressources en eau deviennent insuffisantes pour répondre aux besoins des milieux naturels et des activités humaines.",
+    "pourquoi": "Avec le changement climatique, les épisodes de sécheresse deviennent plus fréquents et plus intenses dans de nombreux territoires français.",
+    "causes": [
+        "Manque prolongé de précipitations",
+        "Températures élevées",
+        "Évaporation plus importante",
+        "Consommation élevée d'eau"
+    ],
+    "consequences": [
+        "Baisse du niveau des nappes",
+        "Diminution du débit des rivières",
+        "Restrictions d'usage de l'eau",
+        "Difficultés pour l'agriculture",
+        "Stress pour les écosystèmes"
+    ],
+    "solutions": [
+        "Économiser l'eau",
+        "Préserver les sols perméables",
+        "Réutiliser certaines eaux lorsque cela est possible",
+        "Adapter les pratiques agricoles",
+        "Mieux partager la ressource"
+    ],
+    "saviez_vous": "Une sécheresse peut continuer plusieurs mois après le retour des pluies, car les nappes mettent du temps à se recharger.",
+    "territoire": "VertClair utilise les projections climatiques DRIAS pour estimer l'évolution future du risque de sécheresse sur votre territoire.",
+    "a_retenir": "La sécheresse ne concerne pas uniquement le manque de pluie : elle touche aussi les sols, les rivières et les nappes souterraines.",
+    "fenny": "Chaque goutte économisée aujourd'hui contribue à mieux résister aux sécheresses de demain."
+}

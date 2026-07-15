@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Mon abonnement{% endblock %}
+
+{% block content %}
+
+<div class="container mt-4">
+
+    <h1>📦 Mon abonnement</h1>
+
+    <div class="card shadow-sm border-0">
+
+        <div class="card-body">
+
+            <h4>{{ organisation.nom }}</h4>
+
+            <table class="table">
+
+                <tr>
+                    <th>Formule</th>
+                    <td>{{ abonnement.get_formule_display }}</td>
+                </tr>
+
+                <tr>
+                    <th>Statut</th>
+                    <td>{{ abonnement.get_statut_display }}</td>
+                </tr>
+
+                <tr>
+                    <th>Licences</th>
+                    <td>
+                        {{ licences_utilisees }} / {{ abonnement.nb_licences }}
+                        <br>
+                        <small class="text-muted">
+                            {{ invitations }} invitation(s) en attente
+                        </small>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Prix mensuel</th>
+                    <td>{{ abonnement.prix_mensuel_ht }} € HT</td>
+                </tr>
+
+                <tr>
+                    <th>Date de début</th>
+                    <td>{{ abonnement.date_debut|default:"—" }}</td>
+                </tr>
+
+                <tr>
+                    <th>Date de fin</th>
+                    <td>{{ abonnement.date_fin|default:"—" }}</td>
+                </tr>
+
+            </table>
+
+            <a href="#" class="btn btn-success">
+                Gérer mon abonnement
+            </a>
+
+            <a href="#" class="btn btn-outline-secondary">
+                Historique des paiements
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

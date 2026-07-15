@@ -1,0 +1,44 @@
+{
+    "id": "sequence_erc_expert",
+    "titre": "La séquence ERC : Éviter, Réduire, Compenser",
+    "niveau": "expert",
+    "illustration": "biodiversite.png",
+
+    "message_image": "L'illustration représente un projet d'aménagement où les impacts sur la biodiversité sont d'abord évités, puis réduits et enfin compensés uniquement lorsque cela reste indispensable.",
+
+    "resume": "La séquence ERC signifie Éviter, Réduire, Compenser. C'est un principe fondamental du droit de l'environnement appliqué à de nombreux projets d'aménagement. Son objectif est de limiter les impacts sur les milieux naturels en respectant un ordre de priorité très précis.",
+
+    "pourquoi": "La meilleure façon de protéger la biodiversité consiste d'abord à éviter les impacts. Lorsque cela n'est pas possible, il faut réduire les effets du projet. La compensation écologique n'intervient qu'en dernier recours et ne remplace jamais les deux premières étapes.",
+
+    "causes": [
+        "Urbanisation.",
+        "Création d'infrastructures.",
+        "Extension des zones d'activités.",
+        "Artificialisation des sols.",
+        "Développement de nouveaux projets."
+    ],
+
+    "consequences": [
+        "Destruction ou dégradation d'habitats naturels.",
+        "Fragmentation des continuités écologiques.",
+        "Perturbation d'espèces protégées.",
+        "Perte de services écosystémiques.",
+        "Obligations réglementaires pour les aménageurs."
+    ],
+
+    "solutions": [
+        "Choisir un site moins sensible.",
+        "Modifier le projet pour limiter ses impacts.",
+        "Préserver les habitats remarquables.",
+        "Créer des passages à faune.",
+        "Mettre en œuvre une compensation écologique uniquement lorsque les impacts résiduels subsistent."
+    ],
+
+    "saviez_vous": "Dans la séquence ERC, la compensation écologique ne doit jamais servir à justifier un projet qui aurait pu être évité ou profondément modifié.",
+
+    "territoire": "Les données de VertClair (ZNIEFF, Natura 2000, Trame verte et bleue, espèces protégées, zones humides...) permettront d'identifier très tôt les secteurs où la séquence ERC devra être particulièrement prise en compte.",
+
+    "a_retenir": "Éviter reste toujours la meilleure solution. La compensation écologique constitue uniquement la dernière étape lorsque les impacts résiduels ne peuvent plus être supprimés.",
+
+    "fenny": "La meilleure biodiversité est celle que l'on n'a pas besoin de recréer. Préserver un milieu naturel existant est presque toujours plus efficace que tenter de le compenser ailleurs."
+}

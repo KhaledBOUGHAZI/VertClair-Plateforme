@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Territoire
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+
+    <h1 class="mb-3">🗺️ Votre territoire</h1>
+
+    <p class="text-muted mb-4">
+        Consultez les données écologiques et climatiques de votre commune.
+    </p>
+
+    <div class="row">
+
+        <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <div class="card shadow-sm p-3 h-100">
+                <h4>🌬 Air & pollution</h4>
+
+                <p class="text-muted">
+                    Qualité de l’air et polluants.
+                </p>
+
+                <a href="{% url 'qualite_air' %}" class="btn btn-success mt-auto">
+                    Consulter l’air
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <div class="card shadow-sm p-3 h-100">
+                <h4>💧 Eau & milieux aquatiques</h4>
+
+                <p class="text-muted">
+                    Eau potable, nitrates, pesticides et rivières.
+                </p>
+
+                <a href="{% url 'qualite_eau' %}" class="btn btn-primary mt-auto">
+                    Consulter l’eau
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <div class="card shadow-sm p-3 h-100">
+                <h4>🌿 Biodiversité</h4>
+
+                <p class="text-muted">
+                    Trames écologiques et continuités naturelles.
+                </p>
+
+                <a href="{% url 'trames' %}" class="btn btn-dark mt-auto">
+                    Voir la carte
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <div class="card shadow-sm p-3 h-100">
+                <h4>🌡️ Climat & adaptation</h4>
+
+                <p class="text-muted">
+                    Risques, projections et vulnérabilités.
+                </p>
+
+                <a href="{% url 'changement_climatique' %}" class="btn btn-danger mt-auto">
+                    Consulter climat
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <div class="card shadow-sm p-3 h-100">
+                <h4>⚡ Énergie</h4>
+
+                <p class="text-muted">
+                    Bâtiments, solaire, ENR et transition.
+                </p>
+
+                <a href="{% url 'energie_territoire' %}" class="btn btn-warning mt-auto">
+                    Consulter l’énergie
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <div class="card shadow-sm p-3 h-100">
+                <h4>♻️ Économie circulaire</h4>
+
+                <p class="text-muted">
+                    Déchets, réemploi, réparation et recyclage.
+                </p>
+
+                <a href="{% url 'dechets_recyclage' %}" class="btn btn-success mt-auto">
+                    Consulter les déchets
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <div class="card shadow-sm p-3 h-100">
+                <h4>🌱 Alimentation</h4>
+
+                <p class="text-muted">
+                    Bio, circuits courts et bioéconomie.
+                </p>
+
+                <a href="{% url 'alimentation_durable' %}" class="btn btn-success mt-auto">
+                    Consulter alimentation
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <div class="card shadow-sm p-3 h-100">
+                <h4>🟫 Sols & pollution</h4>
+
+                <p class="text-muted">
+                    Friches, sols pollués et anciens sites industriels.
+                </p>
+
+                <a href="{% url 'territoire_sols' %}" class="btn btn-success">
+    Consulter les sols
+</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{
+    "id": "meteo_climat",
+    "titre": "Météo et climat : comprendre les tendances",
+    "niveau": "connaisseur",
+    "illustration": "meteo_climat.svg",
+    "resume": "La météo décrit l'état de l'atmosphère à court terme. Le climat correspond aux conditions moyennes observées sur plusieurs décennies.",
+    "pourquoi": "Une période froide ou un épisode neigeux ne remettent pas en cause une tendance climatique observée sur plusieurs dizaines d'années.",
+    "causes": [
+        "Variabilité naturelle du climat",
+        "Influence des océans et de l'atmosphère",
+        "Activités humaines"
+    ],
+    "consequences": [
+        "Hausse des températures moyennes",
+        "Modification des précipitations",
+        "Évolution des événements extrêmes"
+    ],
+    "solutions": [
+        "Suivre les indicateurs climatiques",
+        "Analyser les tendances de long terme",
+        "Préparer les territoires aux évolutions futures"
+    ],
+    "saviez_vous": "Les climatologues utilisent généralement des périodes de référence de 30 ans pour caractériser le climat.",
+    "territoire": "Les données DRIAS permettent d'anticiper l'évolution future du climat de votre commune.",
+    "message_image": "La météo change chaque jour alors que le climat correspond à une tendance observée sur plusieurs décennies.",
+    "a_retenir": "Un événement météorologique isolé ne permet pas de conclure sur l'évolution du climat.",
+    "fenny": "Lorsque vous observez une tempête ou une vague de froid, demandez-vous toujours si elle s'inscrit dans une tendance de long terme."
+}

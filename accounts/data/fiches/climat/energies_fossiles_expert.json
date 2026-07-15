@@ -1,0 +1,29 @@
+{
+    "id": "energies_fossiles",
+    "titre": "Énergies fossiles et transition énergétique",
+    "niveau": "expert",
+    "illustration": "energies_fossiles.png",
+    "message_image": "L'utilisation des énergies fossiles constitue aujourd'hui la principale source d'émissions mondiales de gaz à effet de serre.",
+    "resume": "La transition énergétique vise à réduire progressivement la dépendance aux énergies fossiles tout en assurant les besoins énergétiques de la société.",
+    "pourquoi": "Les scénarios de neutralité carbone reposent sur une forte réduction de l'utilisation du pétrole, du gaz et du charbon.",
+    "causes": [
+        "Dépendance historique aux combustibles fossiles",
+        "Infrastructure énergétique existante",
+        "Besoins de mobilité et d'industrie"
+    ],
+    "consequences": [
+        "Émissions de gaz à effet de serre",
+        "Vulnérabilité aux fluctuations des prix",
+        "Risques géopolitiques"
+    ],
+    "solutions": [
+        "Sobriété énergétique",
+        "Efficacité énergétique",
+        "Électrification des usages",
+        "Développement des énergies renouvelables"
+    ],
+    "saviez_vous": "La neutralité carbone ne signifie pas zéro émission mais un équilibre entre émissions résiduelles et absorptions de carbone.",
+    "territoire": "Le module Bilan Carbone VertClair permet d'identifier les consommations fossiles les plus émettrices.",
+    "a_retenir": "La transition énergétique repose d'abord sur la réduction des besoins avant le remplacement des sources d'énergie.",
+    "fenny": "L'énergie la moins carbonée reste souvent celle que l'on ne consomme pas."
+}

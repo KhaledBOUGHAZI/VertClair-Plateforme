@@ -1,0 +1,112 @@
+[
+    {
+        "question": "La séquence ERC signifie :",
+        "reponses": [
+            "Éviter, Réduire, Compenser",
+            "Évaluer, Restaurer, Construire",
+            "Étudier, Réhabiliter, Classer"
+        ],
+        "bonne": 0,
+        "explication": "La séquence ERC est un principe fondamental de l'aménagement visant à éviter les impacts, les réduire lorsqu'ils sont inévitables, puis les compenser en dernier recours.",
+        "fiche": "strategie_biodiversite_expert"
+    },
+    {
+        "question": "L'objectif du ZAN (Zéro Artificialisation Nette) est de :",
+        "reponses": [
+            "Limiter l'artificialisation des sols",
+            "Supprimer toute activité agricole",
+            "Construire davantage de routes"
+        ],
+        "bonne": 0,
+        "explication": "Le ZAN vise à préserver les sols naturels en limitant leur artificialisation.",
+        "fiche": "renaturation_expert"
+    },
+    {
+        "question": "Le principal rôle d'une Trame verte et bleue est de :",
+        "reponses": [
+            "Maintenir les continuités écologiques",
+            "Créer uniquement des espaces de loisirs",
+            "Délimiter les communes"
+        ],
+        "bonne": 0,
+        "explication": "Les continuités écologiques permettent aux espèces de circuler entre les habitats.",
+        "fiche": "trame_verte_bleue_expert"
+    },
+    {
+        "question": "La renaturation consiste principalement à :",
+        "reponses": [
+            "Redonner des fonctions naturelles à un milieu dégradé",
+            "Construire davantage d'infrastructures",
+            "Artificialiser un espace"
+        ],
+        "bonne": 0,
+        "explication": "La renaturation restaure les fonctions écologiques des milieux.",
+        "fiche": "renaturation_expert"
+    },
+    {
+        "question": "Les Solutions fondées sur la Nature permettent de :",
+        "reponses": [
+            "Répondre à plusieurs enjeux grâce aux écosystèmes",
+            "Supprimer toute végétation",
+            "Remplacer toutes les infrastructures"
+        ],
+        "bonne": 0,
+        "explication": "Les Solutions fondées sur la Nature améliorent simultanément le climat, l'eau, la biodiversité et la qualité de vie.",
+        "fiche": "solutions_nature_expert"
+    },
+    {
+        "question": "Pourquoi préserver la diversité génétique ?",
+        "reponses": [
+            "Pour améliorer la capacité d'adaptation des espèces",
+            "Pour réduire la biodiversité",
+            "Pour favoriser les espèces invasives"
+        ],
+        "bonne": 0,
+        "explication": "Une forte diversité génétique améliore la résilience des populations face aux changements.",
+        "fiche": "diversite_genetique_expert"
+    },
+    {
+        "question": "Le génie écologique consiste à :",
+        "reponses": [
+            "Utiliser les processus naturels pour restaurer les milieux",
+            "Construire uniquement des ouvrages en béton",
+            "Supprimer les zones humides"
+        ],
+        "bonne": 0,
+        "explication": "Le génie écologique s'appuie sur les capacités des écosystèmes.",
+        "fiche": "genie_ecologique_expert"
+    },
+    {
+        "question": "L'outil SESAME du Cerema aide principalement à :",
+        "reponses": [
+            "Choisir des essences végétales adaptées au climat local",
+            "Calculer un bilan carbone",
+            "Mesurer la qualité de l'air"
+        ],
+        "bonne": 0,
+        "explication": "SESAME accompagne les projets de végétalisation en proposant les essences les mieux adaptées.",
+        "fiche": "sesame_cerema_expert"
+    },
+    {
+        "question": "Pourquoi croiser biodiversité et changement climatique ?",
+        "reponses": [
+            "Parce que les deux enjeux sont étroitement liés",
+            "Parce qu'ils sont indépendants",
+            "Parce que seule la biodiversité compte"
+        ],
+        "bonne": 0,
+        "explication": "Le changement climatique modifie les habitats, tandis que les écosystèmes contribuent à l'adaptation.",
+        "fiche": "adaptation_biodiversite_expert"
+    },
+    {
+        "question": "Une stratégie territoriale biodiversité efficace repose sur :",
+        "reponses": [
+            "Des données, des indicateurs et un plan d'actions",
+            "Une seule plantation d'arbres",
+            "Des actions ponctuelles sans suivi"
+        ],
+        "bonne": 0,
+        "explication": "Une stratégie efficace s'appuie sur un diagnostic, des objectifs, des indicateurs et un suivi dans le temps.",
+        "fiche": "strategie_biodiversite_expert"
+    }
+]

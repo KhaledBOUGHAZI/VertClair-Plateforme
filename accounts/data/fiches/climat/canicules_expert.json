@@ -1,0 +1,32 @@
+{
+    "id": "canicules",
+    "titre": "Vulnérabilité aux canicules",
+    "niveau": "expert",
+    "illustration": "canicules.png",
+    "message_image": "L’illustration montre que les canicules touchent à la fois la santé, les bâtiments, les espaces publics et les activités économiques.",
+    "resume": "L’analyse experte des canicules combine les données climatiques, la morphologie urbaine, la vulnérabilité des populations et la capacité d’adaptation du territoire.",
+    "pourquoi": "Les épisodes de chaleur extrême peuvent devenir un risque majeur pour les collectivités, les entreprises et les habitants.",
+    "causes": [
+        "Hausse des températures moyennes",
+        "Multiplication des vagues de chaleur",
+        "Urbanisation dense",
+        "Présence de populations vulnérables"
+    ],
+    "consequences": [
+        "Surmortalité lors des épisodes extrêmes",
+        "Surchauffe des bâtiments",
+        "Baisse de productivité",
+        "Tension sur les services de santé"
+    ],
+    "solutions": [
+        "Cartographier les zones de chaleur",
+        "Prioriser les îlots de fraîcheur",
+        "Adapter les bâtiments publics",
+        "Déployer des plans de prévention canicule",
+        "Protéger les publics vulnérables"
+    ],
+    "saviez_vous": "Les nuits chaudes sont particulièrement dangereuses car elles empêchent le corps de récupérer après une journée de forte chaleur.",
+    "territoire": "Les projections climatiques et les indicateurs de vulnérabilité permettent de prioriser les quartiers et les équipements à adapter.",
+    "a_retenir": "La gestion des canicules doit combiner urbanisme, santé, végétalisation et adaptation des bâtiments.",
+    "fenny": "Une bonne stratégie canicule ne se limite pas aux arbres : elle protège aussi les personnes les plus exposées."
+}

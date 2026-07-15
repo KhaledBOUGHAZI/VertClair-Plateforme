@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}Modifier organisation{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid mt-4">
+
+    <a href="{% url 'fenny_organisation_detail' organisation.id %}" class="btn btn-outline-secondary mb-3">
+        ← Retour à l'organisation
+    </a>
+
+    <h1>✏ Modifier l'organisation</h1>
+    <p class="text-muted">{{ organisation.nom }}</p>
+
+    <div class="card shadow-sm border-0">
+        <div class="card-body">
+
+            <form method="post">
+                {% csrf_token %}
+
+                <div class="mb-3">
+                    <label class="form-label">Nom</label>
+                    <input type="text" name="nom" class="form-control" value="{{ organisation.nom }}" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Type</label>
+                    <select name="type_organisation" class="form-select">
+                        <option value="commune" {% if organisation.type_organisation == "commune" %}selected{% endif %}>Commune / collectivité</option>
+                        <option value="entreprise" {% if organisation.type_organisation == "entreprise" %}selected{% endif %}>Entreprise</option>
+                        <option value="association" {% if organisation.type_organisation == "association" %}selected{% endif %}>Association</option>
+                        <option value="particulier" {% if organisation.type_organisation == "particulier" %}selected{% endif %}>Particulier</option>
+                        <option value="autre" {% if organisation.type_organisation == "autre" %}selected{% endif %}>Autre</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control" value="{{ organisation.email|default:'' }}">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Téléphone</label>
+                    <input type="text" name="telephone" class="form-control" value="{{ organisation.telephone|default:'' }}">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">SIRET</label>
+                    <input type="text" name="siret" class="form-control" value="{{ organisation.siret|default:'' }}">
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">Adresse</label>
+                    <textarea name="adresse" class="form-control" rows="3">{{ organisation.adresse|default:'' }}</textarea>
+                </div>
+
+                <button class="btn btn-success">
+                    Enregistrer
+                </button>
+
+                <a href="{% url 'fenny_organisation_detail' organisation.id %}" class="btn btn-outline-secondary">
+                    Annuler
+                </a>
+
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

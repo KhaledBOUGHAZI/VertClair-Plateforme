@@ -1,0 +1,31 @@
+{
+    "id": "gaz_effet_serre",
+    "titre": "Les gaz à effet de serre",
+    "niveau": "debutant",
+    "illustration": "gaz_effet_serre.svg",
+    "message_image": "L’illustration montre les principaux gaz à effet de serre présents dans l’atmosphère, comme le CO₂, le méthane (CH₄) et le protoxyde d’azote (N₂O).",
+    "a_retenir": "Les gaz à effet de serre sont indispensables à la vie, mais leur augmentation provoque le réchauffement climatique.",
+    "resume": "Les gaz à effet de serre sont naturellement présents dans l'atmosphère. Ils retiennent une partie de la chaleur et rendent la vie possible sur Terre.",
+    "pourquoi": "Lorsque leur concentration augmente, davantage de chaleur est retenue dans l'atmosphère, ce qui contribue au réchauffement climatique.",
+    "causes": [
+        "Utilisation du pétrole, du gaz et du charbon",
+        "Agriculture et élevage",
+        "Industrie",
+        "Déforestation"
+    ],
+    "consequences": [
+        "Hausse des températures",
+        "Modification des régimes de pluie",
+        "Canicules plus fréquentes",
+        "Sécheresses et inondations plus intenses"
+    ],
+    "solutions": [
+        "Réduire l'usage des énergies fossiles",
+        "Améliorer l'efficacité énergétique",
+        "Développer les énergies renouvelables",
+        "Préserver les forêts et les sols"
+    ],
+    "saviez_vous": "Le dioxyde de carbone (CO₂) est le principal gaz à effet de serre émis par les activités humaines, mais le méthane (CH₄) est beaucoup plus puissant à court terme.",
+    "territoire": "Le bilan carbone d'un territoire permet d'identifier les principales sources d'émissions et de définir des actions prioritaires.",
+    "fenny": "Tous les gaz à effet de serre ne sont pas mauvais : sans eux, la Terre serait trop froide pour la vie."
+}

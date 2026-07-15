@@ -1,0 +1,36 @@
+{
+    "id": "usages_eau",
+    "titre": "Les usages de l'eau : concilier les besoins d'un territoire",
+    "niveau": "connaisseur",
+    "illustration": "secheresse_eau.png",
+    "message_image": "L’illustration montre que la même ressource en eau est utilisée par de nombreux acteurs, qui doivent apprendre à partager cette ressource de manière durable.",
+    "resume": "L'eau est indispensable à la vie, mais aussi aux activités économiques et aux écosystèmes. En période de sécheresse ou de forte demande, les différents usages peuvent entrer en concurrence. Une gestion équilibrée est alors nécessaire pour répondre aux besoins tout en préservant les milieux naturels.",
+    "pourquoi": "Les effets du changement climatique rendent la ressource en eau plus fragile. Comprendre les différents usages permet de mieux anticiper les conflits et de construire des solutions durables.",
+    "causes": [
+        "Consommation domestique des habitants.",
+        "Irrigation des cultures agricoles.",
+        "Besoins des industries.",
+        "Production d'énergie.",
+        "Maintien des débits des cours d'eau.",
+        "Développement touristique et loisirs."
+    ],
+    "consequences": [
+        "Restrictions d'usage pendant les sécheresses.",
+        "Concurrence entre les différents utilisateurs.",
+        "Baisse du niveau des nappes et des rivières.",
+        "Fragilisation des milieux aquatiques.",
+        "Nécessité d'arbitrages par les pouvoirs publics."
+    ],
+    "solutions": [
+        "Développer les économies d'eau.",
+        "Moderniser les réseaux afin de limiter les fuites.",
+        "Optimiser l'irrigation agricole.",
+        "Réutiliser certaines eaux traitées lorsque cela est possible.",
+        "Mettre en œuvre une gestion concertée entre tous les acteurs.",
+        "Préserver les débits nécessaires aux écosystèmes."
+    ],
+    "saviez_vous": "Les usages de l'eau varient fortement selon les régions, les saisons et les activités économiques présentes sur le territoire.",
+    "territoire": "VertClair aide à mieux comprendre les enjeux locaux liés à la ressource en eau et aux effets du changement climatique afin d'accompagner les décisions des collectivités, des entreprises et des citoyens.",
+    "a_retenir": "La meilleure gestion de l'eau est celle qui permet de satisfaire les besoins humains tout en préservant durablement les milieux naturels.",
+    "fenny": "L'eau est une ressource commune : chacun de nos usages a un impact sur les autres utilisateurs et sur la nature."
+}

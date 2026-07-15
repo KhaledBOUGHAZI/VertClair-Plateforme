@@ -1,0 +1,163 @@
+{% load static %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Connexion - VertClair</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        body{
+            margin:0;
+            padding:0;
+            height:100vh;
+
+            background-image: url("{% static 'images/fond_connexion.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            font-family: Arial, sans-serif;
+        }
+
+        .overlay{
+            position:absolute;
+            inset:0;
+            background: rgba(0,0,0,0.45);
+        }
+
+        .login-card{
+    position:relative;
+    z-index:2;
+
+    width:400px;
+
+    background: rgba(255,255,255,0.95);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    color:#222;
+
+    border:1px solid rgba(255,255,255,0.4);
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.3);
+}
+
+        .logo{
+            width:200px;
+            margin-bottom:15px;
+        }
+
+        .title{
+            font-size:32px;
+            font-weight:bold;
+            margin-bottom:5px;
+        }
+
+      .subtitle{
+    color:#666;
+}
+
+        .form-control{
+            height:50px;
+            border-radius:12px;
+            border:none;
+        }
+
+        .btn-login{
+            height:50px;
+            border-radius:12px;
+            font-weight:bold;
+            font-size:18px;
+            background:#198754;
+            border:none;
+        }
+
+        .btn-login:hover{
+            background:#157347;
+        }
+
+        .error{
+            background:#ffdddd;
+            color:#b00020;
+            padding:10px;
+            border-radius:10px;
+            margin-bottom:20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<div class="login-card text-center">
+
+    <!-- LOGO -->
+    <img src="{% static 'images/logo_vertclair.png' %}" 
+         class="logo"
+         alt="Logo VertClair">
+
+    <!-- TITRE -->
+    <div class="title">VertClair conseils</div>
+
+    <div class="subtitle">
+        Plateforme ecologique interactive
+    </div>
+
+    <!-- ERREUR -->
+    {% if error %}
+        <div class="error">
+            {{ error }}
+        </div>
+    {% endif %}
+
+    <!-- FORMULAIRE -->
+    <form method="post">
+
+        {% csrf_token %}
+
+        <div class="mb-3">
+            <input 
+                type="text"
+                name="username"
+                class="form-control"
+                placeholder="Identifiant"
+                required
+            >
+        </div>
+
+        <div class="mb-4">
+            <input 
+                type="password"
+                name="password"
+                class="form-control"
+                placeholder="Mot de passe"
+                required
+            >
+        </div>
+
+        <button type="submit" class="btn btn-success btn-login w-100">
+            Se connecter
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

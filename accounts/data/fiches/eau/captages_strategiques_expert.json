@@ -1,0 +1,44 @@
+{
+    "id": "captages_strategiques",
+    "titre": "Les captages stratégiques : sécuriser durablement l'alimentation en eau potable",
+    "niveau": "expert",
+    "illustration": "eau_potable.png",
+    "message_image": "L’illustration montre qu’un captage d’eau potable ne se limite pas au point de prélèvement : c’est tout son bassin d’alimentation qui doit être protégé.",
+    "resume": "Les captages stratégiques assurent une part importante de l'alimentation en eau potable des populations. Leur préservation constitue un enjeu majeur face aux effets du changement climatique, à l'évolution des usages des sols et aux pollutions diffuses. Les collectivités mettent en place des mesures de protection afin de garantir une ressource de qualité sur le long terme.",
+    "pourquoi": "Préserver un captage stratégique coûte généralement beaucoup moins cher que construire de nouvelles installations de traitement ou rechercher une nouvelle ressource en eau. La protection de la ressource constitue donc un investissement durable pour les territoires.",
+    "causes": [
+        "Pollutions agricoles diffuses.",
+        "Urbanisation des aires d'alimentation.",
+        "Activités industrielles.",
+        "Accidents de pollution.",
+        "Sécheresses récurrentes.",
+        "Surexploitation de certaines nappes."
+    ],
+    "consequences": [
+        "Dégradation de la qualité de l'eau brute.",
+        "Augmentation des coûts de traitement.",
+        "Restrictions d'usage.",
+        "Recherche de nouvelles ressources.",
+        "Fragilisation de l'approvisionnement en eau potable."
+    ],
+    "solutions": [
+        "Délimiter les aires d'alimentation des captages.",
+        "Mettre en place des périmètres de protection.",
+        "Développer des pratiques agricoles plus respectueuses.",
+        "Suivre régulièrement les paramètres de qualité.",
+        "Préserver les zones naturelles favorisant l'infiltration.",
+        "Intégrer les enjeux liés au changement climatique dans les stratégies de gestion."
+    ],
+    "saviez_vous": "Certains captages alimentent plusieurs dizaines de communes et représentent une ressource stratégique à l'échelle d'un territoire entier.",
+    "territoire": "Les informations territoriales disponibles dans VertClair permettent de mieux comprendre les risques pouvant affecter les ressources en eau potable : qualité de l'eau, évolution climatique, occupation des sols et pressions environnementales.",
+    "a_retenir": "La sécurité de l'alimentation en eau potable dépend avant tout de la préservation des ressources naturelles situées bien en amont des usines de traitement.",
+    "fenny": "Une eau de bonne qualité est d'abord une eau que l'on protège avant même qu'elle n'arrive dans une station de traitement.",
+    "vertclair_plus": "Les diagnostics territoriaux de VertClair permettent d'identifier les facteurs pouvant influencer durablement la qualité et la disponibilité des ressources utilisées pour l'alimentation en eau potable.",
+    "pour_aller_plus_loin": [
+        "Directive-cadre sur l'eau (2000/60/CE)",
+        "Code de la santé publique",
+        "EauFrance",
+        "BRGM",
+        "Agences de l'eau"
+    ]
+}

@@ -1,0 +1,245 @@
+{% extends "base.html" %}
+
+{% block title %}Fenny - Organisations{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <div>
+            <h1>🏢 Organisations</h1>
+            <div class="mb-4">
+
+    <a href="{% url 'fenny_nouvelle_organisation' %}"
+       class="btn btn-success">
+
+        ➕ Nouvelle organisation
+
+    </a>
+
+</div>
+            <p class="text-muted mb-0">
+                Supervision globale des organisations clientes.
+            </p>
+        </div>
+
+        <a href="#" class="btn btn-success">
+            ➕ Nouvelle organisation
+        </a>
+    </div>
+
+    <div class="row g-4 mb-4">
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h6>🏢 Organisations</h6>
+                    <h2>{{ total_organisations }}</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h6>👥 Utilisateurs</h6>
+                    <h2>{{ total_utilisateurs }}</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h6>💳 Licences</h6>
+                    <h2>{{ total_licences }}</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h6>💶 CA mensuel</h6>
+                    <h2>{{ ca_mensuel }} €</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card shadow-sm border-0 mb-4">
+        <div class="card-body">
+
+            <form method="get" class="row g-2 align-items-end">
+
+                <div class="col-md-5">
+                    <label class="form-label">Recherche</label>
+                    <input
+                        type="text"
+                        name="q"
+                        value="{{ recherche }}"
+                        class="form-control"
+                        placeholder="🔍 Rechercher une organisation..."
+                    >
+                </div>
+
+                <div class="col-md-3">
+                    <label class="form-label">Statut</label>
+                    <select name="statut" class="form-select">
+                        <option value="">Tous les statuts</option>
+                        <option value="actif" {% if statut == "actif" %}selected{% endif %}>Actif</option>
+                        <option value="essai" {% if statut == "essai" %}selected{% endif %}>Essai</option>
+                        <option value="suspendu" {% if statut == "suspendu" %}selected{% endif %}>Suspendu</option>
+                        <option value="resilie" {% if statut == "resilie" %}selected{% endif %}>Résilié</option>
+                    </select>
+                </div>
+
+                <div class="col-md-2">
+                    <button class="btn btn-success w-100">
+                        Filtrer
+                    </button>
+                </div>
+
+                <div class="col-md-2">
+                    <a href="{% url 'fenny_organisations' %}" class="btn btn-outline-secondary w-100">
+                        Réinitialiser
+                    </a>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <div class="card shadow-sm border-0">
+        <div class="card-body">
+
+            <table class="table table-hover align-middle">
+                <thead>
+                    <tr>
+                        <th>Organisation</th>
+                        <th>Type</th>
+                        <th>Abonnement</th>
+                        <th>Licences</th>
+                        <th>Utilisateurs</th>
+                        <th>Occupation</th>
+                        <th>Statut</th>
+                        <th class="text-end">Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for organisation in organisations %}
+                        <tr>
+                            <td>
+                                <strong>{{ organisation.nom }}</strong><br>
+                                <small class="text-muted">
+                                    {{ organisation.email|default:"-" }}
+                                </small>
+                            </td>
+
+                            <td>{{ organisation.get_type_organisation_display }}</td>
+
+                            <td>
+                                {% if organisation.abonnement %}
+                                    {{ organisation.abonnement.get_formule_display }}
+                                {% else %}
+                                    -
+                                {% endif %}
+                            </td>
+
+                            <td>
+                                {% if organisation.abonnement %}
+                                    {{ organisation.abonnement.nb_licences }}
+                                {% else %}
+                                    -
+                                {% endif %}
+                            </td>
+
+                            <td>{{ organisation.utilisateurs.count }}</td>
+
+                            <td>
+                                {% if organisation.abonnement %}
+                                    {% widthratio organisation.utilisateurs.count organisation.abonnement.nb_licences 100 as taux %}
+
+                                    <div class="progress" style="height: 8px;">
+                                        <div
+                                            class="progress-bar {% if taux|add:'0' >= 90 %}bg-danger{% elif taux|add:'0' >= 70 %}bg-warning{% else %}bg-success{% endif %}"
+                                            style="width: {{ taux }}%;">
+                                        </div>
+                                    </div>
+
+                                    <small>{{ taux }} %</small>
+                                {% else %}
+                                    -
+                                {% endif %}
+                            </td>
+
+                            <td>
+                                {% if organisation.abonnement %}
+                                    {% if organisation.abonnement.statut == "actif" %}
+                                        <span class="badge bg-success">Actif</span>
+                                    {% elif organisation.abonnement.statut == "essai" %}
+                                        <span class="badge bg-warning text-dark">Essai</span>
+                                    {% elif organisation.abonnement.statut == "suspendu" %}
+                                        <span class="badge bg-danger">Suspendu</span>
+                                    {% elif organisation.abonnement.statut == "resilie" %}
+                                        <span class="badge bg-dark">Résilié</span>
+                                    {% else %}
+                                        <span class="badge bg-secondary">
+                                            {{ organisation.abonnement.get_statut_display }}
+                                        </span>
+                                    {% endif %}
+                                {% else %}
+                                    <span class="badge bg-secondary">Sans abonnement</span>
+                                {% endif %}
+                            </td>
+
+                            <td class="text-end">
+                                <div class="d-flex justify-content-end gap-1 flex-wrap">
+
+                                    <a href="{% url 'fenny_organisation_detail' organisation.id %}"
+                                       class="btn btn-sm btn-outline-primary">
+                                        👁 Voir
+                                    </a>
+
+                                    <a href="{% url 'fenny_organisation_detail' organisation.id %}"
+                                       class="btn btn-sm btn-outline-info">
+                                        📊 Dashboard
+                                    </a>
+
+                                    <a href="{% url 'utilisateurs_organisation' %}"
+                                       class="btn btn-sm btn-outline-success">
+                                        👥 Utilisateurs
+                                    </a>
+
+                                    <a href="{% url 'abonnement_organisation' %}"
+                                       class="btn btn-sm btn-outline-warning">
+                                        💳 Abonnement
+                                    </a>
+
+                                    <a href="#"
+                                       class="btn btn-sm btn-outline-secondary">
+                                        ✏ Modifier
+                                    </a>
+
+                                </div>
+                            </td>
+                        </tr>
+
+                    {% empty %}
+                        <tr>
+                            <td colspan="8" class="text-muted">
+                                Aucune organisation trouvée.
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

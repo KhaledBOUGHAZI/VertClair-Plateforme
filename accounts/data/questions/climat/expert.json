@@ -1,0 +1,112 @@
+[
+    {
+        "question": "Les projections DRIAS servent principalement à :",
+        "reponses": [
+            "Prévoir la météo du mois prochain",
+            "Estimer les évolutions climatiques futures selon différents scénarios",
+            "Mesurer la qualité de l'air"
+        ],
+        "bonne": 1,
+        "explication": "Les projections DRIAS permettent d'anticiper les évolutions climatiques futures selon différents scénarios.",
+        "fiche": "meteo_climat_expert"
+    },
+    {
+        "question": "Pourquoi utilise-t-on l'équivalent CO₂ (CO₂e) dans un bilan carbone ?",
+        "reponses": [
+            "Pour comparer différents gaz à effet de serre",
+            "Pour mesurer uniquement le CO₂",
+            "Pour calculer la température"
+        ],
+        "bonne": 0,
+        "explication": "Le CO₂e permet d'exprimer l'effet de différents gaz à effet de serre dans une même unité.",
+        "fiche": "gaz_effet_serre_expert"
+    },
+    {
+        "question": "Le réchauffement climatique est principalement lié à :",
+        "reponses": [
+            "Un déséquilibre du bilan énergétique de la Terre",
+            "Une baisse de l'activité solaire",
+            "Une diminution de l'atmosphère"
+        ],
+        "bonne": 0,
+        "explication": "L'accumulation de gaz à effet de serre modifie le bilan énergétique de la planète.",
+        "fiche": "effet_serre_expert"
+    },
+    {
+        "question": "Dans une stratégie énergie-climat, la première priorité est généralement :",
+        "reponses": [
+            "Réduire les besoins énergétiques",
+            "Compenser immédiatement les émissions",
+            "Construire davantage de centrales"
+        ],
+        "bonne": 0,
+        "explication": "La sobriété et l'efficacité énergétique sont les premières étapes d'une stratégie climat.",
+        "fiche": "energies_fossiles_expert"
+    },
+    {
+        "question": "Les scénarios climatiques permettent surtout de :",
+        "reponses": [
+            "Comparer plusieurs futurs possibles",
+            "Connaître la météo exacte en 2100",
+            "Supprimer toutes les incertitudes"
+        ],
+        "bonne": 0,
+        "explication": "Les scénarios servent à préparer différentes trajectoires climatiques possibles.",
+        "fiche": "rechauffement_climatique_expert"
+    },
+    {
+        "question": "Pour analyser la vulnérabilité d'un territoire aux canicules, il faut croiser :",
+        "reponses": [
+            "Aléa climatique, exposition et vulnérabilité",
+            "Uniquement la température maximale",
+            "Uniquement le nombre d'arbres"
+        ],
+        "bonne": 0,
+        "explication": "La vulnérabilité dépend à la fois de l'aléa, des enjeux exposés et de leur sensibilité.",
+        "fiche": "canicules_expert"
+    },
+    {
+        "question": "Le retrait-gonflement des argiles est principalement provoqué par :",
+        "reponses": [
+            "L'alternance sécheresse et réhumidification des sols",
+            "La pollution lumineuse",
+            "Le bruit"
+        ],
+        "bonne": 0,
+        "explication": "Les sols argileux se rétractent lorsqu'ils sèchent puis gonflent lorsqu'ils se réhumidifient.",
+        "fiche": "secheresses_expert"
+    },
+    {
+        "question": "Le PPR Inondation a pour objectif principal de :",
+        "reponses": [
+            "Encadrer l'urbanisation dans les zones à risque",
+            "Prévoir les pluies",
+            "Mesurer la qualité de l'eau"
+        ],
+        "bonne": 0,
+        "explication": "Le Plan de Prévention des Risques Inondation limite l'exposition des personnes et des biens.",
+        "fiche": "inondations_expert"
+    },
+    {
+        "question": "Pour réduire durablement le risque de feux de forêt, une commune doit notamment :",
+        "reponses": [
+            "Prévoir l'aménagement, le débroussaillement et l'accès des secours",
+            "Planter uniquement des résineux",
+            "Supprimer les pistes forestières"
+        ],
+        "bonne": 0,
+        "explication": "La prévention des incendies repose sur l'aménagement, l'entretien de la végétation et l'organisation des secours.",
+        "fiche": "feux_foret_expert"
+    },
+    {
+        "question": "Une stratégie d'adaptation robuste doit :",
+        "reponses": [
+            "Rester pertinente dans plusieurs scénarios climatiques",
+            "Dépendre d'un seul scénario",
+            "Remplacer toutes les actions de réduction des émissions"
+        ],
+        "bonne": 0,
+        "explication": "Une stratégie robuste reste efficace même si l'évolution du climat diffère des projections centrales.",
+        "fiche": "adaptation_expert"
+    }
+]

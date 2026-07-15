@@ -1,0 +1,45 @@
+{
+    "id": "indicateurs_biodiversite_expert",
+    "titre": "Les indicateurs de biodiversité : mesurer pour mieux agir",
+    "niveau": "expert",
+    "illustration": "biodiversite.png",
+
+    "message_image": "L'illustration montre des écologues réalisant des suivis de terrain, des cartes d'habitats naturels, des capteurs et des tableaux de bord permettant d'évaluer l'évolution de la biodiversité d'un territoire.",
+
+    "resume": "Les indicateurs de biodiversité permettent d'évaluer l'état des milieux naturels, de suivre leur évolution dans le temps et de mesurer l'efficacité des actions mises en œuvre. Ils constituent un outil essentiel pour piloter une politique environnementale fondée sur des données objectives.",
+
+    "pourquoi": "Il est impossible de gérer efficacement la biodiversité sans disposer d'indicateurs fiables. Les collectivités, entreprises et gestionnaires d'espaces naturels ont besoin de mesurer leurs progrès afin d'adapter leurs actions et d'évaluer les résultats obtenus.",
+
+    "causes": [
+        "Besoin d'évaluer l'état des écosystèmes.",
+        "Suivi des politiques publiques.",
+        "Évaluation des projets de restauration écologique.",
+        "Respect des objectifs nationaux et européens.",
+        "Aide à la décision pour les gestionnaires."
+    ],
+
+    "consequences": [
+        "Meilleure connaissance du territoire.",
+        "Priorisation des actions de restauration.",
+        "Suivi des résultats dans le temps.",
+        "Optimisation des investissements.",
+        "Amélioration continue des politiques environnementales."
+    ],
+
+    "solutions": [
+        "Suivre l'évolution des habitats naturels.",
+        "Mesurer la surface des continuités écologiques.",
+        "Évaluer l'artificialisation des sols.",
+        "Suivre les espèces indicatrices.",
+        "Analyser la qualité des milieux aquatiques.",
+        "Construire des tableaux de bord territoriaux."
+    ],
+
+    "saviez_vous": "Une augmentation du nombre d'espèces n'est pas toujours synonyme d'amélioration écologique. Les indicateurs doivent être interprétés dans leur contexte et s'appuyer sur plusieurs critères complémentaires.",
+
+    "territoire": "VertClair calcule déjà plusieurs indicateurs territoriaux (climat, eau, économie circulaire, alimentation...) et intégrera progressivement un tableau de bord biodiversité permettant de suivre l'évolution des habitats, des continuités écologiques, de l'artificialisation et des espaces naturels.",
+
+    "a_retenir": "Ce que l'on mesure peut être amélioré. Les indicateurs permettent de transformer des observations en décisions concrètes.",
+
+    "fenny": "Les meilleures décisions sont celles qui s'appuient sur des données fiables. Les indicateurs permettent de savoir si les actions engagées produisent réellement des résultats."
+}

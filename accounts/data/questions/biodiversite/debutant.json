@@ -1,0 +1,112 @@
+[
+    {
+        "question": "La biodiversité désigne principalement :",
+        "reponses": [
+            "L'ensemble du vivant et ses interactions",
+            "Uniquement les animaux sauvages",
+            "Seulement les forêts tropicales"
+        ],
+        "bonne": 0,
+        "explication": "La biodiversité regroupe les espèces, les milieux naturels et les relations entre les êtres vivants.",
+        "fiche": "biodiversite"
+    },
+    {
+        "question": "Un écosystème est :",
+        "reponses": [
+            "Un milieu où les êtres vivants interagissent avec leur environnement",
+            "Une simple liste d'espèces",
+            "Un bâtiment écologique"
+        ],
+        "bonne": 0,
+        "explication": "Un écosystème fonctionne grâce aux interactions entre les espèces, l'eau, les sols, l'air et le climat.",
+        "fiche": "ecosystemes"
+    },
+    {
+        "question": "Pourquoi les espèces sont-elles importantes ?",
+        "reponses": [
+            "Elles participent à l'équilibre des écosystèmes",
+            "Elles n'ont aucun rôle particulier",
+            "Elles servent uniquement à décorer les paysages"
+        ],
+        "bonne": 0,
+        "explication": "Chaque espèce peut jouer un rôle dans les chaînes alimentaires, la pollinisation, la fertilité des sols ou la régulation naturelle.",
+        "fiche": "especes"
+    },
+    {
+        "question": "Les pollinisateurs permettent notamment :",
+        "reponses": [
+            "La reproduction de nombreuses plantes",
+            "La disparition des fleurs",
+            "L'imperméabilisation des sols"
+        ],
+        "bonne": 0,
+        "explication": "Les abeilles, bourdons, papillons et autres pollinisateurs transportent le pollen entre les fleurs.",
+        "fiche": "pollinisateurs"
+    },
+    {
+        "question": "La Trame verte et bleue sert à :",
+        "reponses": [
+            "Relier les espaces naturels entre eux",
+            "Remplacer toutes les routes",
+            "Supprimer les zones humides"
+        ],
+        "bonne": 0,
+        "explication": "Elle permet aux espèces de circuler, se nourrir, se reproduire et s'adapter aux changements.",
+        "fiche": "trame_verte_bleue"
+    },
+    {
+        "question": "Une zone humide est utile car elle :",
+        "reponses": [
+            "Stocke l'eau et accueille de nombreuses espèces",
+            "Accélère toujours les inondations",
+            "Empêche toute biodiversité"
+        ],
+        "bonne": 0,
+        "explication": "Les zones humides fonctionnent comme des éponges naturelles et abritent une biodiversité très riche.",
+        "fiche": "zones_humides_biodiv"
+    },
+    {
+        "question": "Une forêt en bonne santé permet notamment de :",
+        "reponses": [
+            "Abriter des espèces et stocker du carbone",
+            "Supprimer l'eau des sols",
+            "Réduire toute biodiversité"
+        ],
+        "bonne": 0,
+        "explication": "Les forêts offrent des habitats, protègent les sols, stockent du carbone et participent au cycle de l'eau.",
+        "fiche": "forets"
+    },
+    {
+        "question": "La nature en ville contribue à :",
+        "reponses": [
+            "Rafraîchir les espaces urbains et accueillir la biodiversité",
+            "Augmenter les îlots de chaleur",
+            "Supprimer les espaces verts"
+        ],
+        "bonne": 0,
+        "explication": "Les arbres, parcs, jardins et toitures végétalisées améliorent le cadre de vie et favorisent la biodiversité.",
+        "fiche": "nature_ville"
+    },
+    {
+        "question": "Une espèce exotique envahissante peut :",
+        "reponses": [
+            "Perturber les espèces locales et les écosystèmes",
+            "Toujours améliorer la biodiversité",
+            "Remplacer utilement toutes les espèces locales"
+        ],
+        "bonne": 0,
+        "explication": "Certaines espèces introduites peuvent se développer rapidement et déséquilibrer les milieux naturels.",
+        "fiche": "especes_invasives"
+    },
+    {
+        "question": "Quelle action aide concrètement la biodiversité ?",
+        "reponses": [
+            "Planter des espèces locales et limiter les pesticides",
+            "Bétonner les sols",
+            "Tondre partout très court toute l'année"
+        ],
+        "bonne": 0,
+        "explication": "Les plantations locales, les haies, les prairies fleuries et la réduction des pesticides favorisent le retour du vivant.",
+        "fiche": "actions_biodiversite"
+    }
+]

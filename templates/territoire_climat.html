@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet"
+      href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+<div class="container-fluid p-4">
+
+    <h2>🌡️ Climat & adaptation du territoire</h2>
+
+    <p class="text-muted">
+    Ces pistes d’actions sont proposées à partir du diagnostic
+    territorial et des projections climatiques DRIAS/TRACC.
+    Elles peuvent être ajoutées ensuite au plan de transition écologique.
+    </p>
+
+    <div class="mt-4 mb-4">
+        <input
+            type="text"
+            id="ville"
+            class="form-control"
+            placeholder="Ex : Pacy-sur-Eure"
+        >
+
+        <button
+            type="button"
+            id="btn-climat"
+            class="btn btn-danger mt-3"
+        >
+            Consulter le climat
+        </button>
+    </div>
+
+    <div id="map"
+         style="height:500px;"
+         class="mb-4"></div>
+         <div id="ficheCoucheActive" class="mb-4"></div>
+         <div class="card shadow-sm border-0 mt-4 mb-4">
+    <div class="card-body d-flex justify-content-between align-items-center flex-wrap gap-3">
+
+        <div>
+            <h4 class="mb-2">🎓 Quiz climat & adaptation</h4>
+
+            <p class="text-muted mb-0">
+                Vous venez de consulter les risques climatiques du territoire.
+                Testez vos connaissances sur les canicules, sécheresses,
+                inondations et solutions d’adaptation.
+            </p>
+        </div>
+
+        <a href="{% url 'quiz_theme' 'climat' %}"
+           class="btn btn-success">
+            🌡️ Lancer le quiz climat
+        </a>
+
+    </div>
+</div>
+
+    <div class="card shadow-sm border-0 mb-4">
+        <div class="card-body">
+            <h5>Couches cartographiques publiques</h5>
+
+            <p class="text-muted mb-0">
+                Les couches BRGM / Géorisques sont activables directement
+                depuis le contrôle situé en haut à droite de la carte.
+            </p>
+        </div>
+    </div>
+
+    <div id="lectureTerritorialeCarte" class="mb-4"></div>
+    <div id="lectureTerritoriale"></div>
+    <div id="projectionsClimatiques"></div>
+    <div id="actionsPrioritaires"></div>
+    <div id="diagnosticCouchesReelles" class="mb-4"></div>
+    <div id="resultatClimat"></div>
+    <div id="resultatRisques" class="mt-4"></div>
+    <div id="actionsAdaptation" class="mt-4"></div>
+    <div id="planActionAdaptation" class="mt-4"></div>
+    <div id="ficheActionAdaptation" class="mt-4"></div>
+
+    <div class="card shadow-sm border-0 mt-4 mb-4">
+        <div class="card-body">
+            <h4 class="mb-3">
+                Exports du diagnostic
+            </h4>
+
+            <button
+                type="button"
+                class="btn btn-outline-primary me-2"
+                onclick="exporterPlanAdaptationCSV()"
+            >
+                Exporter le plan d’action CSV
+            </button>
+
+            <button
+                type="button"
+                class="btn btn-outline-danger"
+                onclick="preparerExportPDFAdaptation()"
+            >
+                Préparer le rapport PDF
+            </button>
+
+            <button
+                type="button"
+                class="btn btn-outline-success me-2"
+                onclick="exporterPlanAdaptationExcel()"
+            >
+                Exporter le plan d’action Excel
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script src="{% static 'js/territoire/climat-map.js' %}?v=15"></script>
+<script src="{% static 'js/territoire/climat-diagnostic-couches.js' %}?v=1"></script>
+<script src="{% static 'js/territoire/climat-couches-reelles.js' %}?v=6"></script>
+<script src="{% static 'js/territoire/climat-risques.js' %}?v=4"></script>
+
+<script src="{% static 'js/territoire/climat-indice-aleas.js' %}?v=3"></script>
+<script src="{% static 'js/territoire/climat-indice-sensibilite.js' %}?v=4"></script>
+<script src="{% static 'js/territoire/climat-indice-vulnerabilite.js' %}?v=4"></script>
+<script src="{% static 'js/territoire/climat-facteurs-diagnostic.js' %}?v=2"></script>
+<script src="{% static 'js/territoire/climat-indice-affichage.js' %}?v=7"></script>
+
+<script src="{% static 'js/territoire/climat-lecture-territoriale.js' %}?v=1"></script>
+<script src="{% static 'js/territoire/climat-lecture-territoriale-affichage.js' %}?v=2"></script>
+
+<script src="{% static 'js/territoire/climat-interpretation-projections.js' %}?v=1"></script>
+<script src="{% static 'js/territoire/climat-projections-affichage.js' %}?v=6"></script>
+
+<script src="{% static 'js/transition/bibliotheque-actions.js' %}?v=1"></script>
+<script src="{% static 'js/transition/transition-stockage.js' %}?v=1"></script>
+<script src="{% static 'js/transition/transition-moteur-actions.js' %}?v=1"></script>
+
+<script src="{% static 'js/territoire/climat-actions-prioritaires-affichage.js' %}?v=7"></script>
+
+<script src="{% static 'js/territoire/climat-main.js' %}?v=20"></script>
+
+{% endblock %}

@@ -1,0 +1,44 @@
+{
+    "id": "gestion_differenciee_connaisseur",
+    "titre": "La gestion différenciée des espaces verts",
+    "niveau": "connaisseur",
+    "illustration": "biodiversite.png",
+
+    "message_image": "L'illustration montre un parc où certaines zones sont tondues pour les usages du public tandis que d'autres sont laissées plus naturelles afin de favoriser la biodiversité.",
+
+    "resume": "La gestion différenciée consiste à adapter l'entretien des espaces verts en fonction de leur usage et de leur intérêt écologique. Toutes les surfaces n'ont pas besoin d'être entretenues de la même manière. Cette approche permet de préserver davantage la biodiversité tout en maintenant des espaces agréables pour les habitants.",
+
+    "pourquoi": "Pendant longtemps, les espaces verts étaient entretenus de manière uniforme : tonte fréquente, tailles systématiques et suppression de la végétation spontanée. Aujourd'hui, une gestion plus adaptée permet de concilier accueil du public, économies d'entretien et préservation de la biodiversité.",
+
+    "causes": [
+        "Prise en compte des besoins de la biodiversité.",
+        "Réduction de l'utilisation des produits phytosanitaires.",
+        "Recherche d'une gestion plus durable.",
+        "Adaptation des espaces aux différents usages."
+    ],
+
+    "consequences": [
+        "Développement de la flore locale.",
+        "Retour des insectes pollinisateurs.",
+        "Amélioration des habitats pour les oiseaux.",
+        "Réduction des coûts d'entretien.",
+        "Meilleure résilience face aux sécheresses."
+    ],
+
+    "solutions": [
+        "Espacer les tontes sur certaines parcelles.",
+        "Créer des prairies fleuries.",
+        "Conserver des zones refuges pour la faune.",
+        "Limiter les tailles excessives des haies.",
+        "Planter des essences locales.",
+        "Informer les habitants sur les objectifs de cette gestion."
+    ],
+
+    "saviez_vous": "Une pelouse tondue moins fréquemment peut accueillir plusieurs dizaines d'espèces végétales et de nombreux insectes pollinisateurs en quelques années.",
+
+    "territoire": "VertClair pourra proposer des actions de gestion différenciée dans le Plan de Transition en fonction des caractéristiques du territoire et des espaces verts existants.",
+
+    "a_retenir": "Entretenir moins ne signifie pas entretenir moins bien. Une gestion adaptée permet de favoriser la biodiversité tout en améliorant la résilience des espaces verts.",
+
+    "fenny": "Une prairie fleurie demande souvent moins d'entretien qu'une pelouse très tondue... tout en accueillant beaucoup plus de vie !"
+}

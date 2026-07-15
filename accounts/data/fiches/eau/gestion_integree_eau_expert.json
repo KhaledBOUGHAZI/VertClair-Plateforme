@@ -1,0 +1,43 @@
+{
+    "id": "gestion_integree_eau",
+    "titre": "La gestion intégrée de l'eau : coordonner les politiques territoriales",
+    "niveau": "expert",
+    "illustration": "infiltration_ruissellement.png",
+    "message_image": "L’illustration montre qu’une gestion durable de l’eau repose sur une approche globale intégrant les milieux naturels, l’urbanisme, l’agriculture, les infrastructures et les activités humaines.",
+    "resume": "La gestion intégrée de l'eau consiste à prendre en compte l'ensemble du cycle de l'eau dans les décisions d'aménagement et de développement d'un territoire. Elle vise à concilier les besoins des populations, des activités économiques et des milieux naturels tout en anticipant les effets du changement climatique.",
+    "pourquoi": "Les enjeux liés à l'eau concernent aujourd'hui de nombreux domaines : urbanisme, agriculture, énergie, biodiversité, santé, industrie ou encore prévention des risques. Une approche sectorielle n'est plus suffisante pour répondre efficacement aux défis actuels.",
+    "causes": [
+        "Urbanisation croissante.",
+        "Artificialisation des sols.",
+        "Multiplication des épisodes climatiques extrêmes.",
+        "Pression sur les ressources naturelles.",
+        "Évolution des usages de l'eau."
+    ],
+    "consequences": [
+        "Concurrence entre les différents usages.",
+        "Augmentation du ruissellement.",
+        "Dégradation de la qualité des eaux.",
+        "Perte de biodiversité.",
+        "Vulnérabilité accrue des territoires."
+    ],
+    "solutions": [
+        "Intégrer l'eau dans tous les projets d'aménagement.",
+        "Favoriser les solutions fondées sur la nature.",
+        "Développer la désimperméabilisation.",
+        "Coordonner urbanisme, climat et biodiversité.",
+        "Associer tous les acteurs du territoire.",
+        "Suivre des indicateurs communs de performance."
+    ],
+    "saviez_vous": "Une même action, comme la création d'une noue paysagère, peut réduire les inondations, améliorer la qualité de l'eau, favoriser la biodiversité et limiter les îlots de chaleur urbains.",
+    "territoire": "VertClair rassemble dans un même outil les données relatives à l'eau, au climat, aux risques naturels, à la biodiversité, à l'énergie et à l'occupation des sols afin de faciliter une gestion intégrée du territoire.",
+    "a_retenir": "La meilleure gestion de l'eau est celle qui prend simultanément en compte les enjeux environnementaux, économiques et sociaux.",
+    "fenny": "L'eau relie tous les sujets : climat, biodiversité, agriculture, urbanisme et qualité de vie. Penser globalement permet d'agir plus efficacement.",
+    "vertclair_plus": "Le Plan de Transition VertClair permet de regrouper dans une même feuille de route les actions relatives à l'eau, au climat, à la biodiversité, à l'énergie et à l'aménagement du territoire.",
+    "pour_aller_plus_loin": [
+        "Gestion intégrée des ressources en eau (GIRE)",
+        "Directive-cadre sur l'eau",
+        "Cerema",
+        "Office français de la biodiversité",
+        "Agences de l'eau"
+    ]
+}

@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% block title %}Fenny - Utilisateurs{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid mt-4">
+
+    <h1>👥 Utilisateurs</h1>
+    <p class="text-muted">Supervision globale des utilisateurs VertClair.</p>
+
+    <div class="card shadow-sm border-0 mb-4">
+        <div class="card-body">
+
+            <form method="get" class="row g-2 align-items-end">
+
+                <div class="col-md-5">
+                    <label class="form-label">Recherche</label>
+                    <input type="text" name="q" value="{{ recherche }}" class="form-control" placeholder="Nom d’utilisateur...">
+                </div>
+
+                <div class="col-md-3">
+                    <label class="form-label">Rôle</label>
+                    <select name="role" class="form-select">
+                        <option value="">Tous les rôles</option>
+                        <option value="fenny" {% if role == "fenny" %}selected{% endif %}>Fenny</option>
+                        <option value="admin_org" {% if role == "admin_org" %}selected{% endif %}>Administrateur</option>
+                        <option value="gestionnaire" {% if role == "gestionnaire" %}selected{% endif %}>Gestionnaire</option>
+                        <option value="utilisateur" {% if role == "utilisateur" %}selected{% endif %}>Utilisateur</option>
+                        <option value="lecteur" {% if role == "lecteur" %}selected{% endif %}>Lecteur</option>
+                    </select>
+                </div>
+
+                <div class="col-md-2">
+                    <button class="btn btn-success w-100">Filtrer</button>
+                </div>
+
+                <div class="col-md-2">
+                    <a href="{% url 'fenny_utilisateurs' %}" class="btn btn-outline-secondary w-100">Réinitialiser</a>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <div class="card shadow-sm border-0">
+        <div class="card-body">
+
+            <table class="table table-hover align-middle">
+                <thead>
+                    <tr>
+                        <th>Utilisateur</th>
+                        <th>Email</th>
+                        <th>Organisation</th>
+                        <th>Service</th>
+                        <th>Rôle</th>
+                        <th>Dernière connexion</th>
+                        <th>Statut</th>
+                        <th class="text-end">Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for profil in utilisateurs %}
+                        <tr>
+                            <td>
+                                <strong>{{ profil.user.username }}</strong><br>
+                                <small class="text-muted">{{ profil.fonction|default:"-" }}</small>
+                            </td>
+
+                            <td>{{ profil.user.email|default:"-" }}</td>
+
+                            <td>{{ profil.organisation|default:"-" }}</td>
+
+                            <td>
+                                {% if profil.service %}
+                                    {{ profil.service.nom }}
+                                {% else %}
+                                    -
+                                {% endif %}
+                            </td>
+
+                            <td>{{ profil.get_role_display }}</td>
+
+                            <td>
+                                {% if profil.user.last_login %}
+                                    {{ profil.user.last_login|date:"d/m/Y H:i" }}
+                                {% else %}
+                                    Jamais
+                                {% endif %}
+                            </td>
+
+                            <td>
+                                {% if profil.user.is_active %}
+                                    <span class="badge bg-success">Actif</span>
+                                {% else %}
+                                    <span class="badge bg-secondary">Inactif</span>
+                                {% endif %}
+                            </td>
+
+                            <td class="text-end">
+
+    <a href="{% url 'fenny_detail_utilisateur' profil.id %}"
+       class="btn btn-sm btn-outline-primary">
+        👁
+    </a>
+
+    <a href="{% url 'fenny_modifier_utilisateur' profil.id %}"
+       class="btn btn-sm btn-outline-warning">
+        ✏
+    </a>
+
+    <a href="{% url 'fenny_changer_statut_utilisateur' profil.id %}"
+       class="btn btn-sm {% if profil.user.is_active %}btn-outline-danger{% else %}btn-outline-success{% endif %}">
+        {% if profil.user.is_active %}
+            🔒
+        {% else %}
+            🔓
+        {% endif %}
+    </a>
+
+</td>
+                        </tr>
+                    {% empty %}
+                        <tr>
+                            <td colspan="8" class="text-muted">
+                                Aucun utilisateur trouvé.
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,32 @@
+{
+    "id": "inondations",
+    "titre": "Gestion du risque inondation",
+    "niveau": "expert",
+    "illustration": "inondations.png",
+    "message_image": "L’illustration montre les principaux leviers permettant de réduire la vulnérabilité d’un territoire face aux inondations.",
+    "resume": "La gestion du risque inondation repose sur la connaissance des aléas, des enjeux exposés et des capacités d’adaptation du territoire.",
+    "pourquoi": "Le changement climatique pourrait intensifier certains épisodes de pluies extrêmes et augmenter les dommages associés.",
+    "causes": [
+        "Crues de cours d’eau",
+        "Ruissellement urbain",
+        "Remontées de nappes",
+        "Artificialisation des sols"
+    ],
+    "consequences": [
+        "Coûts économiques élevés",
+        "Interruption des services essentiels",
+        "Dégradation des infrastructures",
+        "Risques pour les populations"
+    ],
+    "solutions": [
+        "Cartographier les zones vulnérables",
+        "Intégrer le risque dans l’urbanisme",
+        "Restaurer les zones humides",
+        "Développer des ouvrages et aménagements adaptés",
+        "Renforcer la culture du risque"
+    ],
+    "saviez_vous": "Une grande partie des dommages liés aux inondations provient du ruissellement dans les zones urbanisées.",
+    "territoire": "Les données PPR, BRGM et Géorisques intégrées dans VertClair permettent d’analyser les vulnérabilités locales.",
+    "a_retenir": "La réduction du risque passe autant par l’aménagement du territoire que par les ouvrages de protection.",
+    "fenny": "La meilleure inondation est souvent celle que l’on a anticipée avant qu’elle n’arrive."
+}

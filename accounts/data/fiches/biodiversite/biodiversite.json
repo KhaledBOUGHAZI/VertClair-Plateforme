@@ -1,0 +1,34 @@
+{
+    "id": "biodiversite",
+    "titre": "La biodiversité : le vivant sous toutes ses formes",
+    "niveau": "debutant",
+    "illustration": "biodiversite.png",
+    "message_image": "L’illustration montre la richesse du vivant : animaux, plantes, champignons, insectes et milieux naturels qui interagissent pour former des écosystèmes équilibrés.",
+    "resume": "La biodiversité désigne l'ensemble des êtres vivants, leurs habitats et les relations qu'ils entretiennent entre eux. Elle comprend la diversité des espèces, la diversité génétique au sein de chaque espèce et la diversité des écosystèmes présents sur Terre.",
+    "pourquoi": "La biodiversité rend de nombreux services indispensables : production d'oxygène, pollinisation des cultures, purification de l'eau, fertilité des sols, régulation du climat ou encore alimentation. Préserver la biodiversité revient donc à préserver notre propre qualité de vie.",
+    "causes": [
+        "Diversité des milieux naturels.",
+        "Évolution naturelle des espèces.",
+        "Interactions entre les êtres vivants.",
+        "Influence des conditions climatiques."
+    ],
+    "consequences": [
+        "Écosystèmes plus résilients.",
+        "Meilleure qualité des sols.",
+        "Purification naturelle de l'eau.",
+        "Pollinisation des cultures.",
+        "Régulation naturelle du climat."
+    ],
+    "solutions": [
+        "Préserver les habitats naturels.",
+        "Limiter l'artificialisation des sols.",
+        "Planter des espèces locales.",
+        "Réduire les pollutions.",
+        "Créer des continuités écologiques.",
+        "Sensibiliser les citoyens."
+    ],
+    "saviez_vous": "Plus de la moitié de l'économie mondiale dépend directement ou indirectement des services rendus gratuitement par la biodiversité.",
+    "territoire": "VertClair permet de découvrir les espaces naturels, les zones protégées, les trames vertes et bleues ainsi que les principaux enjeux de biodiversité présents sur votre territoire.",
+    "a_retenir": "La biodiversité ne concerne pas uniquement les espèces rares : elle englobe tout le vivant qui nous entoure et dont nous dépendons chaque jour.",
+    "fenny": "Chaque arbre, chaque insecte et chaque rivière jouent un rôle. La biodiversité fonctionne comme une grande équipe où chaque espèce contribue à l'équilibre du vivant."
+}

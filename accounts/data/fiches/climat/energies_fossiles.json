@@ -1,0 +1,33 @@
+{
+    "id": "energies_fossiles",
+    "titre": "Les énergies fossiles",
+    "niveau": "debutant",
+    "illustration": "energies_fossiles.png",
+    "message_image": "L’illustration montre que le pétrole, le gaz naturel et le charbon libèrent du CO₂ lorsqu’ils sont utilisés pour produire de l’énergie.",
+    "a_retenir": "Le pétrole, le gaz et le charbon sont les principales sources d'émissions de CO₂ d'origine humaine.",
+    "resume": "Le pétrole, le gaz naturel et le charbon sont des énergies fossiles formées à partir d'organismes vivants enfouis il y a plusieurs millions d'années. Leur combustion émet de grandes quantités de CO₂.",
+    "pourquoi": "Les énergies fossiles fournissent encore une grande partie de l'énergie mondiale. Leur utilisation massive est la principale source d'émissions de CO₂ d'origine humaine.",
+    "causes": [
+        "Dépendance aux carburants",
+        "Chauffage au gaz ou au fioul",
+        "Production industrielle énergivore",
+        "Consommations énergétiques élevées"
+    ],
+    "consequences": [
+        "Émissions importantes de CO₂",
+        "Réchauffement climatique",
+        "Pollution de l'air",
+        "Dépendance énergétique",
+        "Vulnérabilité aux crises énergétiques"
+    ],
+    "solutions": [
+        "Réduire les consommations énergétiques",
+        "Isoler les bâtiments",
+        "Développer les énergies renouvelables",
+        "Favoriser les mobilités sobres",
+        "Améliorer l'efficacité énergétique"
+    ],
+    "saviez_vous": "L'énergie la moins polluante est souvent celle que l'on ne consomme pas.",
+    "territoire": "Une commune peut agir sur ses bâtiments, son éclairage public, ses déplacements et ses achats.",
+    "fenny": "Les énergies fossiles ont permis le développement de nos sociétés, mais leur utilisation massive modifie aujourd'hui le climat."
+}

@@ -1,0 +1,32 @@
+{
+    "id": "cycle_eau",
+    "titre": "Le cycle de l'eau",
+    "niveau": "debutant",
+    "illustration": "cycle_eau.png",
+    "message_image": "L’illustration montre que l’eau circule en permanence entre l’atmosphère, les sols, les rivières, les nappes et les océans.",
+    "resume": "Le cycle de l’eau décrit le trajet de l’eau sur Terre : évaporation, nuages, pluie, infiltration, ruissellement et retour vers les rivières ou la mer.",
+    "pourquoi": "Comprendre le cycle de l’eau permet de mieux comprendre les sécheresses, les inondations, la qualité de l’eau et la gestion de la ressource.",
+    "causes": [
+        "Évaporation sous l'effet du soleil",
+        "Formation des nuages",
+        "Pluie ou neige",
+        "Infiltration dans les sols",
+        "Ruissellement vers les cours d'eau"
+    ],
+    "consequences": [
+        "Recharge des nappes souterraines",
+        "Alimentation des rivières",
+        "Disponibilité de l'eau potable",
+        "Risques de sécheresse ou d'inondation selon les situations"
+    ],
+    "solutions": [
+        "Préserver les sols naturels",
+        "Favoriser l'infiltration de l'eau",
+        "Limiter l'imperméabilisation",
+        "Protéger les zones humides"
+    ],
+    "saviez_vous": "Une partie importante de l’eau de pluie ne rejoint pas directement les rivières : elle peut s’infiltrer dans les sols et alimenter les nappes.",
+    "territoire": "Le module Eau de VertClair permet de relier la qualité de l’eau, les rivières et les enjeux locaux de ressource en eau.",
+    "a_retenir": "L’eau circule en permanence : mieux gérer les sols aide à mieux gérer l’eau.",
+    "fenny": "Un sol vivant fonctionne comme une éponge : il ralentit l’eau, la filtre et aide à recharger les nappes."
+}

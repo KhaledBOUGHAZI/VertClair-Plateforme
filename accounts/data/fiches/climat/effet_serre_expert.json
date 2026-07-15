@@ -1,0 +1,28 @@
+{
+    "id": "effet_serre",
+    "titre": "Bilan radiatif et effet de serre",
+    "niveau": "expert",
+    "illustration": "effet_serre.png",
+    "message_image": "L'équilibre entre énergie reçue et énergie renvoyée détermine l'évolution du climat.",
+    "resume": "Le réchauffement climatique est lié à un déséquilibre du bilan radiatif provoqué par l'augmentation des concentrations de gaz à effet de serre.",
+    "pourquoi": "Cette notion constitue la base scientifique utilisée par le GIEC pour analyser l'évolution du climat.",
+    "causes": [
+        "Hausse des concentrations de GES",
+        "Modification du bilan énergétique terrestre",
+        "Rétroactions climatiques"
+    ],
+    "consequences": [
+        "Accumulation d'énergie dans les océans",
+        "Hausse des températures moyennes",
+        "Fonte des glaces"
+    ],
+    "solutions": [
+        "Réduction rapide des émissions",
+        "Neutralité carbone",
+        "Préservation des puits de carbone"
+    ],
+    "saviez_vous": "Les océans absorbent la majorité de l'excès d'énergie généré par le réchauffement climatique.",
+    "territoire": "Les stratégies locales de réduction des émissions participent à la limitation du déséquilibre climatique mondial.",
+    "a_retenir": "Le réchauffement est avant tout une question d'énergie accumulée dans le système climatique.",
+    "fenny": "Comprendre le bilan radiatif aide à comprendre toutes les politiques climatiques."
+}

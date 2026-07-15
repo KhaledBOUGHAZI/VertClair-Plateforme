@@ -1,0 +1,31 @@
+{
+    "id": "zones_humides",
+    "titre": "Les zones humides",
+    "niveau": "debutant",
+    "illustration": "zones_humides.png",
+    "message_image": "L’illustration montre une zone humide où l’eau, les sols et la biodiversité interagissent naturellement pour rendre de nombreux services au territoire.",
+    "resume": "Les zones humides sont des milieux où l’eau est présente de façon permanente ou temporaire. Elles comprennent notamment les marais, tourbières, prairies humides et berges naturelles.",
+    "pourquoi": "Les zones humides jouent un rôle essentiel pour la qualité de l’eau, la biodiversité, la prévention des inondations et l’adaptation au changement climatique.",
+    "causes": [
+        "Présence naturelle d'eau",
+        "Remontée de nappes",
+        "Débordement des cours d'eau",
+        "Accumulation des eaux de pluie"
+    ],
+    "consequences": [
+        "Stockage naturel de l'eau",
+        "Recharge des nappes souterraines",
+        "Filtration naturelle des polluants",
+        "Habitat pour de nombreuses espèces animales et végétales"
+    ],
+    "solutions": [
+        "Préserver les zones humides existantes",
+        "Restaurer les milieux dégradés",
+        "Limiter leur artificialisation",
+        "Maintenir une végétation naturelle"
+    ],
+    "saviez_vous": "Les zones humides couvrent une faible partie du territoire mais rendent des services écologiques considérables.",
+    "territoire": "VertClair affiche les principales zones humides présentes autour de votre commune grâce aux données publiques.",
+    "a_retenir": "Les zones humides sont de véritables éponges naturelles qui protègent les territoires.",
+    "fenny": "Préserver une zone humide, c'est protéger l'eau, la biodiversité et limiter les inondations."
+}

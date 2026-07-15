@@ -1,0 +1,46 @@
+{
+    "id": "especes_protegees_connaisseur",
+    "titre": "Les espèces protégées : un patrimoine naturel à préserver",
+    "niveau": "connaisseur",
+    "illustration": "biodiversite.png",
+
+    "message_image": "L'illustration montre plusieurs espèces protégées vivant dans leur habitat naturel : un rapace, une loutre, une orchidée sauvage, des chauves-souris et un papillon.",
+
+    "resume": "Les espèces protégées sont des animaux, des plantes ou des champignons bénéficiant d'une protection réglementaire en raison de leur rareté, de leur vulnérabilité ou de leur rôle dans les écosystèmes. Cette protection interdit ou encadre leur destruction, leur capture, leur perturbation ainsi que la dégradation de leurs habitats dans certaines situations.",
+
+    "pourquoi": "La disparition d'une espèce peut entraîner des déséquilibres écologiques importants. Les espèces protégées constituent souvent des indicateurs de la bonne santé des milieux naturels et participent au maintien de la biodiversité.",
+
+    "causes": [
+        "Destruction ou fragmentation des habitats.",
+        "Urbanisation et artificialisation des sols.",
+        "Pollutions de l'eau, de l'air et des sols.",
+        "Changement climatique.",
+        "Introduction d'espèces exotiques envahissantes.",
+        "Certaines activités humaines mal adaptées."
+    ],
+
+    "consequences": [
+        "Régression de certaines populations.",
+        "Disparition locale ou nationale d'espèces.",
+        "Déséquilibre des écosystèmes.",
+        "Perte du patrimoine naturel.",
+        "Fragilisation des services écosystémiques."
+    ],
+
+    "solutions": [
+        "Préserver les habitats naturels.",
+        "Éviter les perturbations pendant les périodes de reproduction.",
+        "Prendre en compte les inventaires écologiques avant les projets.",
+        "Maintenir les continuités écologiques.",
+        "Sensibiliser les habitants et les aménageurs.",
+        "Restaurer les milieux dégradés."
+    ],
+
+    "saviez_vous": "Une espèce protégée n'est pas forcément rare partout. Sa protection peut également être justifiée par son rôle écologique ou par le déclin de ses populations.",
+
+    "territoire": "VertClair pourra croiser les données des espaces naturels (ZNIEFF, Natura 2000, Trame verte et bleue) avec les inventaires publics afin de mieux identifier les secteurs présentant un intérêt écologique particulier.",
+
+    "a_retenir": "Protéger une espèce revient souvent à protéger tout son habitat et les nombreuses autres espèces qui y vivent.",
+
+    "fenny": "Lorsqu'une espèce protégée est présente sur un territoire, c'est souvent le signe que le milieu naturel conserve encore un bon équilibre écologique."
+}

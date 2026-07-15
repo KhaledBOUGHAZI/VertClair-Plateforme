@@ -1,0 +1,32 @@
+{
+    "id": "captages_eau",
+    "titre": "Les captages d'eau potable : protéger la ressource à la source",
+    "niveau": "connaisseur",
+    "illustration": "eau_potable.png",
+    "message_image": "L’illustration montre les différentes étapes qui permettent de prélever une eau brute dans le milieu naturel avant son traitement et sa distribution.",
+    "resume": "L'eau potable distribuée aux habitants provient principalement des nappes souterraines ou des rivières. Avant d'être consommée, elle est captée, traitée, contrôlée puis acheminée par un réseau de distribution. La qualité de cette eau dépend avant tout de la protection de la ressource naturelle.",
+    "pourquoi": "Protéger les captages est beaucoup plus efficace et moins coûteux que dépolluer une ressource contaminée. Les collectivités mettent donc en place des périmètres de protection afin de limiter les risques de pollution.",
+    "causes": [
+        "Captage dans une nappe souterraine ou une rivière.",
+        "Création de périmètres de protection réglementaires.",
+        "Contrôle permanent de la qualité de l'eau.",
+        "Traitement adapté selon la qualité de la ressource."
+    ],
+    "consequences": [
+        "Distribution d'une eau conforme aux exigences sanitaires.",
+        "Réduction des risques de pollution.",
+        "Préservation durable de la ressource.",
+        "Coût de traitement maîtrisé."
+    ],
+    "solutions": [
+        "Protéger les aires de captage.",
+        "Réduire l'utilisation des pesticides à proximité.",
+        "Limiter les rejets polluants.",
+        "Renforcer les contrôles sanitaires.",
+        "Sensibiliser les acteurs locaux."
+    ],
+    "saviez_vous": "Les périmètres de protection des captages peuvent s'étendre sur plusieurs dizaines d'hectares afin de protéger durablement la ressource en eau.",
+    "territoire": "VertClair affiche les derniers résultats officiels de qualité de l'eau distribuée sur votre commune et pourra, à terme, intégrer la localisation des principaux captages.",
+    "a_retenir": "Une eau potable de qualité commence toujours par une ressource naturelle bien protégée.",
+    "fenny": "Préserver un captage aujourd'hui permet d'éviter des traitements coûteux demain et garantit une eau de meilleure qualité pour tous."
+}

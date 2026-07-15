@@ -1,0 +1,32 @@
+{
+    "id": "pollinisateurs",
+    "titre": "Les pollinisateurs : des alliés indispensables de la nature",
+    "niveau": "debutant",
+    "illustration": "biodiversite.png",
+    "message_image": "L’illustration montre des abeilles, des bourdons, des papillons et d’autres insectes transportant le pollen entre les fleurs, permettant ainsi la reproduction des plantes.",
+    "resume": "Les pollinisateurs sont des animaux qui transportent le pollen d'une fleur à une autre. Ce phénomène, appelé pollinisation, permet à de nombreuses plantes de produire des fruits, des graines et de se reproduire. Les principaux pollinisateurs sont les abeilles, les bourdons, les papillons, certains coléoptères, les mouches et même quelques oiseaux ou chauves-souris selon les régions du monde.",
+    "pourquoi": "La pollinisation est indispensable au maintien de nombreux écosystèmes et à la production d'une grande partie de notre alimentation. Sans pollinisateurs, de nombreuses cultures produiraient beaucoup moins de fruits et de légumes.",
+    "causes": [
+        "Présence de fleurs variées.",
+        "Diversité des habitats naturels.",
+        "Conditions climatiques favorables.",
+        "Disponibilité de nourriture pour les insectes."
+    ],
+    "consequences": [
+        "Reproduction des plantes.",
+        "Production de fruits et de graines.",
+        "Maintien de la biodiversité.",
+        "Soutien de nombreuses productions agricoles."
+    ],
+    "solutions": [
+        "Planter des espèces mellifères.",
+        "Préserver les haies et les prairies fleuries.",
+        "Limiter l'utilisation des pesticides.",
+        "Installer des refuges pour les insectes.",
+        "Favoriser une gestion écologique des espaces verts."
+    ],
+    "saviez_vous": "Environ 75 % des principales cultures alimentaires mondiales bénéficient, au moins en partie, de la pollinisation par les animaux.",
+    "territoire": "Les espaces naturels, les haies, les prairies et les jardins présents sur votre territoire constituent des habitats essentiels pour les pollinisateurs. VertClair aide à mieux comprendre ces enjeux grâce aux données de biodiversité.",
+    "a_retenir": "Les pollinisateurs assurent gratuitement un service écologique essentiel au fonctionnement des écosystèmes et à notre alimentation.",
+    "fenny": "Une simple abeille peut visiter plusieurs milliers de fleurs en une seule journée. Chacun de ces voyages contribue à maintenir la biodiversité."
+}

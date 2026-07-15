@@ -1,0 +1,19 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Fichiers Stripe sensibles
+Stripe/stripe_backup_code.txt
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Django local
+db.sqlite3
+
+# Éditeurs
+.vscode/
+.idea/
+staticfiles/

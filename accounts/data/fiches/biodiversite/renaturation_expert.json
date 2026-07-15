@@ -1,0 +1,49 @@
+{
+    "id": "renaturation_expert",
+    "titre": "La renaturation : redonner vie aux espaces artificialisés",
+    "niveau": "expert",
+    "illustration": "biodiversite.png",
+
+    "message_image": "L'illustration montre un ancien parking transformé en parc urbain végétalisé avec des arbres, des noues paysagères, une prairie fleurie et une zone humide permettant le retour de la biodiversité.",
+
+    "resume": "La renaturation consiste à restaurer les fonctions naturelles d'un espace dégradé ou artificialisé. Elle ne se limite pas à planter quelques arbres : elle vise à recréer un véritable écosystème capable d'accueillir la biodiversité, d'infiltrer l'eau, de rafraîchir le climat local et d'améliorer le cadre de vie.",
+
+    "pourquoi": "Pendant plusieurs décennies, de nombreux territoires se sont fortement artificialisés. Les sols ont été imperméabilisés, les cours d'eau canalisés et les espaces naturels réduits. Face au changement climatique et à l'érosion de la biodiversité, la renaturation permet de restaurer progressivement les fonctions écologiques perdues.",
+
+    "causes": [
+        "Urbanisation intensive.",
+        "Artificialisation des sols.",
+        "Imperméabilisation des surfaces.",
+        "Disparition des espaces naturels.",
+        "Canalisation des cours d'eau.",
+        "Création de grandes infrastructures."
+    ],
+
+    "consequences": [
+        "Augmentation des îlots de chaleur.",
+        "Ruissellement plus important lors des pluies.",
+        "Perte de biodiversité.",
+        "Dégradation de la qualité des sols.",
+        "Réduction de la capacité de stockage du carbone.",
+        "Baisse de la qualité de vie."
+    ],
+
+    "solutions": [
+        "Désimperméabiliser les sols.",
+        "Créer des noues végétalisées.",
+        "Planter des essences locales adaptées.",
+        "Restaurer les zones humides.",
+        "Renaturer les cours d'eau.",
+        "Créer des corridors écologiques.",
+        "Réhabiliter les friches urbaines.",
+        "Développer des parcs et espaces verts fonctionnels."
+    ],
+
+    "saviez_vous": "Un ancien parking entièrement désimperméabilisé peut retrouver progressivement une partie de ses fonctions écologiques : infiltration de l'eau, stockage du carbone, accueil de la biodiversité et diminution de la température en été.",
+
+    "territoire": "VertClair pourra identifier les secteurs les plus favorables à la renaturation en croisant les données sur l'artificialisation des sols, les îlots de chaleur, les risques d'inondation, la biodiversité et les espaces publics disponibles.",
+
+    "a_retenir": "Renaturer consiste à restaurer le fonctionnement naturel d'un milieu. C'est un levier majeur pour adapter les territoires au changement climatique tout en renforçant la biodiversité.",
+
+    "fenny": "Chaque mètre carré de sol rendu à la nature permet d'améliorer plusieurs enjeux en même temps : biodiversité, eau, climat, qualité de vie et santé des habitants."
+}

@@ -1,0 +1,33 @@
+{
+    "id": "canicules",
+    "titre": "Les canicules",
+    "niveau": "debutant",
+    "illustration": "canicules.png",
+    "message_image": "L’illustration montre les effets visibles d’un épisode de chaleur intense sur la ville, la santé ou la végétation.",
+    "a_retenir": "Les villes peuvent réduire les effets des canicules grâce aux arbres, à l'ombre et aux sols naturels.",
+    "resume": "Une canicule est un épisode de chaleur intense qui dure plusieurs jours et plusieurs nuits consécutives.",
+    "pourquoi": "Les canicules représentent aujourd'hui l'un des risques climatiques les plus importants pour la santé, les villes, l'agriculture et les infrastructures.",
+    "causes": [
+        "Réchauffement climatique",
+        "Accumulation de chaleur dans les villes",
+        "Manque de végétation",
+        "Sols et bâtiments qui stockent la chaleur"
+    ],
+    "consequences": [
+        "Risques pour la santé",
+        "Augmentation de la consommation d'eau",
+        "Stress pour les arbres et les espaces verts",
+        "Dégradation du confort dans les logements",
+        "Renforcement des îlots de chaleur urbains"
+    ],
+    "solutions": [
+        "Planter des arbres",
+        "Créer davantage d'espaces ombragés",
+        "Désimperméabiliser les sols",
+        "Adapter les bâtiments aux fortes chaleurs",
+        "Protéger les personnes vulnérables"
+    ],
+    "saviez_vous": "Lors de la canicule de 2003, près de 15 000 décès supplémentaires ont été recensés en France.",
+    "territoire": "Les centres-villes très minéraux sont souvent plusieurs degrés plus chauds que les zones rurales voisines.",
+    "fenny": "Une ville avec plus d'arbres, d'ombre et de sols naturels peut être plusieurs degrés plus fraîche en été."
+}

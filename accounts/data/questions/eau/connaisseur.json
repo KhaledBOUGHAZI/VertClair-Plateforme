@@ -1,0 +1,112 @@
+[
+    {
+        "question": "Un bassin versant correspond à :",
+        "reponses": [
+            "L'ensemble du territoire dont les eaux s'écoulent vers un même cours d'eau",
+            "Une retenue d'eau artificielle",
+            "Une station d'épuration"
+        ],
+        "bonne": 0,
+        "explication": "Toutes les pluies tombant sur un bassin versant rejoignent progressivement le même réseau hydrographique.",
+        "fiche": "bassin_versant_connaisseur"
+    },
+    {
+        "question": "Pourquoi protège-t-on les captages d'eau potable ?",
+        "reponses": [
+            "Pour préserver durablement la qualité de l'eau",
+            "Pour produire davantage d'électricité",
+            "Pour limiter les précipitations"
+        ],
+        "bonne": 0,
+        "explication": "Les périmètres de protection limitent les pollutions susceptibles de contaminer l'eau destinée à la consommation.",
+        "fiche": "captages_eau_connaisseur"
+    },
+    {
+        "question": "La recharge des nappes souterraines dépend principalement :",
+        "reponses": [
+            "De l'infiltration de l'eau dans les sols",
+            "Du vent",
+            "De la température de l'air"
+        ],
+        "bonne": 0,
+        "explication": "Une partie des pluies s'infiltre lentement dans le sol et alimente les nappes phréatiques.",
+        "fiche": "recharge_nappes_connaisseur"
+    },
+    {
+        "question": "Le rôle principal d'une station d'épuration est de :",
+        "reponses": [
+            "Traiter les eaux usées avant leur rejet dans le milieu naturel",
+            "Produire de l'eau potable",
+            "Stocker les eaux de pluie"
+        ],
+        "bonne": 0,
+        "explication": "Les stations d'épuration éliminent une grande partie des pollutions avant le rejet dans les cours d'eau.",
+        "fiche": "stations_epuration_connaisseur"
+    },
+    {
+        "question": "Les pollutions diffuses proviennent principalement :",
+        "reponses": [
+            "De nombreuses petites sources réparties sur le territoire",
+            "D'une seule usine",
+            "D'un barrage"
+        ],
+        "bonne": 0,
+        "explication": "Les pollutions diffuses sont souvent liées à l'agriculture, aux routes ou aux zones urbaines.",
+        "fiche": "pollutions_diffuses_connaisseur"
+    },
+    {
+        "question": "Le SDAGE est principalement :",
+        "reponses": [
+            "Un document de planification de la gestion de l'eau",
+            "Une station de mesure",
+            "Une usine de traitement"
+        ],
+        "bonne": 0,
+        "explication": "Le SDAGE fixe les grandes orientations pour atteindre le bon état des eaux.",
+        "fiche": "sdage_sage_connaisseur"
+    },
+    {
+        "question": "La résilience hydrique d'un territoire correspond à :",
+        "reponses": [
+            "Sa capacité à faire face aux sécheresses et aux inondations",
+            "La quantité d'eau consommée",
+            "Le nombre de rivières"
+        ],
+        "bonne": 0,
+        "explication": "Un territoire résilient limite les impacts des événements climatiques sur la ressource en eau.",
+        "fiche": "resilience_hydrique_connaisseur"
+    },
+    {
+        "question": "Les Solutions fondées sur la Nature permettent notamment de :",
+        "reponses": [
+            "Favoriser l'infiltration, limiter les inondations et restaurer les écosystèmes",
+            "Remplacer toutes les stations d'épuration",
+            "Supprimer les zones humides"
+        ],
+        "bonne": 0,
+        "explication": "Les Solutions fondées sur la Nature utilisent les écosystèmes pour répondre à différents enjeux environnementaux.",
+        "fiche": "solutions_nature_eau_connaisseur"
+    },
+    {
+        "question": "Une continuité écologique permet principalement :",
+        "reponses": [
+            "La libre circulation des espèces et des sédiments",
+            "La production d'électricité",
+            "La création de nouvelles routes"
+        ],
+        "bonne": 0,
+        "explication": "Les continuités écologiques favorisent le bon fonctionnement des cours d'eau.",
+        "fiche": "continuite_ecologique_connaisseur"
+    },
+    {
+        "question": "Pourquoi est-il important de mieux connaître les usages de l'eau ?",
+        "reponses": [
+            "Pour mieux partager une ressource limitée",
+            "Pour augmenter systématiquement les prélèvements",
+            "Pour supprimer les restrictions"
+        ],
+        "bonne": 0,
+        "explication": "L'eau doit être partagée entre les usages domestiques, agricoles, industriels et les milieux naturels.",
+        "fiche": "usages_eau_connaisseur"
+    }
+]

@@ -1,0 +1,112 @@
+[
+    {
+        "question": "Le changement climatique, c’est surtout :",
+        "reponses": [
+            "Une météo un peu capricieuse",
+            "Une évolution durable du climat",
+            "Une invention des climatiseurs"
+        ],
+        "bonne": 1,
+        "explication": "Le climat correspond à des tendances longues : températures, pluies, sécheresses et événements extrêmes.",
+        "fiche": "meteo_climat"
+    },
+    {
+        "question": "Quel est le principal gaz à effet de serre émis par les activités humaines ?",
+        "reponses": [
+            "Le CO₂",
+            "L'oxygène",
+            "L'hydrogène"
+        ],
+        "bonne": 0,
+        "explication": "Le CO₂ est le principal gaz à effet de serre émis par la combustion des énergies fossiles.",
+        "fiche": "gaz_effet_serre"
+    },
+    {
+        "question": "L'effet de serre naturel permet :",
+        "reponses": [
+            "De maintenir une température compatible avec la vie",
+            "De refroidir la Terre",
+            "D'arrêter les rayons du Soleil"
+        ],
+        "bonne": 0,
+        "explication": "Sans effet de serre naturel, la Terre serait beaucoup trop froide pour la vie.",
+        "fiche": "effet_serre"
+    },
+    {
+        "question": "Quelle énergie est une énergie fossile ?",
+        "reponses": [
+            "Le pétrole",
+            "Le soleil",
+            "Le vent"
+        ],
+        "bonne": 0,
+        "explication": "Le pétrole, le gaz naturel et le charbon sont des énergies fossiles.",
+        "fiche": "energies_fossiles"
+    },
+    {
+        "question": "Le réchauffement climatique correspond à :",
+        "reponses": [
+            "Une hausse durable de la température moyenne mondiale",
+            "Une journée particulièrement chaude",
+            "Une période sans pluie"
+        ],
+        "bonne": 0,
+        "explication": "Le réchauffement climatique est une tendance observée sur plusieurs décennies.",
+        "fiche": "rechauffement_climatique"
+    },
+    {
+        "question": "Une canicule est :",
+        "reponses": [
+            "Un épisode de chaleur intense qui dure plusieurs jours",
+            "Une simple journée d'été",
+            "Un épisode de pluie abondante"
+        ],
+        "bonne": 0,
+        "explication": "Les canicules peuvent avoir des impacts importants sur la santé et les villes.",
+        "fiche": "canicules"
+    },
+    {
+        "question": "Un signe fréquent de sécheresse est :",
+        "reponses": [
+            "Un niveau d'eau plus faible dans les rivières",
+            "Une augmentation des crues",
+            "Une hausse de la biodiversité aquatique"
+        ],
+        "bonne": 0,
+        "explication": "Les sécheresses réduisent les ressources en eau disponibles.",
+        "fiche": "secheresses"
+    },
+    {
+        "question": "Une inondation peut être aggravée par :",
+        "reponses": [
+            "L'imperméabilisation des sols",
+            "Les zones humides",
+            "Les prairies naturelles"
+        ],
+        "bonne": 0,
+        "explication": "Les surfaces imperméables empêchent l'eau de s'infiltrer dans le sol.",
+        "fiche": "inondations"
+    },
+    {
+        "question": "Quel facteur favorise les feux de forêt ?",
+        "reponses": [
+            "La sécheresse",
+            "Les sols humides",
+            "Les pluies régulières"
+        ],
+        "bonne": 0,
+        "explication": "La chaleur et la sécheresse augmentent fortement le risque d'incendie.",
+        "fiche": "feux_foret"
+    },
+    {
+        "question": "Quelle action aide une ville à s'adapter au changement climatique ?",
+        "reponses": [
+            "Planter des arbres et désimperméabiliser les sols",
+            "Supprimer les espaces verts",
+            "Bétonner davantage les surfaces"
+        ],
+        "bonne": 0,
+        "explication": "La végétalisation et l'infiltration de l'eau sont des mesures d'adaptation efficaces.",
+        "fiche": "adaptation"
+    }
+]

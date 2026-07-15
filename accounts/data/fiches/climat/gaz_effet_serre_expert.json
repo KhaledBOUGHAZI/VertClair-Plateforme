@@ -1,0 +1,29 @@
+{
+    "id": "gaz_effet_serre",
+    "titre": "Gaz à effet de serre, PRG et CO₂e",
+    "niveau": "expert",
+    "illustration": "gaz_effet_serre.svg",
+    "message_image": "L’illustration permet de visualiser que plusieurs gaz différents contribuent au réchauffement climatique.",
+    "resume": "Pour comparer les gaz à effet de serre, on utilise le pouvoir de réchauffement global, souvent exprimé en équivalent CO₂.",
+    "pourquoi": "Le CO₂e permet de comparer des émissions de nature différente et de construire un bilan carbone cohérent.",
+    "causes": [
+        "Émissions de CO₂ liées à l'énergie",
+        "Émissions de CH₄ liées à l'agriculture et aux déchets",
+        "Émissions de N₂O liées aux engrais et aux sols agricoles"
+    ],
+    "consequences": [
+        "Calcul des émissions en équivalent CO₂",
+        "Hiérarchisation des postes d'émissions",
+        "Priorisation des actions de réduction"
+    ],
+    "solutions": [
+        "Réaliser un bilan carbone complet",
+        "Identifier les postes les plus émetteurs",
+        "Prioriser les actions à fort impact",
+        "Suivre les émissions dans le temps"
+    ],
+    "saviez_vous": "Le CO₂ reste très longtemps dans l'atmosphère, ce qui explique son rôle central dans les trajectoires climatiques.",
+    "territoire": "Dans VertClair, les émissions peuvent être suivies par poste afin d'aider les organisations à définir un plan de réduction.",
+    "a_retenir": "L'équivalent CO₂ permet de comparer les gaz entre eux et de piloter une stratégie carbone.",
+    "fenny": "Un bon plan climat commence par une mesure fiable des émissions."
+}

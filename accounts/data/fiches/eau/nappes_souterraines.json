@@ -1,0 +1,31 @@
+{
+    "id": "nappes_souterraines",
+    "titre": "Les nappes souterraines",
+    "niveau": "debutant",
+    "illustration": "nappes_souterraines.png",
+    "message_image": "L’illustration montre comment l'eau de pluie s'infiltre dans le sol pour alimenter les nappes souterraines, qui constituent une réserve essentielle d'eau douce.",
+    "resume": "Les nappes souterraines sont des réserves naturelles d'eau situées sous la surface du sol. Elles alimentent de nombreux captages d'eau potable et soutiennent les rivières pendant les périodes sèches.",
+    "pourquoi": "Près des deux tiers de l'eau potable distribuée en France proviennent des nappes souterraines. Leur protection est donc essentielle.",
+    "causes": [
+        "Infiltration progressive des pluies",
+        "Stockage dans les roches poreuses",
+        "Recharge principalement en automne et en hiver",
+        "Échanges permanents avec les rivières"
+    ],
+    "consequences": [
+        "Alimentation en eau potable",
+        "Maintien du débit des cours d'eau",
+        "Réserve d'eau pendant les sécheresses",
+        "Vulnérabilité face aux pollutions diffuses"
+    ],
+    "solutions": [
+        "Préserver les zones d'infiltration",
+        "Limiter l'imperméabilisation des sols",
+        "Protéger les aires de captage",
+        "Réduire les pollutions agricoles et industrielles"
+    ],
+    "saviez_vous": "Une goutte d'eau peut mettre plusieurs années, voire plusieurs décennies, avant d'atteindre une nappe souterraine.",
+    "territoire": "VertClair intégrera progressivement les données BRGM sur les nappes souterraines afin de mieux comprendre les ressources en eau de chaque territoire.",
+    "a_retenir": "Les nappes souterraines sont des réserves stratégiques qu'il faut protéger bien avant qu'elles ne soient polluées.",
+    "fenny": "Ce qui tombe aujourd'hui sous forme de pluie pourra peut-être être bu dans plusieurs années. Préserver les sols, c'est préserver notre eau potable."
+}

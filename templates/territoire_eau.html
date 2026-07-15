@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<div class="container-fluid p-4">
+
+    <h2>💧 Qualité de l’eau</h2>
+
+    <div class="mt-4 mb-4">
+
+        <input
+            type="text"
+            id="ville"
+            class="form-control"
+            placeholder="Ex : Pacy-sur-Eure"
+        >
+
+<button
+    type="button"
+    id="btn-eau"
+    class="btn btn-primary mt-3"
+    >
+    Consulter l’eau
+</button>
+
+    </div>
+
+    <div id="map" style="height:500px;"></div>
+
+    <div id="resultatAir" style="display:none;"></div>
+
+    <div id="resultat-eaux" class="mt-4">
+
+        <h3>
+            💧 Données eau —
+            <span id="eaux-commune"></span>
+        </h3>
+
+        <p>
+            Code INSEE :
+            <span id="eaux-insee"></span>
+        </p>
+
+        <div id="eau-potable"></div>
+
+        <div id="rivieres"></div>
+
+    </div>
+
+</div>
+
+
+<script src="{% static 'js/territoire/map.js' %}?v=20"></script>
+<script src="{% static 'js/territoire/eau-utils.js' %}?v=20"></script>
+<script src="{% static 'js/territoire/eau-graphiques.js' %}?v=20"></script>
+<script src="{% static 'js/territoire/eau.js' %}?v=20"></script>
+<script src="{% static 'js/territoire/main.js' %}?v=20"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    initMap();
+
+    document
+        .getElementById("btn-eau")
+        .addEventListener("click", function(){
+
+            chargerDonneesEau();
+        });
+
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    initMap();
+
+    const boutonEau = document.getElementById("btn-eau");
+
+    if (boutonEau) {
+        boutonEau.addEventListener("click", function(){
+            chargerDonneesEau();
+        });
+    }
+
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const boutonEau = document.getElementById("btn-eau");
+
+    if (boutonEau) {
+        boutonEau.addEventListener("click", function(){
+            chargerDonneesEau();
+        });
+    }
+
+});
+</script>
+
+{% endblock %}

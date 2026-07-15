@@ -1,0 +1,47 @@
+{
+    "id": "solutions_nature_connaisseur",
+    "titre": "Les Solutions fondées sur la Nature : travailler avec les écosystèmes",
+    "niveau": "connaisseur",
+    "illustration": "biodiversite.png",
+
+    "message_image": "L'illustration montre une commune ayant restauré des zones humides, planté des haies, végétalisé les espaces urbains et renaturé une rivière afin de répondre aux défis climatiques et environnementaux.",
+
+    "resume": "Les Solutions fondées sur la Nature (SFN) consistent à protéger, restaurer ou gérer durablement les écosystèmes afin de répondre à différents défis de société comme le changement climatique, les inondations, les sécheresses, la qualité de l'eau ou la perte de biodiversité. Elles s'appuient sur le fonctionnement naturel des milieux plutôt que sur des infrastructures exclusivement techniques.",
+
+    "pourquoi": "Les écosystèmes rendent naturellement de nombreux services : ils stockent le carbone, filtrent l'eau, limitent les inondations, rafraîchissent les villes et accueillent la biodiversité. Restaurer ces fonctions naturelles permet souvent d'obtenir des bénéfices environnementaux, économiques et sociaux simultanément.",
+
+    "causes": [
+        "Dégradation progressive des milieux naturels.",
+        "Artificialisation des sols.",
+        "Augmentation des risques climatiques.",
+        "Recherche de solutions durables et moins coûteuses à long terme.",
+        "Volonté de renforcer la résilience des territoires."
+    ],
+
+    "consequences": [
+        "Réduction des risques d'inondation.",
+        "Amélioration de la qualité de l'eau.",
+        "Stockage supplémentaire de carbone.",
+        "Développement de la biodiversité.",
+        "Réduction des îlots de chaleur urbains.",
+        "Amélioration du cadre de vie."
+    ],
+
+    "solutions": [
+        "Restaurer les zones humides.",
+        "Planter des haies et des arbres adaptés.",
+        "Renaturer les cours d'eau.",
+        "Développer les prairies fleuries.",
+        "Végétaliser les villes.",
+        "Limiter l'artificialisation des sols.",
+        "Préserver les continuités écologiques."
+    ],
+
+    "saviez_vous": "Une zone humide restaurée peut à la fois limiter les inondations, améliorer la qualité de l'eau, stocker du carbone et accueillir une biodiversité remarquable.",
+
+    "territoire": "VertClair identifiera progressivement les secteurs où des Solutions fondées sur la Nature pourraient être mises en œuvre en s'appuyant sur les données territoriales, les risques climatiques, la biodiversité et les recommandations du Cerema.",
+
+    "a_retenir": "Les Solutions fondées sur la Nature permettent souvent de résoudre plusieurs problèmes en même temps en utilisant les capacités naturelles des écosystèmes.",
+
+    "fenny": "Quand la nature fonctionne bien, elle travaille gratuitement pour nous. Les Solutions fondées sur la Nature consistent simplement à lui redonner les moyens de remplir ce rôle."
+}

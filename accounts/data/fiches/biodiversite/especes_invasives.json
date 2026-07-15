@@ -1,0 +1,33 @@
+{
+    "id": "especes_invasives",
+    "titre": "Les espèces exotiques envahissantes : un défi pour la biodiversité",
+    "niveau": "debutant",
+    "illustration": "biodiversite.png",
+    "message_image": "L’illustration montre comment une espèce introduite dans un nouvel environnement peut progressivement prendre la place des espèces locales et perturber l’équilibre naturel.",
+    "resume": "Une espèce exotique envahissante est une plante, un animal ou un autre organisme introduit volontairement ou accidentellement en dehors de son aire d'origine. Certaines de ces espèces se développent rapidement et perturbent les écosystèmes en concurrençant les espèces locales.",
+    "pourquoi": "Les espèces exotiques envahissantes représentent l'une des principales causes d'érosion de la biodiversité. Elles peuvent modifier les habitats naturels, déséquilibrer les chaînes alimentaires et entraîner des coûts importants pour les collectivités.",
+    "causes": [
+        "Introduction volontaire pour l'ornement ou l'aquariophilie.",
+        "Transport international de marchandises.",
+        "Déplacements involontaires liés aux activités humaines.",
+        "Absence de prédateurs naturels dans le nouveau milieu."
+    ],
+    "consequences": [
+        "Régression des espèces locales.",
+        "Modification des écosystèmes.",
+        "Diminution de la biodiversité.",
+        "Impacts économiques pour les collectivités.",
+        "Difficultés de gestion des espaces naturels."
+    ],
+    "solutions": [
+        "Surveiller l'apparition de nouvelles espèces.",
+        "Éviter l'introduction d'espèces exotiques dans la nature.",
+        "Privilégier les espèces locales dans les plantations.",
+        "Intervenir rapidement lorsqu'une espèce envahissante apparaît.",
+        "Informer le public sur les risques."
+    ],
+    "saviez_vous": "La renouée du Japon, le frelon asiatique ou encore l'écrevisse de Louisiane sont quelques exemples d'espèces exotiques envahissantes présentes en France.",
+    "territoire": "Les données environnementales utilisées par VertClair pourront, à terme, aider à mieux identifier certaines espèces envahissantes présentes sur un territoire et à sensibiliser les acteurs locaux.",
+    "a_retenir": "Toutes les espèces venues d'ailleurs ne deviennent pas envahissantes, mais certaines peuvent profondément modifier les équilibres naturels lorsqu'elles se développent sans contrôle.",
+    "fenny": "Avant de planter une espèce dans votre jardin, vérifiez qu'elle est adaptée à votre région et qu'elle ne présente pas de risque pour la biodiversité locale."
+}

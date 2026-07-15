@@ -1,0 +1,171 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Trames vertes et bleues{% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+<style>
+#map {
+    height: 650px;
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+</style>
+
+<div class="container-fluid">
+
+    <h1 class="mb-3">🗺️ Trames vertes et bleues</h1>
+
+    <p class="text-muted mb-4">
+        Recherchez une commune pour afficher les continuités écologiques à proximité.
+    </p>
+
+    <div class="card shadow-sm p-4 mb-4">
+        <label class="mb-2">Commune</label>
+
+        <input
+            type="text"
+            id="commune"
+            class="form-control mb-3"
+            placeholder="Ex : Pacy-sur-Eure"
+        >
+
+        <button class="btn btn-success" onclick="rechercherCommune()">
+            Rechercher
+        </button>
+    </div>
+
+    <div class="card shadow-sm p-4">
+
+        <h2 class="mb-3">🗺️ Carte écologique du territoire</h2>
+
+        <p class="text-muted">
+            Localisation de la commune et couches écologiques disponibles :
+            parcs naturels régionaux, ZNIEFF, Natura 2000 et cours d’eau.
+        </p>
+
+        <div id="map"></div>
+
+        <div
+            id="diagnostic"
+            class="mt-4 p-4 bg-light border rounded"
+            style="display:none;"
+        >
+
+            <h3 class="mb-3">🌍 Diagnostic écologique simplifié</h3>
+
+            <div class="mb-4">
+                <label class="fw-bold">Score écologique</label>
+
+                <div class="progress" style="height:30px;">
+                    <div
+                        id="score-bar"
+                        class="progress-bar bg-success"
+                        role="progressbar"
+                        style="width:0%;"
+                    >
+                        0 / 100
+                    </div>
+                </div>
+            </div>
+
+            <div id="diagnostic-content"></div>
+
+            <div class="mt-4">
+
+                <div class="mb-3">
+                    <h5 class="mb-3">📘 Comprendre le territoire</h5>
+
+                    <button class="btn btn-outline-success me-2 mb-2" onclick="expliquerZNIEFF()">
+                        🌿 Comprendre les ZNIEFF
+                    </button>
+
+                    <button class="btn btn-outline-primary me-2 mb-2" onclick="expliquerEau()">
+                        💧 Comprendre la trame bleue
+                    </button>
+
+                    <button class="btn btn-outline-warning me-2 mb-2" onclick="expliquerNatura()">
+                        🦋 Comprendre Natura 2000
+                    </button>
+                </div>
+
+                <div class="mb-3">
+                    <h5 class="mb-3">🎯 Agir et apprendre</h5>
+
+                    <button class="btn btn-outline-dark me-2 mb-2" onclick="expliquerActions()">
+                        ✅ Que puis-je faire ?
+                    </button>
+
+                    <button class="btn btn-outline-info me-2 mb-2" onclick="lancerQuiz()">
+                        🎯 Mini quiz
+                    </button>
+
+                    <button class="btn btn-outline-success me-2 mb-2" onclick="lancerSimulation()">
+                        📈 Comment améliorer votre score ?
+                    </button>
+
+                    <button class="btn btn-success me-2 mb-2" onclick="genererSynthese()">
+                        📄 Générer mon mini diagnostic
+                    </button>
+                </div>
+
+            </div>
+
+            <div
+                id="zone-explication"
+                class="mt-4 p-4 bg-white border rounded shadow-sm"
+                style="display:none;"
+            ></div>
+
+        </div>
+
+        <div class="mt-4 p-3 bg-light border rounded">
+            <h5>Lecture de la carte</h5>
+
+            <ul class="mb-0">
+                <li><strong>Parcs naturels régionaux :</strong> espaces naturels habités faisant l’objet d’un projet de protection et de valorisation.</li>
+                <li><strong>ZNIEFF type 1 :</strong> secteurs de grand intérêt biologique ou écologique.</li>
+                <li><strong>ZNIEFF type 2 :</strong> grands ensembles naturels riches et peu modifiés.</li>
+                <li><strong>Natura 2000 :</strong> réseau européen de sites naturels importants pour les habitats et les espèces.</li>
+                <li><strong>Cours d’eau :</strong> réseau hydrographique utile pour comprendre la trame bleue.</li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script src="{% static 'js/territoire/trames-fenny.js' %}?v=1"></script>
+<script src="{% static 'js/territoire/trames-map.js' %}?v=3"></script>
+<script src="{% static 'js/territoire/trames-diagnostic.js' %}?v=1"></script>
+<script src="{% static 'js/territoire/trames-explications.js' %}?v=1"></script>
+<script src="{% static 'js/territoire/trames-quiz.js' %}?v=1"></script>
+<script src="{% static 'js/territoire/trames-simulation.js' %}?v=1"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    initMap();
+
+    document
+        .getElementById("commune")
+        .addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                rechercherCommune();
+            }
+        });
+
+    modeIdle();
+});
+</script>
+
+{% endblock %}

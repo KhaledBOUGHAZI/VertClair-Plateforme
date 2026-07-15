@@ -1,0 +1,43 @@
+{
+    "id": "hydrogeologie",
+    "titre": "L'hydrogéologie : comprendre les aquifères et les nappes souterraines",
+    "niveau": "expert",
+    "illustration": "nappes_souterraines.png",
+    "message_image": "L’illustration montre la circulation de l'eau dans les différentes couches géologiques et les principaux types d'aquifères alimentant les nappes souterraines.",
+    "resume": "L'hydrogéologie est la discipline qui étudie les eaux souterraines, leur circulation, leur stockage et leurs interactions avec les roches, les sols et les cours d'eau. Elle permet de comprendre le fonctionnement des aquifères, d'évaluer les ressources disponibles et de prévenir les risques liés à leur exploitation.",
+    "pourquoi": "Les nappes souterraines fournissent une part importante de l'eau potable en France. Leur gestion nécessite de connaître les caractéristiques géologiques du sous-sol, la vitesse de circulation de l'eau et les mécanismes naturels de recharge.",
+    "causes": [
+        "Nature des formations géologiques.",
+        "Perméabilité des roches.",
+        "Porosité des sols.",
+        "Recharge par infiltration.",
+        "Échanges entre nappes et rivières.",
+        "Prélèvements réalisés par les différents usagers."
+    ],
+    "consequences": [
+        "Disponibilité variable de la ressource en eau.",
+        "Recharge lente de certaines nappes profondes.",
+        "Propagation différée des pollutions.",
+        "Risques de surexploitation.",
+        "Modification des débits des cours d'eau."
+    ],
+    "solutions": [
+        "Suivre régulièrement les niveaux piézométriques.",
+        "Limiter les prélèvements en période de tension.",
+        "Préserver les zones d'infiltration.",
+        "Protéger les aires d'alimentation des captages.",
+        "Adapter les usages selon l'état des nappes."
+    ],
+    "saviez_vous": "Dans certains aquifères profonds, l'eau exploitée aujourd'hui est tombée sous forme de pluie il y a plusieurs centaines, voire plusieurs milliers d'années.",
+    "territoire": "Les données du BRGM intégrées progressivement dans VertClair permettent de suivre l'évolution des nappes, leur recharge, leur vulnérabilité et certains phénomènes comme les remontées de nappes.",
+    "a_retenir": "Les nappes souterraines constituent un patrimoine stratégique qui se renouvelle parfois très lentement. Leur préservation est indispensable pour garantir l'alimentation en eau des générations futures.",
+    "fenny": "Le sous-sol est invisible, mais il stocke une grande partie de notre eau potable. Comprendre ce qui s'y passe est essentiel pour protéger durablement cette ressource.",
+    "vertclair_plus": "VertClair croise les données hydrogéologiques du BRGM avec les projections climatiques, les risques naturels et les diagnostics territoriaux afin d'évaluer la vulnérabilité des ressources en eau souterraine.",
+    "pour_aller_plus_loin": [
+        "BRGM",
+        "Banque ADES",
+        "EauFrance",
+        "Directive-cadre sur l'eau",
+        "Office français de la biodiversité"
+    ]
+}

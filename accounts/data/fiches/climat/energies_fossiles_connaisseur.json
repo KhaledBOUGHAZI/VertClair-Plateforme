@@ -1,0 +1,28 @@
+{
+    "id": "energies_fossiles",
+    "titre": "Les énergies fossiles et le carbone",
+    "niveau": "connaisseur",
+    "illustration": "energies_fossiles.png",
+    "message_image": "Le charbon, le pétrole et le gaz naturel libèrent du carbone stocké depuis des millions d'années.",
+    "resume": "Les énergies fossiles se sont formées sur des millions d'années à partir de matière organique enfouie dans le sous-sol.",
+    "pourquoi": "Elles fournissent encore une grande partie de l'énergie mondiale mais sont responsables de la majorité des émissions de CO₂.",
+    "causes": [
+        "Utilisation du pétrole dans les transports",
+        "Utilisation du gaz pour le chauffage",
+        "Utilisation du charbon pour l'électricité et l'industrie"
+    ],
+    "consequences": [
+        "Émissions importantes de CO₂",
+        "Réchauffement climatique",
+        "Dépendance énergétique"
+    ],
+    "solutions": [
+        "Réduire les consommations",
+        "Améliorer l'efficacité énergétique",
+        "Développer les énergies renouvelables"
+    ],
+    "saviez_vous": "Le charbon est généralement le combustible fossile le plus émetteur de CO₂ par unité d'énergie produite.",
+    "territoire": "Les consommations d'énergie représentent souvent une part importante du bilan carbone territorial.",
+    "a_retenir": "Les énergies fossiles concentrent du carbone ancien qui est relâché dans l'atmosphère lors de leur combustion.",
+    "fenny": "Réduire les consommations est souvent le moyen le plus rapide de diminuer les émissions."
+}

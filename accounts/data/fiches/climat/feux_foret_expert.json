@@ -1,0 +1,32 @@
+{
+    "id": "feux_foret",
+    "titre": "Gestion territoriale du risque incendie",
+    "niveau": "expert",
+    "illustration": "feux_foret.png",
+    "message_image": "L’illustration montre comment l’aménagement du territoire peut limiter la propagation des incendies.",
+    "resume": "La gestion du risque incendie combine la prévention, l’aménagement du territoire, la gestion de la végétation et l’organisation des secours.",
+    "pourquoi": "Les feux de grande ampleur peuvent affecter les habitants, les infrastructures, les activités économiques et les écosystèmes.",
+    "causes": [
+        "Hausse des températures",
+        "Allongement des périodes de sécheresse",
+        "Accumulation de biomasse combustible",
+        "Pression humaine"
+    ],
+    "consequences": [
+        "Pertes écologiques",
+        "Impacts sanitaires",
+        "Dégradation des infrastructures",
+        "Coûts économiques élevés"
+    ],
+    "solutions": [
+        "Cartographier les secteurs exposés",
+        "Mettre en œuvre les obligations de débroussaillement",
+        "Adapter les essences végétales",
+        "Préparer les plans d’intervention",
+        "Sensibiliser les habitants"
+    ],
+    "saviez_vous": "Le vent est souvent le principal facteur expliquant la propagation rapide d’un incendie.",
+    "territoire": "Les stratégies d’adaptation doivent intégrer le risque feu de forêt dans les documents d’urbanisme et les plans climat.",
+    "a_retenir": "La vulnérabilité dépend autant de l’exposition au feu que de la capacité du territoire à y faire face.",
+    "fenny": "Un territoire résilient prépare le feu avant qu’il ne survienne."
+}

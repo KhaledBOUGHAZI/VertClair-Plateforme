@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+
+<style>
+.dashboard-card{
+    transition:0.25s;
+    border-radius:16px;
+    background:white;
+    min-height:160px;
+    border:1px solid #f1f5f9;
+}
+
+.dashboard-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.06);
+}
+
+.dashboard-card h3{
+    font-size:20px;
+    font-weight:600;
+    color:#1f2937;
+    line-height:1.4;
+    margin-bottom:12px;
+}
+
+.dashboard-card p{
+    font-size:14px;
+    color:#6b7280;
+    line-height:1.5;
+    margin-bottom:0;
+}
+
+@media (max-width: 768px) {
+    h2{
+        font-size:22px;
+    }
+
+    .dashboard-card{
+        min-height:auto;
+        padding:18px !important;
+    }
+
+    .dashboard-card h3{
+        font-size:18px;
+    }
+
+    .dashboard-card p{
+        font-size:14px;
+    }
+
+    .row{
+        margin-top:10px !important;
+    }
+}
+</style>
+
+<h2 class="mb-1">
+    Bienvenue {{ user.username }} 👋
+</h2>
+
+<p class="text-muted mb-4">
+    Tableau de bord de votre application
+</p>
+
+<div class="row g-4 mt-4">
+
+    <div class="col-12 col-md-6">
+        <a href="{% url 'formations' %}" class="text-decoration-none">
+            <div class="card border-0 p-3 h-100 dashboard-card">
+                <h3>📘 Formations écologies / Quizz</h3>
+                <p>Accédez aux supports pédagogiques, animations et quizz interactifs.</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-12 col-md-6">
+        <a href="{% url 'carbone' %}" class="text-decoration-none">
+            <div class="card border-0 p-3 h-100 dashboard-card">
+                <h3>🌍 Calculez vos impacts carbone</h3>
+                <p>Analysez vos émissions de CO₂ et suivez vos indicateurs.</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-12 col-md-6">
+        <a href="{% url 'territoire' %}" class="text-decoration-none">
+            <div class="card border-0 p-3 h-100 dashboard-card">
+                <h3>🗺️ Données écologies / climat de votre territoire</h3>
+                <p>Consultez les données locales : qualité de l’air, climat, environnement et territoire.</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-12 col-md-6">
+        <a href="{% url 'transition' %}" class="text-decoration-none">
+            <div class="card border-0 p-3 h-100 dashboard-card">
+                <h3>♻️ Plan de transition écologique</h3>
+                <p>Construisez et pilotez vos actions de transition écologique.</p>
+            </div>
+        </a>
+    </div>
+
+</div>
+
+{% endblock %}

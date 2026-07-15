@@ -1,0 +1,51 @@
+{
+    "id": "strategie_biodiversite_expert",
+    "titre": "Construire une stratégie territoriale biodiversité",
+    "niveau": "expert",
+    "illustration": "biodiversite.png",
+
+    "message_image": "L'illustration représente une collectivité élaborant une stratégie biodiversité à partir d'un diagnostic territorial, d'indicateurs, de cartes écologiques et d'un plan d'actions associant élus, techniciens, citoyens et partenaires.",
+
+    "resume": "Une stratégie territoriale biodiversité consiste à définir une vision à long terme afin de préserver, restaurer et développer la biodiversité sur un territoire. Elle s'appuie sur un diagnostic précis, des objectifs mesurables, des indicateurs de suivi et un programme d'actions impliquant l'ensemble des acteurs locaux.",
+
+    "pourquoi": "La biodiversité est aujourd'hui confrontée à de multiples pressions : artificialisation des sols, changement climatique, pollution, fragmentation des habitats ou encore espèces exotiques envahissantes. Une stratégie territoriale permet de coordonner les actions, de hiérarchiser les priorités et d'optimiser les investissements pour obtenir des résultats durables.",
+
+    "causes": [
+        "Artificialisation des sols.",
+        "Changement climatique.",
+        "Fragmentation des habitats.",
+        "Pollutions.",
+        "Surexploitation des ressources naturelles.",
+        "Développement d'espèces exotiques envahissantes."
+    ],
+
+    "consequences": [
+        "Régression des habitats naturels.",
+        "Diminution des populations d'espèces.",
+        "Perte des services écosystémiques.",
+        "Fragilisation de la ressource en eau.",
+        "Augmentation des risques climatiques.",
+        "Dégradation du cadre de vie."
+    ],
+
+    "solutions": [
+        "Réaliser un diagnostic écologique du territoire.",
+        "Identifier les continuités écologiques.",
+        "Préserver les espaces naturels remarquables.",
+        "Développer les Solutions fondées sur la Nature.",
+        "Limiter l'artificialisation des sols.",
+        "Restaurer les milieux dégradés.",
+        "Choisir des essences végétales adaptées.",
+        "Mettre en place des indicateurs de suivi.",
+        "Associer les habitants, entreprises et associations aux projets.",
+        "Évaluer régulièrement les résultats obtenus."
+    ],
+
+    "saviez_vous": "Les stratégies biodiversité les plus efficaces sont celles qui sont intégrées aux autres politiques publiques : urbanisme, climat, eau, agriculture, mobilité et santé. La biodiversité ne constitue pas une politique isolée mais un fil conducteur du développement durable.",
+
+    "territoire": "VertClair rassemble automatiquement de nombreuses données publiques (ZNIEFF, Natura 2000, Trame verte et bleue, artificialisation des sols, climat, eau, risques naturels, SESAME, etc.) afin d'aider les collectivités et les entreprises à construire une stratégie biodiversité adaptée à leur territoire et à alimenter leur Plan de transition écologique.",
+
+    "a_retenir": "Une stratégie biodiversité efficace repose sur la connaissance du territoire, des objectifs clairs, des indicateurs mesurables et des actions concrètes suivies dans le temps.",
+
+    "fenny": "Protéger la biodiversité ne consiste pas à multiplier les actions au hasard. Les meilleurs résultats sont obtenus lorsque toutes les politiques du territoire avancent dans la même direction."
+}

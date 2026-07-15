@@ -1,0 +1,48 @@
+{
+    "id": "infrastructures_agroecologiques_expert",
+    "titre": "Les infrastructures agroécologiques : réconcilier agriculture et biodiversité",
+    "niveau": "expert",
+    "illustration": "biodiversite.png",
+
+    "message_image": "L'illustration montre un paysage agricole composé de haies, bandes enherbées, mares, bosquets et prairies permanentes qui favorisent à la fois la production agricole, la biodiversité et la protection des sols.",
+
+    "resume": "Les infrastructures agroécologiques (IAE) sont des éléments semi-naturels présents dans les paysages agricoles. Elles comprennent notamment les haies, les bandes enherbées, les mares, les bosquets, les arbres isolés, les murets, les prairies permanentes ou encore les ripisylves. Elles jouent un rôle majeur dans le fonctionnement des écosystèmes agricoles.",
+
+    "pourquoi": "L'agriculture dépend fortement des services rendus par la nature : pollinisation, fertilité des sols, régulation des ravageurs, infiltration de l'eau ou encore limitation de l'érosion. Les infrastructures agroécologiques permettent de renforcer ces services tout en améliorant la résilience des exploitations face au changement climatique.",
+
+    "causes": [
+        "Simplification des paysages agricoles.",
+        "Arrachage des haies.",
+        "Agrandissement des parcelles.",
+        "Artificialisation des sols.",
+        "Régression des zones humides.",
+        "Intensification de certaines pratiques agricoles."
+    ],
+
+    "consequences": [
+        "Diminution des pollinisateurs.",
+        "Augmentation de l'érosion des sols.",
+        "Réduction de la biodiversité.",
+        "Ruissellement plus important.",
+        "Moindre stockage de carbone.",
+        "Fragilisation des productions agricoles."
+    ],
+
+    "solutions": [
+        "Planter des haies bocagères.",
+        "Créer des bandes enherbées.",
+        "Préserver les mares et les zones humides.",
+        "Maintenir les prairies permanentes.",
+        "Développer l'agroforesterie.",
+        "Diversifier les paysages agricoles.",
+        "Préserver les ripisylves le long des cours d'eau."
+    ],
+
+    "saviez_vous": "Une haie bocagère peut accueillir plusieurs centaines d'espèces animales et végétales tout en limitant l'érosion, en stockant du carbone, en protégeant les cultures du vent et en améliorant l'infiltration de l'eau.",
+
+    "territoire": "VertClair pourra identifier les secteurs où le développement d'infrastructures agroécologiques apporterait le plus de bénéfices en croisant les données agricoles, climatiques, hydrologiques et écologiques du territoire.",
+
+    "a_retenir": "Les infrastructures agroécologiques ne sont pas des surfaces perdues pour l'agriculture. Elles constituent au contraire un investissement durable qui améliore la résilience des exploitations et les services rendus par les écosystèmes.",
+
+    "fenny": "Une haie n'est pas une simple limite entre deux champs : c'est un véritable corridor écologique, un refuge pour la biodiversité, une protection contre l'érosion et un allié précieux pour l'agriculture."
+}

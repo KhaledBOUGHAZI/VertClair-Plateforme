@@ -1,0 +1,31 @@
+{
+    "id": "inondations",
+    "titre": "Comprendre les inondations",
+    "niveau": "connaisseur",
+    "illustration": "inondations.png",
+    "message_image": "L’illustration montre qu’une inondation peut provenir d’un débordement de rivière ou d’un ruissellement intense.",
+    "resume": "Les inondations peuvent avoir plusieurs origines : débordement de cours d’eau, ruissellement, remontée de nappes ou submersion marine.",
+    "pourquoi": "Les inondations constituent l’un des risques naturels les plus fréquents et les plus coûteux en France.",
+    "causes": [
+        "Pluies intenses",
+        "Débordement de cours d’eau",
+        "Imperméabilisation des sols",
+        "Urbanisation des zones exposées"
+    ],
+    "consequences": [
+        "Dégâts aux habitations",
+        "Coupures de routes",
+        "Perturbation des activités économiques",
+        "Pollutions accidentelles"
+    ],
+    "solutions": [
+        "Préserver les zones d’expansion des crues",
+        "Limiter l’imperméabilisation",
+        "Développer les solutions fondées sur la nature",
+        "Informer les habitants"
+    ],
+    "saviez_vous": "Une prairie inondable peut stocker temporairement de grandes quantités d’eau et réduire les pics de crue.",
+    "territoire": "Les cartes PPR Inondation et Géorisques permettent d’identifier les secteurs exposés.",
+    "a_retenir": "L’eau a besoin d’espace : plus un territoire est artificialisé, plus le risque d’inondation augmente.",
+    "fenny": "Les meilleures protections contre les inondations sont souvent celles qui redonnent de la place à l’eau."
+}

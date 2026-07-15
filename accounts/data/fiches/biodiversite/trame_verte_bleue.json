@@ -1,0 +1,32 @@
+{
+    "id": "trame_verte_bleue",
+    "titre": "La Trame verte et bleue : relier les espaces naturels",
+    "niveau": "debutant",
+    "illustration": "biodiversite.png",
+    "message_image": "L’illustration montre des corridors écologiques reliant des forêts, des prairies, des rivières et des zones humides afin de permettre aux espèces de circuler librement.",
+    "resume": "La Trame verte et bleue est un réseau de continuités écologiques qui relie les principaux espaces naturels. Elle permet aux animaux et aux plantes de se déplacer, de se nourrir, de se reproduire et de s'adapter aux évolutions de leur environnement. La trame verte concerne principalement les milieux terrestres, tandis que la trame bleue relie les milieux aquatiques comme les rivières, les zones humides et les mares.",
+    "pourquoi": "Lorsque les habitats naturels sont isolés par des routes, des villes ou des zones industrielles, de nombreuses espèces ne peuvent plus circuler. Les populations deviennent alors plus fragiles et certaines peuvent disparaître localement. Les continuités écologiques permettent de maintenir ces échanges indispensables.",
+    "causes": [
+        "Urbanisation des territoires.",
+        "Construction d'infrastructures routières.",
+        "Artificialisation des sols.",
+        "Fragmentation des milieux naturels."
+    ],
+    "consequences": [
+        "Isolement des populations animales.",
+        "Diminution de la diversité génétique.",
+        "Déplacement plus difficile des espèces.",
+        "Fragilisation des écosystèmes."
+    ],
+    "solutions": [
+        "Préserver les haies et les forêts.",
+        "Restaurer les corridors écologiques.",
+        "Créer des passages à faune.",
+        "Protéger les cours d'eau et les zones humides.",
+        "Limiter la fragmentation des espaces naturels."
+    ],
+    "saviez_vous": "Certaines espèces parcourent plusieurs kilomètres pour trouver de la nourriture, un partenaire ou un nouvel habitat. Sans continuités écologiques, ces déplacements deviennent parfois impossibles.",
+    "territoire": "Dans VertClair, vous pouvez visualiser les principales composantes de la Trame verte et bleue ainsi que plusieurs espaces naturels protégés présents sur votre territoire.",
+    "a_retenir": "La Trame verte et bleue permet aux espèces de circuler librement entre les différents milieux naturels et contribue à préserver durablement la biodiversité.",
+    "fenny": "Une forêt isolée est comme une île. Plus les espaces naturels sont reliés entre eux, plus la biodiversité est capable de s'adapter aux changements."
+}

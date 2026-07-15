@@ -1,0 +1,42 @@
+{
+    "id": "natura2000_connaisseur",
+    "titre": "Natura 2000 : préserver la biodiversité à l'échelle européenne",
+    "niveau": "connaisseur",
+    "illustration": "biodiversite.png",
+
+    "message_image": "L'illustration représente un site Natura 2000 où les activités humaines coexistent avec la préservation des habitats naturels et des espèces remarquables.",
+
+    "resume": "Natura 2000 est un réseau européen de sites naturels destiné à préserver les habitats et les espèces les plus remarquables tout en permettant le maintien d'activités humaines compatibles avec leur conservation. Il constitue l'un des principaux outils de protection de la biodiversité en Europe.",
+
+    "pourquoi": "Contrairement à certaines idées reçues, Natura 2000 n'interdit pas les activités humaines. L'objectif est de trouver un équilibre entre les activités économiques, agricoles, forestières, touristiques et la préservation durable de la biodiversité.",
+
+    "causes": [
+        "Présence d'habitats naturels remarquables.",
+        "Présence d'espèces animales ou végétales protégées au niveau européen.",
+        "Importance écologique du site.",
+        "Engagement des États membres de l'Union européenne."
+    ],
+
+    "consequences": [
+        "Préservation durable des habitats naturels.",
+        "Maintien des espèces menacées.",
+        "Meilleure gestion écologique des territoires.",
+        "Valorisation du patrimoine naturel."
+    ],
+
+    "solutions": [
+        "Mettre en œuvre des plans de gestion adaptés.",
+        "Associer les acteurs locaux aux décisions.",
+        "Maintenir les pratiques agricoles favorables à la biodiversité.",
+        "Limiter les projets ayant des impacts importants.",
+        "Sensibiliser les habitants et les visiteurs."
+    ],
+
+    "saviez_vous": "Le réseau Natura 2000 couvre plus de 18 % du territoire terrestre de l'Union européenne, ce qui en fait le plus vaste réseau coordonné d'espaces protégés au monde.",
+
+    "territoire": "VertClair permet d'identifier les sites Natura 2000 présents sur votre territoire afin d'intégrer leurs enjeux dans les projets d'aménagement, de végétalisation ou de développement local.",
+
+    "a_retenir": "Natura 2000 cherche à concilier protection de la biodiversité et activités humaines grâce à une gestion adaptée des territoires.",
+
+    "fenny": "Protéger la biodiversité ne signifie pas arrêter toute activité humaine. Natura 2000 montre qu'il est possible de préserver les milieux naturels tout en continuant à vivre, produire et aménager les territoires de manière responsable."
+}

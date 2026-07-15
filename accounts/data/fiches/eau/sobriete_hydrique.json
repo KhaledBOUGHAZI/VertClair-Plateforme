@@ -1,0 +1,33 @@
+{
+    "id": "sobriete_hydrique",
+    "titre": "La sobriété hydrique",
+    "niveau": "debutant",
+    "illustration": "sobriete_hydrique.png",
+    "message_image": "L’illustration montre qu’une gestion raisonnée de l’eau permet de préserver durablement cette ressource indispensable à la vie.",
+    "resume": "La sobriété hydrique consiste à utiliser l’eau de manière plus efficace afin de préserver les ressources naturelles tout en répondant aux besoins des habitants, des entreprises et des activités agricoles.",
+    "pourquoi": "Face au changement climatique et aux sécheresses plus fréquentes, économiser l’eau devient un enjeu majeur pour tous les territoires.",
+    "causes": [
+        "Augmentation des besoins en eau",
+        "Sécheresses plus fréquentes",
+        "Croissance de la population",
+        "Changement climatique",
+        "Fuites dans les réseaux"
+    ],
+    "consequences": [
+        "Restrictions d'usage de l'eau",
+        "Tensions entre les différents usages",
+        "Baisse des niveaux des nappes",
+        "Fragilisation des milieux aquatiques"
+    ],
+    "solutions": [
+        "Réparer les fuites",
+        "Installer des équipements économes",
+        "Récupérer l'eau de pluie lorsque cela est possible",
+        "Adapter les espaces verts",
+        "Sensibiliser les citoyens aux économies d'eau"
+    ],
+    "saviez_vous": "Une fuite d'un simple robinet peut représenter plusieurs dizaines de litres d'eau perdus chaque jour.",
+    "territoire": "VertClair permet d'identifier les enjeux liés à la ressource en eau afin d'accompagner les collectivités et les entreprises dans leurs actions de sobriété.",
+    "a_retenir": "Chaque litre économisé aujourd'hui contribue à préserver les ressources en eau pour demain.",
+    "fenny": "La meilleure eau est celle que nous n'avons pas besoin de prélever inutilement dans le milieu naturel."
+}

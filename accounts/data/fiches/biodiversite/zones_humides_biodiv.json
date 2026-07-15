@@ -1,0 +1,34 @@
+{
+    "id": "zones_humides_biodiv",
+    "titre": "Les zones humides : des milieux naturels indispensables",
+    "niveau": "debutant",
+    "illustration": "biodiversite.png",
+    "message_image": "L’illustration montre une zone humide où l’eau, la végétation et les animaux forment un écosystème particulièrement riche en biodiversité.",
+    "resume": "Les zones humides sont des espaces où l'eau est présente de façon permanente ou temporaire. Elles comprennent notamment les marais, les tourbières, les mares, les prairies humides et les berges de certains cours d'eau. Ces milieux accueillent une biodiversité exceptionnelle et jouent un rôle essentiel dans le fonctionnement naturel des territoires.",
+    "pourquoi": "Les zones humides rendent de nombreux services : elles stockent l'eau lors des fortes pluies, limitent les inondations, soutiennent les cours d'eau pendant les périodes sèches, filtrent naturellement certains polluants et abritent de nombreuses espèces animales et végétales.",
+    "causes": [
+        "Présence naturelle de l'eau.",
+        "Débordement des rivières.",
+        "Remontée des nappes souterraines.",
+        "Dépressions naturelles du terrain."
+    ],
+    "consequences": [
+        "Accueil d'une biodiversité remarquable.",
+        "Stockage temporaire de grandes quantités d'eau.",
+        "Amélioration de la qualité de l'eau.",
+        "Régulation naturelle des crues.",
+        "Soutien des débits en période sèche."
+    ],
+    "solutions": [
+        "Préserver les zones humides existantes.",
+        "Éviter leur remblaiement.",
+        "Restaurer les milieux dégradés.",
+        "Limiter les pollutions.",
+        "Maintenir une végétation adaptée.",
+        "Sensibiliser le public à leur importance."
+    ],
+    "saviez_vous": "Bien qu'elles couvrent une faible partie du territoire, les zones humides figurent parmi les milieux les plus riches en biodiversité.",
+    "territoire": "VertClair permet de localiser plusieurs zones humides de votre territoire grâce aux données publiques et d'identifier leur rôle dans la gestion de l'eau et la préservation de la biodiversité.",
+    "a_retenir": "Les zones humides sont de véritables éponges naturelles qui protègent à la fois la biodiversité, les ressources en eau et les territoires contre certains risques naturels.",
+    "fenny": "Une mare, un marais ou une prairie humide peuvent sembler discrets, mais ils abritent une vie incroyable et rendent de nombreux services à la nature comme à l'Homme."
+}

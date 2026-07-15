@@ -1,0 +1,34 @@
+{
+    "id": "continuite_ecologique",
+    "titre": "La continuité écologique des cours d'eau",
+    "niveau": "connaisseur",
+    "illustration": "rivieres.png",
+    "message_image": "L’illustration montre qu’une rivière fonctionne comme un corridor écologique où l’eau, les sédiments et les espèces doivent pouvoir circuler librement.",
+    "resume": "Une rivière en bon état permet la circulation des poissons, des invertébrés, des sédiments et des nutriments. Les barrages, seuils ou autres ouvrages peuvent interrompre cette continuité et perturber durablement le fonctionnement naturel des cours d'eau.",
+    "pourquoi": "La continuité écologique est indispensable au maintien de la biodiversité aquatique. De nombreuses espèces migratrices ont besoin de remonter ou descendre les cours d'eau pour accomplir leur cycle de vie.",
+    "causes": [
+        "Construction de barrages et de seuils.",
+        "Artificialisation des berges.",
+        "Canalisation des rivières.",
+        "Fragmentation des habitats aquatiques.",
+        "Modification du transport naturel des sédiments."
+    ],
+    "consequences": [
+        "Difficulté de migration des poissons.",
+        "Régression de certaines espèces.",
+        "Accumulation de sédiments.",
+        "Dégradation des habitats naturels.",
+        "Diminution de la biodiversité aquatique."
+    ],
+    "solutions": [
+        "Installer des passes à poissons.",
+        "Effacer certains ouvrages devenus inutiles.",
+        "Restaurer les berges naturelles.",
+        "Reconnecter les annexes hydrauliques.",
+        "Préserver les continuités écologiques."
+    ],
+    "saviez_vous": "Certaines espèces de poissons migrateurs parcourent plusieurs centaines de kilomètres entre la mer et les rivières pour se reproduire.",
+    "territoire": "Les données de VertClair permettent d'identifier les cours d'eau, les milieux naturels et, à terme, les principaux ouvrages pouvant influencer la continuité écologique.",
+    "a_retenir": "Une rivière vivante est une rivière où l'eau, les sédiments et les espèces peuvent circuler naturellement.",
+    "fenny": "Une rivière ne se limite pas à un simple écoulement d'eau : c'est un véritable réseau vivant reliant les différents milieux naturels."
+}

@@ -1,0 +1,29 @@
+{
+    "id": "effet_serre",
+    "titre": "Le renforcement de l'effet de serre",
+    "niveau": "connaisseur",
+    "illustration": "effet_serre.png",
+    "message_image": "Une partie de la chaleur repart vers l'espace tandis qu'une autre est retenue par les gaz à effet de serre.",
+    "resume": "L'effet de serre naturel est indispensable à la vie. Le problème actuel provient de son renforcement par les activités humaines.",
+    "pourquoi": "Comprendre ce mécanisme permet de mieux saisir l'origine physique du réchauffement climatique.",
+    "causes": [
+        "Augmentation du CO₂",
+        "Augmentation du méthane",
+        "Déforestation",
+        "Combustion des énergies fossiles"
+    ],
+    "consequences": [
+        "Accumulation de chaleur",
+        "Hausse des températures",
+        "Modification du climat"
+    ],
+    "solutions": [
+        "Réduire les émissions",
+        "Préserver les forêts",
+        "Développer les énergies bas carbone"
+    ],
+    "saviez_vous": "Sans effet de serre naturel, la température moyenne de la Terre serait proche de -18°C.",
+    "territoire": "Les émissions produites localement contribuent au phénomène global.",
+    "a_retenir": "L'effet de serre est naturel ; c'est son renforcement qui pose problème.",
+    "fenny": "Le Soleil fournit l'énergie, les gaz à effet de serre en modifient l'équilibre."
+}

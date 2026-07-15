@@ -1,0 +1,198 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Déchets et recyclage{% endblock %}
+
+{% block content %}
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css"
+/>
+
+
+<h1>♻️ Économie circulaire et déchets</h1>
+
+<p class="text-muted">
+    Analyse de la gestion locale des déchets, du recyclage,
+    du réemploi et des équipements disponibles sur le territoire.
+</p>
+
+<div class="card shadow-sm border-0 mb-4">
+    <div class="card-body">
+
+        <h4>🔎 Rechercher un territoire</h4>
+
+        <div class="row g-2">
+
+            <div class="col-md-6">
+                <label class="form-label">
+                    Commune à analyser
+                </label>
+
+                <input
+                    id="villeDechets"
+                    class="form-control"
+                    placeholder="Ex : Rouen, Évreux, Pacy-sur-Eure"
+                >
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">
+                    Adresse de départ facultative
+                </label>
+
+                <input
+                    id="adresseDechets"
+                    class="form-control"
+                    placeholder="Ex : 12 rue de Paris, Rouen"
+                >
+            </div>
+
+            <div class="col-12 mt-2">
+                <small class="text-muted">
+                    La commune sert au diagnostic territorial.
+                    Si une adresse est renseignée, les distances seront calculées
+                    depuis cette adresse pour une recherche de proximité.
+                </small>
+            </div>
+
+            <div class="col-12 mt-3">
+                <button
+                    class="btn btn-success"
+                    onclick="chargerDonneesDechets()"
+                >
+                    Analyser
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div id="resultatDechets"></div>
+<div id="diagnosticDechets"></div>
+<div id="indiceDechets"></div>
+<div id="explicationIndiceDechets"></div>
+<div id="actionsDechets"></div>
+<div id="statistiquesEconomieCirculaire"></div>
+<div id="boutonsDechets" class="mb-4" style="display:none;">
+
+    <p class="text-muted">
+        L’indicateur mesure la performance actuelle du territoire.
+        Les actions proposées sont reliées aux critères de calcul :
+        les engager permet d’améliorer progressivement le score.
+    </p>
+
+    <button
+        class="btn btn-outline-success me-2"
+        onclick="afficherBlocActeurs()"
+    >
+        ♻️ Voir les acteurs et équipements
+    </button>
+
+    <button
+        class="btn btn-outline-primary me-2"
+        onclick="afficherBlocPerformance()"
+    >
+        📈 Voir l’indicateur de performance
+    </button>
+
+    <button
+        class="btn btn-outline-warning"
+        onclick="afficherBlocActions()"
+    >
+        🎯 Voir les actions pour améliorer le score
+    </button>
+
+</div>
+<div id="economieCirculaire"></div>
+<div class="card shadow-sm border-0 mb-4">
+    <div class="card-body">
+
+        <h4>🗺️ Carte de l’économie circulaire</h4>
+
+        <div class="mb-3">
+
+            <label class="me-3">
+                <input type="checkbox"
+                       id="filtreDecheteries"
+                       checked>
+                Déchèteries
+            </label>
+
+            <label class="me-3">
+                <input type="checkbox"
+                       id="filtreCollecte"
+                       checked>
+                Collecte
+            </label>
+
+            <label class="me-3">
+                <input type="checkbox"
+                       id="filtreReparation"
+                       checked>
+                Réparation
+            </label>
+
+            <label class="me-3">
+                <input type="checkbox"
+                       id="filtreReemploi"
+                       checked>
+                Réemploi
+            </label>
+
+            <label class="me-3">
+                <input type="checkbox"
+                       id="filtrePartage"
+                       checked>
+                Partage
+            </label>
+
+            <label class="me-3">
+                <input type="checkbox"
+                       id="filtreAchatRevente"
+                       checked>
+                Achat / revente
+            </label>
+
+        </div>
+
+        <div id="mapDechets" style="height:420px;"></div>
+
+    </div>
+</div>
+
+<div class="card shadow-sm border-0 mb-4">
+    <div class="card-body">
+
+        <h4>ℹ️ À propos des données</h4>
+
+        <p>
+            Les informations affichées proviennent de bases de données
+            nationales (ADEME, SINOE, collectivités et plateformes
+            d’économie circulaire).
+        </p>
+
+        <p class="mb-0">
+            Elles permettent d’identifier les équipements et acteurs
+            contribuant à la réduction, au réemploi, à la réparation,
+            au recyclage et à la valorisation des déchets.
+        </p>
+
+    </div>
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="{% static 'js/territoire/dechets-diagnostic.js' %}?v=1"></script>
+<script src="{% static 'js/territoire/dechets-indice.js' %}?v=2"></script>
+<script src="{% static 'js/territoire/dechets-explication.js' %}?v=5"></script>
+<script src="{% static 'js/territoire/dechets-actions.js' %}?v=2"></script>
+<script src="{% static 'js/transition/transition-stockage.js' %}?v=1"></script>
+<script src="{% static 'js/territoire/dechets-carte.js' %}?v=2"></script>
+<script src="{% static 'js/territoire/dechets-economie-circulaire.js' %}?v=5"></script>
+<script src="{% static 'js/territoire/dechets-navigation.js' %}?v=1"></script>
+<script src="{% static 'js/territoire/dechets-main.js' %}?v=26"></script>
+
+{% endblock %}

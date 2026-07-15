@@ -1,0 +1,44 @@
+{
+    "id": "genie_ecologique",
+    "titre": "Le génie écologique : restaurer les écosystèmes pour mieux gérer l'eau",
+    "niveau": "expert",
+    "illustration": "zones_humides.png",
+    "message_image": "L’illustration montre comment les écosystèmes restaurés permettent de mieux infiltrer, stocker et purifier l’eau tout en renforçant la biodiversité.",
+    "resume": "Le génie écologique regroupe l'ensemble des techniques qui utilisent les processus naturels pour restaurer les milieux dégradés et améliorer les services qu'ils rendent. Contrairement aux ouvrages purement techniques, ces solutions s'appuient sur les capacités des écosystèmes à réguler naturellement l'eau, limiter les inondations, soutenir les débits des rivières et préserver la biodiversité.",
+    "pourquoi": "Face au changement climatique, les infrastructures naturelles offrent souvent une réponse plus durable, plus résiliente et moins coûteuse sur le long terme que certaines infrastructures artificielles. Elles participent également à l'amélioration du cadre de vie des habitants.",
+    "causes": [
+        "Artificialisation des sols.",
+        "Destruction des zones humides.",
+        "Rectification des cours d'eau.",
+        "Fragmentation des habitats naturels.",
+        "Disparition des haies et des ripisylves."
+    ],
+    "consequences": [
+        "Augmentation du ruissellement.",
+        "Inondations plus fréquentes.",
+        "Recharge plus faible des nappes.",
+        "Dégradation de la qualité des eaux.",
+        "Perte de biodiversité."
+    ],
+    "solutions": [
+        "Restaurer les zones humides.",
+        "Renaturer les cours d'eau.",
+        "Replanter des haies bocagères.",
+        "Développer les ripisylves.",
+        "Créer des noues végétalisées.",
+        "Désimperméabiliser les espaces urbains.",
+        "Préserver les prairies naturelles."
+    ],
+    "saviez_vous": "Une seule zone humide peut stocker plusieurs milliers de mètres cubes d'eau et réduire significativement les risques d'inondation en aval.",
+    "territoire": "Les cartes de VertClair permettent d'identifier les espaces naturels, les zones humides, les risques d'inondation et les secteurs où le génie écologique peut renforcer la résilience du territoire.",
+    "a_retenir": "Les écosystèmes constituent de véritables infrastructures naturelles capables de rendre gratuitement de nombreux services liés à l'eau.",
+    "fenny": "Protéger la nature, c'est aussi protéger nos ressources en eau. Les meilleures solutions sont souvent celles qui travaillent avec les écosystèmes plutôt que contre eux.",
+    "vertclair_plus": "Les actions de génie écologique proposées par VertClair peuvent être intégrées directement dans le Plan de Transition afin d'améliorer simultanément l'eau, le climat, la biodiversité et la qualité de vie.",
+    "pour_aller_plus_loin": [
+        "Office français de la biodiversité",
+        "Cerema",
+        "UICN - Solutions fondées sur la nature",
+        "Agences de l'eau",
+        "Centre de ressources Génie écologique"
+    ]
+}

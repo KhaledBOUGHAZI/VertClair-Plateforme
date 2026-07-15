@@ -1,0 +1,33 @@
+{
+    "id": "infiltration_ruissellement",
+    "titre": "Infiltration et ruissellement",
+    "niveau": "debutant",
+    "illustration": "infiltration_ruissellement.png",
+    "message_image": "L’illustration montre que l’eau de pluie peut soit s’infiltrer dans le sol, soit ruisseler en surface selon la nature des terrains.",
+    "resume": "Après une pluie, une partie de l'eau pénètre dans le sol tandis qu'une autre s'écoule en surface. L'équilibre entre infiltration et ruissellement dépend notamment des sols et de l'urbanisation.",
+    "pourquoi": "Favoriser l'infiltration permet de limiter les inondations, de recharger les nappes souterraines et de préserver la ressource en eau.",
+    "causes": [
+        "Nature du sol",
+        "Pente du terrain",
+        "Végétation",
+        "Imperméabilisation des surfaces",
+        "Intensité des précipitations"
+    ],
+    "consequences": [
+        "Recharge des nappes souterraines",
+        "Ruissellement vers les rivières",
+        "Érosion des sols",
+        "Inondations en cas de fortes pluies"
+    ],
+    "solutions": [
+        "Préserver les sols naturels",
+        "Créer des noues paysagères",
+        "Planter des arbres",
+        "Désimperméabiliser les espaces urbains",
+        "Développer les solutions fondées sur la nature"
+    ],
+    "saviez_vous": "Un parking imperméable peut générer plusieurs dizaines de fois plus de ruissellement qu'une prairie.",
+    "territoire": "Les cartes d'inondation et de remontée de nappes disponibles dans VertClair permettent de mieux comprendre le comportement de l'eau sur votre territoire.",
+    "a_retenir": "Chaque mètre carré rendu perméable contribue à mieux gérer l'eau de pluie.",
+    "fenny": "Le meilleur bassin de rétention est souvent… un sol vivant."
+}

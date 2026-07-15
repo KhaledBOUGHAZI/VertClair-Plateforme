@@ -1,0 +1,33 @@
+{
+    "id": "adaptation",
+    "titre": "S'adapter au changement climatique",
+    "niveau": "connaisseur",
+    "illustration": "adaptation.png",
+    "message_image": "L’illustration montre plusieurs aménagements permettant de réduire les impacts du changement climatique sur le territoire.",
+    "resume": "L’adaptation consiste à préparer les territoires aux conséquences déjà présentes ou futures du changement climatique.",
+    "pourquoi": "Même en réduisant fortement les émissions, une partie du changement climatique est désormais inévitable.",
+    "causes": [
+        "Hausse des températures",
+        "Canicules plus fréquentes",
+        "Sécheresses",
+        "Inondations",
+        "Modification des écosystèmes"
+    ],
+    "consequences": [
+        "Évolution des risques naturels",
+        "Pression sur les ressources en eau",
+        "Impacts sur la santé",
+        "Adaptation des activités économiques"
+    ],
+    "solutions": [
+        "Planter des arbres",
+        "Désimperméabiliser les sols",
+        "Créer des îlots de fraîcheur",
+        "Préserver les zones humides",
+        "Adapter les bâtiments"
+    ],
+    "saviez_vous": "Certaines actions d’adaptation apportent également des bénéfices pour la biodiversité et la qualité de vie.",
+    "territoire": "Le diagnostic climatique de VertClair aide à identifier les actions d’adaptation prioritaires.",
+    "a_retenir": "L’adaptation complète la réduction des émissions : les deux sont indispensables.",
+    "fenny": "Un territoire résilient est un territoire qui anticipe plutôt qu’un territoire qui subit."
+}

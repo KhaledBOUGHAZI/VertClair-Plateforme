@@ -1,0 +1,48 @@
+{
+    "id": "adaptation_biodiversite_expert",
+    "titre": "Biodiversité et changement climatique : renforcer la capacité d'adaptation des territoires",
+    "niveau": "expert",
+    "illustration": "biodiversite.png",
+
+    "message_image": "L'illustration montre un territoire où les forêts, les zones humides, les haies, les cours d'eau et les espaces urbains végétalisés permettent aux espèces et aux habitants de mieux faire face au changement climatique.",
+
+    "resume": "Le changement climatique modifie progressivement les températures, les précipitations, les saisons et la fréquence des événements extrêmes. Ces évolutions affectent directement les espèces, les habitats naturels et les services écosystémiques. Préserver et restaurer la biodiversité constitue aujourd'hui l'un des moyens les plus efficaces pour renforcer la résilience des territoires.",
+
+    "pourquoi": "La biodiversité n'est pas seulement victime du changement climatique : elle fait aussi partie des solutions. Des écosystèmes en bon état limitent les inondations, rafraîchissent les villes, stockent du carbone, protègent les sols et améliorent la disponibilité de la ressource en eau. Plus un territoire possède des milieux naturels fonctionnels, mieux il résiste aux aléas climatiques.",
+
+    "causes": [
+        "Hausse des températures.",
+        "Modification des régimes de précipitations.",
+        "Multiplication des sécheresses.",
+        "Augmentation des canicules.",
+        "Artificialisation des sols.",
+        "Fragmentation des habitats naturels."
+    ],
+
+    "consequences": [
+        "Déplacement des espèces vers de nouveaux territoires.",
+        "Disparition de certains habitats.",
+        "Stress hydrique des végétaux.",
+        "Développement de nouvelles maladies et ravageurs.",
+        "Réduction des services écosystémiques.",
+        "Fragilisation de certaines activités économiques."
+    ],
+
+    "solutions": [
+        "Préserver les continuités écologiques.",
+        "Restaurer les zones humides.",
+        "Développer la végétalisation urbaine.",
+        "Diversifier les essences végétales.",
+        "Limiter l'artificialisation des sols.",
+        "Utiliser les Solutions fondées sur la Nature.",
+        "Intégrer les projections climatiques dans les projets d'aménagement."
+    ],
+
+    "saviez_vous": "Une ville possédant davantage d'arbres, de sols perméables et d'espaces naturels peut être plusieurs degrés plus fraîche lors des épisodes de canicule qu'un quartier fortement minéralisé.",
+
+    "territoire": "VertClair croise déjà les données climatiques, hydrologiques, écologiques et d'occupation des sols afin d'aider les collectivités à identifier les secteurs où la biodiversité peut renforcer l'adaptation au changement climatique.",
+
+    "a_retenir": "L'adaptation au changement climatique passe autant par les infrastructures que par la restauration des écosystèmes. Une biodiversité préservée constitue un véritable investissement pour l'avenir.",
+
+    "fenny": "Chaque arbre planté, chaque haie restaurée, chaque zone humide préservée renforce à la fois la biodiversité et la capacité du territoire à faire face au climat de demain."
+}

@@ -1,0 +1,412 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Session quiz{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid p-4">
+
+    <h1 id="titreQuiz">🎓 Quiz VertClair</h1>
+
+    <p class="fs-5 text-success">
+        Niveau : <strong>{{ niveau|title }}</strong>
+
+        {% if niveau == "debutant" %}
+            <span class="badge bg-success">🌱 Débutant</span>
+        {% elif niveau == "connaisseur" %}
+            <span class="badge bg-primary">🌿 Connaisseur</span>
+        {% elif niveau == "expert" %}
+            <span class="badge bg-danger">🌳 Expert</span>
+        {% endif %}
+    </p>
+
+    <div class="card shadow-sm border-0 mt-4">
+        <div class="card-body">
+
+            <div class="d-flex justify-content-between mb-3">
+                <strong id="progressionQuiz">Chargement...</strong>
+                <strong id="scoreQuiz">Score : 0</strong>
+            </div>
+
+            <h4 id="questionQuiz" class="mb-4"></h4>
+
+            <div id="reponsesQuiz"></div>
+
+            <div id="feedbackQuiz" class="mt-4"></div>
+
+            <button
+                id="btnSuivant"
+                class="btn btn-success mt-3 d-none"
+                onclick="questionSuivante()"
+            >
+                Question suivante ➡️
+            </button>
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+const theme = "{{ theme }}";
+const niveau = "{{ niveau }}";
+
+const titres = {
+    climat: "🌡️ Quiz climat",
+    eau: "💧 Quiz eau",
+    biodiversite: "🌿 Quiz biodiversité",
+    alimentation: "🥕 Quiz alimentation",
+    dechets: "♻️ Quiz déchets",
+    energie: "⚡ Quiz énergie",
+    air: "🌬️ Quiz air"
+};
+
+document.getElementById("titreQuiz").innerText =
+    titres[theme] || "🎓 Quiz VertClair";
+
+let questions = [];
+let indexQuestion = 0;
+let score = 0;
+let repondu = false;
+
+const messagesQuestionsDebutant = [
+    "🌱 Une bonne base permet de mieux comprendre les enjeux écologiques.",
+    "💡 Observez bien la question avant de répondre.",
+    "📚 Chaque réponse vous rapproche d'une meilleure compréhension du sujet.",
+    "🦊 Fenny vous accompagne dans votre progression.",
+    "🌍 Les notions simples sont souvent les plus importantes."
+];
+
+const messagesQuestionsConnaisseur = [
+    "📊 Ici, on approfondit les mécanismes.",
+    "🌿 Essayez de relier la notion à votre territoire.",
+    "💧 Les données locales donnent du sens aux connaissances.",
+    "🧠 Le niveau Connaisseur permet de mieux analyser les enjeux.",
+    "🦊 Fenny vous aide à faire les liens entre les notions."
+];
+
+const messagesQuestionsExpert = [
+    "📍 Le niveau Expert aide à prendre de meilleures décisions.",
+    "🧭 Cherchez la réponse la plus utile pour l'action territoriale.",
+    "📈 Les données publiques permettent d'objectiver les choix.",
+    "🌍 Une bonne stratégie repose sur plusieurs indicateurs.",
+    "🦊 Fenny vous accompagne vers l'aide à la décision."
+];
+
+let messagesQuestions = messagesQuestionsDebutant;
+
+if (niveau === "connaisseur") {
+    messagesQuestions = messagesQuestionsConnaisseur;
+}
+
+if (niveau === "expert") {
+    messagesQuestions = messagesQuestionsExpert;
+}
+
+function chargerQuestions() {
+    fetch(`/api/questions-quiz/?theme=${theme}&niveau=${niveau}`)
+        .then(response => response.json())
+        .then(data => {
+            if (data.error) {
+                document.querySelector(".card-body").innerHTML = `
+                    <div class="alert alert-danger">
+                        Questions non disponibles pour ce thème et ce niveau.
+                    </div>
+                `;
+                return;
+            }
+
+            questions = data;
+            afficherQuestion();
+        })
+        .catch(() => {
+            document.querySelector(".card-body").innerHTML = `
+                <div class="alert alert-danger">
+                    Impossible de charger les questions.
+                </div>
+            `;
+        });
+}
+
+function afficherQuestion() {
+    repondu = false;
+
+    const q = questions[indexQuestion];
+
+    document.getElementById("progressionQuiz").innerText =
+        `Question ${indexQuestion + 1} / ${questions.length}`;
+
+    document.getElementById("scoreQuiz").innerText =
+        `Score : ${score}`;
+
+    document.getElementById("questionQuiz").innerText = q.question;
+
+    document.getElementById("feedbackQuiz").innerHTML = "";
+    document.getElementById("btnSuivant").classList.add("d-none");
+
+    const zone = document.getElementById("reponsesQuiz");
+    zone.innerHTML = "";
+
+    q.reponses.forEach((rep, i) => {
+        zone.innerHTML += `
+            <button
+                id="rep-${i}"
+                class="btn btn-outline-success w-100 mb-2 text-start"
+                onclick="verifierReponse(${i})"
+            >
+                ${String.fromCharCode(65 + i)}. ${rep}
+            </button>
+        `;
+    });
+
+    if (typeof setFenny === "function") {
+        setFenny(
+            "quiz",
+            messagesQuestions[indexQuestion] || "🎓 À vous de jouer !"
+        );
+    }
+}
+
+function verifierReponse(i) {
+    if (repondu) return;
+
+    repondu = true;
+
+    const q = questions[indexQuestion];
+
+    for (let j = 0; j < q.reponses.length; j++) {
+        const bouton = document.getElementById(`rep-${j}`);
+
+        bouton.disabled = true;
+
+        if (j === q.bonne) {
+            bouton.classList.remove("btn-outline-success");
+            bouton.classList.add("btn-success");
+            bouton.innerHTML = "✅ " + bouton.innerHTML;
+        }
+        else if (j === i) {
+            bouton.classList.remove("btn-outline-success");
+            bouton.classList.add("btn-danger");
+            bouton.innerHTML = "❌ " + bouton.innerHTML;
+        }
+    }
+
+    if (i === q.bonne) {
+        score++;
+    }
+
+    document.getElementById("scoreQuiz").innerText =
+        `Score : ${score}`;
+
+    document.getElementById("feedbackQuiz").innerHTML = `
+        <div class="alert alert-info mt-3">
+            <strong>🦊 Comprendre en 30 secondes</strong><br>
+            ${q.explication}
+
+            <div class="mt-3">
+                <button
+                    type="button"
+                    class="btn btn-outline-primary btn-sm"
+                    onclick="chargerFicheVertClair('${q.fiche}')"
+                >
+                    📚 Voir la fiche VertClair
+                </button>
+            </div>
+
+            <div id="ficheVertClair" class="mt-3"></div>
+        </div>
+    `;
+
+    document.getElementById("btnSuivant").classList.remove("d-none");
+}
+
+function chargerFicheVertClair(ficheId) {
+
+    fetch(`/api/fiche-pedagogique/?theme=${theme}&fiche=${ficheId}`)
+        .then(response => response.json())
+        .then(fiche => {
+
+            if (fiche.error) {
+                document.getElementById("ficheVertClair").innerHTML = `
+                    <div class="alert alert-warning">
+                        Fiche non disponible pour le moment.
+                    </div>
+                `;
+                return;
+            }
+
+            const imagePath =
+                `/static/images/fiches/${theme}/${fiche.illustration}`;
+
+            document.getElementById("ficheVertClair").innerHTML = `
+                <div class="card border-0 shadow-sm mt-3">
+                    <div class="card-body">
+
+                        <h5>📚 ${fiche.titre}</h5>
+
+                        <hr>
+
+                        <div class="text-center mb-4">
+                            <img
+                                src="${imagePath}"
+                                class="img-fluid rounded"
+                                style="width: 100%; max-width: 650px; max-height: 380px; object-fit: contain;"
+                                alt="${fiche.titre}"
+                            >
+                        </div>
+
+                        ${fiche.message_image ? `
+                            <div class="alert alert-info mb-4">
+                                <strong>📷 Ce que montre cette illustration</strong><br>
+                                ${fiche.message_image}
+                            </div>
+                        ` : ""}
+
+                        <p>
+                            <strong>Résumé :</strong><br>
+                            ${fiche.resume || ""}
+                        </p>
+
+                        <p>
+                            <strong>Pourquoi c’est important ?</strong><br>
+                            ${fiche.pourquoi || ""}
+                        </p>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h6>🔎 Causes</h6>
+                                <ul>
+                                    ${(fiche.causes || []).map(item => `<li>${item}</li>`).join("")}
+                                </ul>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h6>⚠️ Conséquences</h6>
+                                <ul>
+                                    ${(fiche.consequences || []).map(item => `<li>${item}</li>`).join("")}
+                                </ul>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h6>✅ Solutions</h6>
+                                <ul>
+                                    ${(fiche.solutions || []).map(item => `<li>${item}</li>`).join("")}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-success mt-3">
+                            <strong>💡 Le saviez-vous ?</strong><br>
+                            ${fiche.saviez_vous || ""}
+                        </div>
+
+                        <div class="alert alert-secondary mt-3">
+                            <strong>📍 Lien avec votre territoire</strong><br>
+                            ${fiche.territoire || ""}
+                        </div>
+
+                        ${fiche.a_retenir ? `
+                            <div class="alert alert-warning mt-3">
+                                <strong>⭐ À retenir</strong><br>
+                                ${fiche.a_retenir}
+                            </div>
+                        ` : ""}
+
+                        ${fiche.fenny ? `
+                            <div class="alert alert-success mt-3 mb-0">
+                                <strong>🦊 Conseil de Fenny</strong><br>
+                                ${fiche.fenny}
+                            </div>
+                        ` : ""}
+
+                    </div>
+                </div>
+            `;
+        })
+        .catch(() => {
+            document.getElementById("ficheVertClair").innerHTML = `
+                <div class="alert alert-danger">
+                    Erreur lors du chargement de la fiche.
+                </div>
+            `;
+        });
+}
+
+function questionSuivante() {
+    indexQuestion++;
+
+    if (indexQuestion >= questions.length) {
+        afficherResultat();
+        return;
+    }
+
+    afficherQuestion();
+}
+
+function afficherResultat() {
+
+    const pourcentage =
+        Math.round((score / questions.length) * 100);
+
+    fetch("/api/save-quiz-result/", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "X-CSRFToken": "{{ csrf_token }}"
+        },
+        body: JSON.stringify({
+            theme: theme,
+            niveau: niveau,
+            score: score,
+            total: questions.length,
+            pourcentage: pourcentage
+        })
+    });
+
+    let commentaire = "";
+
+    if (pourcentage >= 90) {
+        commentaire = "🏆 Excellent niveau de maîtrise du sujet.";
+    }
+    else if (pourcentage >= 70) {
+        commentaire = "🌱 Très bon résultat. Quelques notions peuvent encore être approfondies.";
+    }
+    else if (pourcentage >= 50) {
+        commentaire = "📚 Bon début. Les fiches VertClair peuvent vous aider à progresser.";
+    }
+    else {
+        commentaire = "💡 N'hésitez pas à relire les fiches pédagogiques avant de recommencer.";
+    }
+
+    document.querySelector(".card-body").innerHTML = `
+        <h3>🎉 Quiz terminé</h3>
+
+        <p class="lead">
+            Votre score :
+            <strong>${score} / ${questions.length}</strong>
+            soit <strong>${pourcentage}%</strong>
+        </p>
+
+        <div class="alert alert-info">
+            ${commentaire}
+        </div>
+
+        <div class="alert alert-success">
+            Vous pouvez recommencer pour améliorer votre score.
+        </div>
+
+        <a href="{% url 'quiz_theme' theme %}" class="btn btn-outline-success">
+            🔁 Recommencer un niveau
+        </a>
+
+        <a href="{% url 'campus' %}" class="btn btn-success ms-2">
+            🎓 Retour au Campus
+        </a>
+    `;
+}
+
+document.addEventListener("DOMContentLoaded", chargerQuestions);
+</script>
+
+{% endblock %}

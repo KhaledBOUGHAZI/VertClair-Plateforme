@@ -1,0 +1,44 @@
+{
+    "id": "fragmentation_habitats_connaisseur",
+    "titre": "La fragmentation des habitats : un obstacle pour la biodiversité",
+    "niveau": "connaisseur",
+    "illustration": "biodiversite.png",
+
+    "message_image": "L'illustration montre un paysage où une autoroute, des zones urbanisées et des infrastructures coupent les espaces naturels, rendant les déplacements des espèces plus difficiles.",
+
+    "resume": "La fragmentation des habitats correspond au découpage progressif des milieux naturels en petites parcelles isolées les unes des autres. Ce phénomène est principalement lié à l'urbanisation, aux infrastructures de transport et à l'artificialisation des sols. Même si les habitats subsistent, leur isolement fragilise fortement les espèces qui y vivent.",
+
+    "pourquoi": "De nombreuses espèces doivent se déplacer pour trouver de la nourriture, se reproduire ou coloniser de nouveaux territoires. Lorsque les habitats sont fragmentés, ces déplacements deviennent plus difficiles, ce qui réduit les échanges entre populations et augmente leur vulnérabilité.",
+
+    "causes": [
+        "Construction de routes, autoroutes et voies ferrées.",
+        "Extension des zones urbaines.",
+        "Artificialisation des sols.",
+        "Disparition des haies, bosquets et corridors écologiques.",
+        "Création de grandes zones industrielles ou commerciales."
+    ],
+
+    "consequences": [
+        "Isolement des populations animales et végétales.",
+        "Réduction de la diversité génétique.",
+        "Augmentation des collisions avec les véhicules.",
+        "Disparition progressive de certaines espèces.",
+        "Diminution de la résilience des écosystèmes face au changement climatique."
+    ],
+
+    "solutions": [
+        "Préserver les corridors écologiques.",
+        "Créer des passages à faune au-dessus ou en dessous des infrastructures.",
+        "Maintenir les haies et les alignements d'arbres.",
+        "Limiter l'artificialisation des sols.",
+        "Reconnecter les espaces naturels lors des projets d'aménagement."
+    ],
+
+    "saviez_vous": "Certaines espèces, comme les amphibiens ou les petits mammifères, peuvent être fortement impactées par une simple route lorsqu'aucun passage adapté n'est prévu.",
+
+    "territoire": "VertClair permet d'identifier plusieurs éléments pouvant fragmenter les milieux naturels (urbanisation, infrastructures, réseaux de transport) et de les mettre en perspective avec les continuités écologiques présentes sur votre territoire.",
+
+    "a_retenir": "Préserver la biodiversité ne consiste pas seulement à protéger des espaces naturels : il faut aussi maintenir les connexions entre eux afin que les espèces puissent circuler librement.",
+
+    "fenny": "Un petit bois isolé protège moins bien la biodiversité qu'un réseau d'espaces naturels reliés entre eux. Les connexions sont aussi importantes que les habitats eux-mêmes."
+}

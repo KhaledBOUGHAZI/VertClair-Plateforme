@@ -1,0 +1,46 @@
+{
+    "id": "genie_ecologique_expert",
+    "titre": "Le génie écologique : restaurer les écosystèmes grâce à la nature",
+    "niveau": "expert",
+    "illustration": "biodiversite.png",
+
+    "message_image": "L'illustration montre un chantier de restauration écologique où une rivière est renaturée, des haies sont replantées, une zone humide est recréée et des habitats favorables à la biodiversité sont aménagés.",
+
+    "resume": "Le génie écologique consiste à concevoir, restaurer ou gérer des milieux naturels en s'appuyant sur le fonctionnement des écosystèmes. Contrairement au génie civil classique, il privilégie les processus naturels afin de répondre durablement aux enjeux de biodiversité, d'eau, de climat et d'aménagement.",
+
+    "pourquoi": "Les infrastructures artificielles répondent parfois efficacement à un besoin ponctuel, mais elles ne remplacent pas les fonctions d'un écosystème. Le génie écologique cherche au contraire à restaurer ces fonctions naturelles afin de rendre les territoires plus résilients tout en limitant les coûts d'entretien à long terme.",
+
+    "causes": [
+        "Dégradation des habitats naturels.",
+        "Artificialisation des sols.",
+        "Rectification des cours d'eau.",
+        "Disparition des zones humides.",
+        "Fragmentation des continuités écologiques."
+    ],
+
+    "consequences": [
+        "Perte de biodiversité.",
+        "Augmentation des risques d'inondation.",
+        "Dégradation de la qualité de l'eau.",
+        "Réduction du stockage naturel du carbone.",
+        "Diminution de la résilience des territoires."
+    ],
+
+    "solutions": [
+        "Renaturer les cours d'eau.",
+        "Restaurer les zones humides.",
+        "Replanter des haies bocagères.",
+        "Créer des passages à faune.",
+        "Reconstituer des prairies naturelles.",
+        "Préserver les sols vivants.",
+        "Utiliser des essences végétales adaptées au territoire."
+    ],
+
+    "saviez_vous": "Une rivière renaturée ralentit naturellement les écoulements, améliore la qualité de l'eau, favorise la biodiversité et limite les risques d'inondation sans nécessiter de lourds ouvrages en béton.",
+
+    "territoire": "VertClair pourra identifier les secteurs où des opérations de génie écologique seraient particulièrement pertinentes grâce aux données sur les cours d'eau, les zones humides, les continuités écologiques, les risques climatiques et l'artificialisation des sols.",
+
+    "a_retenir": "Le génie écologique ne cherche pas à remplacer la nature par des infrastructures, mais à redonner aux écosystèmes leur capacité à remplir naturellement leurs fonctions.",
+
+    "fenny": "La meilleure technologie est parfois celle que la nature a développée depuis des millions d'années. Restaurer un écosystème est souvent plus durable que construire un nouvel ouvrage."
+}

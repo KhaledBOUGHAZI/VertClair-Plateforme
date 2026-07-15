@@ -1,0 +1,34 @@
+{
+    "id": "recharge_nappes",
+    "titre": "La recharge des nappes souterraines",
+    "niveau": "connaisseur",
+    "illustration": "nappes_souterraines.png",
+    "message_image": "L’illustration montre que les nappes souterraines se rechargent principalement grâce à l’infiltration lente des pluies d’automne et d’hiver.",
+    "resume": "Une nappe souterraine ne se remplit pas immédiatement après un épisode pluvieux. L’eau doit d’abord traverser les différentes couches du sol et des roches, un processus qui peut prendre plusieurs semaines, plusieurs mois, voire plusieurs années selon la nature du sous-sol.",
+    "pourquoi": "Comprendre la recharge des nappes permet d’expliquer pourquoi certaines régions restent en situation de sécheresse malgré le retour des pluies. Cette connaissance est essentielle pour anticiper les tensions sur la ressource en eau.",
+    "causes": [
+        "Les pluies hivernales favorisent davantage la recharge des nappes.",
+        "La végétation consomme moins d'eau pendant l'hiver.",
+        "Les sols perméables facilitent l'infiltration.",
+        "Les surfaces imperméabilisées réduisent fortement la recharge.",
+        "Les épisodes de sécheresse prolongés diminuent les réserves disponibles."
+    ],
+    "consequences": [
+        "Baisse durable du niveau des nappes.",
+        "Diminution du débit des rivières en été.",
+        "Risques de restrictions d'eau.",
+        "Fragilisation des milieux naturels.",
+        "Difficultés d'alimentation en eau potable dans certains territoires."
+    ],
+    "solutions": [
+        "Préserver les sols perméables.",
+        "Limiter l'artificialisation des terres.",
+        "Développer les techniques favorisant l'infiltration.",
+        "Restaurer les zones humides.",
+        "Adapter les prélèvements selon l'état des nappes."
+    ],
+    "saviez_vous": "Dans certaines formations géologiques profondes, une goutte d'eau peut mettre plusieurs dizaines d'années avant d'atteindre la nappe souterraine.",
+    "territoire": "VertClair s'appuie sur les données publiques du BRGM et d'EauFrance afin de suivre l'état des nappes souterraines et d'aider à comprendre les tensions locales sur la ressource.",
+    "a_retenir": "Les nappes se rechargent principalement en automne et en hiver : quelques jours de pluie ne suffisent pas toujours à reconstituer plusieurs mois de déficit.",
+    "fenny": "Quand il pleut, toute l'eau ne rejoint pas immédiatement les nappes. Une partie est utilisée par la végétation, une autre s'évapore, et seule une fraction s'infiltre lentement dans le sous-sol."
+}

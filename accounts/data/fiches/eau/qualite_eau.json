@@ -1,0 +1,32 @@
+{
+    "id": "qualite_eau",
+    "titre": "La qualité de l'eau",
+    "niveau": "debutant",
+    "illustration": "qualite_eau.png",
+    "message_image": "L’illustration montre que la qualité de l’eau est contrôlée régulièrement grâce à des analyses réalisées sur les réseaux d’eau potable.",
+    "resume": "La qualité de l’eau potable est vérifiée tout au long de l’année afin de garantir qu’elle est conforme aux normes sanitaires avant d’être consommée.",
+    "pourquoi": "Une eau de bonne qualité protège la santé des habitants et limite les risques liés aux contaminants chimiques ou microbiologiques.",
+    "causes": [
+        "Présence naturelle de certains minéraux",
+        "Activités agricoles",
+        "Rejets industriels",
+        "Pollutions accidentelles",
+        "Vieillissement des réseaux"
+    ],
+    "consequences": [
+        "Restriction de consommation si nécessaire",
+        "Traitements complémentaires",
+        "Protection renforcée des captages",
+        "Suivi sanitaire permanent"
+    ],
+    "solutions": [
+        "Préserver les ressources en eau",
+        "Limiter les pollutions à la source",
+        "Moderniser les réseaux",
+        "Surveiller régulièrement la qualité de l'eau"
+    ],
+    "saviez_vous": "Des centaines de paramètres peuvent être analysés selon les situations : bactéries, nitrates, pesticides, métaux, etc.",
+    "territoire": "VertClair affiche automatiquement les derniers résultats officiels de qualité de l'eau de votre commune grâce aux données publiques.",
+    "a_retenir": "La meilleure façon de garantir une eau de qualité est de protéger les ressources avant qu'elles ne soient polluées.",
+    "fenny": "Traiter une eau polluée coûte toujours plus cher que protéger une eau propre."
+}

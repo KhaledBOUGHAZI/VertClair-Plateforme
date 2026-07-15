@@ -1,0 +1,1 @@
+console.log("trames-explications.js chargé");

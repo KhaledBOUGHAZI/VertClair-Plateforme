@@ -1,0 +1,112 @@
+[
+    {
+        "question": "L'hydrologie territoriale permet principalement de comprendre :",
+        "reponses": [
+            "La circulation de l'eau dans un bassin versant",
+            "La composition des étoiles",
+            "La pollution lumineuse"
+        ],
+        "bonne": 0,
+        "explication": "L'hydrologie étudie les précipitations, le ruissellement, l'infiltration, les débits et les échanges avec les nappes.",
+        "fiche": "hydrologie_expert"
+    },
+    {
+        "question": "La Directive-cadre sur l'eau vise notamment :",
+        "reponses": [
+            "Le bon état écologique et chimique des masses d'eau",
+            "La suppression de toutes les rivières",
+            "La production d'énergie solaire"
+        ],
+        "bonne": 0,
+        "explication": "La DCE fixe des objectifs de bon état pour les masses d'eau superficielles et souterraines.",
+        "fiche": "masses_eau_dce_expert"
+    },
+    {
+        "question": "Un captage stratégique doit être protégé car :",
+        "reponses": [
+            "Il sécurise durablement l'alimentation en eau potable",
+            "Il sert uniquement à décorer le paysage",
+            "Il augmente les émissions de CO₂"
+        ],
+        "bonne": 0,
+        "explication": "La protection des captages permet de préserver la qualité de l'eau brute avant traitement.",
+        "fiche": "captages_strategiques_expert"
+    },
+    {
+        "question": "La REUT désigne :",
+        "reponses": [
+            "La réutilisation des eaux usées traitées",
+            "La réduction des espaces urbains thermiques",
+            "Le recyclage des énergies thermiques"
+        ],
+        "bonne": 0,
+        "explication": "La REUT permet d'utiliser certaines eaux traitées pour des usages adaptés et encadrés.",
+        "fiche": "assainissement_avance_expert"
+    },
+    {
+        "question": "Restaurer un cours d'eau peut permettre de :",
+        "reponses": [
+            "Ralentir les écoulements et améliorer la biodiversité",
+            "Bétonner toutes les berges",
+            "Supprimer les zones humides"
+        ],
+        "bonne": 0,
+        "explication": "La restauration écologique redonne à la rivière un fonctionnement plus naturel.",
+        "fiche": "restauration_cours_eau_expert"
+    },
+    {
+        "question": "L'hydrogéologie étudie principalement :",
+        "reponses": [
+            "Les eaux souterraines et les aquifères",
+            "Les vents dominants",
+            "Les émissions lumineuses"
+        ],
+        "bonne": 0,
+        "explication": "L'hydrogéologie analyse la circulation et le stockage de l'eau dans les sols et les roches.",
+        "fiche": "hydrogeologie_expert"
+    },
+    {
+        "question": "En gestion de crise sécheresse, les niveaux d'alerte servent à :",
+        "reponses": [
+            "Adapter progressivement les restrictions d'usage",
+            "Augmenter automatiquement toutes les consommations",
+            "Supprimer le suivi des nappes"
+        ],
+        "bonne": 0,
+        "explication": "Les niveaux vigilance, alerte, alerte renforcée et crise permettent d'adapter les mesures à la gravité de la situation.",
+        "fiche": "gestion_crise_secheresse_expert"
+    },
+    {
+        "question": "La gestion intégrée de l'eau consiste à :",
+        "reponses": [
+            "Coordonner eau, urbanisme, agriculture, biodiversité et climat",
+            "Traiter l'eau séparément de toutes les autres politiques",
+            "Limiter l'eau aux seules questions de plomberie"
+        ],
+        "bonne": 0,
+        "explication": "La gestion intégrée relie les enjeux d'eau aux autres politiques territoriales.",
+        "fiche": "gestion_integree_eau_expert"
+    },
+    {
+        "question": "Le génie écologique s'appuie sur :",
+        "reponses": [
+            "Les processus naturels des écosystèmes",
+            "Uniquement des ouvrages bétonnés",
+            "La suppression de la végétation"
+        ],
+        "bonne": 0,
+        "explication": "Le génie écologique utilise les capacités naturelles des milieux pour restaurer des fonctions utiles.",
+        "fiche": "genie_ecologique_expert"
+    },
+    {
+        "question": "Une stratégie Eau & Climat efficace doit surtout :",
+        "reponses": [
+            "Combiner plusieurs actions adaptées au territoire",
+            "Reposer sur une seule solution unique",
+            "Ignorer les données climatiques"
+        ],
+        "bonne": 0,
+        "explication": "Une stratégie robuste combine sobriété, protection des milieux, adaptation, suivi des données et planification.",
+        "fiche": "strategie_eau_climat_expert"
+    }
+]

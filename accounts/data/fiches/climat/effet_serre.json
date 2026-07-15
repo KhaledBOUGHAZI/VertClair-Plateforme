@@ -1,0 +1,30 @@
+{
+    "id": "effet_serre",
+    "titre": "L'effet de serre",
+    "niveau": "debutant",
+    "illustration": "effet_serre.png",
+    "message_image": "L’illustration montre qu’une partie de la chaleur reçue du Soleil reste naturellement autour de la Terre grâce aux gaz à effet de serre.",
+    "a_retenir": "L'effet de serre est un phénomène naturel. Son renforcement par les activités humaines est le véritable problème.",
+    "resume": "L'effet de serre est un phénomène naturel qui retient une partie de la chaleur autour de la Terre et permet la vie telle que nous la connaissons.",
+    "pourquoi": "Sans effet de serre naturel, la température moyenne de la Terre serait d'environ -18°C. Le problème actuel vient du renforcement de cet effet par les activités humaines.",
+    "causes": [
+        "Présence naturelle de gaz à effet de serre dans l'atmosphère",
+        "Augmentation du CO₂ liée aux activités humaines",
+        "Augmentation du méthane et d'autres gaz à effet de serre"
+    ],
+    "consequences": [
+        "Hausse de la température moyenne mondiale",
+        "Modification du climat",
+        "Fonte des glaciers et des calottes polaires",
+        "Multiplication des événements climatiques extrêmes"
+    ],
+    "solutions": [
+        "Réduire les émissions de gaz à effet de serre",
+        "Développer les énergies bas carbone",
+        "Améliorer l'efficacité énergétique",
+        "Préserver les puits de carbone naturels"
+    ],
+    "saviez_vous": "Sans effet de serre naturel, la température moyenne de la Terre serait proche de -18°C au lieu d'environ +15°C.",
+    "territoire": "Les émissions de gaz à effet de serre produites sur un territoire influencent sa contribution au changement climatique.",
+    "fenny": "L'effet de serre est indispensable à la vie. Ce qui pose problème aujourd'hui, c'est son renforcement."
+}

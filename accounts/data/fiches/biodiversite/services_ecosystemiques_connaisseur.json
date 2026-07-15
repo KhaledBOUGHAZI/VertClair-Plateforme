@@ -1,0 +1,46 @@
+{
+    "id": "services_ecosystemiques_connaisseur",
+    "titre": "Les services écosystémiques : ce que la nature nous apporte",
+    "niveau": "connaisseur",
+    "illustration": "biodiversite.png",
+
+    "message_image": "L'illustration représente différents écosystèmes (forêt, rivière, prairie, zone humide et espaces agricoles) qui rendent naturellement de nombreux services indispensables à notre société.",
+
+    "resume": "Les services écosystémiques sont l'ensemble des bénéfices que les êtres humains retirent du bon fonctionnement des écosystèmes. Ils sont indispensables à notre alimentation, à notre santé, à notre économie et à notre qualité de vie. Bien qu'ils soient souvent gratuits, leur valeur est considérable.",
+
+    "pourquoi": "Lorsque les écosystèmes sont dégradés, les services qu'ils rendent diminuent. Cela peut entraîner des coûts importants pour les collectivités, les entreprises et les habitants : inondations plus fréquentes, baisse de la qualité de l'eau, diminution des récoltes, perte de biodiversité ou augmentation des températures en ville.",
+
+    "causes": [
+        "Artificialisation des sols.",
+        "Destruction des habitats naturels.",
+        "Pollutions de l'eau, de l'air et des sols.",
+        "Changement climatique.",
+        "Surexploitation des ressources naturelles."
+    ],
+
+    "consequences": [
+        "Diminution de la pollinisation.",
+        "Dégradation de la qualité de l'eau.",
+        "Érosion des sols.",
+        "Réduction du stockage naturel du carbone.",
+        "Augmentation des risques d'inondation.",
+        "Perte de biodiversité."
+    ],
+
+    "solutions": [
+        "Préserver les milieux naturels.",
+        "Restaurer les zones humides.",
+        "Développer les haies et les corridors écologiques.",
+        "Limiter l'artificialisation des sols.",
+        "Planter des essences locales adaptées.",
+        "Développer les Solutions fondées sur la Nature."
+    ],
+
+    "saviez_vous": "Une seule zone humide peut à la fois filtrer naturellement l'eau, stocker les crues, accueillir une biodiversité exceptionnelle et contribuer au stockage du carbone.",
+
+    "territoire": "VertClair met progressivement en évidence les services écosystémiques présents sur votre territoire : stockage du carbone, continuités écologiques, régulation des eaux, biodiversité, végétalisation et adaptation au changement climatique.",
+
+    "a_retenir": "Préserver la biodiversité ne protège pas seulement les espèces : cela permet aussi de préserver les nombreux services gratuits que les écosystèmes rendent quotidiennement à notre société.",
+
+    "fenny": "Chaque arbre, chaque haie, chaque rivière ou chaque zone humide travaille gratuitement pour nous. Plus un territoire protège ses écosystèmes, plus il devient résilient face aux changements climatiques."
+}

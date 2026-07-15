@@ -1,0 +1,32 @@
+{
+    "id": "adaptation",
+    "titre": "Stratégie territoriale d'adaptation",
+    "niveau": "expert",
+    "illustration": "adaptation.png",
+    "message_image": "L’illustration montre comment plusieurs actions complémentaires peuvent renforcer la résilience d’un territoire.",
+    "resume": "Une stratégie d’adaptation vise à réduire durablement la vulnérabilité d’un territoire face aux évolutions climatiques futures.",
+    "pourquoi": "Les collectivités, entreprises et organisations doivent intégrer le climat dans leurs décisions d’investissement et d’aménagement.",
+    "causes": [
+        "Évolution du climat local",
+        "Multiplication des événements extrêmes",
+        "Pression sur les ressources naturelles",
+        "Vulnérabilité des infrastructures"
+    ],
+    "consequences": [
+        "Coûts économiques croissants",
+        "Risques sanitaires",
+        "Dégradation des milieux naturels",
+        "Fragilisation de certaines activités"
+    ],
+    "solutions": [
+        "Évaluer les vulnérabilités territoriales",
+        "Prioriser les actions selon les risques",
+        "Développer les solutions fondées sur la nature",
+        "Adapter les infrastructures",
+        "Suivre des indicateurs de résilience"
+    ],
+    "saviez_vous": "Une même action peut répondre à plusieurs enjeux climatiques : chaleur, eau, biodiversité et qualité de vie.",
+    "territoire": "Les données DRIAS, BRGM, Géorisques et TRACC permettent d’orienter les stratégies d’adaptation locales.",
+    "a_retenir": "L’adaptation consiste à réduire les vulnérabilités avant que les impacts ne deviennent critiques.",
+    "fenny": "La meilleure adaptation est celle qui améliore déjà le territoire aujourd’hui tout en le préparant au climat de demain."
+}

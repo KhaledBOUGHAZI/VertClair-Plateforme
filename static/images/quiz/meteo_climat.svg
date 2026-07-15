@@ -1,0 +1,18 @@
+<svg width="900" height="360" viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="360" rx="28" fill="#ecfdf5"></rect>
+
+  <rect x="60" y="70" width="330" height="220" rx="24" fill="#dbeafe"></rect>
+  <text x="225" y="125" text-anchor="middle" font-size="46">☔</text>
+  <text x="225" y="170" text-anchor="middle" font-size="34" font-family="Arial" font-weight="700" fill="#1e3a8a">Météo</text>
+  <text x="225" y="215" text-anchor="middle" font-size="24" font-family="Arial" fill="#1e40af">Aujourd’hui</text>
+  <text x="225" y="250" text-anchor="middle" font-size="20" font-family="Arial" fill="#475569">court terme</text>
+
+  <rect x="510" y="70" width="330" height="220" rx="24" fill="#dcfce7"></rect>
+  <text x="675" y="125" text-anchor="middle" font-size="46">🌍</text>
+  <text x="675" y="170" text-anchor="middle" font-size="34" font-family="Arial" font-weight="700" fill="#14532d">Climat</text>
+  <text x="675" y="215" text-anchor="middle" font-size="24" font-family="Arial" fill="#166534">Plusieurs décennies</text>
+  <text x="675" y="250" text-anchor="middle" font-size="20" font-family="Arial" fill="#475569">tendance longue</text>
+
+  <path d="M410 180 H490" stroke="#64748b" stroke-width="6" stroke-linecap="round"></path>
+  <path d="M475 160 L495 180 L475 200" fill="none" stroke="#64748b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>

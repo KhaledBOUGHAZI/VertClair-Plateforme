@@ -1,0 +1,36 @@
+{
+    "id": "secheresses",
+    "titre": "Les sécheresses",
+    "niveau": "debutant",
+    "illustration": "secheresses.png",
+    "message_image": "L’illustration montre les signes visibles d’un manque d’eau : sols secs, végétation fragilisée ou cours d’eau bas.",
+    "a_retenir": "Préserver l'eau commence par préserver les sols, la végétation et les zones humides.",
+    "resume": "Une sécheresse apparaît lorsque l'eau disponible devient insuffisante dans les sols, les rivières, les nappes souterraines ou les réservoirs.",
+    "pourquoi": "Les sécheresses affectent l'agriculture, les milieux naturels, l'eau potable, les bâtiments, les activités économiques et la qualité de vie des habitants.",
+    "causes": [
+        "Manque de pluie",
+        "Températures élevées",
+        "Évaporation accrue",
+        "Consommations d'eau importantes",
+        "Dégradation des sols"
+    ],
+    "consequences": [
+        "Baisse du niveau des rivières",
+        "Diminution des nappes souterraines",
+        "Stress des cultures agricoles",
+        "Fragilisation des arbres et des forêts",
+        "Restrictions d'eau",
+        "Retrait-gonflement des argiles"
+    ],
+    "solutions": [
+        "Économiser l'eau",
+        "Favoriser l'infiltration dans les sols",
+        "Restaurer les zones humides",
+        "Adapter les plantations au climat futur",
+        "Limiter l'imperméabilisation",
+        "Préserver les sols vivants"
+    ],
+    "saviez_vous": "Un sol vivant et végétalisé peut stocker davantage d'eau et mieux résister aux périodes de sécheresse.",
+    "territoire": "Les données locales sur les nappes, les sols, les usages de l'eau et les risques de retrait-gonflement des argiles permettent d'identifier les secteurs les plus vulnérables.",
+    "fenny": "La meilleure réserve d'eau n'est pas toujours un réservoir : un sol vivant peut stocker une grande quantité d'eau."
+}

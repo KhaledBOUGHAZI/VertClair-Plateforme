@@ -1,0 +1,44 @@
+{
+    "id": "gestion_crise_secheresse",
+    "titre": "La gestion des crises sécheresse : anticiper plutôt que subir",
+    "niveau": "expert",
+    "illustration": "secheresse_eau.png",
+    "message_image": "L’illustration montre comment un territoire peut anticiper les sécheresses grâce au suivi des ressources en eau, à des mesures graduées et à une gestion coordonnée des usages.",
+    "resume": "Les sécheresses deviennent plus fréquentes, plus longues et plus intenses sous l'effet du changement climatique. Leur gestion repose sur un suivi permanent des ressources en eau, une anticipation des tensions et la mise en œuvre de mesures graduées permettant de préserver en priorité l'alimentation en eau potable et les milieux naturels.",
+    "pourquoi": "Une crise sécheresse ne se résume pas à un manque de pluie. Elle résulte d'un déséquilibre entre les ressources disponibles et les besoins des différents usagers. Plus les décisions sont anticipées, plus leurs impacts économiques, sociaux et environnementaux peuvent être limités.",
+    "causes": [
+        "Déficit prolongé de précipitations.",
+        "Hausse des températures.",
+        "Évapotranspiration plus importante.",
+        "Recharge insuffisante des nappes.",
+        "Augmentation des prélèvements.",
+        "Artificialisation des sols."
+    ],
+    "consequences": [
+        "Baisse des débits des rivières.",
+        "Abaissement des nappes souterraines.",
+        "Restrictions des usages de l'eau.",
+        "Stress des écosystèmes.",
+        "Impacts sur l'agriculture, l'industrie et les collectivités."
+    ],
+    "solutions": [
+        "Mettre en place un suivi continu des ressources.",
+        "Développer des plans de gestion de crise.",
+        "Réduire les consommations d'eau.",
+        "Améliorer le rendement des réseaux.",
+        "Réutiliser les eaux usées traitées lorsque cela est pertinent.",
+        "Développer les solutions fondées sur la nature."
+    ],
+    "saviez_vous": "Les arrêtés sécheresse prévoient généralement quatre niveaux d'alerte : vigilance, alerte, alerte renforcée et crise, chacun entraînant des restrictions d'usage adaptées à la situation.",
+    "territoire": "VertClair combine les données climatiques (DRIAS), hydrogéologiques (BRGM), hydrologiques (EauFrance) et les risques naturels afin d'aider les collectivités à anticiper les situations de sécheresse.",
+    "a_retenir": "Une gestion efficace de la sécheresse repose avant tout sur l'anticipation et une bonne connaissance des ressources disponibles.",
+    "fenny": "La meilleure crise est celle que l'on a préparée. Plus un territoire anticipe, plus il reste résilient lorsque la sécheresse s'installe.",
+    "vertclair_plus": "Les indicateurs de VertClair permettent de suivre les principaux facteurs de vulnérabilité liés à la sécheresse et d'intégrer automatiquement des actions dans le plan de transition écologique.",
+    "pour_aller_plus_loin": [
+        "VigiEau",
+        "EauFrance",
+        "BRGM",
+        "Ministère de la Transition écologique",
+        "Cerema"
+    ]
+}

@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet"
+      href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<div class="container-fluid p-4">
+
+    <h2>🌫️ Qualité de l’air</h2>
+
+    <div class="mt-4 mb-4">
+
+        <input
+            type="text"
+            id="ville"
+            class="form-control"
+            placeholder="Ex : Pacy-sur-Eure"
+        >
+
+        <button
+            type="button"
+            id="btn-air"
+            class="btn btn-success mt-3"
+        >
+            Consulter l’air
+        </button>
+
+    </div>
+
+    <div id="map" style="height:500px;" class="mb-4"></div>
+
+    <div id="resultatAir" class="mt-4"></div>
+
+</div>
+
+<script src="{% static 'js/territoire/map.js' %}"></script>
+<script src="{% static 'js/territoire/air.js' %}"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    initMap();
+
+    document
+        .getElementById("btn-air")
+        .addEventListener("click", function(){
+            chargerQualiteAir();
+        });
+
+});
+</script>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{
+    "id": "essences_locales_connaisseur",
+    "titre": "Les essences végétales locales : planter les bonnes espèces au bon endroit",
+    "niveau": "connaisseur",
+    "illustration": "biodiversite.png",
+
+    "message_image": "L'illustration montre plusieurs essences locales (chêne, érable, tilleul, charme, aubépine...) intégrées dans un paysage naturel et urbain, accueillant oiseaux, insectes et petits mammifères.",
+
+    "resume": "Les essences végétales locales sont les arbres, arbustes et plantes naturellement adaptés au climat, aux sols et aux conditions écologiques d'un territoire. Elles favorisent une biodiversité plus riche et résistent généralement mieux aux conditions locales que des espèces exotiques mal adaptées.",
+
+    "pourquoi": "Choisir des essences adaptées permet de limiter les besoins en arrosage, de réduire les risques de maladies et d'offrir de meilleures ressources alimentaires et des habitats à la faune locale. C'est un levier essentiel pour réussir les projets de végétalisation et d'adaptation au changement climatique.",
+
+    "causes": [
+        "Adaptation naturelle au climat régional.",
+        "Compatibilité avec les sols locaux.",
+        "Relations anciennes avec la faune locale.",
+        "Meilleure résistance aux conditions environnementales."
+    ],
+
+    "consequences": [
+        "Développement d'une biodiversité plus riche.",
+        "Réduction des besoins en entretien.",
+        "Meilleure résistance aux sécheresses.",
+        "Diminution des risques liés aux espèces invasives.",
+        "Amélioration de la résilience des espaces verts."
+    ],
+
+    "solutions": [
+        "Privilégier les essences locales lors des plantations.",
+        "Diversifier les espèces végétales.",
+        "Éviter les monocultures.",
+        "Adapter les plantations aux projections climatiques.",
+        "Utiliser les recommandations des outils spécialisés comme SESAME du Cerema."
+    ],
+
+    "saviez_vous": "Un chêne peut accueillir plusieurs centaines d'espèces d'insectes, alors que certaines essences exotiques en accueillent très peu.",
+
+    "territoire": "VertClair intégrera l'outil SESAME du Cerema afin de proposer les essences les plus adaptées à chaque commune française selon son climat actuel et futur.",
+
+    "a_retenir": "Planter local ne signifie pas planter toujours les mêmes espèces. Il s'agit de choisir des végétaux adaptés au territoire tout en diversifiant les plantations.",
+
+    "fenny": "Le bon arbre n'est pas forcément le plus beau ou celui qui pousse le plus vite : c'est celui qui sera encore en bonne santé dans 30 ou 50 ans et qui profitera à la biodiversité."
+}

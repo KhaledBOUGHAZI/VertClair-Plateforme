@@ -1,0 +1,34 @@
+{
+    "id": "secheresses",
+    "titre": "Les différents types de sécheresse",
+    "niveau": "connaisseur",
+    "illustration": "secheresses.png",
+    "message_image": "L’illustration montre que la sécheresse touche à la fois les sols, la végétation et les cours d’eau.",
+    "resume": "Une sécheresse peut concerner le manque de pluie, le manque d’eau dans les sols ou la baisse des rivières et des nappes.",
+    "pourquoi": "Comprendre les différents types de sécheresse permet de mieux choisir les actions à mettre en place.",
+    "causes": [
+        "Déficit de précipitations",
+        "Températures élevées",
+        "Évaporation accrue",
+        "Sols dégradés",
+        "Consommations d’eau importantes"
+    ],
+    "consequences": [
+        "Stress des cultures agricoles",
+        "Baisse des débits des rivières",
+        "Fragilisation des arbres",
+        "Restrictions d’eau",
+        "Retrait-gonflement des argiles"
+    ],
+    "solutions": [
+        "Économiser l’eau",
+        "Favoriser l’infiltration",
+        "Restaurer les zones humides",
+        "Préserver les sols vivants",
+        "Adapter les plantations"
+    ],
+    "saviez_vous": "On distingue souvent la sécheresse météorologique, agricole et hydrologique.",
+    "territoire": "Le module Climat de VertClair permet de relier sécheresse, sols, nappes et risques liés aux argiles.",
+    "a_retenir": "La sécheresse n’est pas seulement un manque de pluie : elle concerne aussi les sols, les nappes et les usages de l’eau.",
+    "fenny": "Un sol vivant agit comme une éponge : il stocke mieux l’eau et résiste mieux aux périodes sèches."
+}

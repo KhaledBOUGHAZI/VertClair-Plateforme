@@ -1,0 +1,33 @@
+{
+    "id": "pollutions_eau",
+    "titre": "Les pollutions de l'eau",
+    "niveau": "debutant",
+    "illustration": "pollutions_eau.png",
+    "message_image": "L’illustration montre que les pollutions peuvent provenir de nombreuses activités humaines avant d’atteindre les rivières ou les nappes souterraines.",
+    "resume": "L'eau peut être polluée par des substances d'origine agricole, industrielle ou domestique. Ces pollutions peuvent dégrader les milieux aquatiques et compliquer la production d'eau potable.",
+    "pourquoi": "Prévenir les pollutions est plus efficace et moins coûteux que dépolluer l'eau après contamination.",
+    "causes": [
+        "Utilisation excessive de pesticides",
+        "Excès de nitrates provenant des engrais",
+        "Rejets industriels",
+        "Eaux usées insuffisamment traitées",
+        "Déchets abandonnés dans la nature"
+    ],
+    "consequences": [
+        "Dégradation de la qualité de l'eau",
+        "Fragilisation des écosystèmes aquatiques",
+        "Coût plus élevé du traitement de l'eau potable",
+        "Risques pour la santé dans certains cas"
+    ],
+    "solutions": [
+        "Réduire l'utilisation des produits phytosanitaires",
+        "Protéger les zones de captage",
+        "Améliorer le traitement des eaux usées",
+        "Prévenir les rejets polluants",
+        "Sensibiliser les citoyens"
+    ],
+    "saviez_vous": "Certaines pollutions mettent plusieurs années avant d'atteindre les nappes souterraines en traversant les sols.",
+    "territoire": "VertClair affiche les résultats officiels concernant notamment les nitrates et les pesticides dans l'eau distribuée sur votre commune.",
+    "a_retenir": "La meilleure eau est celle que l'on protège avant qu'elle ne soit polluée.",
+    "fenny": "Chaque pollution évitée aujourd'hui contribue à préserver l'eau potable de demain."
+}

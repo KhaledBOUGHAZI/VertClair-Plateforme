@@ -1,0 +1,42 @@
+{
+    "id": "continuites_ecologiques_connaisseur",
+    "titre": "Les continuités écologiques : relier les espaces naturels",
+    "niveau": "connaisseur",
+    "illustration": "biodiversite.png",
+
+    "message_image": "L'illustration représente plusieurs milieux naturels reliés entre eux par des haies, des cours d'eau, des forêts et des prairies, permettant aux espèces de se déplacer librement.",
+
+    "resume": "Les continuités écologiques sont les connexions qui permettent aux espèces animales et végétales de circuler entre différents habitats. Elles sont indispensables pour se nourrir, se reproduire, coloniser de nouveaux milieux et s'adapter aux évolutions du climat.",
+
+    "pourquoi": "Lorsque les espaces naturels restent connectés, les populations animales et végétales sont plus résistantes aux maladies, aux changements climatiques et à la disparition de certains habitats. À l'inverse, des milieux isolés fragilisent les espèces et limitent leur capacité d'adaptation.",
+
+    "causes": [
+        "Urbanisation et artificialisation des sols.",
+        "Construction d'infrastructures routières ou ferroviaires.",
+        "Disparition des haies et des bosquets.",
+        "Canalisation ou artificialisation des cours d'eau."
+    ],
+
+    "consequences": [
+        "Isolement des populations animales.",
+        "Réduction des échanges génétiques.",
+        "Diminution de la biodiversité.",
+        "Moindre capacité d'adaptation face au changement climatique."
+    ],
+
+    "solutions": [
+        "Préserver les haies et les alignements d'arbres.",
+        "Maintenir les corridors écologiques.",
+        "Créer des passages à faune.",
+        "Restaurer les cours d'eau et les zones humides.",
+        "Limiter la fragmentation des habitats."
+    ],
+
+    "saviez_vous": "Certaines espèces ont besoin de parcourir plusieurs kilomètres pour trouver de la nourriture ou un partenaire. Sans continuités écologiques, ces déplacements deviennent parfois impossibles.",
+
+    "territoire": "VertClair permet de visualiser plusieurs continuités écologiques présentes sur votre territoire, notamment grâce aux données de la Trame verte et bleue, des forêts, des zones humides et des cours d'eau.",
+
+    "a_retenir": "La biodiversité dépend autant de la qualité des habitats que de leur connexion entre eux. Des espaces naturels reliés forment un territoire plus résilient.",
+
+    "fenny": "Une forêt, une haie ou une rivière n'ont pas seulement de la valeur individuellement : c'est leur connexion qui permet au vivant de circuler et de prospérer."
+}

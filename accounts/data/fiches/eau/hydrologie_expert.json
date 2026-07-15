@@ -1,0 +1,37 @@
+{
+    "id": "hydrologie",
+    "titre": "L'hydrologie territoriale : comprendre le fonctionnement complet d'un bassin versant",
+    "niveau": "expert",
+    "illustration": "cycle_eau.png",
+    "message_image": "L’illustration représente l’ensemble du cycle hydrologique d’un territoire, depuis les précipitations jusqu’au retour de l’eau vers les rivières, les nappes souterraines et les océans.",
+    "resume": "L’hydrologie est la science qui étudie la circulation de l’eau sur les continents. Elle analyse les précipitations, le ruissellement, l’infiltration, l’évapotranspiration, les débits des cours d’eau et les échanges avec les nappes souterraines. Ces mécanismes déterminent la disponibilité de la ressource en eau et influencent directement les risques d’inondation ou de sécheresse.",
+    "pourquoi": "Face au changement climatique, comprendre le fonctionnement hydrologique d’un territoire est indispensable pour adapter l’aménagement, sécuriser les ressources en eau et limiter les risques naturels. Les collectivités s'appuient sur ces connaissances pour élaborer leurs stratégies d'adaptation.",
+    "causes": [
+        "Répartition des précipitations au cours de l'année.",
+        "Nature des sols et des formations géologiques.",
+        "Topographie du bassin versant.",
+        "Occupation des sols.",
+        "Artificialisation et imperméabilisation.",
+        "Évolution du climat."
+    ],
+    "consequences": [
+        "Modification des débits des cours d'eau.",
+        "Recharge plus ou moins importante des nappes souterraines.",
+        "Évolution de la fréquence des inondations.",
+        "Sécheresses plus longues.",
+        "Disponibilité variable de la ressource en eau."
+    ],
+    "solutions": [
+        "Préserver les sols perméables.",
+        "Limiter l'artificialisation.",
+        "Restaurer les zones humides.",
+        "Favoriser l'infiltration des eaux pluviales.",
+        "Développer une gestion intégrée du bassin versant.",
+        "Suivre les indicateurs hydrologiques."
+    ],
+    "saviez_vous": "Une même quantité de pluie peut produire des effets très différents selon la saison, la nature du sol, son humidité et l'occupation du territoire.",
+    "territoire": "VertClair combine les données climatiques (DRIAS), hydrogéologiques (BRGM), hydrologiques (EauFrance) et les risques naturels afin d'aider à comprendre le fonctionnement hydrologique propre à chaque territoire.",
+    "a_retenir": "La gestion durable de l'eau commence toujours par une bonne compréhension du fonctionnement hydrologique du bassin versant.",
+    "fenny": "L'eau circule en permanence entre le ciel, les sols, les nappes et les rivières. Comprendre ces échanges permet de mieux protéger les territoires face aux changements climatiques.",
+    "vertclair_plus": "Dans le module Eau de VertClair, les données hydrologiques sont croisées avec les projections climatiques et les indicateurs territoriaux afin d'identifier les principales vulnérabilités locales."
+}

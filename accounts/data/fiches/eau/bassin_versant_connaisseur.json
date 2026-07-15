@@ -1,0 +1,32 @@
+{
+    "id": "bassin_versant",
+    "titre": "Le bassin versant : comprendre le parcours de l'eau",
+    "niveau": "connaisseur",
+    "illustration": "cycle_eau.png",
+    "message_image": "L’illustration montre qu'une goutte de pluie tombant sur un territoire rejoint toujours un même réseau hydrographique appelé bassin versant.",
+    "resume": "Un bassin versant est un territoire dont toutes les eaux de pluie s'écoulent vers un même cours d'eau principal. Les reliefs délimitent naturellement ces bassins et déterminent le trajet de l'eau jusqu'à la mer ou un grand fleuve.",
+    "pourquoi": "Le bassin versant constitue l'échelle de référence pour gérer durablement l'eau. Une action réalisée en amont peut avoir des conséquences importantes plusieurs dizaines de kilomètres plus loin.",
+    "causes": [
+        "Le relief oriente naturellement l'écoulement des eaux.",
+        "Les ruisseaux alimentent progressivement les rivières.",
+        "Les rivières rejoignent ensuite un fleuve ou la mer.",
+        "Toutes les activités humaines situées dans un bassin influencent la qualité de l'eau."
+    ],
+    "consequences": [
+        "Propagation des pollutions vers l'aval.",
+        "Transmission des risques d'inondation.",
+        "Impact des aménagements sur l'ensemble du bassin.",
+        "Nécessité d'une gestion coordonnée entre les communes."
+    ],
+    "solutions": [
+        "Protéger les zones amont.",
+        "Préserver les cours d'eau.",
+        "Limiter les pollutions diffuses.",
+        "Favoriser la coopération entre collectivités.",
+        "Gérer l'eau à l'échelle du bassin versant."
+    ],
+    "saviez_vous": "Les limites d'un bassin versant ne correspondent presque jamais aux limites administratives des communes ou des départements.",
+    "territoire": "Les données utilisées par VertClair prennent en compte les caractéristiques hydrologiques de votre territoire afin de mieux comprendre les risques et les ressources en eau.",
+    "a_retenir": "L'eau ignore les frontières administratives : elle suit toujours la topographie du bassin versant.",
+    "fenny": "Pour protéger une rivière, il faut regarder tout ce qui se passe en amont. Chaque action compte, même très loin du cours d'eau."
+}

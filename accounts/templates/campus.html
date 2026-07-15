@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Campus VertClair{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid p-4">
+
+    <div class="mb-4">
+        <h1>🎓 Campus VertClair</h1>
+        <p class="text-muted">
+            Développez votre culture écologique et suivez votre progression.
+        </p>
+    </div>
+
+    <div class="card shadow-sm border-0 mb-4">
+        <div class="card-body">
+            <h4>👋 Bienvenue {{ request.user.username }}</h4>
+
+            <p class="mb-2">Progression globale</p>
+
+            <div class="progress mb-2" style="height: 12px;">
+                <div class="progress-bar bg-success" style="width: {{ progression_globale }}%;"></div>
+            </div>
+
+            <small class="text-muted">
+                {{ progression_globale }} % du parcours VertClair complété
+            </small>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-xl-8 col-lg-7 mb-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+
+                    <h3 class="mb-4">📚 Mes formations</h3>
+
+                    <div class="row">
+
+                        <!-- Climat -->
+                        {% include "partials/campus_module.html" with titre="🌡️ Climat & adaptation" progression=progression_climat debutant=climat_debutant connaisseur=climat_connaisseur expert=climat_expert theme="climat" %}
+
+                        <!-- Eau -->
+                        {% include "partials/campus_module.html" with titre="💧 Eau" progression=progression_eau debutant=eau_debutant connaisseur=eau_connaisseur expert=eau_expert theme="eau" %}
+
+                        <!-- Biodiversité -->
+                        {% include "partials/campus_module.html" with titre="🌿 Biodiversité" progression=progression_biodiversite debutant=biodiversite_debutant connaisseur=biodiversite_connaisseur expert=biodiversite_expert theme="biodiversite" %}
+
+                        <!-- Énergie -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body">
+                                    <h4>⚡ Énergie</h4>
+
+                                    <div class="progress mb-3" style="height: 10px;">
+                                        <div class="progress-bar bg-success" style="width: 0%;"></div>
+                                    </div>
+
+                                    <p class="mb-1">🌱 Débutant <span class="badge bg-secondary">⚪ À faire</span></p>
+                                    <p class="mb-1">🌿 Connaisseur <span class="badge bg-secondary">⚪ À faire</span></p>
+                                    <p class="mb-3">🌳 Expert <span class="badge bg-secondary">⚪ À faire</span></p>
+
+                                    <button class="btn btn-outline-secondary btn-sm" disabled>
+                                        Bientôt disponible
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-5 mb-4">
+
+            <div class="card shadow-sm border-0 mb-4">
+                <div class="card-body">
+                    <h3>🏅 Mes badges</h3>
+
+                    {% if climat_debutant %}<p class="mb-2">🌱 Climat débutant validé</p>{% endif %}
+                    {% if climat_connaisseur %}<p class="mb-2">🌿 Climat connaisseur validé</p>{% endif %}
+                    {% if climat_expert %}<p class="mb-2">🌳 Climat expert validé</p>{% endif %}
+
+                    {% if eau_debutant %}<p class="mb-2">💧 Eau débutant validé</p>{% endif %}
+                    {% if eau_connaisseur %}<p class="mb-2">💦 Eau connaisseur validé</p>{% endif %}
+                    {% if eau_expert %}<p class="mb-2">🌊 Eau expert validé</p>{% endif %}
+
+                    {% if biodiversite_debutant %}<p class="mb-2">🌱 Biodiversité débutant validé</p>{% endif %}
+                    {% if biodiversite_connaisseur %}<p class="mb-2">🌿 Biodiversité connaisseur validé</p>{% endif %}
+                    {% if biodiversite_expert %}<p class="mb-2">🌳 Biodiversité expert validé</p>{% endif %}
+
+                    {% if resultats %}
+                        <p class="mb-0">🥇 Premier quiz réalisé</p>
+                    {% else %}
+                        <p class="text-muted mb-0">Aucun badge pour le moment.</p>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="card shadow-sm border-0 mb-4">
+                <div class="card-body">
+                    <h3>🎯 Recommandations personnalisées</h3>
+
+                    {% if not climat_debutant %}
+                        <div class="alert alert-warning">
+                            🌡️ Commencez le parcours <strong>Climat Débutant</strong>.
+                        </div>
+                    {% elif not eau_debutant %}
+                        <div class="alert alert-info">
+                            💧 Continuez avec le parcours <strong>Eau Débutant</strong>.
+                        </div>
+                    {% elif not biodiversite_debutant %}
+                        <div class="alert alert-success">
+                            🌿 Continuez avec le parcours <strong>Biodiversité Débutant</strong>.
+                        </div>
+                    {% elif not climat_connaisseur %}
+                        <div class="alert alert-primary">
+                            🌿 Passez au niveau <strong>Climat Connaisseur</strong>.
+                        </div>
+                    {% elif not eau_connaisseur %}
+                        <div class="alert alert-primary">
+                            💦 Passez au niveau <strong>Eau Connaisseur</strong>.
+                        </div>
+                    {% elif not biodiversite_connaisseur %}
+                        <div class="alert alert-primary">
+                            🌿 Passez au niveau <strong>Biodiversité Connaisseur</strong>.
+                        </div>
+                    {% elif not climat_expert %}
+                        <div class="alert alert-danger">
+                            🌳 Passez au niveau <strong>Climat Expert</strong>.
+                        </div>
+                    {% elif not eau_expert %}
+                        <div class="alert alert-danger">
+                            🌊 Passez au niveau <strong>Eau Expert</strong>.
+                        </div>
+                    {% elif not biodiversite_expert %}
+                        <div class="alert alert-danger">
+                            🌳 Passez au niveau <strong>Biodiversité Expert</strong>.
+                        </div>
+                    {% else %}
+                        <div class="alert alert-success">
+                            🏆 Bravo, vous avez terminé les parcours Climat, Eau et Biodiversité.
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h3>📊 Statistiques</h3>
+
+                    <p class="mb-2">
+                        Quiz réalisés : <strong>{{ quiz_realises }}</strong>
+                    </p>
+
+                    <p class="mb-2">
+                        Modules commencés :
+                        <strong>{{ modules_commences }} / 8</strong>
+                    </p>
+
+                    <p class="mb-0">
+                        Progression globale :
+                        <strong>{{ progression_globale }} %</strong>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

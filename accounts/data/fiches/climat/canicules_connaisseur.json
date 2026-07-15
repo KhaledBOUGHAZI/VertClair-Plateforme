@@ -1,0 +1,31 @@
+{
+    "id": "canicules",
+    "titre": "Canicules et îlots de chaleur urbains",
+    "niveau": "connaisseur",
+    "illustration": "canicules.png",
+    "message_image": "L’illustration montre qu’en ville, les matériaux minéraux accumulent la chaleur et aggravent les épisodes de canicule.",
+    "resume": "Les canicules sont des épisodes de chaleur intense qui durent plusieurs jours et peuvent être aggravées par les îlots de chaleur urbains.",
+    "pourquoi": "Les villes très minérales stockent la chaleur le jour et la restituent la nuit, ce qui limite le refroidissement nocturne.",
+    "causes": [
+        "Réchauffement climatique",
+        "Sols imperméabilisés",
+        "Bâtiments et voiries qui stockent la chaleur",
+        "Manque d’arbres et d’espaces ombragés"
+    ],
+    "consequences": [
+        "Risques sanitaires",
+        "Nuits tropicales plus fréquentes",
+        "Inconfort dans les logements",
+        "Stress hydrique pour la végétation"
+    ],
+    "solutions": [
+        "Végétaliser les rues et les places",
+        "Créer des zones d’ombre",
+        "Désimperméabiliser les sols",
+        "Adapter les bâtiments aux fortes chaleurs"
+    ],
+    "saviez_vous": "Une nuit tropicale est une nuit durant laquelle la température ne descend pas sous 20°C.",
+    "territoire": "Le module Climat de VertClair permet d’identifier les enjeux liés aux fortes chaleurs et à l’adaptation urbaine.",
+    "a_retenir": "Les canicules sont aggravées par les villes minérales, mais la végétation et l’ombre peuvent réduire les impacts.",
+    "fenny": "Un arbre bien placé peut rafraîchir une rue, protéger les habitants et améliorer le confort d’été."
+}

@@ -1,0 +1,44 @@
+{
+    "id": "sesame_cerema_expert",
+    "titre": "L'outil SESAME du Cerema : choisir les bonnes essences pour aujourd'hui… et pour demain",
+    "niveau": "expert",
+    "illustration": "biodiversite.png",
+
+    "message_image": "L'illustration montre un aménageur utilisant un outil d'aide à la décision pour sélectionner des arbres et arbustes adaptés au climat actuel, au climat futur, au type de sol et aux objectifs de biodiversité d'un territoire.",
+
+    "resume": "SESAME est un outil développé par le Cerema qui aide les collectivités, aménageurs et gestionnaires d'espaces verts à choisir les essences végétales les mieux adaptées à un territoire. Il prend en compte le climat actuel, les projections climatiques futures, les caractéristiques du sol et les objectifs de végétalisation afin de renforcer la résilience des plantations.",
+
+    "pourquoi": "Le changement climatique modifie progressivement les conditions de croissance des végétaux. Une essence adaptée aujourd'hui ne le sera peut-être plus dans trente ou cinquante ans. Choisir les bonnes espèces dès maintenant permet de limiter les pertes, les coûts de remplacement et d'assurer une végétalisation durable.",
+
+    "causes": [
+        "Hausse des températures.",
+        "Sécheresses plus fréquentes.",
+        "Modification des régimes de précipitations.",
+        "Évolution des maladies et ravageurs.",
+        "Besoin de végétaliser durablement les villes."
+    ],
+
+    "consequences": [
+        "Mortalité plus importante des plantations inadaptées.",
+        "Augmentation des coûts d'entretien.",
+        "Réduction des services rendus par les arbres.",
+        "Moindre capacité d'adaptation des espaces verts.",
+        "Perte de biodiversité locale."
+    ],
+
+    "solutions": [
+        "Choisir des essences adaptées au territoire.",
+        "Diversifier les plantations.",
+        "Anticiper les conditions climatiques futures.",
+        "Privilégier les espèces favorables à la biodiversité.",
+        "Utiliser des outils d'aide à la décision comme SESAME."
+    ],
+
+    "saviez_vous": "Deux communes situées à seulement quelques dizaines de kilomètres peuvent nécessiter des choix d'essences différents en raison de leur altitude, de leur exposition, de leur climat ou de la nature de leurs sols.",
+
+    "territoire": "VertClair intégrera progressivement l'outil SESAME afin de proposer automatiquement les essences végétales les plus adaptées à chaque commune française selon son climat actuel, son climat futur et les caractéristiques de son territoire.",
+
+    "a_retenir": "Planter un arbre est un investissement pour plusieurs décennies. Choisir une essence adaptée dès aujourd'hui permet de garantir sa survie, les services qu'elle rendra et sa contribution à la biodiversité.",
+
+    "fenny": "Le meilleur arbre n'est pas forcément celui que l'on préfère aujourd'hui… c'est celui qui sera encore en bonne santé dans cinquante ans et qui profitera durablement aux habitants comme à la biodiversité."
+}

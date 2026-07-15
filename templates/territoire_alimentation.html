@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Alimentation durable{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid p-4">
+
+    <h2>🌱 Alimentation durable & bioéconomie</h2>
+
+    <p class="text-muted">
+        Diagnostic territorial de l’alimentation, des circuits courts,
+        de l’agriculture locale et des ressources de bioéconomie.
+    </p>
+
+    <div class="card shadow-sm border-0 mb-4">
+        <div class="card-body">
+
+            <h4>🔎 Rechercher un territoire</h4>
+
+            <input
+                id="villeAlimentation"
+                class="form-control"
+                placeholder="Ex : Rouen, Évreux, Pacy-sur-Eure"
+            >
+            <input
+    id="adresseAlimentation"
+    class="form-control mt-2"
+    placeholder="Adresse facultative pour calculer les distances"
+>
+
+            <button
+                class="btn btn-success mt-3"
+                onclick="chargerAlimentation()"
+            >
+                Analyser l’alimentation durable
+            </button>
+<div
+    id="boutonsAlimentation"
+    class="mt-4 mb-4"
+    style="display:none;"
+>
+
+    <button
+        class="btn btn-outline-success me-2"
+        onclick="
+            document
+                .getElementById('acteursAlimentation')
+                .scrollIntoView({
+                    behavior:'smooth'
+                });
+        "
+    >
+        🌱 Acteurs
+    </button>
+
+    <button
+        class="btn btn-outline-primary me-2"
+        onclick="
+            document
+                .getElementById('indiceAlimentation')
+                .scrollIntoView({
+                    behavior:'smooth'
+                });
+        "
+    >
+        📈 Indicateur
+    </button>
+
+    <button
+        class="btn btn-outline-warning"
+        onclick="
+            document
+                .getElementById('actionsAlimentation')
+                .scrollIntoView({
+                    behavior:'smooth'
+                });
+        "
+    >
+        🎯 Actions
+    </button>
+
+</div>
+        </div>
+    </div>
+
+
+    <div id="resultatAlimentation"></div>
+
+<div class="card shadow-sm border-0 mt-4">
+    <div class="card-body">
+        <h4>🗺️ Carte alimentation durable</h4>
+        <div id="mapAlimentation" style="height:420px;"></div>
+    </div>
+</div>
+
+<div id="boutonsAlimentation" class="mb-4 mt-4" style="display:none;">
+
+    <button
+        class="btn btn-outline-success me-2"
+        onclick="afficherBlocActeursAlimentationPrincipal()">
+        🌱 Acteurs bio
+    </button>
+
+    <button
+        class="btn btn-outline-primary me-2"
+        onclick="afficherBlocIndiceAlimentation()">
+        📈 Indicateur
+    </button>
+
+    <button
+        class="btn btn-outline-warning"
+        onclick="afficherBlocActionsAlimentation()">
+        🎯 Actions
+    </button>
+
+</div>
+
+<div id="blocActeursAlimentation">
+    <div id="acteursAlimentation"></div>
+    <div id="listeCompleteAlimentation"></div>
+</div>
+
+<div id="blocIndiceAlimentation">
+    <div id="indiceAlimentation"></div>
+</div>
+
+<div id="blocActionsAlimentation">
+    <div id="actionsAlimentation"></div>
+</div>
+
+
+</div>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script src="{% static 'js/territoire/alimentation-carte.js' %}?v=8"></script>
+<script src="{% static 'js/territoire/alimentation-diagnostic.js' %}?v=3"></script>
+<script src="{% static 'js/territoire/alimentation-acteurs.js' %}?v=5"></script>
+<script src="{% static 'js/territoire/alimentation-indice.js' %}?v=7"></script>
+<script src="{% static 'js/territoire/alimentation-actions.js' %}?v=5"></script>
+<script src="{% static 'js/territoire/alimentation-navigation.js' %}?v=1"></script>
+<script src="{% static 'js/territoire/alimentation-main.js' %}?v=8"></script>
+
+{% endblock %}

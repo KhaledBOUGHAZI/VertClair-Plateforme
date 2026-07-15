@@ -1,0 +1,35 @@
+[
+    {
+        "question": "Quel aménagement favorise l’infiltration de l’eau ?",
+        "reponses": [
+            "Une noue végétalisée",
+            "Une dalle béton continue",
+            "Un parking imperméable"
+        ],
+        "bonne": 0,
+        "explication": "Une noue végétalisée ralentit l’eau de pluie et favorise son infiltration dans le sol.",
+        "fiche": "infiltration_ruissellement"
+    },
+    {
+        "question": "En période de sécheresse, la priorité est de :",
+        "reponses": [
+            "Préserver les usages essentiels de l’eau",
+            "Arroser davantage les pelouses",
+            "Laver les voiries tous les jours"
+        ],
+        "bonne": 0,
+        "explication": "La gestion de l’eau vise d’abord à préserver les usages essentiels, l’eau potable et les milieux naturels.",
+        "fiche": "sobriete_hydrique"
+    },
+    {
+        "question": "Une rivière en bon état écologique est plutôt :",
+        "reponses": [
+            "Vivante, avec des berges végétalisées",
+            "Totalement bétonnée",
+            "Sans végétation ni habitats"
+        ],
+        "bonne": 0,
+        "explication": "Des berges végétalisées offrent des habitats, limitent l’érosion et améliorent le fonctionnement du cours d’eau.",
+        "fiche": "rivieres"
+    }
+]

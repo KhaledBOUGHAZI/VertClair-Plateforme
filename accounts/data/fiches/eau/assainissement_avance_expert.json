@@ -1,0 +1,42 @@
+{
+    "id": "assainissement_avance",
+    "titre": "Les traitements avancés des eaux usées et la réutilisation de l'eau",
+    "niveau": "expert",
+    "illustration": "pollutions_eau.png",
+    "message_image": "L’illustration montre comment les technologies modernes permettent d'améliorer la qualité des eaux usées avant leur rejet ou leur réutilisation.",
+    "resume": "Les stations d'épuration modernes ne se limitent plus à éliminer les matières en suspension et la pollution organique. Elles intègrent progressivement des traitements avancés capables de réduire les nutriments, certains micropolluants, les résidus médicamenteux et les microplastiques. Dans certains territoires, les eaux usées traitées peuvent également être réutilisées pour limiter les prélèvements dans le milieu naturel.",
+    "pourquoi": "Face aux sécheresses plus fréquentes et aux tensions sur la ressource, la réutilisation des eaux usées traitées (REUT) constitue une solution complémentaire permettant de préserver les ressources naturelles tout en sécurisant certains usages non alimentaires.",
+    "causes": [
+        "Augmentation des besoins en eau.",
+        "Développement urbain.",
+        "Présence de nouveaux micropolluants.",
+        "Épisodes de sécheresse plus fréquents.",
+        "Exigences réglementaires renforcées."
+    ],
+    "consequences": [
+        "Modernisation des stations d'épuration.",
+        "Amélioration de la qualité des rejets.",
+        "Réduction des prélèvements dans les nappes et les rivières.",
+        "Développement de nouveaux usages de l'eau recyclée.",
+        "Protection renforcée des milieux aquatiques."
+    ],
+    "solutions": [
+        "Mettre en place des traitements tertiaires.",
+        "Développer la réutilisation des eaux usées traitées lorsque la réglementation le permet.",
+        "Réduire les micropolluants à la source.",
+        "Optimiser les performances énergétiques des stations.",
+        "Mettre en œuvre une surveillance renforcée des rejets."
+    ],
+    "saviez_vous": "Dans plusieurs pays européens, les eaux usées traitées sont déjà utilisées pour l'irrigation, le nettoyage des voiries ou certains usages industriels afin d'économiser l'eau potable.",
+    "territoire": "Les collectivités peuvent intégrer la REUT parmi les actions d'adaptation au changement climatique lorsque les conditions réglementaires, sanitaires et techniques sont réunies.",
+    "a_retenir": "L'eau rejetée après traitement peut devenir une ressource complémentaire lorsqu'elle est utilisée dans des conditions strictement encadrées.",
+    "fenny": "Chaque litre d'eau réutilisé pour un usage adapté est un litre d'eau potable préservé pour les besoins essentiels.",
+    "vertclair_plus": "VertClair permet d'intégrer la réutilisation des eaux usées traitées dans les plans d'action territoriaux consacrés à l'eau et à l'adaptation climatique.",
+    "pour_aller_plus_loin": [
+        "Règlement européen sur la réutilisation des eaux usées traitées",
+        "Ministère de la Transition écologique",
+        "EauFrance",
+        "Office français de la biodiversité",
+        "Cerema"
+    ]
+}

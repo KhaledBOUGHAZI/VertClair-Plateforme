@@ -1,0 +1,46 @@
+{
+    "id": "zan_expert",
+    "titre": "Le Zéro Artificialisation Nette (ZAN) : préserver durablement les sols",
+    "niveau": "expert",
+    "illustration": "biodiversite.png",
+
+    "message_image": "L'illustration montre une commune qui privilégie la rénovation des espaces déjà urbanisés, la désimperméabilisation des sols et la préservation des espaces naturels afin de limiter l'artificialisation.",
+
+    "resume": "Le Zéro Artificialisation Nette (ZAN) est une politique nationale visant à limiter progressivement la consommation d'espaces naturels, agricoles et forestiers. Son objectif est de réduire fortement l'artificialisation des sols tout en favorisant la réutilisation des espaces déjà urbanisés et la renaturation des territoires.",
+
+    "pourquoi": "L'artificialisation des sols entraîne la disparition des habitats naturels, limite l'infiltration de l'eau, augmente les risques d'inondation, favorise les îlots de chaleur urbains et réduit les capacités de stockage du carbone. Préserver les sols est donc essentiel pour la biodiversité comme pour l'adaptation au changement climatique.",
+
+    "causes": [
+        "Extension des zones urbaines.",
+        "Construction de nouvelles infrastructures.",
+        "Création de zones commerciales et industrielles.",
+        "Imperméabilisation des sols.",
+        "Étalement urbain."
+    ],
+
+    "consequences": [
+        "Perte de biodiversité.",
+        "Destruction des habitats naturels.",
+        "Augmentation du ruissellement.",
+        "Réduction de la recharge des nappes phréatiques.",
+        "Renforcement des îlots de chaleur.",
+        "Diminution des services écosystémiques."
+    ],
+
+    "solutions": [
+        "Réhabiliter les friches.",
+        "Densifier les secteurs déjà urbanisés lorsque cela est pertinent.",
+        "Désimperméabiliser les espaces publics.",
+        "Préserver les espaces agricoles et naturels.",
+        "Renaturer les sites artificialisés.",
+        "Intégrer le ZAN dans les documents d'urbanisme."
+    ],
+
+    "saviez_vous": "Un sol artificialisé perd une grande partie de ses fonctions naturelles : infiltration de l'eau, stockage du carbone, support de biodiversité et production agricole.",
+
+    "territoire": "VertClair pourra suivre l'évolution de l'artificialisation de votre territoire, identifier les secteurs à renaturer et proposer des actions compatibles avec les objectifs du ZAN.",
+
+    "a_retenir": "Le meilleur terrain à construire est souvent celui qui est déjà artificialisé. Préserver les sols naturels permet de protéger simultanément la biodiversité, l'eau, le climat et l'agriculture.",
+
+    "fenny": "Le sol est une ressource vivante qui met parfois plusieurs centaines d'années à se former. Une fois artificialisé, il est très difficile de retrouver toutes ses fonctions naturelles."
+}

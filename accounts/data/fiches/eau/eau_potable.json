@@ -1,0 +1,31 @@
+{
+    "id": "eau_potable",
+    "titre": "L'eau potable : une ressource précieuse",
+    "niveau": "debutant",
+    "illustration": "eau_potable.png",
+    "message_image": "L’illustration montre les principales étapes qui permettent de distribuer une eau potable jusqu'au robinet.",
+    "resume": "L’eau potable est une eau qui peut être consommée sans danger pour la santé. Elle provient principalement des nappes souterraines ou des rivières, puis est traitée avant d’être distribuée.",
+    "pourquoi": "Chaque habitant dépend quotidiennement d’un réseau d’alimentation en eau potable. Préserver cette ressource est indispensable pour la santé et pour les activités humaines.",
+    "causes": [
+        "Captage dans les nappes ou les rivières",
+        "Traitement de l'eau",
+        "Contrôles sanitaires réguliers",
+        "Distribution par le réseau d'eau potable"
+    ],
+    "consequences": [
+        "Accès à une eau de qualité",
+        "Protection de la santé publique",
+        "Besoins importants en infrastructures",
+        "Nécessité de protéger les captages"
+    ],
+    "solutions": [
+        "Préserver les aires de captage",
+        "Réduire les pollutions agricoles et industrielles",
+        "Limiter le gaspillage d'eau",
+        "Entretenir les réseaux de distribution"
+    ],
+    "saviez_vous": "En France, l'eau potable fait l'objet de milliers d'analyses sanitaires chaque année avant d'arriver au robinet.",
+    "territoire": "VertClair affiche les derniers résultats officiels de qualité de l'eau potable de votre commune.",
+    "a_retenir": "L'eau la moins chère et la plus écologique est celle que l'on ne gaspille pas.",
+    "fenny": "Chaque litre économisé contribue à préserver les ressources en eau et limite les besoins de traitement."
+}

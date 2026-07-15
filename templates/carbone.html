@@ -1,0 +1,400 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Calculez vos impacts carbone{% endblock %}
+
+{% block content %}
+
+<h2 class="d-flex align-items-center gap-2">
+    <img src="{% static 'images/logo_carbone.png' %}" 
+         alt="Logo carbone" 
+         style="width: 60px;">
+    Calculez vos impacts carbone
+</h2>
+
+<div class="alert alert-info border-0 shadow-sm mt-3 mb-4" style="max-width:900px;">
+    ℹ️ Les facteurs d’émission utilisés par VertClair sont issus d’une sélection de données de la
+    <strong>Base Empreinte® ADEME</strong>, référence nationale pour l’évaluation des émissions de gaz à effet de serre.
+</div>
+
+<div class="mb-3" style="max-width:300px;">
+    <label for="mois" class="form-label">Mois concerné</label>
+    <input type="month" id="mois" name="mois" class="form-control" min="2025-01" max="2030-12" required>
+</div>
+
+<p>Entrez vos consommations :</p>
+
+<div class="mb-3">
+    <a href="#actions-carbone"
+       class="btn btn-success">
+       🎯 Voir les actions de réduction carbone
+    </a>
+</div>
+
+<ul class="nav nav-tabs mt-4 mb-4" id="carboneTabs" role="tablist">
+    <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#energie" type="button">⚡ Energie</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#deplacements" type="button">🚗 Déplacements</button></li>
+<li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#achats" type="button">📄 Achats / Intrants</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#fret" type="button">🚚 Fret</button></li>
+    
+</ul>
+
+<div class="tab-content" style="max-width:900px;">
+
+    <div class="tab-pane fade show active" id="energie">
+
+    <div class="alert alert-light border mb-3">
+        ⚡ La sobriété énergétique consiste à réduire les consommations inutiles
+        tout en conservant le même niveau de confort.
+
+        <br><br>
+
+        💡 Éclairage inutile, appareils en veille,
+        climatisation excessive ou eau chaude surconsommée
+        peuvent représenter une part significative des consommations d'énergie.
+    </div>
+
+    <div class="alert alert-light border mb-3">
+        💡 Une climatisation mal réglée peut fortement augmenter la consommation électrique.
+        <br>
+        L'isolation des bâtiments, les protections solaires et la végétalisation permettent souvent de réduire durablement les besoins de climatisation.
+    </div>
+
+    <table class="table table-bordered">
+            <thead><tr><th>Rubrique</th><th>Poste</th><th>Consommation</th><th>Résultat (kg CO₂)</th></tr></thead>
+            <tbody>
+                <tr><td>Energie</td><td>Consommation électrique annuelle (kWh)</td><td><input type="number" class="form-control conso" data-code="energie_electricite"></td><td><span class="result">0</span></td></tr>
+                <tr><td>Energie</td><td>Gaz naturel (kWh)</td><td><input type="number" class="form-control conso" data-code="energie_gaz"></td><td><span class="result">0</span></td></tr>
+                <tr><td>Energie</td><td>Fioul (litre)</td><td><input type="number" class="form-control conso" data-code="energie_fioul"></td><td><span class="result">0</span></td></tr>
+            <tr>
+    <td>Energie</td>
+    <td>Climatisation (kWh)</td>
+    <td>
+        <input type="number"
+               class="form-control conso"
+               data-code="energie_climatisation">
+    </td>
+    <td><span class="result">0</span></td>
+</tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="tab-pane fade" id="deplacements">
+        <table class="table table-bordered">
+            <thead><tr><th>Rubrique</th><th>Poste</th><th>Consommation</th><th>Résultat (kg CO₂)</th></tr></thead>
+            <tbody>
+                <tr>
+    <td>Déplacements</td>
+    <td>Voiture essence (km)</td>
+    <td><input type="number" class="form-control conso" data-code="deplacement_voiture_essence"></td>
+    <td><span class="result">0</span></td>
+</tr>
+
+<tr>
+    <td>Déplacements</td>
+    <td>Voiture diesel (km)</td>
+    <td><input type="number" class="form-control conso" data-code="deplacement_voiture_diesel"></td>
+    <td><span class="result">0</span></td>
+</tr>
+                <tr><td>Déplacements</td><td>Deux roues motorisées (nombre d'engins × km)</td><td><input type="number" class="form-control conso" data-code="deplacement_deux_roues"></td><td><span class="result">0</span></td></tr>
+                <tr><td>Déplacements</td><td>Autobus (passagers × km)</td><td><input type="number" class="form-control conso" data-code="deplacement_bus"></td><td><span class="result">0</span></td></tr>
+                <tr><td>Déplacements</td><td>Train, métro, tram, RER (passagers × km)</td><td><input type="number" class="form-control conso" data-code="deplacement_train"></td><td><span class="result">0</span></td></tr>
+                <tr>
+    <td>Déplacements</td>
+    <td>Avion court courrier (km)</td>
+    <td>
+        <input type="number"
+               class="form-control conso"
+               data-code="deplacement_avion_court">
+    </td>
+    <td><span class="result">0</span></td>
+</tr>
+
+<tr>
+    <td>Déplacements</td>
+    <td>Avion long courrier (km)</td>
+    <td>
+        <input type="number"
+               class="form-control conso"
+               data-code="deplacement_avion_long">
+    </td>
+    <td><span class="result">0</span></td>
+</tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="tab-pane fade" id="achats">
+        
+        <table class="table table-bordered">
+            <thead><tr><th>Rubrique</th><th>Poste</th><th>Consommation</th><th>Résultat (kg CO₂)</th></tr></thead>
+            <tbody>
+                <tr><td>Achats / Intrants</td><td>Papier bureautique (kg)</td><td><input type="number" class="form-control conso" data-code="achats_papier"></td><td><span class="result">0</span></td></tr>
+                <tr>
+    <td>Achats / Intrants</td>
+    <td>Carton acheté (kg)</td>
+    <td>
+        <input type="number"
+               class="form-control conso"
+               data-code="achats_carton">
+    </td>
+    <td><span class="result">0</span></td>
+</tr>
+                
+</tbody>
+        </table>
+    </div>
+
+    
+    <div class="tab-pane fade" id="fret">
+        <table class="table table-bordered">
+            <thead><tr><th>Rubrique</th><th>Poste</th><th>Consommation</th><th>Résultat (kg CO₂)</th></tr></thead>
+            <tbody>
+                <tr><td>Fret</td><td>Transport routier (tonne.km)</td><td><input type="number" class="form-control conso" data-code="fret_routier"></td><td><span class="result">0</span></td></tr>
+                <tr><td>Fret</td><td>Transport ferroviaire (tonne.km)</td><td><input type="number" class="form-control conso" data-code="fret_ferroviaire"></td><td><span class="result">0</span></td></tr>
+                <tr><td>Fret</td><td>Transport maritime (tonne.km)</td><td><input type="number" class="form-control conso" data-code="fret_maritime"></td><td><span class="result">0</span></td></tr>
+                <tr><td>Fret</td><td>Transport aérien (tonne.km)</td><td><input type="number" class="form-control conso" data-code="fret_aerien"></td><td><span class="result">0</span></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<div class="alert alert-success mt-3" style="max-width:700px;">
+    Total : <strong><span id="total">0</span> kg CO₂e</strong>
+    <div class="card shadow-sm border-0 mt-3 mb-3">
+    <div class="card-body">
+
+        <h5>ℹ️ Facteurs d'émission utilisés</h5>
+
+        <div id="listeFacteursUtilises">
+
+            <div class="text-muted">
+                Les facteurs utilisés apparaîtront après saisie.
+            </div>
+
+        </div>
+
+    </div>
+</div>
+    <div class="alert alert-warning mt-2" style="max-width:700px;">
+    🎯 Objectif recommandé :
+    réduire d'au moins <strong>20 %</strong>
+    vos émissions sur 5 ans.
+</div>
+<div class="card shadow-sm border-0 mt-3 mb-4" style="max-width:900px;">
+    <div class="card-body">
+        <h4>🌳 Équivalence carbone</h4>
+
+        <div id="equivalenceCarbone">
+            <div class="alert alert-light mb-0">
+                Saisissez des consommations pour afficher une équivalence.
+            </div>
+        </div>
+    </div>
+</div>
+    <br>
+    <small>Source des facteurs d’émission : Base Empreinte® ADEME.</small>
+</div>
+<div class="card shadow-sm border-0 mt-4 mb-4" style="max-width:900px;">
+    <div class="card-body">
+        <h4>🏆 Principaux postes d’émissions</h4>
+
+        <p class="text-muted">
+            Les postes les plus émetteurs sont identifiés automatiquement à partir de vos saisies.
+        </p>
+
+        <div id="topPostesCarbone">
+            <div class="alert alert-light">
+                Saisissez des consommations pour afficher les principaux postes d’émissions.
+            </div>
+        </div>
+    </div>
+</div>
+<h4 class="mt-4">
+    📊 Analyse et export du bilan carbone
+</h4>
+
+<p class="text-muted">
+    Visualisez l'évolution de vos émissions et exportez votre bilan.
+</p>
+<div class="mt-3" style="max-width:900px;">
+    <label class="form-label">Période du graphique</label>
+    <select id="periodeGraphique" class="form-select mb-2" style="max-width:300px;">
+        <option value="mensuel">Mensuel</option>
+        <option value="annuel">Annuel</option>
+    </select>
+
+    <label class="form-label">Détail du graphique</label>
+    <select id="modeGraphique" class="form-select mb-3" style="max-width:300px;">
+        <option value="total">Total</option>
+        <option value="postes">Par postes</option>
+    </select>
+<div class="d-flex flex-wrap gap-2 align-items-center mt-3 mb-3">
+
+    <a href="{% url 'transition' %}"
+       class="btn btn-outline-success">
+        📋 Plan de transition
+    </a>
+
+    <button onclick="enregistrer()"
+            class="btn btn-primary">
+        💾 Enregistrer
+    </button>
+
+    <button onclick="afficherGraphiqueGlobal()"
+            class="btn btn-success">
+        📊 Graphique
+    </button>
+
+    <button onclick="telechargerImage()"
+            class="btn btn-secondary">
+        🖼️ Image
+    </button>
+
+    <button onclick="telechargerCSV()"
+            class="btn btn-warning">
+        📊 Excel
+    </button>
+
+    <button onclick="window.print()"
+            class="btn btn-danger">
+        📄 PDF
+    </button>
+
+</div>
+<div class="mt-4" style="max-width:900px;">
+    <canvas id="graphCarbone"></canvas>
+    </div>
+</div>
+<div id="actions-carbone"
+     class="card shadow-sm border-0 mt-4 mb-4"
+     style="max-width:900px;">
+    <div class="card-body">
+
+        <h4>🎯 Actions de réduction carbone</h4>
+
+        <p class="text-muted">
+            Estimez les réductions d'émissions de gaz à effet de serre associées à certaines actions de transition écologique.
+        </p>
+
+        <table class="table table-sm align-middle">
+            <thead>
+                <tr>
+                    <th>Action</th>
+                    <th>Gain estimé</th>
+                    <th>CO₂ évité (kg/an)</th>
+                    <th>Plan</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>⚡ Réduire la consommation électrique</td>
+                    <td>
+                        <input type="number"
+                               class="form-control action-carbone"
+                               data-code="energie_electricite"
+                               placeholder="kWh économisés/an">
+                    </td>
+                    <td><span class="gain-carbone">0</span></td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-success"
+                                onclick="ajouterActionCarboneAuPlan(this)">
+                            ➕ Ajouter
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+    <td>❄️ Réduire la climatisation</td>
+    <td>
+        <input type="number"
+               class="form-control action-carbone"
+               data-code="energie_climatisation"
+               placeholder="kWh évités/an">
+    </td>
+    <td><span class="gain-carbone">0</span></td>
+    <td>
+        <button class="btn btn-sm btn-outline-success"
+                onclick="ajouterActionCarboneAuPlan(this)">
+            ➕ Ajouter
+        </button>
+    </td>
+</tr>
+
+
+                <tr>
+                    <td>🚗 Réduire les déplacements en voiture essence</td>
+                    <td>
+                        <input type="number"
+                               class="form-control action-carbone"
+                               data-code="deplacement_voiture_essence"
+                               placeholder="km évités/an">
+                    </td>
+                    <td><span class="gain-carbone">0</span></td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-success"
+                                onclick="ajouterActionCarboneAuPlan(this)">
+                            ➕ Ajouter
+                        </button>
+                    </td>
+                </tr>
+<tr>
+                    <td>🚗 Réduire les déplacements en voiture diesel</td>
+                    <td>
+                        <input type="number"
+                               class="form-control action-carbone"
+                               data-code="deplacement_voiture_diesel"
+                               placeholder="km évités/an">
+                    </td>
+                    <td><span class="gain-carbone">0</span></td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-success"
+                                onclick="ajouterActionCarboneAuPlan(this)">
+                            ➕ Ajouter
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+    <td>✈️ Réduire les déplacements en avion court courrier</td>
+    <td>
+        <input type="number"
+               class="form-control action-carbone"
+               data-code="deplacement_avion_court"
+               placeholder="km évités/an">
+    </td>
+    <td><span class="gain-carbone">0</span></td>
+    <td>
+        <button class="btn btn-sm btn-outline-success"
+                onclick="ajouterActionCarboneAuPlan(this)">
+            ➕ Ajouter
+        </button>
+    </td>
+</tr>
+            </tbody>
+        </table>
+
+        <div class="alert alert-light mt-3 mb-0">
+            Gain carbone total estimé :
+            <strong><span id="gainTotalCarbone">0</span> kg CO₂e/an</strong>
+        </div>
+        
+    </div>
+</div>
+   
+
+<script>
+window.facteursEmission = JSON.parse('{{ facteurs_emission|escapejs }}');
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="{% static 'js/carbone/graphiques.js' %}?v=2"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+<script src="{% static 'js/carbone/calculs.js' %}?v=7"></script>
+<script src="{% static 'js/carbone/sauvegarde.js' %}?v=7"></script>
+<script src="{% static 'js/carbone/exports.js' %}?v=7"></script>
+<script src="{% static 'js/carbone/main.js' %}?v=15"></script>
+
+{% endblock content %}

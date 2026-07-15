@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Sols & pollution{% endblock %}
+
+{% block content %}
+
+<h1>🟫 Sols, pollution et foncier durable</h1>
+
+<p class="text-muted">
+    Diagnostic territorial des sites pollués, anciens sites industriels et secteurs d’information sur les sols.
+</p>
+
+<div class="card shadow-sm border-0 mb-4">
+    <div class="card-body">
+
+        <h4>🔎 Rechercher un territoire</h4>
+
+        <input
+            id="rechercheSols"
+            class="form-control mb-2"
+            placeholder="Commune ou adresse"
+        >
+
+        <button class="btn btn-success mb-3" onclick="analyserSols()">
+    Analyser les sols
+</button>
+
+<div class="mt-2">
+
+    <button class="btn btn-outline-secondary me-2"
+        onclick="document.getElementById('diagnosticSols').scrollIntoView({behavior:'smooth'})">
+        📋 Diagnostic
+    </button>
+
+    <button class="btn btn-outline-primary me-2"
+        onclick="document.getElementById('carteSols').scrollIntoView({behavior:'smooth'})">
+        🗺️ Carte
+    </button>
+
+    <button class="btn btn-outline-dark me-2"
+        onclick="document.getElementById('sitesSols').scrollIntoView({behavior:'smooth'})">
+        🏭 Sites
+    </button>
+
+    <button class="btn btn-outline-success me-2"
+        onclick="document.getElementById('indicateurSols').scrollIntoView({behavior:'smooth'})">
+        📈 Indicateur
+    </button>
+
+    <button class="btn btn-outline-warning me-2"
+        onclick="document.getElementById('actionsSols').scrollIntoView({behavior:'smooth'})">
+        ⭐ Actions
+    </button>
+
+    <button class="btn btn-outline-info"
+        onclick="document.getElementById('bibliothequeActionsSols').scrollIntoView({behavior:'smooth'})">
+        📚 Bibliothèque
+    </button>
+
+</div>
+
+    </div>
+</div>
+
+<div id="diagnosticSols"></div>
+
+<div id="comprendreIndicateursSols"></div>
+
+<div id="carteSols" style="height: 420px;" class="mb-4"></div>
+
+<div id="sitesSols"></div>
+
+<div id="indicateurSols"></div>
+<div id="diagnosticTerritorialSols"></div>
+
+<div id="actionsSols"></div>
+
+<div id="bibliothequeActionsSols"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="{% static 'js/sols/sols-actions-bibliotheque.js' %}?v=2"></script>
+<script src="{% static 'js/sols/sols.js' %}?v=99"></script>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{
+    "id": "nature_ville",
+    "titre": "La nature en ville : un atout pour la biodiversité et la qualité de vie",
+    "niveau": "debutant",
+    "illustration": "biodiversite.png",
+    "message_image": "L’illustration montre une ville où les arbres, les parcs, les jardins, les haies et les toitures végétalisées créent des habitats favorables à la biodiversité tout en améliorant le cadre de vie.",
+    "resume": "La biodiversité ne se limite pas aux forêts ou aux campagnes. Les villes peuvent également accueillir une grande diversité d'espèces grâce aux parcs, jardins, arbres d'alignement, haies, mares, friches, toitures végétalisées et autres espaces verts. Une ville plus végétalisée est généralement plus agréable à vivre et plus résiliente face au changement climatique.",
+    "pourquoi": "La nature en ville améliore la qualité de l'air, réduit les îlots de chaleur, favorise l'infiltration de l'eau de pluie, limite les risques d'inondation et offre des refuges à de nombreuses espèces animales et végétales. Elle participe également au bien-être des habitants.",
+    "causes": [
+        "Création d'espaces verts.",
+        "Plantation d'arbres adaptés au climat local.",
+        "Développement de jardins publics et partagés.",
+        "Installation de toitures et façades végétalisées."
+    ],
+    "consequences": [
+        "Retour de nombreuses espèces.",
+        "Réduction des températures en période de canicule.",
+        "Amélioration de la qualité de l'air.",
+        "Gestion plus naturelle des eaux pluviales.",
+        "Cadre de vie plus agréable."
+    ],
+    "solutions": [
+        "Planter davantage d'arbres.",
+        "Créer des corridors écologiques urbains.",
+        "Préserver les arbres anciens.",
+        "Développer les toitures végétalisées.",
+        "Installer des nichoirs et des hôtels à insectes.",
+        "Privilégier une gestion écologique des espaces verts."
+    ],
+    "saviez_vous": "Un grand arbre peut rafraîchir son environnement de plusieurs degrés pendant les fortes chaleurs grâce à l'ombre qu'il procure et à l'évapotranspiration.",
+    "territoire": "VertClair permet d'identifier les espaces naturels urbains, les continuités écologiques et les secteurs pouvant être végétalisés afin d'améliorer la biodiversité et l'adaptation au changement climatique.",
+    "a_retenir": "Une ville plus verte est souvent une ville plus agréable, plus résiliente et plus favorable à la biodiversité.",
+    "fenny": "Chaque arbre planté en ville apporte de l'ombre, accueille la biodiversité, améliore la qualité de l'air et participe au bien-être des habitants."
+}

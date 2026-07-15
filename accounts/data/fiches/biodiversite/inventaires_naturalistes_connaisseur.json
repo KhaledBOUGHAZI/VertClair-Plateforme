@@ -1,0 +1,43 @@
+{
+    "id": "inventaires_naturalistes_connaisseur",
+    "titre": "Les inventaires naturalistes : mieux connaître la biodiversité",
+    "niveau": "connaisseur",
+    "illustration": "biodiversite.png",
+
+    "message_image": "L'illustration montre des naturalistes observant la faune et la flore sur le terrain, accompagnés d'outils de mesure et de relevés permettant d'identifier les espèces présentes.",
+
+    "resume": "Les inventaires naturalistes consistent à recenser les espèces animales, végétales et les habitats naturels présents sur un territoire. Ils permettent de mieux connaître la biodiversité locale et constituent une base essentielle pour protéger les milieux naturels et orienter les projets d'aménagement.",
+
+    "pourquoi": "On ne peut protéger efficacement que ce que l'on connaît. Les inventaires naturalistes permettent d'identifier les espèces communes, rares ou protégées, de suivre leur évolution au fil du temps et de détecter d'éventuelles dégradations des écosystèmes.",
+
+    "causes": [
+        "Besoin de mieux connaître le patrimoine naturel.",
+        "Préparation des projets d'aménagement.",
+        "Suivi scientifique des espèces.",
+        "Évaluation des politiques de préservation de la biodiversité."
+    ],
+
+    "consequences": [
+        "Meilleure connaissance des espèces présentes.",
+        "Protection plus efficace des habitats naturels.",
+        "Aide à la décision pour les collectivités.",
+        "Suivi de l'évolution de la biodiversité.",
+        "Identification des espèces menacées ou invasives."
+    ],
+
+    "solutions": [
+        "Réaliser régulièrement des inventaires de terrain.",
+        "Mettre à jour les bases de données naturalistes.",
+        "Associer scientifiques, collectivités et associations.",
+        "Partager les données avec les acteurs du territoire.",
+        "Prendre en compte les inventaires dans les projets d'aménagement."
+    ],
+
+    "saviez_vous": "Les inventaires naturalistes sont réalisés par de nombreux organismes publics, associations et bureaux d'études. Ils alimentent les bases nationales de connaissance de la biodiversité.",
+
+    "territoire": "VertClair pourra progressivement intégrer les données publiques issues des inventaires naturalistes afin de mieux caractériser la biodiversité de chaque territoire et d'aider les utilisateurs dans leurs projets.",
+
+    "a_retenir": "Les inventaires naturalistes sont indispensables pour connaître les espèces présentes, suivre leur évolution et prendre de meilleures décisions en faveur de la biodiversité.",
+
+    "fenny": "Observer la nature est la première étape pour mieux la protéger. Chaque inventaire améliore notre connaissance du territoire."
+}

@@ -1,0 +1,34 @@
+{
+    "id": "forets",
+    "titre": "Les forêts : des écosystèmes essentiels pour la biodiversité",
+    "niveau": "debutant",
+    "illustration": "biodiversite.png",
+    "message_image": "L’illustration montre une forêt diversifiée où arbres, arbustes, champignons, oiseaux, insectes et mammifères vivent ensemble dans un même écosystème.",
+    "resume": "Les forêts couvrent près d'un tiers du territoire français. Elles abritent une biodiversité exceptionnelle et rendent de nombreux services indispensables : elles produisent de l'oxygène, stockent du carbone, protègent les sols, régulent le cycle de l'eau et offrent un habitat à des milliers d'espèces animales, végétales et fongiques.",
+    "pourquoi": "Une forêt en bonne santé contribue à limiter le changement climatique, améliore la qualité de l'air, favorise l'infiltration de l'eau et constitue un refuge pour une grande diversité d'espèces. Elle participe également au bien-être des populations en offrant des espaces naturels propices aux loisirs et à la découverte.",
+    "causes": [
+        "Diversité des essences d'arbres.",
+        "Présence de bois morts et de vieux arbres.",
+        "Variété des habitats forestiers.",
+        "Équilibre entre la faune, la flore et les micro-organismes."
+    ],
+    "consequences": [
+        "Accueil d'une biodiversité très riche.",
+        "Stockage naturel du carbone.",
+        "Protection des sols contre l'érosion.",
+        "Filtration et infiltration de l'eau.",
+        "Amélioration du cadre de vie."
+    ],
+    "solutions": [
+        "Préserver les forêts anciennes.",
+        "Favoriser la diversité des essences.",
+        "Limiter la fragmentation des massifs forestiers.",
+        "Maintenir des arbres morts favorables à la biodiversité.",
+        "Adapter les forêts au changement climatique.",
+        "Privilégier une gestion forestière durable."
+    ],
+    "saviez_vous": "Un arbre mature peut accueillir plusieurs centaines d'espèces différentes : oiseaux, insectes, mousses, lichens, champignons et micro-organismes.",
+    "territoire": "VertClair permet d'identifier les principaux massifs forestiers, les espaces naturels remarquables et les continuités écologiques présentes sur votre territoire.",
+    "a_retenir": "Une forêt est bien plus qu'un ensemble d'arbres : c'est un écosystème complexe où chaque espèce contribue à l'équilibre du vivant.",
+    "fenny": "Une forêt diversifiée est généralement plus résistante aux maladies, aux tempêtes et aux effets du changement climatique qu'une forêt composée d'une seule essence."
+}

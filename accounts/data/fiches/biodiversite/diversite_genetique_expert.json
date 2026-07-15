@@ -1,0 +1,46 @@
+{
+    "id": "diversite_genetique_expert",
+    "titre": "La diversité génétique : un atout essentiel pour l'adaptation des espèces",
+    "niveau": "expert",
+    "illustration": "biodiversite.png",
+
+    "message_image": "L'illustration montre plusieurs populations d'une même espèce présentant des caractéristiques génétiques différentes, leur permettant de mieux résister aux maladies et aux changements climatiques.",
+
+    "resume": "La diversité génétique correspond à la variété des gènes présents au sein d'une même espèce. Elle constitue l'un des trois niveaux de la biodiversité, avec la diversité des espèces et celle des écosystèmes. Une forte diversité génétique améliore la capacité des populations à s'adapter aux évolutions de leur environnement.",
+
+    "pourquoi": "Lorsque toutes les populations deviennent génétiquement très proches, elles deviennent également plus vulnérables aux maladies, aux parasites, aux événements climatiques extrêmes et aux changements environnementaux. À l'inverse, une diversité génétique élevée augmente les chances de survie des espèces face aux perturbations futures.",
+
+    "causes": [
+        "Isolement des populations.",
+        "Fragmentation des habitats naturels.",
+        "Réduction du nombre d'individus.",
+        "Artificialisation des milieux.",
+        "Disparition des corridors écologiques.",
+        "Pressions liées au changement climatique."
+    ],
+
+    "consequences": [
+        "Diminution de la capacité d'adaptation des espèces.",
+        "Augmentation du risque d'extinction.",
+        "Sensibilité accrue aux maladies.",
+        "Réduction de la résilience des écosystèmes.",
+        "Perte progressive du patrimoine génétique."
+    ],
+
+    "solutions": [
+        "Préserver les continuités écologiques.",
+        "Maintenir des populations suffisamment importantes.",
+        "Limiter la fragmentation des habitats.",
+        "Restaurer les échanges entre populations.",
+        "Conserver des habitats variés.",
+        "Mettre en place des programmes de conservation lorsque cela est nécessaire."
+    ],
+
+    "saviez_vous": "Deux populations appartenant à la même espèce peuvent réagir très différemment face à une maladie ou à une sécheresse selon leur diversité génétique. Cette diversité constitue une véritable assurance face aux changements futurs.",
+
+    "territoire": "Les actions de restauration écologique, de création de corridors biologiques et de préservation des habitats proposées par VertClair contribuent également à préserver la diversité génétique des espèces présentes sur le territoire.",
+
+    "a_retenir": "Protéger une espèce ne consiste pas uniquement à conserver quelques individus : il faut également préserver la diversité génétique qui lui permettra de s'adapter aux évolutions futures.",
+
+    "fenny": "La biodiversité ne se voit pas uniquement dans les paysages. Une grande partie de sa richesse est invisible : elle se trouve dans les gènes qui permettent aux espèces de continuer à évoluer et à survivre."
+}

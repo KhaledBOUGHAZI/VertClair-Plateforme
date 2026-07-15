@@ -1,0 +1,29 @@
+{
+    "id": "meteo_climat",
+    "titre": "Météo et climat",
+    "niveau": "debutant",
+    "illustration": "meteo_climat.svg",
+    "message_image": "L’illustration montre que la météo décrit une situation courte, alors que le climat correspond à une tendance observée sur une longue période.",
+    "a_retenir": "La météo décrit le temps sur quelques jours. Le climat décrit des tendances observées sur plusieurs décennies.",
+    "resume": "La météo décrit le temps qu'il fait aujourd'hui ou cette semaine. Le climat décrit les tendances observées sur plusieurs décennies.",
+    "pourquoi": "Comprendre la différence entre météo et climat permet d'éviter de nombreuses idées reçues sur le changement climatique.",
+    "causes": [
+        "Le climat évolue naturellement depuis toujours",
+        "Les activités humaines modifient aujourd'hui le climat",
+        "Les émissions de gaz à effet de serre accélèrent le réchauffement"
+    ],
+    "consequences": [
+        "Hausse des températures",
+        "Modification des saisons",
+        "Événements extrêmes plus fréquents"
+    ],
+    "solutions": [
+        "Réduire les émissions de gaz à effet de serre",
+        "Développer la végétalisation des villes",
+        "Préserver les ressources en eau",
+        "Adapter les bâtiments aux fortes chaleurs"
+    ],
+    "saviez_vous": "Les climatologues analysent généralement des périodes d'au moins 30 ans.",
+    "territoire": "Les projections climatiques permettent d'anticiper l'évolution future de votre territoire.",
+    "fenny": "Une journée froide ou pluvieuse ne remet pas en cause une tendance climatique observée sur plusieurs décennies."
+}

@@ -1,0 +1,289 @@
+{% extends "base.html" %}
+
+{% block title %}Plan de transition écologique{% endblock %}
+
+{% block content %}
+
+<h1>📋 Plan de transition écologique</h1>
+
+<p class="text-muted">
+    Retrouvez ici les actions issues des différents modules :
+    climat, carbone, eau, biodiversité, énergie.
+</p>
+
+<div class="card shadow-sm border-0 mb-4">
+    <div class="card-body">
+
+        <h4>📊 Synthèse du plan</h4>
+
+        <div id="synthesePlanTransition"></div>
+
+        <hr>
+
+        <h4>Actions du plan de transition</h4>
+
+        <div class="mb-3">
+            <button class="btn btn-sm btn-outline-dark me-2" onclick="filtrerPlanTransition('Tous')">
+                📚 Tous
+            </button>
+
+            <button class="btn btn-sm btn-outline-success me-2" onclick="filtrerPlanTransition('Alimentation durable')">
+                🌱 Alimentation
+            </button>
+
+            <button class="btn btn-sm btn-outline-secondary me-2" onclick="filtrerPlanTransition('Déchets')">
+                ♻️ Déchets
+            </button>
+            <button class="btn btn-sm btn-outline-success me-2" onclick="filtrerPlanTransition('Sols & pollution')">
+    🌱 Sols & pollution
+</button>
+
+            <button class="btn btn-sm btn-outline-danger me-2" onclick="filtrerPlanTransition('Climat')">
+                🌡️ Climat
+            </button>
+
+            <button class="btn btn-sm btn-outline-primary me-2" onclick="filtrerPlanTransition('Eau')">
+                💧 Eau
+            </button>
+
+            <button class="btn btn-sm btn-outline-info me-2" onclick="filtrerPlanTransition('Air')">
+                🌬️ Air
+            </button>
+
+            <button class="btn btn-sm btn-outline-warning me-2" onclick="filtrerPlanTransition('Énergie')">
+                ⚡ Énergie
+            </button>
+        </div>
+
+        <div id="listePlanTransition"></div>
+
+    </div>
+</div>
+
+<div class="card shadow-sm border-0">
+    <div class="card-body">
+
+        <h4>➕ Ajouter une action personnalisée</h4>
+
+        <div class="row g-3">
+
+            <div class="col-md-6">
+                <label class="form-label">Titre de l’action</label>
+                <input id="actionTitre" class="form-control">
+            </div>
+
+            <div class="col-md-3">
+                <label class="form-label">Priorité</label>
+                <select id="actionPriorite" class="form-select">
+                    <option>Élevée</option>
+                    <option>Moyenne</option>
+                    <option>Faible</option>
+                </select>
+            </div>
+
+            <div class="col-md-3">
+                <label class="form-label">Origine</label>
+                <select id="actionOrigine" class="form-select">
+    <option>Air</option>
+    <option>Eau</option>
+    <option>Climat</option>
+    <option>Énergie</option>
+    <option>Carbone</option>
+    <option>Déchets</option>
+    <option>Alimentation durable</option>
+    <option>Biodiversité</option>
+    <option>Sols & pollution</option>
+    <option>Mobilité</option>
+    <option>Action personnalisée</option>
+</select>
+            </div>
+
+            <div class="col-12">
+                <label class="form-label">Description</label>
+                <textarea id="actionDescription" class="form-control"></textarea>
+            </div>
+
+            <div class="col-md-4">
+                <label class="form-label">Responsable de l'action</label>
+                <input
+                    id="actionResponsable"
+                    class="form-control"
+                    placeholder="Service technique, DGS, élu référent, responsable QSE..."
+                >
+            </div>
+
+            <div class="col-md-4">
+                <label class="form-label">Budget estimatif</label>
+                <input
+                    id="actionBudget"
+                    class="form-control"
+                    placeholder="ex : 20 000 €"
+                >
+            </div>
+
+            <div class="col-md-4">
+                <label class="form-label">Échéance</label>
+                <input
+                    id="actionEcheance"
+                    class="form-control"
+                    placeholder="ex : 2027"
+                >
+            </div>
+
+            <div class="col-12">
+                <button
+                    class="btn btn-success"
+                    onclick="ajouterActionPersonnalisee()"
+                >
+                    Ajouter au plan
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="card shadow-sm border-0 mt-4">
+    <div class="card-body">
+        <h4>🌍 Synthèse carbone du plan</h4>
+
+<p class="text-muted">
+    Estimation des réductions d'émissions de gaz à effet de serre générées par les actions du plan de transition.
+</p>
+<p class="text-muted">
+            Ces actions proviennent du module “Calculez vos impacts carbone” et sont classées par thématique.
+        </p>
+<div id="syntheseCarbonePlan"></div>
+
+        
+
+        <div id="syntheseCarbonePlan" class="alert alert-success"></div>
+
+        <div id="actionsCarbonePlan"></div>
+    </div>
+</div>
+
+<script src="/static/js/transition/transition-stockage.js?v=1"></script>
+<script src="/static/js/transition/transition-liste-actions.js?v=3"></script>
+
+<script>
+function getCookie(name) {
+    let cookieValue = null;
+
+    if (document.cookie && document.cookie !== "") {
+        const cookies = document.cookie.split(";");
+
+        for (let cookie of cookies) {
+            cookie = cookie.trim();
+
+            if (cookie.startsWith(name + "=")) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+
+    return cookieValue;
+}
+
+function ajouterActionPersonnalisee() {
+    const data = {
+        titre: document.getElementById("actionTitre").value,
+        priorite: document.getElementById("actionPriorite").value,
+        origine: document.getElementById("actionOrigine").value,
+        description: document.getElementById("actionDescription").value,
+        responsable: document.getElementById("actionResponsable").value,
+        cout: document.getElementById("actionBudget").value,
+        echeance: document.getElementById("actionEcheance").value,
+        theme: document.getElementById("actionOrigine").value,
+        statut: "À étudier",
+        objectifs: [],
+        indicateur_suivi: "",
+        valeur_cible: "",
+        sources: "",
+        financements: []
+    };
+
+    if (!data.titre.trim()) {
+        alert("Veuillez saisir un titre d’action.");
+        return;
+    }
+
+    fetch("/api/transition/ajouter-action/", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "X-CSRFToken": getCookie("csrftoken")
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(result => {
+        if (result.success) {
+            alert("Action ajoutée au plan de transition.");
+            window.location.reload();
+        } else {
+            alert("Erreur : " + result.error);
+        }
+    })
+    .catch(error => {
+        console.error(error);
+        alert("Erreur lors de l’ajout de l’action.");
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    afficherActionsCarboneParTheme();
+});
+
+function afficherActionsCarboneParTheme() {
+    const synthese = document.getElementById("syntheseCarbonePlan");
+    const actions = JSON.parse(localStorage.getItem("planTransition")) || [];
+
+    let total = 0;
+    let energie = 0;
+    let mobilite = 0;
+    let dechets = 0;
+    let alimentation = 0;
+    let numerique = 0;
+
+    actions.forEach(function(action) {
+        const gain = parseFloat(action.gain_co2_tonnes) || 0;
+        total += gain;
+
+        switch(action.theme) {
+            case "Energie":
+                energie += gain;
+                break;
+            case "Mobilité":
+                mobilite += gain;
+                break;
+            case "Déchets":
+                dechets += gain;
+                break;
+            case "Alimentation":
+                alimentation += gain;
+                break;
+            case "Numérique":
+                numerique += gain;
+                break;
+        }
+    });
+
+    synthese.innerHTML = `
+        <div class="alert alert-success">
+            <h5 class="mb-3">🎯 Gain carbone potentiel du plan</h5>
+            <h3>${total.toFixed(2)} tCO₂e/an</h3>
+            <hr>
+            <p>⚡ Energie : ${energie.toFixed(2)} tCO₂e/an</p>
+            <p>🚗 Mobilité : ${mobilite.toFixed(2)} tCO₂e/an</p>
+            <p>🗑️ Déchets : ${dechets.toFixed(2)} tCO₂e/an</p>
+            <p>🍽️ Alimentation : ${alimentation.toFixed(2)} tCO₂e/an</p>
+            <p>💻 Numérique : ${numerique.toFixed(2)} tCO₂e/an</p>
+        </div>
+    `;
+}
+</script>
+
+{% endblock %}

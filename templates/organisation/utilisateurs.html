@@ -1,0 +1,223 @@
+{% extends "base.html" %}
+
+{% block title %}Administration - Utilisateurs{% endblock %}
+
+{% block content %}
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1>👥 Gestion des utilisateurs</h1>
+            <p class="text-muted mb-0">
+                Organisation : <strong>{{ organisation.nom }}</strong>
+            </p>
+        </div>
+
+        <a href="{% url 'inviter_utilisateur' %}" class="btn btn-success">
+    + Inviter un utilisateur
+</a>
+    </div>
+
+    <div class="row mb-4">
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h6>Utilisateurs</h6>
+<h2>{{ licences_utilisees }} / {{ nb_licences }}</h2>
+<p class="text-muted mb-0">licences utilisées</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h6>Services</h6>
+                    <h2>{{ services|length }}</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card shadow-sm border-0 mb-4">
+        <div class="card-body">
+            <h5>Filtres</h5>
+
+            <form method="get" class="row g-3 mt-2">
+
+                <div class="col-md-4">
+                    <label class="form-label">Service</label>
+                    <select name="service" class="form-select">
+                        <option value="">Tous les services</option>
+                        {% for service in services %}
+                            <option value="{{ service.id }}">
+                                {{ service.nom }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label class="form-label">Rôle</label>
+                    <select name="role" class="form-select">
+                        <option value="">Tous les rôles</option>
+                        <option value="admin_org">Administrateur</option>
+                        <option value="gestionnaire">Gestionnaire</option>
+                        <option value="utilisateur">Utilisateur</option>
+                        <option value="lecteur">Lecteur</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4 d-flex align-items-end">
+                    <button class="btn btn-outline-success w-100">
+                        Filtrer
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="card shadow-sm border-0 mb-4">
+    <div class="card-body">
+        <h5>✉ Invitations en attente</h5>
+
+        <table class="table table-sm align-middle mt-3">
+            <thead>
+                <tr>
+                    <th>Email</th>
+                    <th>Nom</th>
+                    <th>Service</th>
+                    <th>Rôle</th>
+                    <th>Expiration</th>
+<th class="text-end">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for invitation in invitations %}
+                    <tr>
+                        <td>{{ invitation.email }}</td>
+                        <td>{{ invitation.prenom }} {{ invitation.nom }}</td>
+                        <td>
+                            {% if invitation.service %}
+                                {{ invitation.service.nom }}
+                            {% else %}
+                                -
+                            {% endif %}
+                        </td>
+                        <td>{{ invitation.get_role_display }}</td>
+                        <td>{{ invitation.date_expiration|date:"d/m/Y H:i" }}</td>
+                        <td class="text-end">
+    <a href="{% url 'renvoyer_invitation' invitation.id %}"
+       class="btn btn-sm btn-outline-primary">
+        Renvoyer
+    </a>
+
+    <a href="{% url 'annuler_invitation' invitation.id %}"
+       class="btn btn-sm btn-outline-danger">
+        Annuler
+    </a>
+</td>
+                    </tr>
+                {% empty %}
+                    <tr>
+                        <td colspan="6" class="text-muted">
+                            Aucune invitation en attente.
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+    <div class="card shadow-sm border-0">
+        <div class="card-body">
+
+            <table class="table table-hover align-middle">
+                <thead>
+                    <tr>
+                        <th>Utilisateur</th>
+                        <th>Email</th>
+                        <th>Service</th>
+                        <th>Rôle</th>
+                        <th>Dernière connexion</th>
+                        <th>Statut</th>
+                        <th class="text-end">Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for profil in utilisateurs %}
+                        <tr>
+                            <td>
+                                <strong>{{ profil.user.username }}</strong><br>
+                                <small class="text-muted">
+                                    {{ profil.fonction|default:"-" }}
+                                </small>
+                            </td>
+
+                            <td>{{ profil.user.email|default:"-" }}</td>
+
+                            <td>
+                                {% if profil.service %}
+                                    {{ profil.service.nom }}
+                                {% else %}
+                                    -
+                                {% endif %}
+                            </td>
+
+                            <td>{{ profil.get_role_display }}</td>
+
+                            <td>
+                                {% if profil.user.last_login %}
+                                    {{ profil.user.last_login|date:"d/m/Y H:i" }}
+                                {% else %}
+                                    Jamais connecté
+                                {% endif %}
+                            </td>
+
+                            <td>
+                                {% if profil.user.is_active %}
+                                    <span class="badge bg-success">Actif</span>
+                                {% else %}
+                                    <span class="badge bg-secondary">Inactif</span>
+                                {% endif %}
+                            </td>
+
+                            <td class="text-end">
+                                <a href="{% url 'modifier_utilisateur_organisation' profil.id %}" class="btn btn-sm btn-outline-primary">
+    Modifier
+</a>
+                                {% if profil.role != "fenny" %}
+    <a href="{% url 'changer_statut_utilisateur' profil.id %}"
+       class="btn btn-sm {% if profil.user.is_active %}btn-outline-danger{% else %}btn-outline-success{% endif %}">
+        {% if profil.user.is_active %}
+            Désactiver
+        {% else %}
+            Réactiver
+        {% endif %}
+    </a>
+{% endif %}
+                            </td>
+                        </tr>
+                    {% empty %}
+                        <tr>
+                            <td colspan="7" class="text-muted text-center">
+                                Aucun utilisateur rattaché à cette organisation.
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

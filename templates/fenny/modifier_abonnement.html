@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block title %}Modifier abonnement{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid mt-4">
+
+    <a href="{% url 'fenny_abonnement_detail' abonnement.id %}" class="btn btn-outline-secondary mb-3">
+        ← Retour à l'organisation
+    </a>
+
+    <h1>💳 Modifier l'abonnement</h1>
+    <p class="text-muted">{{ organisation.nom }}</p>
+
+    <div class="card shadow-sm border-0">
+        <div class="card-body">
+
+            <form method="post">
+                {% csrf_token %}
+
+                <div class="mb-3">
+                    <label class="form-label">Formule</label>
+                    <select name="formule" class="form-select">
+                        <option value="essai" {% if abonnement.formule == "essai" %}selected{% endif %}>Essai</option>
+                        <option value="1" {% if abonnement.formule == "1" %}selected{% endif %}>1 utilisateur</option>
+                        <option value="5" {% if abonnement.formule == "5" %}selected{% endif %}>5 utilisateurs</option>
+                        <option value="10" {% if abonnement.formule == "10" %}selected{% endif %}>10 utilisateurs</option>
+                        <option value="20" {% if abonnement.formule == "20" %}selected{% endif %}>20 utilisateurs</option>
+                        <option value="50" {% if abonnement.formule == "50" %}selected{% endif %}>50 utilisateurs</option>
+                        <option value="100" {% if abonnement.formule == "100" %}selected{% endif %}>100 utilisateurs</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Nombre de licences</label>
+                    <input type="number" name="nb_licences" class="form-control" value="{{ abonnement.nb_licences }}" min="1" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Prix mensuel HT</label>
+                    <input type="number" step="0.01" name="prix_mensuel_ht" class="form-control" value="{{ abonnement.prix_mensuel_ht }}" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Statut</label>
+                    <select name="statut" class="form-select">
+                        <option value="actif" {% if abonnement.statut == "actif" %}selected{% endif %}>Actif</option>
+                        <option value="essai" {% if abonnement.statut == "essai" %}selected{% endif %}>Période d’essai</option>
+                        <option value="suspendu" {% if abonnement.statut == "suspendu" %}selected{% endif %}>Suspendu</option>
+                        <option value="resilie" {% if abonnement.statut == "resilie" %}selected{% endif %}>Résilié</option>
+                        <option value="expire" {% if abonnement.statut == "expire" %}selected{% endif %}>Expiré</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Date de début</label>
+                        <input type="date" name="date_debut" class="form-control" value="{{ abonnement.date_debut|date:'Y-m-d' }}">
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Date de fin</label>
+                        <input type="date" name="date_fin" class="form-control" value="{{ abonnement.date_fin|date:'Y-m-d' }}">
+                    </div>
+                </div>
+
+                <button class="btn btn-success">
+                    Enregistrer
+                </button>
+
+                <a href="{% url 'fenny_abonnement_detail' abonnement.id %}" class="btn btn-outline-secondary">
+                    Annuler
+                </a>
+
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{
+    "id": "gaz_effet_serre",
+    "titre": "Les gaz à effet de serre : pouvoir de réchauffement",
+    "niveau": "connaisseur",
+    "illustration": "gaz_effet_serre.svg",
+    "message_image": "L’illustration montre que plusieurs gaz contribuent à retenir la chaleur autour de la Terre.",
+    "resume": "Les gaz à effet de serre n'ont pas tous le même pouvoir de réchauffement ni la même durée de vie dans l'atmosphère.",
+    "pourquoi": "Comprendre les différences entre CO₂, méthane et protoxyde d'azote permet de mieux cibler les actions de réduction.",
+    "causes": [
+        "CO₂ : combustion du pétrole, du gaz et du charbon",
+        "CH₄ : élevage, déchets, fuites de gaz naturel",
+        "N₂O : engrais azotés et pratiques agricoles"
+    ],
+    "consequences": [
+        "Renforcement de l'effet de serre",
+        "Hausse des températures",
+        "Perturbation des équilibres climatiques"
+    ],
+    "solutions": [
+        "Réduire l'usage des énergies fossiles",
+        "Limiter les fuites de méthane",
+        "Améliorer les pratiques agricoles",
+        "Réduire les déchets organiques mal valorisés"
+    ],
+    "saviez_vous": "Le méthane a un pouvoir de réchauffement beaucoup plus élevé que le CO₂ à court terme.",
+    "territoire": "Le module Bilan Carbone de VertClair permet d'identifier les postes locaux les plus émetteurs.",
+    "a_retenir": "Tous les gaz à effet de serre ne se valent pas : il faut agir sur leur quantité, leur puissance et leur durée de vie.",
+    "fenny": "Pour bien agir, il faut d'abord savoir quels gaz sont émis et par quelles activités."
+}

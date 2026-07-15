@@ -1,0 +1,196 @@
+{% extends "base.html" %}
+
+{% block title %}Inviter un utilisateur{% endblock %}
+
+{% block content %}
+
+<div class="container mt-4">
+
+    <div class="mb-4">
+        <h1>✉ Inviter un utilisateur</h1>
+
+        <p class="text-muted">
+            Organisation :
+            <strong>{{ organisation.nom }}</strong>
+        </p>
+    </div>
+
+    {% if messages %}
+        {% for message in messages %}
+
+            {% if message.tags == "success" %}
+                <div class="alert alert-success shadow-sm">
+                    ✅ {{ message }}
+                </div>
+
+            {% elif message.tags == "warning" %}
+                <div class="alert alert-warning shadow-sm">
+                    ⚠️ {{ message }}
+                </div>
+
+            {% else %}
+                <div class="alert alert-danger shadow-sm">
+                    ❌ {{ message }}
+                </div>
+
+            {% endif %}
+
+        {% endfor %}
+    {% endif %}
+
+    <div class="card shadow-sm border-0">
+
+        <div class="card-body">
+
+            <form method="post">
+
+                {% csrf_token %}
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">
+                            Prénom
+                        </label>
+
+                        <input
+                            type="text"
+                            name="prenom"
+                            class="form-control"
+                            required
+                        >
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">
+                            Nom
+                        </label>
+
+                        <input
+                            type="text"
+                            name="nom"
+                            class="form-control"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">
+                        Email professionnel
+                    </label>
+
+                    <input
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        placeholder="prenom.nom@organisation.fr"
+                        required
+                    >
+
+                    <small class="text-muted">
+                        Un lien d'activation sera envoyé à cette adresse.
+                    </small>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">
+                        Fonction
+                    </label>
+
+                    <input
+                        type="text"
+                        name="fonction"
+                        class="form-control"
+                    >
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">
+                        Service
+                    </label>
+
+                    <select
+                        name="service"
+                        class="form-select"
+                    >
+
+                        <option value="">
+                            Aucun service
+                        </option>
+
+                        {% for service in services %}
+
+                            <option value="{{ service.id }}">
+                                {{ service.nom }}
+                            </option>
+
+                        {% endfor %}
+
+                    </select>
+
+                </div>
+
+                <div class="mb-4">
+
+                    <label class="form-label">
+                        Rôle
+                    </label>
+
+                    <select
+                        name="role"
+                        class="form-select"
+                        required
+                    >
+
+                        <option value="utilisateur">
+                            Utilisateur
+                        </option>
+
+                        <option value="gestionnaire">
+                            Gestionnaire
+                        </option>
+
+                        <option value="admin_org">
+                            Administrateur d’organisation
+                        </option>
+
+                        <option value="lecteur">
+                            Lecteur
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="btn btn-success"
+                >
+                    ✉ Créer l'invitation
+                </button>
+
+                <a
+                    href="{% url 'utilisateurs_organisation' %}"
+                    class="btn btn-outline-secondary"
+                >
+                    Annuler
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

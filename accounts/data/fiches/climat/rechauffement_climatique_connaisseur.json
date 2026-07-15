@@ -1,0 +1,31 @@
+{
+    "id": "rechauffement_climatique",
+    "titre": "Le réchauffement climatique aujourd'hui",
+    "niveau": "connaisseur",
+    "illustration": "rechauffement_climatique.png",
+    "message_image": "L'illustration montre plusieurs trajectoires possibles selon l'évolution des émissions mondiales de gaz à effet de serre.",
+    "resume": "Le réchauffement climatique correspond à l'augmentation durable de la température moyenne de la planète observée depuis l'ère industrielle.",
+    "pourquoi": "Même une hausse de quelques degrés modifie profondément l'eau, les sols, les écosystèmes et les activités humaines.",
+    "causes": [
+        "Émissions de gaz à effet de serre",
+        "Combustion des énergies fossiles",
+        "Déforestation",
+        "Certaines pratiques agricoles"
+    ],
+    "consequences": [
+        "Canicules plus fréquentes",
+        "Sécheresses plus intenses",
+        "Modification des précipitations",
+        "Hausse du niveau des mers"
+    ],
+    "solutions": [
+        "Réduire les émissions",
+        "Développer les énergies bas carbone",
+        "Adapter les territoires",
+        "Préserver les puits de carbone"
+    ],
+    "saviez_vous": "La température moyenne mondiale a déjà augmenté d'environ +1,2°C par rapport à l'ère préindustrielle.",
+    "territoire": "Les effets du réchauffement sont déjà visibles dans de nombreux territoires français.",
+    "a_retenir": "Quelques degrés supplémentaires suffisent à modifier fortement les risques climatiques.",
+    "fenny": "Le réchauffement est mondial, mais ses impacts sont toujours locaux."
+}

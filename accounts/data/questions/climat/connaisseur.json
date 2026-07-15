@@ -1,0 +1,112 @@
+[
+    {
+        "question": "Quelle durée est généralement utilisée pour caractériser le climat d'un territoire ?",
+        "reponses": [
+            "7 jours",
+            "1 an",
+            "30 ans"
+        ],
+        "bonne": 2,
+        "explication": "Les climatologues utilisent généralement des périodes de 30 ans pour caractériser le climat.",
+        "fiche": "meteo_climat_connaisseur"
+    },
+    {
+        "question": "Quel gaz possède un pouvoir de réchauffement beaucoup plus élevé que le CO₂ à court terme ?",
+        "reponses": [
+            "Le méthane",
+            "L'oxygène",
+            "L'azote"
+        ],
+        "bonne": 0,
+        "explication": "Le méthane possède un pouvoir de réchauffement très élevé sur une période de 20 ans.",
+        "fiche": "gaz_effet_serre_connaisseur"
+    },
+    {
+        "question": "Le renforcement de l'effet de serre provoque principalement :",
+        "reponses": [
+            "Une accumulation de chaleur",
+            "Une diminution du rayonnement solaire",
+            "Une baisse de la température des océans"
+        ],
+        "bonne": 0,
+        "explication": "Les gaz à effet de serre retiennent davantage d'énergie dans le système climatique.",
+        "fiche": "effet_serre_connaisseur"
+    },
+    {
+        "question": "Pourquoi les énergies fossiles sont-elles dites non renouvelables ?",
+        "reponses": [
+            "Elles se forment sur des millions d'années",
+            "Elles produisent du CO₂",
+            "Elles sont importées"
+        ],
+        "bonne": 0,
+        "explication": "Leur renouvellement est extrêmement lent à l'échelle humaine.",
+        "fiche": "energies_fossiles_connaisseur"
+    },
+    {
+        "question": "Depuis l'ère préindustrielle, la température moyenne mondiale a augmenté d'environ :",
+        "reponses": [
+            "+0,3°C",
+            "+1,2°C",
+            "+4°C"
+        ],
+        "bonne": 1,
+        "explication": "Le réchauffement observé est aujourd'hui proche de +1,2°C.",
+        "fiche": "rechauffement_climatique_connaisseur"
+    },
+    {
+        "question": "Qu'appelle-t-on une nuit tropicale ?",
+        "reponses": [
+            "Une nuit où la température reste supérieure à 20°C",
+            "Une nuit très humide",
+            "Une nuit très venteuse"
+        ],
+        "bonne": 0,
+        "explication": "Les nuits tropicales limitent le refroidissement nocturne des bâtiments et des organismes vivants.",
+        "fiche": "canicules_connaisseur"
+    },
+    {
+        "question": "Quelle sécheresse affecte directement les cultures agricoles ?",
+        "reponses": [
+            "La sécheresse agricole",
+            "La sécheresse géologique",
+            "La sécheresse urbaine"
+        ],
+        "bonne": 0,
+        "explication": "Elle correspond au manque d'eau dans les sols utilisés par les cultures.",
+        "fiche": "secheresses_connaisseur"
+    },
+    {
+        "question": "Quel phénomène augmente fortement le risque d'inondation en ville ?",
+        "reponses": [
+            "L'imperméabilisation des sols",
+            "Les zones humides",
+            "Les haies"
+        ],
+        "bonne": 0,
+        "explication": "L'eau ruisselle davantage lorsqu'elle ne peut plus s'infiltrer.",
+        "fiche": "inondations_connaisseur"
+    },
+    {
+        "question": "Quel facteur favorise le plus la propagation rapide d'un incendie ?",
+        "reponses": [
+            "Le vent",
+            "Les sols humides",
+            "Les nuages"
+        ],
+        "bonne": 0,
+        "explication": "Le vent accélère fortement la propagation des flammes.",
+        "fiche": "feux_foret_connaisseur"
+    },
+    {
+        "question": "L'adaptation climatique consiste principalement à :",
+        "reponses": [
+            "Préparer le territoire aux impacts du climat futur",
+            "Prévoir la météo",
+            "Produire davantage d'énergie"
+        ],
+        "bonne": 0,
+        "explication": "L'adaptation vise à réduire les vulnérabilités des territoires face au changement climatique.",
+        "fiche": "adaptation_connaisseur"
+    }
+]

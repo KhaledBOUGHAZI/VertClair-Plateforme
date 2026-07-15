@@ -1,0 +1,37 @@
+{
+    "id": "masses_eau_dce",
+    "titre": "Les masses d'eau et la Directive-cadre sur l'eau (DCE)",
+    "niveau": "expert",
+    "illustration": "qualite_eau.png",
+    "message_image": "L’illustration représente les différents milieux aquatiques surveillés afin d'évaluer leur état écologique et chimique conformément à la réglementation européenne.",
+    "resume": "Adoptée en 2000, la Directive-cadre sur l'eau (DCE) constitue le principal cadre réglementaire européen pour la protection des ressources en eau. Elle fixe comme objectif l'atteinte du bon état écologique et chimique des masses d'eau superficielles et souterraines. Chaque rivière, lac, nappe ou masse d'eau côtière est suivie régulièrement afin d'évaluer son évolution et d'orienter les politiques publiques.",
+    "pourquoi": "La DCE permet d'évaluer objectivement la qualité des ressources en eau dans tous les États membres de l'Union européenne. Les résultats servent à définir les actions prioritaires pour restaurer les milieux aquatiques et préserver durablement la ressource.",
+    "causes": [
+        "Pollutions agricoles.",
+        "Rejets industriels.",
+        "Artificialisation des cours d'eau.",
+        "Modification des débits.",
+        "Fragmentation des milieux aquatiques.",
+        "Effets du changement climatique."
+    ],
+    "consequences": [
+        "Dégradation de l'état écologique.",
+        "Dégradation de l'état chimique.",
+        "Perte de biodiversité.",
+        "Difficultés d'approvisionnement en eau potable.",
+        "Obligation de mettre en œuvre des programmes de restauration."
+    ],
+    "solutions": [
+        "Réduire les pollutions à la source.",
+        "Restaurer les cours d'eau.",
+        "Préserver les zones humides.",
+        "Limiter l'artificialisation des sols.",
+        "Suivre régulièrement les indicateurs DCE.",
+        "Mettre en œuvre les programmes d'actions des Agences de l'eau."
+    ],
+    "saviez_vous": "Le 'bon état' d'une masse d'eau ne dépend pas uniquement de la qualité chimique : il prend également en compte le fonctionnement écologique du milieu et la présence des espèces aquatiques.",
+    "territoire": "Les données diffusées par EauFrance et utilisées par VertClair permettent de suivre l'état des masses d'eau, les paramètres de qualité et les principales pressions environnementales affectant votre territoire.",
+    "a_retenir": "Une eau peut sembler propre à l'œil nu tout en présentant un état écologique ou chimique insuffisant au regard des critères de la Directive-cadre sur l'eau.",
+    "fenny": "Observer une rivière ne suffit pas pour connaître son état. Les scientifiques analysent de nombreux indicateurs biologiques, chimiques et hydromorphologiques afin d'obtenir un diagnostic complet.",
+    "vertclair_plus": "VertClair facilite l'interprétation des données publiques relatives à la qualité de l'eau afin d'aider les collectivités, entreprises et citoyens à mieux comprendre les enjeux locaux et à orienter leurs actions."
+}

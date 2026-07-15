@@ -1,0 +1,354 @@
+{% extends "base.html" %}
+
+{% block title %}Fenny - Abonnement{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid mt-4">
+
+    <a href="{% url 'fenny_abonnements' %}" class="btn btn-outline-secondary mb-3">
+        ← Retour aux abonnements
+    </a>
+
+    <h1>💳 Abonnement</h1>
+    <p class="text-muted">{{ abonnement.organisation.nom }}</p>
+
+    <div class="d-flex gap-2 flex-wrap mb-4">
+
+        <a href="{% url 'fenny_modifier_abonnement' abonnement.organisation.id %}"
+           class="btn btn-outline-warning">
+            ✏ Modifier l'abonnement
+        </a>
+
+        <a href="{% url 'fenny_organisation_detail' abonnement.organisation.id %}"
+           class="btn btn-outline-primary">
+            🏢 Voir l'organisation
+        </a>
+
+    </div>
+
+    <div class="row g-4 mb-4">
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h6>Formule</h6>
+                    <h3>{{ abonnement.get_formule_display }}</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h6>Statut</h6>
+
+                    {% if abonnement.statut == "actif" %}
+                        <span class="badge bg-success fs-5">Actif</span>
+                    {% elif abonnement.statut == "essai" %}
+                        <span class="badge bg-warning text-dark fs-5">Essai</span>
+                    {% elif abonnement.statut == "suspendu" %}
+                        <span class="badge bg-danger fs-5">Suspendu</span>
+                    {% else %}
+                        <span class="badge bg-dark fs-5">Résilié</span>
+                    {% endif %}
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h6>Licences</h6>
+                    <h3>{{ nb_utilisateurs }} / {{ abonnement.nb_licences }}</h3>
+                    <small>{{ taux_utilisation }} % utilisées</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h6>Prix mensuel HT</h6>
+                    <h3>{{ abonnement.prix_mensuel_ht }} €</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Utilisation -->
+
+    <div class="card shadow-sm border-0 mb-4">
+
+        <div class="card-header bg-dark text-white">
+            📊 Utilisation des licences
+        </div>
+
+        <div class="card-body">
+
+            <p>
+                <strong>{{ nb_utilisateurs }}</strong> utilisateur(s)
+                sur
+                <strong>{{ abonnement.nb_licences }}</strong> licence(s).
+            </p>
+
+            <div class="progress" style="height:14px;">
+
+                <div class="progress-bar
+                    {% if taux_utilisation >= 90 %}
+                        bg-danger
+                    {% elif taux_utilisation >= 70 %}
+                        bg-warning
+                    {% else %}
+                        bg-success
+                    {% endif %}"
+
+                    style="width: {{ taux_utilisation }}%;">
+                </div>
+
+            </div>
+
+            <small>
+                Taux d'occupation : {{ taux_utilisation }} %
+            </small>
+
+        </div>
+
+    </div>
+
+    <!-- Informations -->
+
+    <div class="card shadow-sm border-0 mb-4">
+
+        <div class="card-header bg-primary text-white">
+            💳 Informations abonnement
+        </div>
+
+        <div class="card-body">
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <table class="table table-borderless">
+
+                        <tr>
+                            <th width="220">Organisation</th>
+                            <td>{{ abonnement.organisation.nom }}</td>
+                        </tr>
+
+                        <tr>
+                            <th>Email</th>
+                            <td>{{ abonnement.organisation.email }}</td>
+                        </tr>
+
+                        <tr>
+                            <th>Formule</th>
+                            <td>{{ abonnement.get_formule_display }}</td>
+                        </tr>
+
+                        <tr>
+                            <th>Licences</th>
+                            <td>{{ abonnement.nb_licences }}</td>
+                        </tr>
+
+                        <tr>
+                            <th>Prix mensuel</th>
+                            <td>{{ abonnement.prix_mensuel_ht }} €</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <table class="table table-borderless">
+
+                        <tr>
+                            <th width="220">Statut</th>
+                            <td>{{ abonnement.get_statut_display }}</td>
+                        </tr>
+
+                        <tr>
+                            <th>Date début</th>
+                            <td>{{ abonnement.date_debut|default:"-" }}</td>
+                        </tr>
+
+                        <tr>
+                            <th>Date fin</th>
+                            <td>{{ abonnement.date_fin|default:"-" }}</td>
+                        </tr>
+
+                        <tr>
+                            <th>Stripe Customer</th>
+                            <td>{{ abonnement.stripe_customer_id|default:"-" }}</td>
+                        </tr>
+
+                        <tr>
+                            <th>Stripe Subscription</th>
+                            <td>{{ abonnement.stripe_subscription_id|default:"-" }}</td>
+                        </tr>
+
+                        <tr>
+                            <th>Mode de paiement</th>
+                            <td>Carte bancaire</td>
+                        </tr>
+
+                        <tr>
+                            <th>Renouvellement</th>
+                            <td>Automatique</td>
+                        </tr>
+
+                        <tr>
+                            <th>Facturation</th>
+                            <td>Mensuelle</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Statistiques -->
+
+    <div class="card shadow-sm border-0 mb-4">
+
+        <div class="card-header bg-success text-white">
+            📈 Statistiques
+        </div>
+
+        <div class="card-body">
+
+            <table class="table">
+
+                <tr>
+                    <th width="250">Organisation</th>
+                    <td>{{ abonnement.organisation.nom }}</td>
+                </tr>
+
+                <tr>
+                    <th>Utilisateurs actifs</th>
+                    <td>{{ nb_utilisateurs }}</td>
+                </tr>
+
+                <tr>
+                    <th>Licences disponibles</th>
+                    <td>{{ licences_disponibles }}</td>
+                </tr>
+
+                <tr>
+                    <th>Occupation</th>
+                    <td>{{ taux_utilisation }} %</td>
+                </tr>
+
+                <tr>
+                    <th>Coût par utilisateur</th>
+                    <td>{{ cout_par_utilisateur|floatformat:2 }} € / mois</td>
+                </tr>
+
+                <tr>
+                    <th>CA annuel</th>
+                    <td>{{ ca_annuel }} €</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- Alertes -->
+
+    <div class="card shadow-sm border-0 mb-4">
+
+        <div class="card-header bg-warning">
+            🚨 Alertes
+        </div>
+
+        <div class="card-body">
+
+            {% for alerte in alertes_abonnement %}
+
+                <div class="alert alert-{{ alerte.niveau }}">
+                    {{ alerte.message }}
+                </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+    <!-- Historique -->
+
+    <div class="card shadow-sm border-0">
+
+        <div class="card-header bg-secondary text-white">
+            📜 Historique
+        </div>
+
+        <div class="card-body">
+
+            <table class="table table-sm">
+
+                <thead>
+
+                    <tr>
+                        <th>Date</th>
+                        <th>Utilisateur</th>
+                        <th>Action</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                {% for ligne in historique_abonnement %}
+
+                    <tr>
+
+                        <td>{{ ligne.date_creation|date:"d/m/Y H:i" }}</td>
+
+                        <td>
+
+                            {% if ligne.utilisateur %}
+                                {{ ligne.utilisateur.username }}
+                            {% else %}
+                                -
+                            {% endif %}
+
+                        </td>
+
+                        <td>{{ ligne.message }}</td>
+
+                    </tr>
+
+                {% empty %}
+
+                    <tr>
+                        <td colspan="3" class="text-muted">
+                            Aucun historique.
+                        </td>
+                    </tr>
+
+                {% endfor %}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{
+    "id": "rechauffement_climatique",
+    "titre": "Scénarios climatiques et trajectoires futures",
+    "niveau": "expert",
+    "illustration": "rechauffement_climatique.png",
+    "message_image": "Les courbes représentent différents scénarios climatiques selon les émissions futures de gaz à effet de serre.",
+    "resume": "Les projections climatiques reposent sur plusieurs scénarios d'émissions permettant d'estimer les évolutions possibles du climat jusqu'en 2100.",
+    "pourquoi": "Les collectivités et les entreprises doivent préparer leurs investissements en tenant compte des différents futurs possibles.",
+    "causes": [
+        "Émissions mondiales de gaz à effet de serre",
+        "Choix énergétiques",
+        "Évolution démographique et économique"
+    ],
+    "consequences": [
+        "Écarts importants entre scénarios",
+        "Différences régionales marquées",
+        "Modification durable des risques climatiques"
+    ],
+    "solutions": [
+        "Réduire rapidement les émissions",
+        "Développer l'adaptation",
+        "Construire des stratégies robustes",
+        "Utiliser les projections DRIAS"
+    ],
+    "saviez_vous": "Les scénarios SSP du GIEC permettent d'explorer plusieurs futurs climatiques possibles jusqu'en 2100.",
+    "territoire": "Les données DRIAS utilisées dans VertClair permettent de territorialiser les projections climatiques.",
+    "a_retenir": "Le futur climatique dépend encore largement des émissions qui seront produites dans les prochaines décennies.",
+    "fenny": "Les scénarios ne prédisent pas l'avenir : ils aident à préparer plusieurs futurs possibles."
+}

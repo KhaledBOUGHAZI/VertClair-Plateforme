@@ -1,0 +1,49 @@
+{
+    "id": "strategie_eau_climat",
+    "titre": "Construire une stratégie territoriale Eau & Climat",
+    "niveau": "expert",
+    "illustration": "sobriete_hydrique.png",
+    "message_image": "L’illustration montre un territoire qui adapte sa gestion de l’eau en combinant sobriété, protection des milieux naturels, innovation et anticipation des effets du changement climatique.",
+    "resume": "Face au changement climatique, les collectivités et les entreprises doivent élaborer une stratégie intégrée associant la gestion durable de l’eau, l’adaptation climatique, la préservation de la biodiversité et l’aménagement du territoire. Cette approche permet de renforcer durablement la résilience du territoire tout en répondant aux besoins des habitants et des activités économiques.",
+    "pourquoi": "Les sécheresses, les inondations, les vagues de chaleur et les tensions sur la ressource en eau sont désormais des enjeux structurels. Une stratégie territoriale permet d'anticiper ces évolutions, de hiérarchiser les priorités et d'investir dans des solutions efficaces sur le long terme.",
+    "causes": [
+        "Évolution du climat.",
+        "Augmentation des températures.",
+        "Modification du régime des précipitations.",
+        "Croissance des besoins en eau.",
+        "Artificialisation des sols.",
+        "Dégradation des milieux naturels."
+    ],
+    "consequences": [
+        "Vulnérabilité accrue des territoires.",
+        "Conflits d'usage de la ressource.",
+        "Pressions sur les infrastructures.",
+        "Impacts économiques et sanitaires.",
+        "Fragilisation des écosystèmes."
+    ],
+    "solutions": [
+        "Développer une gestion intégrée de l'eau.",
+        "Préserver les ressources naturelles.",
+        "Renforcer les solutions fondées sur la nature.",
+        "Adapter les documents d'urbanisme.",
+        "Réduire les consommations d'eau.",
+        "Développer la réutilisation des eaux lorsque cela est pertinent.",
+        "Suivre régulièrement les indicateurs climatiques et hydrologiques.",
+        "Construire un plan de transition écologique partagé."
+    ],
+    "saviez_vous": "Les territoires les plus résilients sont généralement ceux qui combinent plusieurs solutions complémentaires plutôt qu'une seule grande infrastructure.",
+    "territoire": "VertClair rassemble dans une même plateforme les données publiques issues de DRIAS, BRGM, EauFrance, Géorisques, de l'INPN, de l'ADEME et d'autres sources afin d'aider les collectivités, entreprises et associations à construire une stratégie territoriale cohérente.",
+    "a_retenir": "Une stratégie Eau & Climat efficace ne repose pas sur une seule action mais sur un ensemble cohérent de décisions prises à l'échelle du territoire.",
+    "fenny": "Le meilleur moment pour préparer un territoire aux défis de demain est aujourd'hui. Chaque action engagée renforce progressivement sa résilience.",
+    "vertclair_plus": "Le diagnostic territorial de VertClair permet d'identifier automatiquement les principales vulnérabilités locales, de proposer des actions adaptées et de les intégrer dans un Plan de Transition personnalisé.",
+    "pour_aller_plus_loin": [
+        "DRIAS",
+        "TRACC",
+        "BRGM",
+        "EauFrance",
+        "Géorisques",
+        "Cerema",
+        "ADEME",
+        "Office français de la biodiversité"
+    ]
+}

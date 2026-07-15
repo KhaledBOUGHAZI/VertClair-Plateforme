@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Quiz écologique{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid p-4">
+
+    <div class="card shadow-sm border-0 mb-4"
+         style="border-radius: 20px; overflow: hidden;">
+
+        <div class="card-body p-5"
+             style="background: linear-gradient(135deg, #ecfdf5, #e0f2fe);">
+
+            <h1 class="mb-3">
+                🌡️ Quiz climat & adaptation
+            </h1>
+
+            <p class="lead mb-4">
+                Testez vos connaissances sur le changement climatique,
+                les risques naturels et les solutions d’adaptation du territoire.
+            </p>
+
+            <div class="row">
+
+                <div class="col-md-4 mb-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <h4>🟢 Débutant</h4>
+                            <p>
+                                Comprendre les bases :
+                                climat, météo, canicule, sécheresse.
+                            </p>
+                            <a href="{% url 'quiz_session' theme 'debutant' %}" class="btn btn-success w-100">
+    Commencer
+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <h4>🟠 Connaisseur</h4>
+                            <p>
+                                Relier les risques climatiques
+                                aux territoires et aux aménagements.
+                            </p>
+                            <a href="{% url 'quiz_session' theme 'connaisseur' %}" class="btn btn-warning w-100">
+    Commencer
+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <h4>🔴 Expert</h4>
+                            <p>
+                                Approfondir les stratégies
+                                d’adaptation et de résilience.
+                            </p>
+                            <a href="{% url 'quiz_session' theme 'expert' %}" class="btn btn-danger w-100">
+    Commencer
+</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card shadow-sm border-0">
+        <div class="card-body">
+
+            <h4>🦊 Conseil de Fenny</h4>
+
+            <p class="mb-0">
+                Après avoir consulté le diagnostic climat de votre territoire,
+                ce quiz vous aide à comprendre les risques observés :
+                chaleur, sécheresse, inondation, retrait-gonflement des argiles
+                ou remontées de nappes.
+            </p>
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    if (typeof setFenny === "function") {
+        setFenny(
+            "neutre",
+            "🎓 Prêt à tester vos connaissances sur le climat ?"
+        );
+    }
+});
+</script>
+
+{% endblock %}

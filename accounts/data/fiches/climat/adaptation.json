@@ -1,0 +1,31 @@
+{
+    "id": "adaptation",
+    "titre": "S'adapter au changement climatique",
+    "niveau": "debutant",
+    "illustration": "adaptation.png",
+    "message_image": "L’illustration montre que l’adaptation consiste à préparer le territoire avec des solutions comme la végétalisation, l’infiltration de l’eau ou la protection des habitants.",
+    "a_retenir": "Réduire les émissions est indispensable, mais il faut aussi préparer les territoires aux changements déjà engagés.",
+    "resume": "S'adapter, c'est préparer le territoire aux effets déjà visibles ou à venir du changement climatique.",
+    "pourquoi": "Même si les émissions diminuent rapidement, une partie du réchauffement climatique est déjà engagée. Les territoires doivent donc se préparer aux changements à venir.",
+    "causes": [
+        "Hausse des températures",
+        "Évolution des pluies",
+        "Multiplication des événements extrêmes"
+    ],
+    "consequences": [
+        "Risques accrus pour la santé lors des canicules",
+        "Pression sur la ressource en eau",
+        "Dégradation de certains écosystèmes",
+        "Coûts supplémentaires pour les infrastructures"
+    ],
+    "solutions": [
+        "Réaliser un diagnostic territorial",
+        "Végétaliser les espaces publics",
+        "Désimperméabiliser les sols",
+        "Préserver les zones humides",
+        "Intégrer le climat dans les plans d'action"
+    ],
+    "saviez_vous": "L'adaptation la plus efficace combine souvent nature, urbanisme, santé, eau et énergie.",
+    "territoire": "Le module Climat de VertClair permet de relier les risques locaux aux actions d'adaptation.",
+    "fenny": "L'adaptation ne remplace pas la réduction des émissions : les deux sont indispensables."
+}

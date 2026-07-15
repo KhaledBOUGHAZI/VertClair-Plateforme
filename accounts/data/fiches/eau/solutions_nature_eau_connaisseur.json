@@ -1,0 +1,36 @@
+{
+    "id": "solutions_nature_eau",
+    "titre": "Les solutions fondées sur la nature pour mieux gérer l'eau",
+    "niveau": "connaisseur",
+    "illustration": "zones_humides.png",
+    "message_image": "L’illustration montre comment les écosystèmes naturels peuvent ralentir, stocker, filtrer et restituer l'eau tout en améliorant la biodiversité et la résilience des territoires.",
+    "resume": "Les solutions fondées sur la nature consistent à s'appuyer sur les capacités naturelles des écosystèmes pour répondre aux défis liés à l'eau. Elles permettent de limiter les inondations, d'améliorer la qualité de l'eau, de favoriser la recharge des nappes et d'adapter les territoires au changement climatique.",
+    "pourquoi": "Les infrastructures naturelles sont souvent plus durables, moins coûteuses à long terme et apportent de nombreux bénéfices complémentaires : biodiversité, qualité de vie, stockage du carbone et rafraîchissement des villes.",
+    "causes": [
+        "Artificialisation des sols.",
+        "Disparition des zones humides.",
+        "Canalisation des cours d'eau.",
+        "Imperméabilisation des espaces urbains.",
+        "Effets du changement climatique."
+    ],
+    "consequences": [
+        "Augmentation du ruissellement.",
+        "Recharge plus faible des nappes.",
+        "Aggravation des inondations.",
+        "Dégradation de la biodiversité.",
+        "Îlots de chaleur urbains."
+    ],
+    "solutions": [
+        "Restaurer les zones humides.",
+        "Créer des noues paysagères.",
+        "Planter des haies et des arbres.",
+        "Désimperméabiliser les espaces urbains.",
+        "Renaturer les berges des cours d'eau.",
+        "Développer les toitures végétalisées.",
+        "Préserver les prairies naturelles."
+    ],
+    "saviez_vous": "Une zone humide peut stocker d'importants volumes d'eau lors des fortes pluies puis les restituer progressivement pendant les périodes sèches.",
+    "territoire": "VertClair identifie déjà plusieurs éléments favorables aux solutions fondées sur la nature grâce aux données sur les zones humides, la biodiversité, les risques climatiques et l'occupation des sols.",
+    "a_retenir": "Travailler avec la nature permet souvent d'obtenir des résultats plus durables que de lutter contre elle.",
+    "fenny": "Une haie, une prairie ou une zone humide sont de véritables infrastructures naturelles capables de rendre gratuitement de nombreux services au territoire."
+}

@@ -1,0 +1,36 @@
+{
+    "id": "pollutions_diffuses",
+    "titre": "Les pollutions diffuses : un enjeu majeur pour la qualité de l'eau",
+    "niveau": "connaisseur",
+    "illustration": "qualite_eau.png",
+    "message_image": "L’illustration montre que certaines pollutions ne proviennent pas d'un seul rejet mais de milliers de petites sources réparties sur l'ensemble d'un territoire.",
+    "resume": "Contrairement aux pollutions ponctuelles provenant d'une canalisation ou d'une usine, les pollutions diffuses sont dispersées sur de grandes surfaces. Elles proviennent principalement des activités agricoles, urbaines et des transports, puis sont progressivement entraînées par les pluies vers les nappes souterraines et les cours d'eau.",
+    "pourquoi": "Les pollutions diffuses sont aujourd'hui parmi les plus difficiles à maîtriser car elles résultent de nombreuses activités quotidiennes. Leur réduction nécessite une mobilisation de tous les acteurs du territoire.",
+    "causes": [
+        "Utilisation d'engrais agricoles.",
+        "Produits phytosanitaires et pesticides.",
+        "Ruissellement des eaux sur les routes.",
+        "Hydrocarbures provenant de la circulation.",
+        "Médicaments et produits ménagers.",
+        "Microplastiques transportés par les eaux pluviales."
+    ],
+    "consequences": [
+        "Dégradation progressive des nappes souterraines.",
+        "Pollution des rivières et des lacs.",
+        "Traitements plus complexes pour produire l'eau potable.",
+        "Impacts sur la biodiversité aquatique.",
+        "Coûts supplémentaires pour les collectivités."
+    ],
+    "solutions": [
+        "Réduire l'utilisation des pesticides.",
+        "Développer les pratiques agricoles durables.",
+        "Créer des bandes végétalisées le long des cours d'eau.",
+        "Limiter l'imperméabilisation des sols.",
+        "Installer des dispositifs de gestion des eaux pluviales.",
+        "Sensibiliser les citoyens aux bons gestes."
+    ],
+    "saviez_vous": "Une pollution diffuse peut mettre plusieurs années avant d'être détectée dans une nappe souterraine, car l'eau circule lentement sous terre.",
+    "territoire": "Les analyses de qualité de l'eau affichées dans VertClair permettent notamment de suivre certains paramètres comme les nitrates ou les pesticides, révélateurs de pollutions diffuses.",
+    "a_retenir": "Les pollutions diffuses sont invisibles au quotidien mais leurs effets s'accumulent progressivement sur l'ensemble du territoire.",
+    "fenny": "Chaque geste compte : utiliser moins de produits polluants chez soi ou dans son jardin contribue directement à préserver la qualité de l'eau."
+}

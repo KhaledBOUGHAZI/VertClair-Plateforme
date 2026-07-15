@@ -1,0 +1,112 @@
+[
+    {
+        "question": "Un service écosystémique correspond à :",
+        "reponses": [
+            "Un bénéfice rendu gratuitement par la nature",
+            "Une taxe environnementale",
+            "Un bâtiment public"
+        ],
+        "bonne": 0,
+        "explication": "La pollinisation, la filtration de l'eau ou le stockage du carbone sont des services rendus par les écosystèmes.",
+        "fiche": "biodiversite"
+    },
+    {
+        "question": "Une ZNIEFF sert principalement à :",
+        "reponses": [
+            "Identifier un espace naturel remarquable",
+            "Interdire automatiquement toute activité",
+            "Produire de l'énergie"
+        ],
+        "bonne": 0,
+        "explication": "Les ZNIEFF recensent les secteurs présentant un intérêt écologique, faunistique ou floristique.",
+        "fiche": "ecosystemes"
+    },
+    {
+        "question": "La fragmentation des habitats est problématique car elle :",
+        "reponses": [
+            "Isole les populations animales et végétales",
+            "Augmente toujours la biodiversité",
+            "Supprime les besoins de déplacement des espèces"
+        ],
+        "bonne": 0,
+        "explication": "Lorsque les habitats sont coupés par les routes, l'urbanisation ou les infrastructures, les espèces circulent plus difficilement.",
+        "fiche": "trame_verte_bleue"
+    },
+    {
+        "question": "Natura 2000 vise surtout à :",
+        "reponses": [
+            "Préserver des habitats et espèces d'intérêt européen",
+            "Créer uniquement des parcs urbains",
+            "Supprimer toute activité humaine"
+        ],
+        "bonne": 0,
+        "explication": "Natura 2000 protège des milieux et espèces remarquables tout en tenant compte des activités humaines compatibles.",
+        "fiche": "zones_humides_biodiv"
+    },
+    {
+        "question": "La gestion différenciée des espaces verts consiste à :",
+        "reponses": [
+            "Adapter l'entretien selon les usages et la biodiversité",
+            "Tondre partout de la même manière",
+            "Supprimer toute végétation spontanée"
+        ],
+        "bonne": 0,
+        "explication": "On n'entretient pas de la même façon une aire de jeux, une prairie fleurie ou une haie écologique.",
+        "fiche": "nature_ville"
+    },
+    {
+        "question": "Pourquoi privilégier les espèces végétales locales ?",
+        "reponses": [
+            "Elles sont souvent mieux adaptées aux milieux et à la faune locale",
+            "Elles empêchent toute biodiversité",
+            "Elles nécessitent toujours plus d'eau"
+        ],
+        "bonne": 0,
+        "explication": "Les espèces locales offrent généralement nourriture et abris aux insectes, oiseaux et autres espèces du territoire.",
+        "fiche": "forets"
+    },
+    {
+        "question": "Une espèce protégée est une espèce :",
+        "reponses": [
+            "Pour laquelle la réglementation encadre la destruction, la capture ou la perturbation",
+            "Que l'on peut déplacer librement",
+            "Qui n'a aucun intérêt écologique"
+        ],
+        "bonne": 0,
+        "explication": "La protection réglementaire vise à éviter la disparition ou la dégradation d'espèces sensibles.",
+        "fiche": "especes"
+    },
+    {
+        "question": "Les pollinisateurs sont sensibles notamment :",
+        "reponses": [
+            "Aux pesticides, à la disparition des fleurs et à la fragmentation des habitats",
+            "À la présence de prairies fleuries",
+            "Aux haies diversifiées"
+        ],
+        "bonne": 0,
+        "explication": "Les pollinisateurs ont besoin de nourriture, d'abris et de milieux peu pollués.",
+        "fiche": "pollinisateurs"
+    },
+    {
+        "question": "Une espèce exotique devient envahissante lorsqu'elle :",
+        "reponses": [
+            "Se développe fortement et perturbe les milieux locaux",
+            "Reste rare et sans impact",
+            "Disparaît immédiatement"
+        ],
+        "bonne": 0,
+        "explication": "Certaines espèces introduites peuvent se propager rapidement en l'absence de régulation naturelle.",
+        "fiche": "especes_invasives"
+    },
+    {
+        "question": "Une action biodiversité efficace doit idéalement :",
+        "reponses": [
+            "Créer des habitats, relier les milieux et réduire les pressions",
+            "Se limiter à une affiche de sensibilisation",
+            "Supprimer les continuités écologiques"
+        ],
+        "bonne": 0,
+        "explication": "Les actions les plus utiles combinent habitats favorables, réduction des pollutions et continuités écologiques.",
+        "fiche": "actions_biodiversite"
+    }
+]

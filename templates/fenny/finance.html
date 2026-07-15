@@ -1,0 +1,251 @@
+{% extends "base.html" %}
+
+{% block title %}Finances VertClair{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid mt-4">
+
+    <div class="mb-4">
+        <h1>💰 Dashboard Financier</h1>
+        <p class="text-muted">
+            Pilotage financier de VertClair.
+        </p>
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h6>MRR</h6>
+                    <h2>{{ mrr }} €</h2>
+                    <small class="text-muted">
+                        Revenu mensuel récurrent
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h6>ARR</h6>
+                    <h2>{{ arr }} €</h2>
+                    <small class="text-muted">
+                        Revenu annuel récurrent
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h6>Panier moyen</h6>
+                    <h2>{{ panier_moyen|floatformat:2 }} €</h2>
+                    <small class="text-muted">
+                        par abonnement actif
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h6>Revenu / utilisateur</h6>
+                    <h2>{{ revenu_par_utilisateur|floatformat:2 }} €</h2>
+                    <small class="text-muted">
+                        utilisateur actif
+                    </small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="row g-4">
+
+        <div class="col-md-6">
+
+            <div class="card shadow-sm border-0">
+
+                <div class="card-header bg-success text-white">
+
+                    💳 Etat des abonnements
+
+                </div>
+
+                <div class="card-body">
+
+                    <canvas id="abonnementsChart"></canvas>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="card shadow-sm border-0">
+
+                <div class="card-header bg-primary text-white">
+
+                    👥 Licences
+
+                </div>
+
+                <div class="card-body">
+
+                    <canvas id="licencesChart"></canvas>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+
+            <div class="card shadow-sm border-0">
+
+                <div class="card-body text-center">
+
+                    <h6>Licences vendues</h6>
+
+                    <h2>{{ licences_vendues }}</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card shadow-sm border-0">
+
+                <div class="card-body text-center">
+
+                    <h6>Licences utilisées</h6>
+
+                    <h2>{{ licences_utilisees }}</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card shadow-sm border-0">
+
+                <div class="card-body text-center">
+
+                    <h6>Disponibles</h6>
+
+                    <h2>{{ licences_disponibles }}</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="card shadow-sm border-0">
+
+        <div class="card-header bg-dark text-white">
+
+            📊 Occupation des licences
+
+        </div>
+
+        <div class="card-body">
+
+            <div class="progress" style="height:30px;">
+
+                <div
+                    class="progress-bar bg-success"
+                    style="width:{{ taux_occupation }}%;">
+
+                    {{ taux_occupation }} %
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+
+new Chart(
+document.getElementById("abonnementsChart"),
+{
+type:"doughnut",
+data:{
+labels:[
+"Actifs",
+"Essai",
+"Suspendus",
+"Résiliés",
+"Expirés"
+],
+datasets:[{
+data:[
+{{ abonnements_actifs }},
+{{ abonnements_essai }},
+{{ abonnements_suspendus }},
+{{ abonnements_resilies }},
+{{ abonnements_expires }}
+]
+}]
+}
+}
+);
+
+new Chart(
+document.getElementById("licencesChart"),
+{
+type:"bar",
+data:{
+labels:[
+"Vendues",
+"Utilisées",
+"Disponibles"
+],
+datasets:[{
+label:"Licences",
+data:[
+{{ licences_vendues }},
+{{ licences_utilisees }},
+{{ licences_disponibles }}
+]
+}]
+}
+}
+);
+
+</script>
+
+{% endblock %}

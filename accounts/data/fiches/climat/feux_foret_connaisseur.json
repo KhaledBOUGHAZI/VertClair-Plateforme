@@ -1,0 +1,31 @@
+{
+    "id": "feux_foret",
+    "titre": "Comprendre le risque feu de forêt",
+    "niveau": "connaisseur",
+    "illustration": "feux_foret.png",
+    "message_image": "L’illustration montre comment la chaleur, la sécheresse et le vent favorisent les incendies de végétation.",
+    "resume": "Les feux de forêt sont favorisés par la sécheresse, les fortes chaleurs, le vent et la présence de végétation combustible.",
+    "pourquoi": "Le changement climatique augmente progressivement le risque d’incendie dans des territoires auparavant moins exposés.",
+    "causes": [
+        "Sécheresse",
+        "Températures élevées",
+        "Vent",
+        "Activités humaines accidentelles ou volontaires"
+    ],
+    "consequences": [
+        "Destruction d’habitats naturels",
+        "Risques pour les habitants",
+        "Dégradation des sols",
+        "Émissions importantes de fumées"
+    ],
+    "solutions": [
+        "Débroussailler les zones exposées",
+        "Informer les habitants",
+        "Préserver des coupures végétales",
+        "Faciliter l’accès des secours"
+    ],
+    "saviez_vous": "La majorité des départs de feu sont liés à des activités humaines.",
+    "territoire": "Le risque incendie concerne aujourd’hui des territoires plus vastes qu’auparavant.",
+    "a_retenir": "Le feu a besoin de combustible, de chaleur et d’oxygène pour se développer.",
+    "fenny": "Prévenir un départ de feu est toujours plus efficace que lutter contre un incendie."
+}

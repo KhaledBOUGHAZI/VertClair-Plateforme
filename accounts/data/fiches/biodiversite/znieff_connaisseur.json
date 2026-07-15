@@ -1,0 +1,41 @@
+{
+    "id": "znieff_connaisseur",
+    "titre": "Les ZNIEFF : identifier les espaces naturels remarquables",
+    "niveau": "connaisseur",
+    "illustration": "biodiversite.png",
+
+    "message_image": "L'illustration représente un espace naturel remarquable recensé pour sa richesse écologique, avec différentes espèces animales et végétales vivant dans leur habitat.",
+
+    "resume": "Les ZNIEFF (Zones Naturelles d'Intérêt Écologique, Faunistique et Floristique) sont des secteurs identifiés pour leur richesse écologique. Elles permettent de mieux connaître les espaces naturels remarquables et constituent un outil d'aide à la décision pour l'aménagement du territoire.",
+
+    "pourquoi": "Les ZNIEFF n'interdisent pas les projets, mais elles signalent la présence de milieux naturels ou d'espèces remarquables. Elles permettent d'anticiper les impacts potentiels lors des projets d'urbanisme, d'aménagement ou d'infrastructure.",
+
+    "causes": [
+        "Présence d'espèces rares ou protégées.",
+        "Habitats naturels remarquables.",
+        "Fonctionnement écologique important.",
+        "Richesse exceptionnelle de la faune ou de la flore."
+    ],
+
+    "consequences": [
+        "Meilleure connaissance du patrimoine naturel.",
+        "Prise en compte de la biodiversité dans les projets.",
+        "Protection indirecte des milieux remarquables.",
+        "Aide à la planification territoriale."
+    ],
+
+    "solutions": [
+        "Intégrer les ZNIEFF dans les documents d'urbanisme.",
+        "Éviter les aménagements les plus sensibles.",
+        "Préserver les habitats naturels.",
+        "Réaliser des études écologiques avant les projets."
+    ],
+
+    "saviez_vous": "Une ZNIEFF n'est pas une réserve naturelle. Il s'agit avant tout d'un inventaire scientifique qui recense les secteurs présentant un intérêt écologique particulier.",
+
+    "territoire": "VertClair pourra afficher les ZNIEFF présentes sur votre territoire afin d'aider les collectivités et les entreprises à mieux intégrer la biodiversité dans leurs projets.",
+
+    "a_retenir": "Les ZNIEFF constituent un outil essentiel de connaissance de la biodiversité et facilitent une meilleure prise en compte des enjeux écologiques dans les décisions d'aménagement.",
+
+    "fenny": "Connaître les espaces naturels remarquables avant de lancer un projet permet souvent d'éviter des impacts importants sur la biodiversité."
+}

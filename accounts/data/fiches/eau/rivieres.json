@@ -1,0 +1,31 @@
+{
+    "id": "rivieres",
+    "titre": "Les rivières et les cours d'eau",
+    "niveau": "debutant",
+    "illustration": "rivieres.png",
+    "message_image": "L’illustration montre qu'une rivière est un milieu vivant qui transporte l'eau, les sédiments et abrite une riche biodiversité.",
+    "resume": "Les rivières assurent l'écoulement naturel de l'eau, alimentent les nappes, accueillent de nombreuses espèces et participent à l'équilibre des territoires.",
+    "pourquoi": "Les cours d'eau jouent un rôle essentiel pour l'alimentation en eau, la biodiversité, la prévention des inondations et les loisirs.",
+    "causes": [
+        "Les précipitations alimentent les cours d'eau.",
+        "Les sources et les nappes souterraines maintiennent leur débit.",
+        "Le relief détermine leur direction.",
+        "Les activités humaines peuvent modifier leur fonctionnement."
+    ],
+    "consequences": [
+        "Alimentation des milieux naturels",
+        "Recharge des nappes phréatiques",
+        "Développement de la biodiversité",
+        "Risque d'inondation lors des fortes pluies"
+    ],
+    "solutions": [
+        "Préserver les berges naturelles",
+        "Limiter les pollutions",
+        "Restaurer les continuités écologiques",
+        "Éviter l'artificialisation excessive des rivières"
+    ],
+    "saviez_vous": "Une rivière en bon état contribue naturellement à améliorer la qualité de l'eau et à limiter certains risques d'inondation.",
+    "territoire": "VertClair affiche les stations officielles de suivi des cours d'eau proches de votre commune ainsi que leurs principales caractéristiques.",
+    "a_retenir": "Une rivière est un écosystème vivant qu'il faut protéger autant que la ressource en eau qu'elle transporte.",
+    "fenny": "Une rivière en bonne santé est souvent le reflet d'un territoire en bonne santé."
+}

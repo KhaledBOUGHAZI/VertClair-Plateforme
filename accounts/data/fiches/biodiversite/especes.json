@@ -1,0 +1,32 @@
+{
+    "id": "especes",
+    "titre": "Les espèces : une incroyable diversité du vivant",
+    "niveau": "debutant",
+    "illustration": "biodiversite.png",
+    "message_image": "L’illustration présente différentes espèces animales et végétales vivant dans un même environnement naturel, chacune occupant une place spécifique dans l’écosystème.",
+    "resume": "Une espèce regroupe des êtres vivants capables de se reproduire entre eux et de donner une descendance fertile. La Terre abrite des millions d’espèces animales, végétales, fongiques et microbiennes, dont beaucoup restent encore à découvrir.",
+    "pourquoi": "Chaque espèce joue un rôle dans le fonctionnement des écosystèmes. Certaines pollinisent les plantes, d'autres recyclent la matière organique, régulent les populations d'autres espèces ou participent à la dispersion des graines.",
+    "causes": [
+        "Évolution naturelle au fil des millions d'années.",
+        "Adaptation aux différents milieux.",
+        "Diversité des climats.",
+        "Interactions entre les espèces."
+    ],
+    "consequences": [
+        "Richesse des écosystèmes.",
+        "Équilibre des chaînes alimentaires.",
+        "Meilleure résilience des milieux naturels.",
+        "Diversité génétique."
+    ],
+    "solutions": [
+        "Préserver les habitats naturels.",
+        "Limiter les pollutions.",
+        "Réduire la fragmentation des milieux.",
+        "Lutter contre les espèces invasives.",
+        "Sensibiliser à la protection de la biodiversité."
+    ],
+    "saviez_vous": "Les scientifiques estiment que plusieurs millions d'espèces restent encore inconnues, notamment parmi les insectes, les champignons et les organismes marins.",
+    "territoire": "VertClair permet de découvrir les espèces remarquables présentes sur votre territoire grâce aux données publiques de l'INPN et des espaces naturels protégés.",
+    "a_retenir": "Chaque espèce contribue au bon fonctionnement des écosystèmes, même lorsqu'elle paraît discrète ou peu connue.",
+    "fenny": "La disparition d'une seule espèce peut avoir des conséquences sur de nombreuses autres. Dans la nature, tout est lié."
+}

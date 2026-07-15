@@ -1,0 +1,32 @@
+{
+    "id": "sdage_sage",
+    "titre": "Les SDAGE et les SAGE : organiser la gestion de l'eau",
+    "niveau": "connaisseur",
+    "illustration": "infiltration_ruissellement.png",
+    "message_image": "L’illustration montre que la gestion de l'eau repose sur une coopération entre les différents acteurs d'un bassin versant : collectivités, usagers, services de l'État et Agences de l'eau.",
+    "resume": "En France, la gestion de l'eau est organisée à l'échelle des grands bassins hydrographiques. Les Schémas Directeurs d'Aménagement et de Gestion des Eaux (SDAGE) définissent les grandes orientations, tandis que les Schémas d'Aménagement et de Gestion des Eaux (SAGE) les déclinent localement afin de répondre aux enjeux propres à chaque territoire.",
+    "pourquoi": "L'eau ne s'arrête pas aux limites administratives. Une gestion coordonnée permet de préserver durablement la ressource, de limiter les conflits d'usage et d'améliorer la qualité des milieux aquatiques.",
+    "causes": [
+        "Multiplication des usages de l'eau.",
+        "Pressions liées au changement climatique.",
+        "Nécessité de préserver les ressources en eau.",
+        "Gestion commune d'un même bassin versant."
+    ],
+    "consequences": [
+        "Définition d'objectifs communs.",
+        "Programmation d'actions locales.",
+        "Protection renforcée des milieux aquatiques.",
+        "Coordination entre les différents acteurs du territoire."
+    ],
+    "solutions": [
+        "Mettre en œuvre les orientations du SDAGE.",
+        "Déployer localement un SAGE.",
+        "Associer collectivités, entreprises, agriculteurs et citoyens.",
+        "Suivre régulièrement les indicateurs environnementaux.",
+        "Adapter les politiques publiques aux évolutions climatiques."
+    ],
+    "saviez_vous": "La France est organisée en plusieurs grands bassins hydrographiques, chacun disposant de son propre SDAGE élaboré avec les acteurs locaux.",
+    "territoire": "Les diagnostics réalisés par VertClair peuvent compléter les objectifs définis dans les SDAGE et les SAGE en apportant une vision locale des enjeux liés à l'eau, au climat et à la biodiversité.",
+    "a_retenir": "Une bonne gestion de l'eau repose sur une vision commune à l'échelle du bassin versant et sur la coopération entre tous les acteurs.",
+    "fenny": "Préserver l'eau n'est pas seulement une affaire de technique : c'est avant tout une démarche collective qui mobilise tout un territoire."
+}
