@@ -13,7 +13,21 @@ __pycache__/
 # Django local
 db.sqlite3
 
+# Static collect
+staticfiles/
+
 # Éditeurs
 .vscode/
 .idea/
 staticfiles/
+
+# SIG nationaux trop lourds
+data/sources_biodiversite/
+
+# QGIS / shapefiles
+*.shp
+*.dbf
+*.shx
+*.prj
+*.qmd
+*.cpg
