@@ -1,1 +1,1 @@
-web: gunicorn Appli1.wsgi
+web: python manage.py collectstatic --noinput && gunicorn Appli1.wsgi
