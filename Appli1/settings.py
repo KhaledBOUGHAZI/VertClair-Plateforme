@@ -384,7 +384,10 @@ STRIPE_WEBHOOK_SECRET = os.environ.get(
     "STRIPE_WEBHOOK_SECRET",
     "",
 )
-
+VERTCLAIR_URL = os.environ.get(
+    "VERTCLAIR_URL",
+    "https://www.formation-ecologie.fr",
+)
 
 # =========================================================
 # SÉCURITÉ EN PRODUCTION

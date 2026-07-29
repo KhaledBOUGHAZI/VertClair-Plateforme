@@ -47,9 +47,12 @@ def login_view(request):
     return render(request, "login.html")
 
 
+from django.conf import settings
+
 def logout_view(request):
     logout(request)
-    return redirect("login")
+
+    return redirect(settings.VERTCLAIR_URL)
 
 def connexion_vertclair(request):
     token = request.GET.get("token", "")
