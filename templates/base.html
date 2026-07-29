@@ -71,6 +71,26 @@
             font-weight: 500;
             line-height: 1.4;
         }
+        .topbar {
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+            min-height: 74px;
+        }
+
+        .topbar .dropdown-toggle::after {
+            margin-left: 10px;
+        }
+
+        .topbar .dropdown-menu {
+            min-width: 230px;
+            border-radius: 12px;
+        }
+
+        .topbar .dropdown-item {
+            border-radius: 6px;
+            margin: 2px 6px;
+            width: auto;
+        }
     </style>
 </head>
 
@@ -111,7 +131,12 @@
     {% endif %}
 
     <hr>
-
+    <a href="{% url 'profil' %}">
+        👤 Mon profil
+    </a>
+    <a href="{% url 'organisation' %}">
+    🏢 Mon organisation
+    </a>
     <a href="{% url 'logout' %}">🚪 Déconnexion</a>
 
     <div id="fenny-sidebar">
@@ -125,6 +150,86 @@
             🌿 La biodiversité est précieuse.
         </div>
     </div>
+
+</div>
+
+<div class="topbar d-flex justify-content-end align-items-center px-4 py-3">
+
+    {% if request.user.is_authenticated %}
+
+        <div class="dropdown">
+
+            <button
+                class="btn btn-light border dropdown-toggle d-flex align-items-center gap-2"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+            >
+                <span
+                    class="rounded-circle bg-success-subtle
+                           d-flex align-items-center justify-content-center"
+                    style="width: 34px; height: 34px;"
+                >
+                    👤
+                </span>
+
+                <span class="text-start">
+                    <strong class="d-block">
+                        {{ request.user.first_name|default:request.user.username }}
+                    </strong>
+
+                    <small class="text-muted">
+                        Mon compte
+                    </small>
+                </span>
+            </button>
+
+            <ul class="dropdown-menu dropdown-menu-end shadow border-0 mt-2">
+
+                <li>
+                    <a class="dropdown-item py-2"
+                       href="{% url 'profil' %}">
+                        👤 Mon profil
+                    </a>
+                </li>
+
+                <li>
+                    <a class="dropdown-item py-2"
+                       href="{% url 'organisation' %}">
+                        🏢 Mon organisation
+                    </a>
+                </li>
+
+                <li>
+                    <a class="dropdown-item py-2"
+                       href="{% url 'utilisateurs_organisation' %}">
+                        👥 Mon équipe
+                    </a>
+                </li>
+
+                <li>
+                    <a class="dropdown-item py-2"
+                       href="{% url 'abonnement_organisation' %}">
+                        💳 Mon abonnement
+                    </a>
+                </li>
+
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+
+                <li>
+                    <a class="dropdown-item py-2 text-danger"
+                       href="{% url 'logout' %}">
+                        🚪 Déconnexion
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    {% endif %}
 
 </div>
 

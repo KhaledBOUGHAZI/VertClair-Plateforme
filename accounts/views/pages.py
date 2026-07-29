@@ -339,4 +339,96 @@ def alimentation_durable(request):
 def territoire_sols(request):
     return render(request, "territoire_sols.html")
 
+@login_required
+def profil(request):
+    profil = ProfilUtilisateur.objects.select_related(
+        "organisation"
+    ).get(user=request.user)
+
+    abonnement = Abonnement.objects.filter(
+        organisation=profil.organisation
+    ).first()
+
+    return render(
+        request,
+        "profil.html",
+        {
+            "profil": profil,
+            "abonnement": abonnement,
+        },
+    )
+
+@login_required
+def organisation(request):
+    profil_utilisateur, _ = ProfilUtilisateur.objects.select_related(
+        "organisation"
+    ).get_or_create(
+        user=request.user,
+        defaults={
+            "role": "utilisateur",
+        },
+    )
+
+    organisation_utilisateur = profil_utilisateur.organisation
+
+    # Cas exceptionnel : utilisateur sans organisation
+    if organisation_utilisateur is None:
+        return render(
+            request,
+            "organisation.html",
+            {
+                "profil": profil_utilisateur,
+                "organisation": None,
+                "abonnement": None,
+                "utilisateurs": [],
+                "nombre_utilisateurs": 0,
+                "utilisateurs_actifs": 0,
+                "licences_totales": 0,
+                "places_restantes": 0,
+            },
+        )
+
+    utilisateurs = (
+        ProfilUtilisateur.objects
+        .filter(organisation=organisation_utilisateur)
+        .select_related("user")
+        .order_by("user__last_name", "user__first_name", "user__username")
+    )
+
+    abonnement = (
+        Abonnement.objects
+        .filter(organisation=organisation_utilisateur)
+        .first()
+    )
+
+    nombre_utilisateurs = utilisateurs.count()
+
+    utilisateurs_actifs = utilisateurs.filter(
+        user__is_active=True
+    ).count()
+
+    licences_totales = 0
+
+    if abonnement:
+        licences_totales = abonnement.nb_licences or 0
+
+    places_restantes = max(
+        licences_totales - utilisateurs_actifs,
+        0,
+    )
+
+    return render(
+        request,
+        "organisation.html",
+        {
+            "profil": profil_utilisateur,
+            "organisation": organisation_utilisateur,
+            "abonnement": abonnement,
+            "utilisateurs": utilisateurs,
+            "nombre_utilisateurs": nombre_utilisateurs,
+            "utilisateurs_actifs": utilisateurs_actifs,
+            "licences_totales": licences_totales,
+            "places_restantes": places_restantes,
+        },
+    )
 

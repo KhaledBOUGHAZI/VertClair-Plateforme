@@ -78,6 +78,16 @@ from .views import (
 
 urlpatterns = [
     path(
+    "profil/",
+    pages.profil,
+    name="profil",
+),
+path(
+    "organisation/",
+    pages.organisation,
+    name="organisation",
+),
+    path(
     "connexion-vertclair/",
     connexion_vertclair,
     name="connexion_vertclair",

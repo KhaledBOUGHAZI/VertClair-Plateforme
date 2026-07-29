@@ -1,0 +1,212 @@
+{% extends "base.html" %}
+
+{% block title %}Mon profil - VertClair{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid p-4">
+
+    <div class="mb-4">
+        <h1>👤 Mon profil</h1>
+        <p class="text-muted mb-0">
+            Consultez les informations associées à votre compte VertClair.
+        </p>
+    </div>
+
+    <div class="row">
+
+        <!-- INFORMATIONS PERSONNELLES -->
+        <div class="col-lg-8 mb-4">
+
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body p-4">
+
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+
+                        <div>
+                            <h4 class="mb-1">Informations personnelles</h4>
+                            <p class="text-muted mb-0">
+                                Identité et coordonnées du compte
+                            </p>
+                        </div>
+
+                        <div
+                            class="rounded-circle bg-success-subtle text-success
+                                   d-flex align-items-center justify-content-center"
+                            style="width: 64px; height: 64px; font-size: 28px;"
+                        >
+                            👤
+                        </div>
+
+                    </div>
+
+                    <div class="row g-4">
+
+                        <div class="col-md-6">
+                            <small class="text-muted d-block">
+                                Prénom
+                            </small>
+                            <strong>
+                                {{ request.user.first_name|default:"Non renseigné" }}
+                            </strong>
+                        </div>
+
+                        <div class="col-md-6">
+                            <small class="text-muted d-block">
+                                Nom
+                            </small>
+                            <strong>
+                                {{ request.user.last_name|default:"Non renseigné" }}
+                            </strong>
+                        </div>
+
+                        <div class="col-md-6">
+                            <small class="text-muted d-block">
+                                Nom d’utilisateur
+                            </small>
+                            <strong>
+                                {{ request.user.username }}
+                            </strong>
+                        </div>
+
+                        <div class="col-md-6">
+                            <small class="text-muted d-block">
+                                Adresse e-mail
+                            </small>
+                            <strong>
+                                {{ request.user.email|default:"Non renseignée" }}
+                            </strong>
+                        </div>
+
+                        <div class="col-md-6">
+                            <small class="text-muted d-block">
+                                Date de création
+                            </small>
+                            <strong>
+                                {{ request.user.date_joined|date:"d/m/Y à H:i" }}
+                            </strong>
+                        </div>
+
+                        <div class="col-md-6">
+                            <small class="text-muted d-block">
+                                Dernière connexion
+                            </small>
+                            <strong>
+                                {% if request.user.last_login %}
+                                    {{ request.user.last_login|date:"d/m/Y à H:i" }}
+                                {% else %}
+                                    Première connexion
+                                {% endif %}
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- STATUT DU COMPTE -->
+        <div class="col-lg-4 mb-4">
+
+            <div class="card shadow-sm border-0 mb-4">
+                <div class="card-body p-4">
+
+                    <h4 class="mb-4">Statut du compte</h4>
+
+                    <div class="mb-3">
+                        <small class="text-muted d-block">
+                            Organisation
+                        </small>
+
+                        <strong>
+                            {% if profil.organisation %}
+                                {{ profil.organisation.nom }}
+                            {% else %}
+                                Aucune organisation
+                            {% endif %}
+                        </strong>
+                    </div>
+
+                    <div class="mb-3">
+                        <small class="text-muted d-block">
+                            Rôle
+                        </small>
+
+                        {% if profil.role == "admin_org" %}
+                            <span class="badge bg-success">
+                                Administrateur de l’organisation
+                            </span>
+                        {% elif profil.role == "fenny" %}
+                            <span class="badge bg-dark">
+                                Superviseur VertClair
+                            </span>
+                        {% else %}
+                            <span class="badge bg-secondary">
+                                Utilisateur
+                            </span>
+                        {% endif %}
+                    </div>
+
+                    <div class="mb-3">
+                        <small class="text-muted d-block">
+                            Offre
+                        </small>
+
+                        <strong>
+                            {% if abonnement %}
+                                {{ abonnement.get_formule_display|default:abonnement.formule }}
+                            {% else %}
+                                Non renseignée
+                            {% endif %}
+                        </strong>
+                    </div>
+
+                    <div>
+                        <small class="text-muted d-block">
+                            Abonnement
+                        </small>
+
+                        {% if abonnement and abonnement.statut == "actif" %}
+                            <span class="badge bg-success">
+                                Actif
+                            </span>
+                        {% elif abonnement %}
+                            <span class="badge bg-warning text-dark">
+                                {{ abonnement.statut|capfirst }}
+                            </span>
+                        {% else %}
+                            <span class="badge bg-secondary">
+                                Non renseigné
+                            </span>
+                        {% endif %}
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card shadow-sm border-0">
+                <div class="card-body p-4">
+
+                    <h5>🔒 Sécurité</h5>
+
+                    <p class="text-muted">
+                        Votre compte est connecté à votre espace VertClair.
+                    </p>
+
+                    <p class="small mb-0">
+                        La modification du mot de passe sera ajoutée dans
+                        l’espace Sécurité.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,481 @@
+{% extends "base.html" %}
+
+{% block title %}Mon organisation - VertClair{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid p-4">
+
+    <!-- TITRE -->
+    <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3">
+
+        <div>
+            <h1 class="mb-1">🏢 Mon organisation</h1>
+            <p class="text-muted mb-0">
+                Consultez votre organisation, votre abonnement
+                et les utilisateurs associés.
+            </p>
+        </div>
+
+        {% if profil.role == "admin_org" or profil.role == "fenny" %}
+            <div class="d-flex gap-2">
+
+                <a href="{% url 'utilisateurs_organisation' %}"
+                   class="btn btn-outline-success">
+                    👥 Gérer les utilisateurs
+                </a>
+
+                <a href="{% url 'abonnement_organisation' %}"
+                   class="btn btn-success">
+                    💳 Voir l’abonnement
+                </a>
+
+            </div>
+        {% endif %}
+
+    </div>
+
+    {% if organisation %}
+
+        <!-- INDICATEURS -->
+        <div class="row g-4 mb-4">
+
+            <div class="col-md-6 col-xl-3">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body p-4">
+
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <p class="text-muted mb-2">
+                                    Utilisateurs actifs
+                                </p>
+
+                                <h2 class="mb-0">
+                                    {{ utilisateurs_actifs }}
+                                </h2>
+                            </div>
+
+                            <div class="fs-2">
+                                👥
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body p-4">
+
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <p class="text-muted mb-2">
+                                    Licences souscrites
+                                </p>
+
+                                <h2 class="mb-0">
+                                    {{ licences_totales }}
+                                </h2>
+                            </div>
+
+                            <div class="fs-2">
+                                🎫
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body p-4">
+
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <p class="text-muted mb-2">
+                                    Places restantes
+                                </p>
+
+                                <h2 class="mb-0">
+                                    {{ places_restantes }}
+                                </h2>
+                            </div>
+
+                            <div class="fs-2">
+                                ➕
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body p-4">
+
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <p class="text-muted mb-2">
+                                    État de l’abonnement
+                                </p>
+
+                                {% if abonnement and abonnement.statut == "actif" %}
+                                    <span class="badge bg-success fs-6">
+                                        Actif
+                                    </span>
+                                {% elif abonnement %}
+                                    <span class="badge bg-warning text-dark fs-6">
+                                        {{ abonnement.statut|capfirst }}
+                                    </span>
+                                {% else %}
+                                    <span class="badge bg-secondary fs-6">
+                                        Non renseigné
+                                    </span>
+                                {% endif %}
+                            </div>
+
+                            <div class="fs-2">
+                                ✅
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- INFORMATIONS ORGANISATION -->
+            <div class="col-xl-5">
+
+                <div class="card shadow-sm border-0 mb-4">
+                    <div class="card-body p-4">
+
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+
+                            <div>
+                                <h4 class="mb-1">
+                                    Informations générales
+                                </h4>
+
+                                <p class="text-muted mb-0">
+                                    Identité de votre organisation
+                                </p>
+                            </div>
+
+                            <div
+                                class="rounded-circle bg-success-subtle
+                                       d-flex align-items-center
+                                       justify-content-center"
+                                style="width: 60px; height: 60px; font-size: 28px;"
+                            >
+                                🏢
+                            </div>
+
+                        </div>
+
+                        <div class="mb-4">
+                            <small class="text-muted d-block">
+                                Nom de l’organisation
+                            </small>
+
+                            <strong class="fs-5">
+                                {{ organisation.nom }}
+                            </strong>
+                        </div>
+
+                        <div class="mb-4">
+                            <small class="text-muted d-block">
+                                Votre rôle
+                            </small>
+
+                            {% if profil.role == "admin_org" %}
+                                <span class="badge bg-success">
+                                    Administrateur de l’organisation
+                                </span>
+
+                            {% elif profil.role == "fenny" %}
+                                <span class="badge bg-dark">
+                                    Superviseur VertClair
+                                </span>
+
+                            {% else %}
+                                <span class="badge bg-secondary">
+                                    Utilisateur
+                                </span>
+                            {% endif %}
+                        </div>
+
+                        <div>
+                            <small class="text-muted d-block">
+                                Nombre total de comptes
+                            </small>
+
+                            <strong>
+                                {{ nombre_utilisateurs }}
+                            </strong>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ABONNEMENT -->
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4">
+
+                        <h4 class="mb-4">
+                            💳 Abonnement
+                        </h4>
+
+                        <div class="row g-4">
+
+                            <div class="col-sm-6">
+                                <small class="text-muted d-block">
+                                    Offre actuelle
+                                </small>
+
+                                <strong>
+                                    {% if abonnement %}
+                                        {{ abonnement.get_formule_display|default:abonnement.formule|capfirst }}
+                                    {% else %}
+                                        Non renseignée
+                                    {% endif %}
+                                </strong>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <small class="text-muted d-block">
+                                    Nombre de licences
+                                </small>
+
+                                <strong>
+                                    {{ licences_totales }}
+                                </strong>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <small class="text-muted d-block">
+                                    Licences utilisées
+                                </small>
+
+                                <strong>
+                                    {{ utilisateurs_actifs }}
+                                    / {{ licences_totales }}
+                                </strong>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <small class="text-muted d-block">
+                                    Places disponibles
+                                </small>
+
+                                <strong>
+                                    {{ places_restantes }}
+                                </strong>
+                            </div>
+
+                        </div>
+
+                        {% if profil.role == "admin_org" or profil.role == "fenny" %}
+
+                            <hr class="my-4">
+
+                            <a href="{% url 'abonnement_organisation' %}"
+                               class="btn btn-outline-success">
+                                Gérer mon abonnement
+                            </a>
+
+                        {% endif %}
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- LISTE DES UTILISATEURS -->
+            <div class="col-xl-7">
+
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4">
+
+                        <div class="d-flex flex-wrap justify-content-between
+                                    align-items-center gap-3 mb-4">
+
+                            <div>
+                                <h4 class="mb-1">
+                                    👥 Utilisateurs
+                                </h4>
+
+                                <p class="text-muted mb-0">
+                                    Membres rattachés à votre organisation
+                                </p>
+                            </div>
+
+                            {% if profil.role == "admin_org" or profil.role == "fenny" %}
+
+                                {% if places_restantes > 0 %}
+                                    <a href="{% url 'inviter_utilisateur' %}"
+                                       class="btn btn-success">
+                                        ✉️ Inviter un utilisateur
+                                    </a>
+                                {% else %}
+                                    <button type="button"
+                                            class="btn btn-secondary"
+                                            disabled>
+                                        Aucune licence disponible
+                                    </button>
+                                {% endif %}
+
+                            {% endif %}
+
+                        </div>
+
+                        <div class="table-responsive">
+
+                            <table class="table align-middle">
+
+                                <thead>
+                                    <tr>
+                                        <th>Utilisateur</th>
+                                        <th>Rôle</th>
+                                        <th>Statut</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                    {% for membre in utilisateurs %}
+
+                                        <tr>
+
+                                            <td>
+                                                <div class="d-flex align-items-center">
+
+                                                    <div
+                                                        class="rounded-circle bg-success-subtle
+                                                               d-flex align-items-center
+                                                               justify-content-center me-3"
+                                                        style="width: 42px;
+                                                               height: 42px;
+                                                               min-width: 42px;"
+                                                    >
+                                                        👤
+                                                    </div>
+
+                                                    <div>
+
+                                                        <strong>
+                                                            {% if membre.user.first_name or membre.user.last_name %}
+                                                                {{ membre.user.first_name }}
+                                                                {{ membre.user.last_name }}
+                                                            {% else %}
+                                                                {{ membre.user.username }}
+                                                            {% endif %}
+                                                        </strong>
+
+                                                        <div class="small text-muted">
+                                                            {{ membre.user.email|default:"Adresse e-mail non renseignée" }}
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                {% if membre.role == "admin_org" %}
+                                                    <span class="badge bg-success">
+                                                        Administrateur
+                                                    </span>
+
+                                                {% elif membre.role == "fenny" %}
+                                                    <span class="badge bg-dark">
+                                                        Superviseur
+                                                    </span>
+
+                                                {% else %}
+                                                    <span class="badge bg-secondary">
+                                                        Utilisateur
+                                                    </span>
+                                                {% endif %}
+                                            </td>
+
+                                            <td>
+                                                {% if membre.user.is_active %}
+                                                    <span class="badge bg-success-subtle text-success">
+                                                        Actif
+                                                    </span>
+                                                {% else %}
+                                                    <span class="badge bg-danger-subtle text-danger">
+                                                        Désactivé
+                                                    </span>
+                                                {% endif %}
+                                            </td>
+
+                                        </tr>
+
+                                    {% empty %}
+
+                                        <tr>
+                                            <td colspan="3"
+                                                class="text-center text-muted py-5">
+                                                Aucun utilisateur n’est rattaché
+                                                à cette organisation.
+                                            </td>
+                                        </tr>
+
+                                    {% endfor %}
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                        {% if profil.role == "admin_org" or profil.role == "fenny" %}
+
+                            <div class="mt-3">
+
+                                <a href="{% url 'utilisateurs_organisation' %}"
+                                   class="btn btn-outline-success">
+                                    Voir la gestion complète de l’équipe
+                                </a>
+
+                            </div>
+
+                        {% endif %}
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    {% else %}
+
+        <!-- UTILISATEUR SANS ORGANISATION -->
+        <div class="alert alert-warning shadow-sm border-0">
+
+            <h4 class="alert-heading">
+                Organisation non renseignée
+            </h4>
+
+            <p class="mb-0">
+                Votre compte n’est actuellement rattaché à aucune organisation.
+                Revenez dans votre espace VertClair, puis ouvrez de nouveau
+                la plateforme afin de synchroniser votre compte.
+            </p>
+
+        </div>
+
+    {% endif %}
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,607 @@
+Structure du dossier pour le volume OS
+Le numéro de série du volume est 000000B8 D495:4F75
+C:.
+|   arborescence.txt
+|   data.xlsx
+|   db.sqlite3
+|   manage.py
+|   normaliser_fiches.py
+|   
++---accounts
+|   |   admin.py
+|   |   apps.py
+|   |   models.py
+|   |   stripe_config.py
+|   |   tests.py
+|   |   test_sources_sols.py
+|   |   urls.py
+|   |   validators.py
+|   |   views_monolith_old.py
+|   |   views_old.py
+|   |   
+|   +---data
+|   |   +---alimentation
+|   |   |       agreste_exploitation.csv
+|   |   |       agreste_sau.csv
+|   |   |       bio_operateurs.csv
+|   |   |       
+|   |   +---climat
+|   |   |       climat_2030.txt
+|   |   |       climat_2050.txt
+|   |   |       climat_2100.txt
+|   |   |       climat_ref.txt
+|   |   |       
+|   |   +---dechets
+|   |   |       economie_circulaire.csv
+|   |   |       economie_circulaire_light.csv
+|   |   |       JD_ANNUAIRE_DECHETERIES.csv
+|   |   |       
+|   |   +---fiches
+|   |   |   +---biodiversite
+|   |   |   |       actions_biodiversite.json
+|   |   |   |       adaptation_biodiversite_expert.json
+|   |   |   |       biodiversite.json
+|   |   |   |       continuites_ecologiques_connaisseur.json
+|   |   |   |       diversite_genetique_expert.json
+|   |   |   |       ecosystemes.json
+|   |   |   |       especes.json
+|   |   |   |       especes_invasives.json
+|   |   |   |       especes_protegees_connaisseur.json
+|   |   |   |       essences_locales_connaisseur.json
+|   |   |   |       forets.json
+|   |   |   |       fragmentation_habitats_connaisseur.json
+|   |   |   |       genie_ecologique_expert.json
+|   |   |   |       gestion_differenciee_connaisseur.json
+|   |   |   |       indicateurs_biodiversite_expert.json
+|   |   |   |       infrastructures_agroecologiques_expert.json
+|   |   |   |       inventaires_naturalistes_connaisseur.json
+|   |   |   |       natura2000_connaisseur.json
+|   |   |   |       nature_ville.json
+|   |   |   |       pollinisateurs.json
+|   |   |   |       renaturation_expert.json
+|   |   |   |       sequence_erc_expert.json
+|   |   |   |       services_ecosystemiques_connaisseur.json
+|   |   |   |       sesame_cerema_expert.json
+|   |   |   |       solutions_nature_connaisseur.json
+|   |   |   |       strategie_biodiversite_expert.json
+|   |   |   |       trame_verte_bleue.json
+|   |   |   |       zan_expert.json
+|   |   |   |       znieff_connaisseur.json
+|   |   |   |       zones_humides_biodiv.json
+|   |   |   |       
+|   |   |   +---climat
+|   |   |   |       adaptation.json
+|   |   |   |       adaptation_connaisseur.json
+|   |   |   |       adaptation_expert.json
+|   |   |   |       canicules.json
+|   |   |   |       canicules_connaisseur.json
+|   |   |   |       canicules_expert.json
+|   |   |   |       effet_serre.json
+|   |   |   |       effet_serre_connaisseur.json
+|   |   |   |       effet_serre_expert.json
+|   |   |   |       energies_fossiles.json
+|   |   |   |       energies_fossiles_connaisseur.json
+|   |   |   |       energies_fossiles_expert.json
+|   |   |   |       feux_foret.json
+|   |   |   |       feux_foret_connaisseur.json
+|   |   |   |       feux_foret_expert.json
+|   |   |   |       gaz_effet_serre.json
+|   |   |   |       gaz_effet_serre_connaisseur.json
+|   |   |   |       gaz_effet_serre_expert.json
+|   |   |   |       inondations.json
+|   |   |   |       inondations_connaisseur.json
+|   |   |   |       inondations_expert.json
+|   |   |   |       meteo_climat.json
+|   |   |   |       meteo_climat_connaisseur.json
+|   |   |   |       meteo_climat_expert.json
+|   |   |   |       rechauffement_climatique.json
+|   |   |   |       rechauffement_climatique_connaisseur.json
+|   |   |   |       rechauffement_climatique_expert.json
+|   |   |   |       secheresses.json
+|   |   |   |       secheresses_connaisseur.json
+|   |   |   |       secheresses_expert.json
+|   |   |   |       
+|   |   |   \---eau
+|   |   |           assainissement_avance_expert.json
+|   |   |           bassin_versant_connaisseur.json
+|   |   |           captages_eau_connaisseur.json
+|   |   |           captages_strategiques_expert.json
+|   |   |           continuite_ecologique_connaisseur.json
+|   |   |           cycle_eau.json
+|   |   |           eau_potable.json
+|   |   |           genie_ecologique_expert.json
+|   |   |           gestion_crise_secheresse_expert.json
+|   |   |           gestion_integree_eau_expert.json
+|   |   |           hydrogeologie_expert.json
+|   |   |           hydrologie_expert.json
+|   |   |           infiltration_ruissellement.json
+|   |   |           masses_eau_dce_expert.json
+|   |   |           nappes_souterraines.json
+|   |   |           pollutions_diffuses_connaisseur.json
+|   |   |           pollutions_eau.json
+|   |   |           qualite_eau.json
+|   |   |           recharge_nappes_connaisseur.json
+|   |   |           resilience_hydrique_connaisseur.json
+|   |   |           restauration_cours_eau_expert.json
+|   |   |           rivieres.json
+|   |   |           sdage_sage_connaisseur.json
+|   |   |           secheresse_eau.json
+|   |   |           sobriete_hydrique.json
+|   |   |           solutions_nature_eau_connaisseur.json
+|   |   |           stations_epuration_connaisseur.json
+|   |   |           strategie_eau_climat_expert.json
+|   |   |           usages_eau_connaisseur.json
+|   |   |           zones_humides.json
+|   |   |           
+|   |   \---questions
+|   |       +---biodiversite
+|   |       |       connaisseur.json
+|   |       |       debutant.json
+|   |       |       expert.json
+|   |       |       
+|   |       +---climat
+|   |       |       connaisseur.json
+|   |       |       debutant.json
+|   |       |       expert.json
+|   |       |       
+|   |       \---eau
+|   |               connaisseur.json
+|   |               debutant.json
+|   |               expert.json
+|   |               
+|   +---management
+|   |   |   __init__.py
+|   |   |   
+|   |   +---commands
+|   |   |   |   creer_services_base.py
+|   |   |   |   preparer_economie_circulaire.py
+|   |   |   |   prepare_biodiversite_data.py
+|   |   |   |   seed_facteurs_emission.py
+|   |   |   |   sync_economie-circulaire.py
+|   |   |   |   __init__.py
+|   |   |   |   
+|   |   |   \---__pycache__
+|   |   |           creer_services_base.cpython-314.pyc
+|   |   |           preparer_economie_circulaire.cpython-314.pyc
+|   |   |           prepare_biodiversite_data.cpython-314.pyc
+|   |   |           seed_facteurs_emission.cpython-314.pyc
+|   |   |           __init__.cpython-314.pyc
+|   |   |           
+|   |   \---__pycache__
+|   |           __init__.cpython-314.pyc
+|   |           
+|   +---migrations
+|   |   |   0001_initial.py
+|   |   |   0002_bilancarbone_lignecarbone.py
+|   |   |   0003_actiontransition.py
+|   |   |   0004_facteuremission_actif_facteuremission_code_and_more.py
+|   |   |   0005_alter_facteuremission_code_and_more.py
+|   |   |   0006_resultatquiz.py
+|   |   |   0007_actiontransition_financements_and_more.py
+|   |   |   0008_organisation_abonnement_profilutilisateur.py
+|   |   |   0009_add_saas_models.py
+|   |   |   0010_alter_profilutilisateur_role.py
+|   |   |   0011_serviceorganisation_profilutilisateur_service.py
+|   |   |   0012_invitationutilisateur.py
+|   |   |   0013_alter_invitationutilisateur_role_and_more.py
+|   |   |   0014_alter_abonnement_formule.py
+|   |   |   0015_journalactivite.py
+|   |   |   __init__.py
+|   |   |   
+|   |   \---__pycache__
+|   |           0001_initial.cpython-314.pyc
+|   |           0002_bilancarbone_lignecarbone.cpython-314.pyc
+|   |           0003_actiontransition.cpython-314.pyc
+|   |           0004_facteuremission_actif_facteuremission_code_and_more.cpython-314.pyc
+|   |           0005_alter_facteuremission_code_and_more.cpython-314.pyc
+|   |           0006_resultatquiz.cpython-314.pyc
+|   |           0007_actiontransition_financements_and_more.cpython-314.pyc
+|   |           0008_organisation_abonnement_profilutilisateur.cpython-314.pyc
+|   |           0009_add_saas_models.cpython-314.pyc
+|   |           0010_alter_profilutilisateur_role.cpython-314.pyc
+|   |           0011_serviceorganisation_profilutilisateur_service.cpython-314.pyc
+|   |           0012_invitationutilisateur.cpython-314.pyc
+|   |           0013_alter_invitationutilisateur_role_and_more.cpython-314.pyc
+|   |           0014_alter_abonnement_formule.cpython-314.pyc
+|   |           0015_journalactivite.cpython-314.pyc
+|   |           __init__.cpython-314.pyc
+|   |           
+|   +---templates
+|   |       campus.html
+|   |       
+|   +---views
+|   |   |   api_air.py
+|   |   |   api_alimentation.py
+|   |   |   api_biodiversite_couches.py
+|   |   |   api_carbone.py
+|   |   |   api_climat.py
+|   |   |   api_climat_futur.py
+|   |   |   api_commune.py
+|   |   |   api_dechets.py
+|   |   |   api_dpe.py
+|   |   |   api_eau.py
+|   |   |   api_economie_circulaire.py
+|   |   |   api_energie.py
+|   |   |   api_exports.py
+|   |   |   api_fiches.py
+|   |   |   api_questions.py
+|   |   |   api_sensibilite.py
+|   |   |   api_sols.py
+|   |   |   api_transition.py
+|   |   |   fenny.py
+|   |   |   fenny_finance.py
+|   |   |   organisation.py
+|   |   |   pages.py
+|   |   |   quiz.py
+|   |   |   __init__.py
+|   |   |   
+|   |   \---__pycache__
+|   |           api_air.cpython-314.pyc
+|   |           api_alimentation.cpython-314.pyc
+|   |           api_biodiversite_couches.cpython-314.pyc
+|   |           api_carbone.cpython-314.pyc
+|   |           api_climat.cpython-314.pyc
+|   |           api_climat_futur.cpython-314.pyc
+|   |           api_commune.cpython-314.pyc
+|   |           api_dechets.cpython-314.pyc
+|   |           api_dpe.cpython-314.pyc
+|   |           api_eau.cpython-314.pyc
+|   |           api_economie_circulaire.cpython-314.pyc
+|   |           api_energie.cpython-314.pyc
+|   |           api_exports.cpython-314.pyc
+|   |           api_fiches.cpython-314.pyc
+|   |           api_questions.cpython-314.pyc
+|   |           api_sensibilite.cpython-314.pyc
+|   |           api_sols.cpython-314.pyc
+|   |           api_transition.cpython-314.pyc
+|   |           fenny.cpython-314.pyc
+|   |           fenny_finance.cpython-314.pyc
+|   |           organisation.cpython-314.pyc
+|   |           pages.cpython-314.pyc
+|   |           quiz.cpython-314.pyc
+|   |           __init__.cpython-314.pyc
+|   |           
+|   \---__pycache__
+|           admin.cpython-314.pyc
+|           apps.cpython-314.pyc
+|           models.cpython-314.pyc
+|           urls.cpython-314.pyc
+|           views.cpython-314.pyc
+|           __init__.cpython-314.pyc
+|           
++---app.py
+|       app.py
+|       
++---Appli1
+|   |   asgi.py
+|   |   settings.py
+|   |   urls.py
+|   |   wsgi.py
+|   |   __init__.py
+|   |   
+|   \---__pycache__
+|           settings.cpython-314.pyc
+|           urls.cpython-314.pyc
+|           wsgi.cpython-314.pyc
+|           __init__.cpython-314.pyc
+|           
++---data
+|   +---biodiversite
+|   \---sources_biodiversite
+|       +---BassinHydrographique_FXX-shp
+|       |       BassinHydrographique_FXX.cpg
+|       |       BassinHydrographique_FXX.dbf
+|       |       BassinHydrographique_FXX.prj
+|       |       BassinHydrographique_FXX.qmd
+|       |       BassinHydrographique_FXX.shp
+|       |       BassinHydrographique_FXX.shx
+|       |       
+|       +---BassinVersantTopographique_FXX-shp
+|       |       BassinVersantTopographique_FXX.cpg
+|       |       BassinVersantTopographique_FXX.dbf
+|       |       BassinVersantTopographique_FXX.prj
+|       |       BassinVersantTopographique_FXX.qmd
+|       |       BassinVersantTopographique_FXX.shp
+|       |       BassinVersantTopographique_FXX.shx
+|       |       
+|       +---CoursEau_FXX-shp
+|       |       CoursEau_FXX.cpg
+|       |       CoursEau_FXX.dbf
+|       |       CoursEau_FXX.prj
+|       |       CoursEau_FXX.qmd
+|       |       CoursEau_FXX.shp
+|       |       CoursEau_FXX.shx
+|       |       
+|       +---LaisseEaux_FXX-shp
+|       |       LaisseEaux_FXX.cpg
+|       |       LaisseEaux_FXX.dbf
+|       |       LaisseEaux_FXX.prj
+|       |       LaisseEaux_FXX.qmd
+|       |       LaisseEaux_FXX.shp
+|       |       LaisseEaux_FXX.shx
+|       |       
+|       +---NoeudHydrographique_FXX-shp
+|       |       NoeudHydrographique_FXX.cpg
+|       |       NoeudHydrographique_FXX.dbf
+|       |       NoeudHydrographique_FXX.prj
+|       |       NoeudHydrographique_FXX.qmd
+|       |       NoeudHydrographique_FXX.shp
+|       |       NoeudHydrographique_FXX.shx
+|       |       
+|       +---PlanEau_FXX-shp
+|       |       PlanEau_FXX.cpg
+|       |       PlanEau_FXX.dbf
+|       |       PlanEau_FXX.prj
+|       |       PlanEau_FXX.qmd
+|       |       PlanEau_FXX.shp
+|       |       PlanEau_FXX.shx
+|       |       
+|       +---SurfaceElementaire_FXX-shp
+|       |       SurfaceElementaire_FXX.cpg
+|       |       SurfaceElementaire_FXX.dbf
+|       |       SurfaceElementaire_FXX.prj
+|       |       SurfaceElementaire_FXX.qmd
+|       |       SurfaceElementaire_FXX.shp
+|       |       SurfaceElementaire_FXX.shx
+|       |       
+|       \---TronconHydrographique_FXX-shp
+|               TronconHydrographique_FXX.cpg
+|               TronconHydrographique_FXX.dbf
+|               TronconHydrographique_FXX.prj
+|               TronconHydrographique_FXX.qmd
+|               TronconHydrographique_FXX.shp
+|               TronconHydrographique_FXX.shx
+|               
++---import_excel.py
++---static
+|   +---images
+|   |   |   fond_connexion.jpg
+|   |   |   logo.png
+|   |   |   logo_carbone.png
+|   |   |   logo_vertclair.png
+|   |   |   
+|   |   +---fenny
+|   |   |       fenny_alerte.png
+|   |   |       fenny_courir.png
+|   |   |       fenny_decouvrir.png
+|   |   |       fenny_dormir.png
+|   |   |       fenny_heureux.png
+|   |   |       fenny_marcher.png
+|   |   |       fenny_neutre.png
+|   |   |       fenny_parler.png
+|   |   |       fenny_quiz.png
+|   |   |       fenny_reflechir.png
+|   |   |       fenny_saluer.png
+|   |   |       fenny_sauter.png
+|   |   |       
+|   |   +---fiches
+|   |   |   +---biodiversite
+|   |   |   |       biodiversite.png
+|   |   |   |       
+|   |   |   +---climat
+|   |   |   |   |   adaptation.png
+|   |   |   |   |   canicules.png
+|   |   |   |   |   effet_serre.png
+|   |   |   |   |   energies_fossiles.png
+|   |   |   |   |   feux_foret.png
+|   |   |   |   |   gaz_effet_serre.svg
+|   |   |   |   |   inondations.png
+|   |   |   |   |   meteo_climat.svg
+|   |   |   |   |   rechauffement_climatique.png
+|   |   |   |   |   secheresses.png
+|   |   |   |   |   
+|   |   |   |   \---Nouveau dossier
+|   |   |   |           effet_serre.svg
+|   |   |   |           energies_fossiles.svg
+|   |   |   |           rechauffement_climatique.svg
+|   |   |   |           
+|   |   |   \---eau
+|   |   |           cycle_eau.png
+|   |   |           eau_potable.png
+|   |   |           infiltration_ruissellement.png
+|   |   |           nappes_souterraines.png
+|   |   |           pollutions_eau.png
+|   |   |           qualite_eau.png
+|   |   |           rivieres.png
+|   |   |           secheresse.png
+|   |   |           sobriete_hydrique.png
+|   |   |           zones_humides.png
+|   |   |           
+|   |   \---quiz
+|   |           alimentation.jpg
+|   |           Biodiversite.jpg
+|   |           climat.jpg
+|   |           eau.jpg
+|   |           economie-circulaire.jpg
+|   |           energie.jpg
+|   |           meteo_climat.svg
+|   |           
+|   \---js
+|       |   carbone old.js
+|       |   carbone.js
+|       |   territoire old.js
+|       |   
+|       +---carbone
+|       |       calculs.js
+|       |       exports.js
+|       |       graphiques.js
+|       |       main.js
+|       |       sauvegarde.js
+|       |       
+|       +---sols
+|       |       sols-actions-bibliotheque.js
+|       |       sols.js
+|       |       
+|       +---territoire
+|       |   |   .js
+|       |   |   air.js
+|       |   |   alimentation-acteurs.js
+|       |   |   alimentation-actions.js
+|       |   |   alimentation-carte.js
+|       |   |   alimentation-diagnostic.js
+|       |   |   alimentation-indice.js
+|       |   |   alimentation-main.js
+|       |   |   carte-dpe.js
+|       |   |   climat-actions-affichage.js
+|       |   |   climat-actions-prioritaires-affichage.js
+|       |   |   climat-actions-prioritaires.js
+|       |   |   climat-actions-regles.js
+|       |   |   climat-actions-score.js
+|       |   |   climat-actions.js
+|       |   |   climat-couches-reelles.js
+|       |   |   climat-couches-simulees.js
+|       |   |   climat-diagnostic-couches.js
+|       |   |   climat-exports.js
+|       |   |   climat-facteurs-diagnostic.js
+|       |   |   climat-fiches-couches.js
+|       |   |   climat-indice-affichage.js
+|       |   |   climat-indice-aleas.js
+|       |   |   climat-indice-sensibilite.js
+|       |   |   climat-indice-vulnerabilite.js
+|       |   |   climat-interpretation-projections.js
+|       |   |   climat-lecture-territoriale-affichage.js
+|       |   |   climat-lecture-territoriale.js
+|       |   |   climat-main.js
+|       |   |   climat-map.js
+|       |   |   climat-priorisation.js
+|       |   |   climat-priorites-affichage.js
+|       |   |   climat-projections-affichage.js
+|       |   |   climat-risques.js
+|       |   |   dechets-actions.js
+|       |   |   dechets-carte.js
+|       |   |   dechets-diagnostic.js
+|       |   |   dechets-economie-circulaire.js
+|       |   |   dechets-explication.js
+|       |   |   dechets-indice.js
+|       |   |   dechets-main.js
+|       |   |   dechets-navigation.js
+|       |   |   dpe-batiment.js
+|       |   |   dpe.js
+|       |   |   eau-graphiques.js
+|       |   |   eau-utils.js
+|       |   |   eau.js
+|       |   |   energie-actions.js
+|       |   |   energie-biomasse.js
+|       |   |   energie-eolien.js
+|       |   |   energie-geothermie.js
+|       |   |   energie-navigation.js
+|       |   |   energie-solaire.js
+|       |   |   energie.js
+|       |   |   filtres-dpe.js
+|       |   |   main.js
+|       |   |   map.js
+|       |   |   trames-diagnostic.js
+|       |   |   trames-explications.js
+|       |   |   trames-fenny.js
+|       |   |   trames-map.js
+|       |   |   trames-quiz.js
+|       |   |   trames-simulation.js
+|       |   |   
+|       |   +---dechets
+|       |   \---old
+|       |       |   climat-actions-2050-affichage.js
+|       |       |   climat-actions-2050.js
+|       |       |   climat-aggravation-affichage.js
+|       |       |   climat-aggravation-risques.js
+|       |       |   climat-analyse.js
+|       |       |   climat-budget-affichage.js
+|       |       |   climat-couts.js
+|       |       |   territoire-projections.js
+|       |       |   
+|       |       +---climat
+|       |       |       climat-couches-simulees.js
+|       |       |       climat-couches.js
+|       |       |       climat-fiches-actions.js
+|       |       |       climat-priorites-affichage.js
+|       |       |       climat-scenarios.js
+|       |       |       climat-synthese.js
+|       |       |       
+|       |       \---Nouveau dossier
+|       |               trames-diagnostic.js
+|       |               trames-map.js
+|       |               trames-quiz.js
+|       |               trames-simulation.js
+|       |               
+|       \---transition
+|               bibliotheque-actions.js
+|               transition-liste-actions.js
+|               transition-moteur-action.js
+|               transition-stockage.js
+|               
++---templates
+|   |   403.html
+|   |   base.html
+|   |   carbone.html
+|   |   dashboard.html
+|   |   formations.html
+|   |   login.html
+|   |   quiz_session.html
+|   |   quiz_theme.html
+|   |   territoire.html
+|   |   territoire_air.html
+|   |   territoire_alimentation.html
+|   |   territoire_climat.html
+|   |   territoire_dechets.html
+|   |   territoire_eau.html
+|   |   territoire_energie.html
+|   |   territoire_sols.html
+|   |   territoire_trames.html
+|   |   transition.html
+|   |   
+|   +---fenny
+|   |       abonnements.html
+|   |       abonnement_detail.html
+|   |       dashboard_fenny.html
+|   |       finance.html
+|   |       modifier_abonnement.html
+|   |       modifier_organisation.html
+|   |       modifier_utilisateur.html
+|   |       nouvelle_organisation.html
+|   |       organisations.html
+|   |       organisation_detail.html
+|   |       supervision.html
+|   |       utilisateurs.html
+|   |       utilisateur_detail.html
+|   |       
+|   +---invitation
+|   |       accepter_invitation.html
+|   |       invitation_invalide.html
+|   |       
+|   +---organisation
+|   |       abonnement.html
+|   |       inviter_utilisateur.html
+|   |       modifier_utilisateur.html
+|   |       utilisateurs.html
+|   |       
+|   +---partials
+|   |       campus_module.html
+|   |       carte_quiz.html
+|   |       
+|   \---todo
+|           todo_list.html
+|           
+\---todo
+    |   admin.py
+    |   apps.py
+    |   models.py
+    |   tests.py
+    |   urls.py
+    |   views.py
+    |   __init__.py
+    |   
+    +---migrations
+    |   |   0001_initial.py
+    |   |   __init__.py
+    |   |   
+    |   \---__pycache__
+    |           0001_initial.cpython-314.pyc
+    |           __init__.cpython-314.pyc
+    |           
+    \---__pycache__
+            admin.cpython-314.pyc
+            apps.cpython-314.pyc
+            models.cpython-314.pyc
+            urls.cpython-314.pyc
+            views.cpython-314.pyc
+            __init__.cpython-314.pyc
+            
