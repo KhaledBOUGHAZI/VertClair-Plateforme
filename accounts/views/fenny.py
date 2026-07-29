@@ -20,11 +20,16 @@ from accounts.models import (
 
 
 def est_fenny(user):
+    if not user.is_authenticated:
+        return False
+
+    if user.is_superuser:
+        return True
+
     profil = getattr(user, "profil_vertclair", None)
     return profil and profil.role == "fenny"
 
 
-@login_required
 @login_required
 def dashboard_fenny(request):
     if not est_fenny(request.user):
@@ -104,7 +109,11 @@ def dashboard_fenny(request):
     ).count()
 
     total_co2 = sum(
-        BilanCarbone.objects.values_list("total_co2", flat=True)
+    (co2 or 0.0)
+    for co2 in BilanCarbone.objects.values_list(
+        "total_co2",
+        flat=True
+    )
     )
 
     actions_transition = ActionTransition.objects.count()

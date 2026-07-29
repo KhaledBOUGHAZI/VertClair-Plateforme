@@ -112,7 +112,8 @@
 
     <a href="{% url 'transition' %}">📋 Plan de transition écologique</a>
 
-    {% if request.user.is_authenticated and request.user.profil_vertclair.role == "fenny" %}
+    {% if request.user.is_authenticated %}
+    {% if request.user.is_superuser or request.user.profil_vertclair.role == "fenny" %}
 
         <hr>
 
@@ -123,12 +124,13 @@
         <a href="{% url 'fenny_utilisateurs' %}">👥 Utilisateurs</a>
 
         <a href="{% url 'fenny_abonnements' %}">💳 Abonnements</a>
+
         <a href="{% url 'fenny_supervision' %}">🚨 Supervision</a>
-        <a href="{% url 'fenny_finance' %}">
-    💰 Finances
-</a>
+
+        <a href="{% url 'fenny_finance' %}">💰 Finances</a>
 
     {% endif %}
+{% endif %}
 
     <hr>
     <a href="{% url 'profil' %}">

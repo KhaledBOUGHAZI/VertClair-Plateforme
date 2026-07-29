@@ -11,6 +11,12 @@ from accounts.models import (
 
 
 def est_fenny(user):
+    if not user.is_authenticated:
+        return False
+
+    if user.is_superuser:
+        return True
+
     profil = getattr(user, "profil_vertclair", None)
     return profil and profil.role == "fenny"
 
