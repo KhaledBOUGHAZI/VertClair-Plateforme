@@ -1,5 +1,5 @@
 import json
-
+from django.contrib.auth import logout as django_logout
 from django.conf import settings
 from django.contrib.auth import (
     authenticate,
@@ -48,11 +48,6 @@ def login_view(request):
 
 
 from django.conf import settings
-
-def logout_view(request):
-    logout(request)
-
-    return redirect(settings.VERTCLAIR_URL)
 
 def connexion_vertclair(request):
     token = request.GET.get("token", "")
@@ -435,3 +430,6 @@ def organisation(request):
         },
     )
 
+def deconnexion(request):
+    django_logout(request)
+    return redirect("login")

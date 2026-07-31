@@ -40,7 +40,7 @@ from accounts.views.aide import centre_aide
 from .views import (
     home,
     login_view,
-    logout_view,
+    deconnexion,
     dashboard,
     campus,
     formations,
@@ -102,7 +102,7 @@ path(
     path("", home, name="home"),
 
     path("login/", login_view, name="login"),
-    path("logout/", logout_view, name="logout"),
+    path("logout/", deconnexion, name="logout"),
 
     path("dashboard/", dashboard, name="dashboard"),
     path(
