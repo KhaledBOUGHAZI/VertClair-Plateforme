@@ -35,6 +35,7 @@ from accounts.views.fenny import (
 )
 
 from accounts.views.fenny_finance import fenny_finance
+from accounts.views.aide import centre_aide
 
 from .views import (
     home,
@@ -104,6 +105,11 @@ path(
     path("logout/", logout_view, name="logout"),
 
     path("dashboard/", dashboard, name="dashboard"),
+    path(
+    "centre-aide/",
+    centre_aide,
+    name="centre_aide",
+),
     path("campus/", campus, name="campus"),
 
     path("formations/", formations, name="formations"),
